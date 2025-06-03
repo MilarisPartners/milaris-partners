@@ -1,0 +1,16 @@
+🎨 INFORMATION LOGOS MIRALIS PARTNERS
+=====================================
+
+Les logos SVG actuels sont des LOGOS TEMPORAIRES créés automatiquement.
+
+POUR UTILISER VOS VRAIS LOGOS :
+1. Remplacez logo-white.svg par votre logo blanc (format PNG ou SVG)
+2. Remplacez logo-dark.svg par votre logo coloré (format PNG ou SVG)
+
+Si vous utilisez des fichiers PNG, modifiez l'extension dans :
+- components/Navbar.tsx (ligne 49)
+- components/Footer.tsx (ligne 21)
+
+Les logos actuels utilisent la police Work Sans comme demandé.
+
+✅ Le site est maintenant prêt avec vos logos temporaires ! 
