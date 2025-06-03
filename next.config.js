@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
-const repoName = 'miralis-partners-new' // Remplacez par le nom de votre repo GitHub
+const repoName = 'miralis-partners' // Nom correct du repository GitHub
 
 const nextConfig = {
   output: 'export',
