@@ -120,3 +120,39 @@ Pour toute question ou support, contactez : contact@miralispartners.com
 ## 📄 Licence
 
 © 2024 Milaris Partners - Tous droits réservés
+
+## Déploiement sur GitHub Pages
+
+Ce projet est configuré pour être déployé automatiquement sur GitHub Pages.
+
+### Configuration GitHub Pages
+
+1. **Dans les paramètres de votre repository GitHub :**
+   - Allez dans Settings > Pages
+   - Dans "Build and deployment", sélectionnez "GitHub Actions" comme source
+   - Le workflow se déclenchera automatiquement à chaque push sur la branche `main`
+
+2. **Modifier le nom du repository :**
+   - Si votre repository a un nom différent, modifiez la variable `repoName` dans `next.config.js`
+   - Par exemple : `const repoName = 'votre-nom-de-repo'`
+
+3. **Première utilisation :**
+   - Après le premier push sur `main`, attendez que le workflow GitHub Actions se termine
+   - Votre site sera accessible à : `https://[votre-username].github.io/[nom-du-repo]/`
+
+### Build local
+
+Pour tester le build statique localement :
+
+```bash
+npm run build:static
+```
+
+Le site statique sera généré dans le dossier `out/`.
+
+### Workflow automatique
+
+Le déploiement est automatique grâce au workflow GitHub Actions (`.github/workflows/deploy.yml`). 
+À chaque push sur la branche `main`, le site est automatiquement construit et déployé sur GitHub Pages.
+
+Vous pouvez également déclencher manuellement le déploiement depuis l'onglet "Actions" de votre repository.
