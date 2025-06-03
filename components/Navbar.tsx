@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import ContactModal from "./ContactModal";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +48,7 @@ const Navbar = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image 
-                src="/logo-white.png"
+                src={getAssetPath("/logo-white.png")}
                 alt="Milaris Partners"
                 width={200}
                 height={40}

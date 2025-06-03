@@ -6,6 +6,7 @@ import { MapPin, Mail, Phone, Linkedin, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ContactModal from "./ContactModal";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 const Footer = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -25,7 +26,7 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <div className="mb-6">
                 <Image 
-                  src="/logo-white.png" 
+                  src={getAssetPath("/logo-white.png")}
                   alt="Milaris Partners"
                   width={250}
                   height={50}
