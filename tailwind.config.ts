@@ -10,33 +10,44 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#151515",
-          light: "#424242",
+          DEFAULT: "#3B82F6",
+          light: "#60A5FA",
+          dark: "#2563EB",
+        },
+        offwhite: {
+          DEFAULT: "#FAFAF9",
+          light: "#FCFCFB",
+          dark: "#F5F5F4",
         },
         blue: {
-          light: "#e3f2fd",
-          soft: "#90caf9",
-          medium: "#2196f3",
-          deep: "#1565c0",
-          dark: "#0d47a1",
+          light: "#DBEAFE",
+          soft: "#93C5FD",
+          medium: "#3B82F6",
+          bright: "#2563EB",
+          sky: "#0EA5E9",
         },
         gray: {
-          light: "#f5f5f5",
-          soft: "#e0e0e0",
-          medium: "#9e9e9e",
-          dark: "#424242",
-        },
-        accent: {
-          gold: "#d4af37",
+          50: "#FAFAFA",
+          100: "#F5F5F5",
+          200: "#E5E5E5",
+          300: "#D4D4D4",
+          400: "#A3A3A3",
+          500: "#737373",
         },
       },
       fontFamily: {
-        sans: ["var(--font-work-sans)", "Work Sans", "sans-serif"],
-        playfair: ["Playfair Display", "serif"],
+        sans: ["Work Sans", "system-ui", "sans-serif"],
+        display: ["Work Sans", "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        'xl': '1rem',
+        '2xl': '1.5rem',
+        '3xl': '2rem',
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
         "slide-up": "slideUp 0.5s ease-out",
+        "float": "float 6s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -46,6 +57,10 @@ const config: Config = {
         slideUp: {
           "0%": { transform: "translateY(20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
         },
       },
     },

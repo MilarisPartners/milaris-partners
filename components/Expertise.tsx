@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShoppingBag, Globe, Heart } from "lucide-react";
+import { ShoppingBag, Globe, Heart, Briefcase, Factory, Zap } from "lucide-react";
 
 const Expertise = () => {
   const sectors = [
@@ -9,61 +9,98 @@ const Expertise = () => {
       icon: ShoppingBag,
       title: "Biens de consommation",
       description: "Expertise approfondie dans le secteur des biens de consommation courante et durables",
+      color: "from-primary to-primary-dark",
     },
     {
       icon: Globe,
       title: "Technologies / Media / Telecom",
       description: "Accompagnement des entreprises innovantes dans leur transformation digitale",
+      color: "from-blue-500 to-blue-600",
     },
     {
       icon: Heart,
       title: "Santé",
       description: "Conseil spécialisé pour les acteurs du secteur médical et pharmaceutique",
+      color: "from-green-500 to-green-600",
+    },
+    {
+      icon: Factory,
+      title: "Industrie",
+      description: "Support stratégique pour les entreprises industrielles et manufacturières",
+      color: "from-purple-500 to-purple-600",
+    },
+    {
+      icon: Briefcase,
+      title: "Services aux entreprises",
+      description: "Expertise dans l'optimisation et la valorisation des services B2B",
+      color: "from-orange-500 to-orange-600",
+    },
+    {
+      icon: Zap,
+      title: "Énergie & Environnement",
+      description: "Accompagnement dans la transition énergétique et les projets durables",
+      color: "from-teal-500 to-teal-600",
     },
   ];
 
   return (
-    <section id="expertise" className="py-20 bg-gradient-to-br from-[#050e1f] via-[#0a1628] to-[#162644] relative overflow-hidden">
-      {/* Motif subtil */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-[#162644] rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#0a1628] rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2" />
-      </div>
-      
-      <div className="container-custom relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-normal text-white mb-4 font-playfair">
-            Notre expertise <span className="text-[#c9a961] italic">sectorielle</span>
-          </h2>
-          <p className="text-xl text-white/60 max-w-3xl mx-auto font-light">
-            Une connaissance approfondie des dynamiques de marché dans trois secteurs clés
-          </p>
-        </motion.div>
+    <section id="expertise" className="py-20 lg:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="container-custom">
+        <div className="max-w-6xl mx-auto">
+          {/* Titre */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+              Notre expertise <span className="text-primary">sectorielle</span>
+            </h2>
+            <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+              Une connaissance approfondie des dynamiques de marché dans six secteurs clés
+            </p>
+          </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {sectors.map((sector, index) => (
-            <motion.div
-              key={sector.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden"
-            >
-              {/* Effet de shine au hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-              
-              <div className="w-16 h-16 bg-[#c9a961]/10 flex items-center justify-center mb-6 group-hover:bg-[#c9a961]/20 transition-colors duration-300">
-                <sector.icon className="w-8 h-8 text-[#c9a961]" />
-              </div>
-              <h3 className="text-2xl font-normal text-white mb-4 font-playfair">{sector.title}</h3>
-              <p className="text-white/60">{sector.description}</p>
-            </motion.div>
-          ))}
+          {/* Grille de secteurs */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {sectors.map((sector, index) => (
+              <motion.div
+                key={sector.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.08 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+                className="group relative bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+              >
+                {/* Gradient overlay subtil */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${sector.color} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-300`} />
+                
+                <div className="relative">
+                  {/* Icône */}
+                  <motion.div 
+                    className={`w-14 h-14 rounded-xl bg-gradient-to-r ${sector.color} flex items-center justify-center mb-5 shadow-lg`}
+                    whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <sector.icon className="w-7 h-7 text-white" />
+                  </motion.div>
+                  
+                  {/* Titre */}
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-3">
+                    {sector.title}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-gray-600 leading-relaxed">
+                    {sector.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

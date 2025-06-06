@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,12 +7,12 @@
 @layer base {
   :root {
     --font-work-sans: 'Work Sans', system-ui, sans-serif;
-    --font-playfair: 'Playfair Display', serif;
-    --color-accent: #c9a961;
-    --color-accent-dark: #b89a4f;
-    --color-dark-blue: #050e1f;
-    --color-navy: #0a1628;
-    --color-midnight: #162644;
+    --color-primary: #3B82F6;
+    --color-primary-light: #60A5FA;
+    --color-primary-dark: #2563EB;
+    --color-offwhite: #FAFAF9;
+    --color-offwhite-light: #FCFCFB;
+    --color-offwhite-dark: #F5F5F4;
   }
   
   html {
@@ -18,20 +20,35 @@
   }
   
   body {
-    @apply font-sans bg-white text-gray-900 antialiased;
+    @apply font-sans bg-offwhite text-gray-800 antialiased;
+    font-family: 'Work Sans', system-ui, sans-serif;
   }
 
-  /* Titres élégants avec Playfair Display */
-  .font-playfair {
-    font-family: var(--font-playfair) !important;
+  /* Styles globaux simplifiés et modernes */
+  * {
+    @apply rounded-lg;
   }
   
-  /* Grille subtile pour les fonds blancs */
+  /* Grille subtile pour les fonds */
   .subtle-grid {
     background-image: 
-      linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+      linear-gradient(rgba(59, 130, 246, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  /* Ombres douces et modernes */
+  .shadow-soft {
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08);
+  }
+  
+  /* Boutons modernes */
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-2xl font-medium transition-all duration-300 hover:bg-primary-dark hover:shadow-lg hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary border-2 border-primary px-6 py-3 rounded-2xl font-medium transition-all duration-300 hover:bg-primary hover:text-white hover:shadow-lg hover:scale-105;
   }
 }
 
@@ -43,4 +60,59 @@
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+  
+  /* Arrondis modernes */
+  .rounded-card {
+    @apply rounded-2xl;
+  }
+  
+  .rounded-button {
+    @apply rounded-full;
+  }
+}
+
+/* Animations pour le globe */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse-slow {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 60s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-reverse-slow 45s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-30px) translateX(5px);
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
 }

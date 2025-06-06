@@ -1,9 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import MapBanner from "@/components/MapBanner";
-import Services from "@/components/Services";
-import Process from "@/components/Process";
+import AISection from "@/components/AISection";
+import InterventionSection from "@/components/InterventionSection";
+import EuropePresence from "@/components/EuropePresence";
 import Expertise from "@/components/Expertise";
 import Testimonial from "@/components/Testimonial";
 import Footer from "@/components/Footer";
@@ -14,9 +14,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <MapBanner />
-      <Services />
-      <Process />
+      <AISection />
+      <InterventionSection />
+      <EuropePresence />
       <Expertise />
       <Testimonial />
       <Footer />
