@@ -10,7 +10,8 @@ import {
   TrendingUp,
   Heart,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  Mail
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
