@@ -8,201 +8,275 @@ import {
   Send,
   Sparkles,
   TrendingUp,
-  Heart
+  Heart,
+  ArrowRight,
+  CheckCircle
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const Carrieres = () => {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.8 }
-  };
+  const values = [
+    {
+      icon: Globe,
+      title: "Exposition internationale",
+      description: "Intégrez une équipe présente dans plusieurs pays, et profitez d'opportunités concrètes de collaboration sur des projets à portée internationale — l'idéal pour élargir vos horizons professionnels.",
+      gradient: "from-[#0001ff] to-[#3E8BFF]"
+    },
+    {
+      icon: Cpu,
+      title: "Solutions axées sur la technologie",
+      description: "Chez Miralis Partners, nous mettons la technologie au service de l'efficacité. Nous déployons des outils avancés et des systèmes d'IA de pointe pour optimiser nos processus.",
+      gradient: "from-[#3E8BFF] to-[#0001ff]"
+    },
+    {
+      icon: Users,
+      title: "Environnement jeune et dynamique",
+      description: "Évoluez dans un cadre stimulant, ouvert aux idées neuves et aux initiatives. Nous valorisons la curiosité, l'apprentissage continu et l'esprit d'équipe.",
+      gradient: "from-[#0001ff] to-[#3E8BFF]"
+    }
+  ];
+
+  const benefits = [
+    "Opportunités de croissance et développement personnel",
+    "Projets stimulants avec des clients prestigieux",
+    "Formation continue et mentorat",
+    "Environnement de travail flexible",
+    "Rémunération compétitive et avantages",
+    "Culture d'entreprise collaborative et inclusive"
+  ];
 
   return (
-    <>
+    <main className="min-h-screen">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#050e1f] via-[#0a1628] to-[#162644] overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3Cpattern%20id%3D%22pattern%22%20width%3D%2260%22%20height%3D%2260%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22%20fill%3D%22rgba(255%2C255%2C255%2C0.03)%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23pattern)%22%2F%3E%3C%2Fsvg%3E')]" />
-        
-        <div className="container-custom relative z-10">
+      <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5 pt-20 overflow-hidden">
+        {/* Animated decorative elements */}
+        <div className="absolute inset-0">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <h1 className="text-5xl md:text-6xl font-normal text-white mb-6 font-playfair">
-              Rejoignez notre équipe <span className="italic text-[#c9a961]">dynamique et innovante</span>
-            </h1>
-            <p className="text-xl text-white/70 font-light leading-relaxed">
-              Notre réussite repose sur une équipe talentueuse de professionnels, dont la diversité 
-              d'expériences et la richesse des idées nourrissent notre ambition d'excellence et d'innovation.
-            </p>
-          </motion.div>
+            className="absolute -top-20 -right-20 w-40 sm:w-80 h-40 sm:h-80 bg-[#0001ff]/10 rounded-full blur-3xl"
+            animate={{ 
+              scale: [1, 1.2, 1],
+              rotate: [0, 90, 0],
+            }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          />
+          <motion.div
+            className="absolute -bottom-20 -left-20 w-48 sm:w-96 h-48 sm:h-96 bg-[#3E8BFF]/10 rounded-full blur-3xl"
+            animate={{ 
+              scale: [1.2, 1, 1.2],
+              rotate: [0, -90, 0],
+            }}
+            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          />
         </div>
 
-        {/* Animated elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(4)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-64 h-64 bg-[#c9a961]/5 rounded-full blur-3xl"
-              initial={{
-                x: i % 2 === 0 ? -100 : "100%",
-                y: i * 150,
-              }}
-              animate={{
-                x: i % 2 === 0 ? "100%" : -100,
-                y: i * 150 + 100,
-              }}
-              transition={{
-                duration: 20 + i * 5,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "linear",
-              }}
-            />
-          ))}
+        <div className="container-custom relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <motion.div 
+              className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#0001ff]/10 rounded-full"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Sparkles className="w-5 h-5 text-[#0001ff]" />
+              <span className="text-[#0001ff] font-semibold">Rejoignez-nous</span>
+            </motion.div>
+            
+            <motion.h1 
+              className="heading-1 font-bold mb-6 text-[#0b062b]"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Rejoignez notre équipe{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+                innovante
+              </span>
+            </motion.h1>
+            <motion.p 
+              className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto px-4 sm:px-0"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Notre réussite repose sur une équipe talentueuse de professionnels, dont la diversité 
+              d'expériences et la richesse des idées nourrissent notre ambition d'excellence et d'innovation.
+            </motion.p>
+          </motion.div>
         </div>
       </section>
 
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-[#c9a961]/30 to-transparent" />
-
       {/* Travaillez avec nous */}
-      <section className="py-20 bg-white subtle-grid">
+      <section className="section-padding bg-white">
         <div className="container-custom">
-          <motion.div {...fadeInUp} className="text-center mb-16">
-            <div className="w-20 h-px bg-[#c9a961] mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-normal text-[#050e1f] font-playfair">
-              Travaillez avec <span className="italic text-[#162644]">nous</span> !
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
+              Pourquoi nous{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+                rejoindre
+              </span> ?
             </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Découvrez ce qui fait de Miralis Partners un environnement de travail unique
+            </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Exposition internationale */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="group"
-            >
-              <div className="bg-gradient-to-br from-[#f8f9fa] to-white border border-gray-200 p-8 h-full hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-[#c9a961]/10 flex items-center justify-center mb-6 group-hover:bg-[#c9a961]/20 transition-colors duration-300">
-                  <Globe className="w-8 h-8 text-[#c9a961]" />
-                </div>
-                <h3 className="text-2xl font-normal text-[#050e1f] mb-4 font-playfair">Exposition internationale</h3>
-                <p className="text-[#424242] leading-relaxed">
-                  Intégrez une équipe présente dans plusieurs pays, et profitez d'opportunités concrètes 
-                  de collaboration sur des projets à portée internationale — l'idéal pour élargir 
-                  vos horizons professionnels.
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Solutions technologiques */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="group"
-            >
-              <div className="bg-gradient-to-br from-[#f8f9fa] to-white border border-gray-200 p-8 h-full hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-[#c9a961]/10 flex items-center justify-center mb-6 group-hover:bg-[#c9a961]/20 transition-colors duration-300">
-                  <Cpu className="w-8 h-8 text-[#c9a961]" />
-                </div>
-                <h3 className="text-2xl font-normal text-[#050e1f] mb-4 font-playfair">Solutions axées sur la technologie</h3>
-                <p className="text-[#424242] leading-relaxed">
-                  Chez Milaris Partners, nous mettons la technologie au service de l'efficacité. 
-                  Nous déployons des outils avancés et des systèmes d'IA de pointe pour optimiser 
-                  nos processus et délivrer des résultats mesurables à nos clients.
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Environnement dynamique */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="group"
-            >
-              <div className="bg-gradient-to-br from-[#f8f9fa] to-white border border-gray-200 p-8 h-full hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-[#c9a961]/10 flex items-center justify-center mb-6 group-hover:bg-[#c9a961]/20 transition-colors duration-300">
-                  <Users className="w-8 h-8 text-[#c9a961]" />
-                </div>
-                <h3 className="text-2xl font-normal text-[#050e1f] mb-4 font-playfair">Environnement jeune et dynamique</h3>
-                <p className="text-[#424242] leading-relaxed">
-                  Évoluez dans un cadre stimulant, ouvert aux idées neuves et aux initiatives. 
-                  Nous valorisons la curiosité, l'apprentissage continu et l'esprit d'équipe.
-                </p>
-              </div>
-            </motion.div>
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
+            {values.map((value, index) => {
+              const Icon = value.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="group relative"
+                >
+                  <div className="h-full bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-lg border border-gray-100 hover:border-[#0001ff]/30 hover:shadow-xl transition-all duration-300">
+                    <div className={`w-16 h-16 bg-gradient-to-br ${value.gradient} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-[#0b062b] mb-3 group-hover:text-[#0001ff] transition-colors duration-300">
+                      {value.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {value.description}
+                    </p>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-[#c9a961]/30 to-transparent" />
-
-      {/* Opportunités */}
-      <section className="py-20 bg-gradient-to-br from-[#050e1f] via-[#0a1628] to-[#162644] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
-          }} />
-        </div>
-
-        <div className="container-custom relative z-10">
-          <motion.div {...fadeInUp} className="text-center mb-16">
-            <div className="w-20 h-px bg-[#c9a961] mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-normal text-white mb-6 font-playfair">
-              Opportunités <span className="italic text-[#c9a961]">actuelles</span>
+      {/* Avantages */}
+      <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
+              Nos avantages
             </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Nous investissons dans le bien-être et le développement de nos collaborateurs
+            </p>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto"
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
           >
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-12 text-center">
-              <div className="flex justify-center mb-8">
-                <div className="flex space-x-4">
-                  <div className="w-16 h-16 bg-[#c9a961]/10 flex items-center justify-center">
-                    <Sparkles className="w-8 h-8 text-[#c9a961]" />
-                  </div>
-                  <div className="w-16 h-16 bg-[#c9a961]/10 flex items-center justify-center">
-                    <TrendingUp className="w-8 h-8 text-[#c9a961]" />
-                  </div>
-                  <div className="w-16 h-16 bg-[#c9a961]/10 flex items-center justify-center">
-                    <Heart className="w-8 h-8 text-[#c9a961]" />
-                  </div>
-                </div>
-              </div>
-              <p className="text-xl text-white/80 leading-relaxed font-light">
-                Nous sommes en permanence à la recherche de profils ambitieux, passionnés par 
-                l'excellence et l'innovation. Si vous aspirez à avoir un impact réel, à apprendre 
-                chaque jour et à progresser dans un environnement bienveillant, parlons-en.
-              </p>
+            <div className="grid sm:grid-cols-2 gap-4 px-4 sm:px-0">
+              {benefits.map((benefit, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 hover:border-[#0001ff]/30 hover:shadow-md transition-all duration-300"
+                >
+                  <CheckCircle className="w-5 h-5 text-[#0001ff] flex-shrink-0" />
+                  <span className="text-gray-700">{benefit}</span>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>
       </section>
 
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-[#c9a961]/30 to-transparent" />
+      {/* Opportunités */}
+      <section className="section-padding bg-[#0b062b] relative overflow-hidden">
+        {/* Background pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute h-full w-full" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          }} />
+        </div>
+
+        <div className="container-custom relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="heading-2 font-bold text-white mb-12">
+              Opportunités{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
+                actuelles
+              </span>
+            </h2>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-3xl mx-auto"
+            >
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 sm:p-12 rounded-lg text-center">
+                <div className="flex justify-center gap-4 mb-8">
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-lg flex items-center justify-center">
+                    <Sparkles className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#3E8BFF] to-[#0001ff] rounded-lg flex items-center justify-center">
+                    <TrendingUp className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-lg flex items-center justify-center">
+                    <Heart className="w-7 h-7 text-white" />
+                  </div>
+                </div>
+                <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+                  Nous sommes en permanence à la recherche de profils ambitieux, passionnés par 
+                  l'excellence et l'innovation. Si vous aspirez à avoir un impact réel, à apprendre 
+                  chaque jour et à progresser dans un environnement bienveillant, parlons-en.
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Comment postuler */}
-      <section className="py-20 bg-white subtle-grid">
+      <section className="section-padding bg-white">
         <div className="container-custom">
-          <motion.div {...fadeInUp} className="text-center mb-16">
-            <div className="w-20 h-px bg-[#c9a961] mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-normal text-[#050e1f] mb-6 font-playfair">
-              Comment <span className="italic text-[#162644]">postuler</span> ?
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
+              Comment{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+                postuler
+              </span> ?
             </h2>
           </motion.div>
 
@@ -210,22 +284,23 @@ const Carrieres = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
-            <div className="bg-[#f8f9fa] border border-gray-200 p-12">
-              <div className="w-20 h-20 bg-[#c9a961]/10 flex items-center justify-center mx-auto mb-8">
-                <Send className="w-10 h-10 text-[#c9a961]" />
+            <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-100 p-8 sm:p-12 rounded-lg">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-lg flex items-center justify-center mx-auto mb-8">
+                <Send className="w-10 h-10 text-white" />
               </div>
-              <p className="text-lg text-[#424242] leading-relaxed mb-8">
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 Envoyez votre CV et une lettre de motivation présentant votre parcours, 
-                vos aspirations et ce qui vous attire chez Milaris Partners, à l'adresse suivante :
+                vos aspirations et ce qui vous attire chez Miralis Partners, à l'adresse suivante :
               </p>
               <a 
-                href="mailto:careers@milarispartners.com"
-                className="inline-flex items-center space-x-2 text-2xl text-[#c9a961] hover:text-[#b89a4f] transition-colors duration-300"
+                href="mailto:careers@miralispartners.com"
+                className="inline-flex items-center gap-3 text-2xl text-[#0001ff] hover:text-[#3E8BFF] transition-colors duration-300"
               >
-                <span>📩</span>
-                <span className="font-playfair">careers@milarispartners.com</span>
+                <Mail className="w-6 h-6" />
+                <span className="font-semibold">careers@miralispartners.com</span>
               </a>
             </div>
           </motion.div>
@@ -233,40 +308,40 @@ const Carrieres = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#050e1f] via-[#0a1628] to-[#162644] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
-          }} />
-        </div>
-        
-        <div className="container-custom relative z-10">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
+        <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h2 className="text-4xl md:text-5xl font-normal text-white mb-6 font-playfair">
-              Prêt à façonner l'avenir avec <span className="italic text-[#c9a961]">nous</span> ?
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-6">
+              Prêt à façonner l'avenir avec{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+                nous
+              </span> ?
             </h2>
-            <p className="text-xl text-white/70 mb-10 font-light">
+            <p className="text-xl text-gray-600 mb-10">
               Rejoignez une équipe où votre talent sera valorisé et où vous pourrez 
               contribuer à des projets d'envergure internationale.
             </p>
-            <a 
-              href="mailto:careers@milarispartners.com"
-              className="inline-block bg-[#c9a961] text-[#050e1f] px-10 py-4 font-medium hover:bg-[#b89a4f] transition-colors duration-300"
+            <motion.a 
+              href="mailto:careers@miralispartners.com"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] text-white px-8 py-4 rounded-lg font-medium shadow-lg hover:shadow-2xl transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               Postulez maintenant
-            </a>
+              <ArrowRight className="w-5 h-5" />
+            </motion.a>
           </motion.div>
         </div>
       </section>
 
       <Footer />
-    </>
+    </main>
   );
 };
 

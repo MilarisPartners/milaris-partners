@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="relative py-8 px-4 md:px-6">
+    <footer className="relative py-6 sm:py-8 px-4 md:px-6">
       {/* Pillule flottante */}
       <motion.div 
         className="max-w-6xl mx-auto bg-[#2c3e50] rounded-full px-6 md:px-8 py-3 md:py-4 flex items-center justify-between shadow-xl"
@@ -15,15 +15,15 @@ const Footer = () => {
         viewport={{ once: true }}
       >
         {/* Logo */}
-        <div className="text-white font-bold text-base md:text-lg">
-          Milaris
+        <div className="text-white font-bold text-sm sm:text-base md:text-lg">
+          Miralis Partners
         </div>
 
         {/* Copyright et liens - responsive */}
-        <div className="flex items-center space-x-2 md:space-x-6 text-xs md:text-sm text-white/80">
-          <span className="hidden md:inline">© 2024 Milaris Partners</span>
-          <span className="md:hidden">© 2024</span>
-          <span className="text-white/40">•</span>
+        <div className="flex items-center flex-wrap gap-2 sm:gap-3 md:gap-6 text-[10px] sm:text-xs md:text-sm text-white/80">
+          <span className="hidden sm:inline">© 2024 Miralis Partners</span>
+          <span className="sm:hidden">© 2024</span>
+          <span className="text-white/40 hidden sm:inline">•</span>
           <Link href="#" className="hover:text-white transition-colors">
             Mentions légales
           </Link>

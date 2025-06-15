@@ -5,7 +5,7 @@ import { MapPin } from "lucide-react";
 
 const MapBanner = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-[#050e1f] via-[#0a1628] to-[#162644] overflow-hidden">
+    <section className="relative section-padding bg-gradient-to-br from-[#050e1f] via-[#0a1628] to-[#162644] overflow-hidden">
       {/* Grille de fond subtile */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -23,33 +23,33 @@ const MapBanner = () => {
         >
           {/* Texte */}
           <div className="text-white">
-            <h2 className="text-3xl md:text-4xl font-normal mb-6 font-playfair">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal mb-4 sm:mb-6 font-playfair px-4 sm:px-0">
               Une présence stratégique en <span className="text-[#c9a961] italic">Europe</span>
             </h2>
-            <p className="text-lg mb-8 text-white/70 font-light">
+            <p className="text-base sm:text-lg mb-6 sm:mb-8 text-white/70 font-light px-4 sm:px-0">
               Milaris Partners opère au cœur de l'Europe avec une expertise reconnue en France, en Italie et au Luxembourg. 
               Notre réseau international nous permet d'identifier les meilleures opportunités pour nos clients.
             </p>
-            <div className="grid sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-6 h-6 text-[#c9a961] flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium text-xl mb-1">France</h3>
-                  <p className="text-white/60 text-sm">Paris, Lyon, Marseille</p>
+                  <h3 className="font-medium text-lg sm:text-xl mb-1">France</h3>
+                  <p className="text-white/60 text-xs sm:text-sm">Paris, Lyon, Marseille</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-6 h-6 text-[#c9a961] flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium text-xl mb-1">Italie</h3>
-                  <p className="text-white/60 text-sm">Milan, Rome, Turin</p>
+                  <h3 className="font-medium text-lg sm:text-xl mb-1">Italie</h3>
+                  <p className="text-white/60 text-xs sm:text-sm">Milan, Rome, Turin</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-6 h-6 text-[#c9a961] flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium text-xl mb-1">Luxembourg</h3>
-                  <p className="text-white/60 text-sm">Luxembourg-Ville</p>
+                  <h3 className="font-medium text-lg sm:text-xl mb-1">Luxembourg</h3>
+                  <p className="text-white/60 text-xs sm:text-sm">Luxembourg-Ville</p>
                 </div>
               </div>
             </div>
@@ -60,15 +60,15 @@ const MapBanner = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative h-[500px] flex items-center justify-center"
+            className="relative h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-center"
           >
             {/* Fond lumineux */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[500px] h-[500px] bg-[#c9a961]/5 rounded-full blur-3xl" />
+              <div className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] bg-[#c9a961]/5 rounded-full blur-3xl" />
             </div>
 
-            {/* Carte abstraite */}
-            <div className="relative w-full h-full max-w-[600px]">
+            {/* Carte abstraite - simplifiée sur mobile */}
+            <div className="relative w-full h-full max-w-[300px] sm:max-w-[450px] lg:max-w-[600px]">
               {/* Points de connexion */}
               {/* France - Paris */}
               <motion.div
@@ -78,18 +78,18 @@ const MapBanner = () => {
                 className="absolute top-[45%] left-[30%] transform -translate-x-1/2 -translate-y-1/2"
               >
                 <div className="relative">
-                  <div className="w-20 h-20 bg-[#c9a961]/10 rounded-full flex items-center justify-center">
-                    <div className="w-12 h-12 bg-[#c9a961]/20 rounded-full flex items-center justify-center">
-                      <div className="w-6 h-6 bg-[#c9a961] rounded-full animate-pulse shadow-lg shadow-[#c9a961]/50" />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-[#c9a961]/10 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#c9a961]/20 rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-[#c9a961] rounded-full animate-pulse shadow-lg shadow-[#c9a961]/50" />
                     </div>
                   </div>
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1 }}
-                    className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
+                    className="absolute -bottom-6 sm:-bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
                   >
-                    <span className="text-white text-sm font-light">France</span>
+                    <span className="text-white text-xs sm:text-sm font-light">France</span>
                   </motion.div>
                 </div>
               </motion.div>
@@ -102,18 +102,18 @@ const MapBanner = () => {
                 className="absolute top-[60%] right-[20%] transform translate-x-1/2 -translate-y-1/2"
               >
                 <div className="relative">
-                  <div className="w-20 h-20 bg-[#c9a961]/10 rounded-full flex items-center justify-center">
-                    <div className="w-12 h-12 bg-[#c9a961]/20 rounded-full flex items-center justify-center">
-                      <div className="w-6 h-6 bg-[#c9a961] rounded-full animate-pulse shadow-lg shadow-[#c9a961]/50" />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-[#c9a961]/10 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#c9a961]/20 rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-[#c9a961] rounded-full animate-pulse shadow-lg shadow-[#c9a961]/50" />
                     </div>
                   </div>
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.2 }}
-                    className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
+                    className="absolute -bottom-6 sm:-bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
                   >
-                    <span className="text-white text-sm font-light">Italie</span>
+                    <span className="text-white text-xs sm:text-sm font-light">Italie</span>
                   </motion.div>
                 </div>
               </motion.div>
@@ -126,24 +126,24 @@ const MapBanner = () => {
                 className="absolute top-[25%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
               >
                 <div className="relative">
-                  <div className="w-16 h-16 bg-[#c9a961]/10 rounded-full flex items-center justify-center">
-                    <div className="w-10 h-10 bg-[#c9a961]/20 rounded-full flex items-center justify-center">
-                      <div className="w-5 h-5 bg-[#c9a961] rounded-full animate-pulse shadow-lg shadow-[#c9a961]/50" />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-[#c9a961]/10 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#c9a961]/20 rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-[#c9a961] rounded-full animate-pulse shadow-lg shadow-[#c9a961]/50" />
                     </div>
                   </div>
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.4 }}
-                    className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
+                    className="absolute -bottom-6 sm:-bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
                   >
-                    <span className="text-white text-sm font-light">Luxembourg</span>
+                    <span className="text-white text-xs sm:text-sm font-light">Luxembourg</span>
                   </motion.div>
                 </div>
               </motion.div>
 
-              {/* Lignes de connexion animées */}
-              <svg className="absolute inset-0 w-full h-full pointer-events-none">
+              {/* Lignes de connexion animées - cachées sur mobile */}
+              <svg className="hidden sm:block absolute inset-0 w-full h-full pointer-events-none">
                 <defs>
                   <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stopColor="#c9a961" stopOpacity="0" />
@@ -254,8 +254,8 @@ const MapBanner = () => {
                 </defs>
               </svg>
 
-              {/* Particules flottantes */}
-              {[...Array(6)].map((_, i) => (
+              {/* Particules flottantes - réduites sur mobile */}
+              {[...Array(3)].map((_, i) => (
                 <motion.div
                   key={i}
                   className="absolute w-1 h-1 bg-[#c9a961]/40 rounded-full"

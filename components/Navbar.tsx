@@ -40,8 +40,8 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
         className={`fixed w-full top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-transparent"
-            : "bg-white/95 backdrop-blur-md shadow-soft"
+            ? "bg-white/95 backdrop-blur-md shadow-soft"
+            : "bg-transparent"
         }`}
       >
         <div className="container-custom">
@@ -80,7 +80,7 @@ const Navbar = () => {
                   >
                     <Link
                       href="/"
-                      className="transition-all duration-300 font-medium text-gray-700 hover:text-primary text-sm"
+                      className="transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm"
                     >
                       A propos
                     </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
                     {/* Expertises Dropdown */}
                     <div className="relative group">
                       <button 
-                        className="flex items-center space-x-1 transition-all duration-300 font-medium text-gray-700 hover:text-primary text-sm"
+                        className="flex items-center space-x-1 transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm"
                         onMouseEnter={() => setIsExpertisesOpen(true)}
                         onMouseLeave={() => setIsExpertisesOpen(false)}
                       >
@@ -96,7 +96,7 @@ const Navbar = () => {
                         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isExpertisesOpen ? 'rotate-180' : ''}`} />
                       </button>
                       <div 
-                        className={`absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-soft border border-gray-100 transition-all duration-300 ${
+                        className={`absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-soft border border-gray-100 transition-all duration-300 ${
                           isExpertisesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
                         }`}
                         onMouseEnter={() => setIsExpertisesOpen(true)}
@@ -106,7 +106,7 @@ const Navbar = () => {
                           <Link
                             key={expertise.label}
                             href={expertise.href}
-                            className="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors duration-200 first:rounded-t-xl last:rounded-b-xl"
+                            className="block px-5 py-3 text-sm text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-200 first:rounded-t-lg last:rounded-b-lg"
                           >
                             {expertise.label}
                           </Link>
@@ -115,15 +115,15 @@ const Navbar = () => {
                     </div>
                     
                     <Link
-                      href="/equipes"
-                      className="transition-all duration-300 font-medium text-gray-700 hover:text-primary text-sm"
+                      href="/equipe"
+                      className="transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm"
                     >
-                      Équipes
+                      Équipe
                     </Link>
                     
                     <Link
                       href="/carrieres"
-                      className="transition-all duration-300 font-medium text-gray-700 hover:text-primary text-sm"
+                      className="transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm"
                     >
                       Carrière
                     </Link>
@@ -134,7 +134,7 @@ const Navbar = () => {
                         <span>{selectedLanguage}</span>
                         <ChevronDown className="w-4 h-4" />
                       </button>
-                      <div className="absolute right-0 mt-2 w-20 bg-white rounded-xl shadow-soft border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
+                      <div className="absolute right-0 mt-2 w-20 bg-white rounded-lg shadow-soft border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
                         {languages.map((lang) => (
                           <button
                             key={lang}
@@ -152,7 +152,7 @@ const Navbar = () => {
                     {/* CTA Button */}
                     <button
                       onClick={() => setIsContactModalOpen(true)}
-                      className="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-300"
+                      className="bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#0b062b] transition-all duration-300"
                     >
                       Nous contacter
                     </button>
@@ -160,7 +160,7 @@ const Navbar = () => {
 
                   {/* Mobile Menu Button */}
                   <motion.button
-                    className="lg:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors duration-300"
+                    className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -184,11 +184,11 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="lg:hidden bg-white rounded-2xl shadow-soft mt-2 py-4 border border-gray-100"
+              className="lg:hidden bg-white rounded-lg shadow-soft mt-2 py-4 border border-gray-100"
             >
               <Link
                 href="/"
-                className="block px-6 py-3 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors duration-300 text-sm font-medium"
+                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-sm font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 A propos
@@ -201,7 +201,7 @@ const Navbar = () => {
                   <Link
                     key={expertise.label}
                     href={expertise.href}
-                    className="block pl-4 py-2 text-gray-600 hover:text-primary transition-colors duration-300 text-sm"
+                    className="block pl-4 py-2 text-gray-600 hover:text-[#0001ff] transition-colors duration-300 text-sm"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {expertise.label}
@@ -210,16 +210,16 @@ const Navbar = () => {
               </div>
               
               <Link
-                href="/equipes"
-                className="block px-6 py-3 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors duration-300 text-sm font-medium"
+                href="/equipe"
+                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-sm font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Équipes
+                Équipe
               </Link>
               
               <Link
                 href="/carrieres"
-                className="block px-6 py-3 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors duration-300 text-sm font-medium"
+                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-sm font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Carrière
@@ -233,7 +233,7 @@ const Navbar = () => {
                       onClick={() => setSelectedLanguage(lang)}
                       className={`px-4 py-2 text-sm rounded-lg transition-all duration-300 ${
                         lang === selectedLanguage
-                          ? "bg-primary text-white"
+                          ? "bg-[#0001ff] text-white"
                           : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                       }`}
                     >
@@ -249,7 +249,7 @@ const Navbar = () => {
                     setIsContactModalOpen(true);
                     setIsMobileMenuOpen(false);
                   }}
-                  className="w-full bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-300"
+                  className="w-full bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#0b062b] transition-all duration-300"
                 >
                   Nous contacter
                 </button>
@@ -271,17 +271,17 @@ const Navbar = () => {
           >
             {/* Language Selector */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-soft transition-all duration-300 font-medium text-gray-700 hover:text-primary text-sm">
+              <button className="flex items-center space-x-1 bg-white/90 backdrop-blur-md px-4 py-2 rounded-lg shadow-soft transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm">
                 <span>{selectedLanguage}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute right-0 mt-2 w-20 bg-white rounded-xl shadow-soft border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
+              <div className="absolute right-0 mt-2 w-20 bg-white rounded-lg shadow-soft border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
                 {languages.map((lang) => (
                   <button
                     key={lang}
                     onClick={() => setSelectedLanguage(lang)}
-                    className={`block w-full px-4 py-2 text-left hover:bg-primary/10 transition-colors duration-300 text-sm ${
-                      lang === selectedLanguage ? "text-primary font-semibold" : "text-gray-700"
+                    className={`block w-full px-4 py-2 text-left hover:bg-[#0001ff]/10 transition-colors duration-300 text-sm ${
+                      lang === selectedLanguage ? "text-[#0001ff] font-semibold" : "text-gray-700"
                     }`}
                   >
                     {lang}
@@ -293,7 +293,7 @@ const Navbar = () => {
             {/* CTA Button */}
             <button
               onClick={() => setIsContactModalOpen(true)}
-              className="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-300 shadow-soft"
+              className="bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#0b062b] transition-all duration-300 shadow-soft"
             >
               Nous contacter
             </button>

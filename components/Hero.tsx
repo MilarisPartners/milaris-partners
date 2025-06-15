@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Sparkles } from "lucide-react";
 import Globe3D from "./Globe3D";
 import { useState } from "react";
 import ContactModal from "./ContactModal";
@@ -14,12 +14,120 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-offwhite">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#3E8BFF]/20 via-white to-[#0001ff]/10">
+        <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent" />
+      </div>
+
+      {/* Animated grid pattern */}
+      <div className="absolute inset-0 overflow-hidden">
+        <svg
+          className="absolute inset-0 w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="grid-pattern"
+              x="0"
+              y="0"
+              width="60"
+              height="60"
+              patternUnits="userSpaceOnUse"
+            >
+              <motion.path
+                d="M 60 0 L 0 0 0 60"
+                fill="none"
+                stroke="rgba(0, 1, 255, 0.05)"
+                strokeWidth="1"
+                animate={{
+                  d: [
+                    "M 60 0 L 0 0 0 60",
+                    "M 60 5 L 0 0 5 60",
+                    "M 60 0 L 0 0 0 60",
+                  ],
+                }}
+                transition={{
+                  duration: 8,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+              <motion.rect
+                width="60"
+                height="60"
+                fill="none"
+                stroke="rgba(62, 139, 255, 0.03)"
+                strokeWidth="1"
+                animate={{
+                  width: [60, 58, 60],
+                  height: [60, 58, 60],
+                  x: [0, 1, 0],
+                  y: [0, 1, 0],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+            </pattern>
+          </defs>
+          <motion.rect
+            width="100%"
+            height="100%"
+            fill="url(#grid-pattern)"
+            animate={{
+              opacity: [0.5, 0.8, 0.5],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+        </svg>
+        
+        {/* Distortion overlay */}
+        <motion.div
+          className="absolute inset-0"
+          style={{
+            background: `radial-gradient(circle at 50% 50%, transparent 0%, rgba(0, 1, 255, 0.02) 50%, transparent 100%)`,
+          }}
+          animate={{
+            scale: [1, 1.5, 1],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        
+        {/* Moving gradient waves */}
+        <motion.div
+          className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%]"
+          style={{
+            background: `conic-gradient(from 0deg at 50% 50%, transparent, rgba(0, 1, 255, 0.03), transparent, rgba(62, 139, 255, 0.03), transparent)`,
+          }}
+          animate={{
+            rotate: 360,
+          }}
+          transition={{
+            duration: 30,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+        />
+      </div>
+
       {/* Globe terrestre en arrière-plan */}
-      <Globe3D />
+      <div className="absolute inset-0 opacity-30 lg:opacity-50">
+        <Globe3D />
+      </div>
       
       {/* Content */}
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 py-16 sm:py-20 lg:py-0">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -27,23 +135,33 @@ const Hero = () => {
           className="max-w-4xl mx-auto text-center"
         >
           {/* Phrase catchy */}
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-lg md:text-xl text-gray-600 mb-8 font-light"
+            className="mb-6 sm:mb-8"
           >
-            À destination des sociétés et fonds d'investissement
-          </motion.p>
+            <p className="text-sm sm:text-base md:text-lg text-gray-500 font-light">
+              Anciennement Varenne Partners
+            </p>
+          </motion.div>
 
           {/* Titre principal */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8"
+            className="heading-1 font-bold mb-6 sm:mb-8 relative"
           >
-            Le M&A, simplement.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-primary to-gray-900 animate-gradient-x">
+              Le M&A, simplement.
+            </span>
+            {/* Glow effect */}
+            <motion.div
+              className="absolute inset-0 bg-primary/20 blur-3xl -z-10"
+              animate={{ opacity: [0.3, 0.6, 0.3] }}
+              transition={{ duration: 3, repeat: Infinity }}
+            />
           </motion.h1>
           
           {/* Description */}
@@ -51,10 +169,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
           >
-            Milaris Partners accompagne les dirigeants de TPE/PME, 
-            les actionnaires et les investisseurs à vendre, acquérir 
+            <span className="font-bold text-primary">Milaris Partners</span> accompagne les{" "}
+            <span className="font-semibold text-blue-bright">dirigeants de TPE/PME</span>, 
+            les <span className="font-semibold text-blue-bright">actionnaires</span> et les{" "}
+            <span className="font-semibold text-blue-bright">investisseurs</span> à vendre, acquérir 
             ou financer des entreprises dans les meilleures conditions.
           </motion.p>
 
@@ -63,20 +183,30 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0"
           >
-            <button 
+            <motion.button 
               onClick={() => setIsContactModalOpen(true)}
-              className="bg-primary text-white px-8 py-4 rounded-full font-medium hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className="bg-[#0001ff] text-white btn-responsive rounded-lg font-medium transition-all duration-300 hover:shadow-2xl hover:scale-105 relative overflow-hidden group w-full sm:w-auto"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              Planifier un échange
-            </button>
-            <button 
+              <span className="relative z-10">Planifier un échange</span>
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]"
+                initial={{ x: "100%" }}
+                whileHover={{ x: 0 }}
+                transition={{ duration: 0.3 }}
+              />
+            </motion.button>
+            <motion.button 
               onClick={scrollToAbout}
-              className="bg-white text-primary border-2 border-primary/20 px-8 py-4 rounded-full font-medium hover:border-primary hover:shadow-lg transition-all duration-300 hover:scale-105"
+              className="bg-white/80 backdrop-blur-sm text-[#0b062b] border-2 border-[#0001ff]/30 btn-responsive rounded-lg font-medium hover:border-[#0001ff] hover:bg-[#0001ff]/5 hover:shadow-lg transition-all duration-300 relative overflow-hidden w-full sm:w-auto"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               Ce qui change chez nous ?
-            </button>
+            </motion.button>
           </motion.div>
         </motion.div>
       </div>
@@ -91,11 +221,11 @@ const Hero = () => {
         <motion.div 
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-2 cursor-pointer group"
+          className="flex flex-col items-center gap-1 sm:gap-2 cursor-pointer group"
           onClick={scrollToAbout}
         >
-          <div className="w-10 h-10 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center group-hover:border-primary transition-colors">
-            <ArrowDown className="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors" />
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-white to-[#0001ff]/10 border-2 border-[#0001ff]/30 flex items-center justify-center group-hover:border-[#0001ff] group-hover:shadow-lg transition-all duration-300">
+            <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-[#0001ff] group-hover:text-[#0b062b] transition-colors" />
           </div>
         </motion.div>
       </motion.div>

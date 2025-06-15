@@ -1,0 +1,221 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { MapPin, Mail, Linkedin, Target, Globe, Factory, Cpu, Users, Building2 } from "lucide-react";
+import Link from "next/link";
+
+const Equipe = () => {
+  const team = [
+    {
+      name: "Paul Poulain",
+      role: "Managing Director France",
+      email: "paul@miralispartners.com",
+      linkedin: "https://linkedin.com/in/paulpoulain",
+      image: "/team/paul.jpg", // Placeholder
+      focus: [
+        {
+          icon: Building2,
+          title: "Accompagnement régional",
+          description: "Accompagnement des entreprises locales en région dans leurs opérations primaires et secondaires dans divers domaines en fonction des tendances de marché"
+        },
+        {
+          icon: Globe,
+          title: "Expansion internationale",
+          description: "Cession et recherche de partenaires à l'échelle mondiale pour les entreprises françaises"
+        },
+        {
+          icon: Target,
+          title: "Mandats Buy-Side",
+          description: "Accompagnement des fonds d'investissement français dans leurs mandats à l'achat à l'étranger pour profiter des opportunités sous-exploitées en Italie et Allemagne"
+        }
+      ]
+    },
+    {
+      name: "Matteo Rossi",
+      role: "Managing Director Italie",
+      email: "matteo@miralispartners.com",
+      linkedin: "https://linkedin.com/in/matteorossi",
+      image: "/team/matteo.jpg", // Placeholder
+      focus: [
+        {
+          icon: Factory,
+          title: "Secteurs industriels & tech",
+          description: "Accompagnement des entrepreneurs italiens industriels et technologiques sur des opérations primaires"
+        },
+        {
+          icon: Users,
+          title: "Partenariats européens",
+          description: "Cession et recherche de partenaires à travers l'Europe pour les entreprises italiennes"
+        },
+        {
+          icon: Cpu,
+          title: "Origination Italie",
+          description: "Identification de pépites italiennes pour nos mandats en buy-side"
+        }
+      ]
+    }
+  ];
+
+  return (
+    <main className="min-h-screen">
+      <Navbar />
+
+      {/* Hero Section */}
+      <section className="relative pt-40 pb-32 bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5 overflow-hidden">
+        {/* Animated decorative elements */}
+        <div className="absolute inset-0">
+          <motion.div
+            className="absolute -top-20 -right-20 w-40 sm:w-80 h-40 sm:h-80 bg-[#0001ff]/10 rounded-full blur-3xl"
+            animate={{ 
+              scale: [1, 1.2, 1],
+              rotate: [0, 90, 0],
+            }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          />
+          <motion.div
+            className="absolute -bottom-20 -left-20 w-48 sm:w-96 h-48 sm:h-96 bg-[#3E8BFF]/10 rounded-full blur-3xl"
+            animate={{ 
+              scale: [1.2, 1, 1.2],
+              rotate: [0, -90, 0],
+            }}
+            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          />
+        </div>
+
+        <div className="container-custom relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b062b] mb-6">
+              Notre{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+                équipe
+              </span>
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Des experts passionnés par la création de valeur et l'accompagnement des entreprises dans leurs projets stratégiques
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {team.map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              >
+                {/* Member Header */}
+                <div className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] p-8 text-white">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <h2 className="text-3xl font-bold mb-2">{member.name}</h2>
+                      <p className="text-white/80 text-lg">{member.role}</p>
+                    </div>
+                    {/* Photo placeholder */}
+                    <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center">
+                      <Users className="w-12 h-12 text-white/60" />
+                    </div>
+                  </div>
+                  
+                  {/* Contact Info */}
+                  <div className="mt-6 flex flex-wrap gap-4">
+                    <a 
+                      href={`mailto:${member.email}`}
+                      className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition-colors"
+                    >
+                      <Mail className="w-4 h-4" />
+                      <span className="text-sm">{member.email}</span>
+                    </a>
+                    <a 
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition-colors"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                      <span className="text-sm">LinkedIn</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Focus Areas */}
+                <div className="p-8">
+                  <h3 className="text-xl font-bold text-[#0b062b] mb-6">Domaines d'expertise</h3>
+                  <div className="space-y-6">
+                    {member.focus.map((area, idx) => {
+                      const Icon = area.icon;
+                      return (
+                        <motion.div
+                          key={idx}
+                          initial={{ opacity: 0, x: -20 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.5, delay: idx * 0.1 }}
+                          viewport={{ once: true }}
+                          className="flex gap-4"
+                        >
+                          <div className="w-12 h-12 bg-gradient-to-br from-[#0001ff]/10 to-[#3E8BFF]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Icon className="w-6 h-6 text-[#0001ff]" />
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-[#0b062b] mb-1">{area.title}</h4>
+                            <p className="text-gray-600 text-sm leading-relaxed">{area.description}</p>
+                          </div>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-6">
+              Prêt à rencontrer notre équipe ?
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              Discutons de votre projet et voyons comment nous pouvons vous accompagner dans votre réussite
+            </p>
+            <Link href="/contact">
+              <motion.button
+                className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] text-white px-8 py-4 rounded-lg font-medium shadow-lg hover:shadow-2xl transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Planifier un échange
+              </motion.button>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+};
+
+export default Equipe; 

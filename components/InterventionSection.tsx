@@ -1,216 +1,184 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
-import { ArrowRight, Building2, Globe2, Handshake, TrendingUp, Users, Wallet } from "lucide-react";
+import { motion } from "framer-motion";
+import { TrendingUp, Users, Wallet, CheckCircle } from "lucide-react";
 import Link from "next/link";
 
 const InterventionSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [activeCard, setActiveCard] = useState(0);
-  
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-
-  const criteria = [
-    {
-      icon: Building2,
-      text: "Société de 5 à 150m€\nde chiffre d'affaires"
-    },
-    {
-      icon: Globe2,
-      text: "Activité majoritairement\nen Europe"
-    },
-    {
-      icon: Handshake,
-      text: "Transaction minoritaire\nou majoritaire"
-    }
-  ];
-
   const services = [
     {
       title: "Conseil en cession",
-      description: "Notre équipe d'experts vous accompagne dans toutes les étapes de votre projet de cession. Avec une approche personnalisée et un réseau international, nous maximisons la valeur de votre transaction.",
+      description: "Maximisez la valeur de votre entreprise lors de sa transmission",
       icon: TrendingUp,
-      link: "/fusions-acquisitions",
-      color: "from-primary to-primary-dark"
+      link: "/cession-entreprise",
+      features: [
+        "Entreprises de 5 à 150M€ CA",
+        "Cession totale ou partielle",
+        "Processus structuré sur 6-9 mois"
+      ],
+      color: "from-[#0001ff] to-[#3E8BFF]"
     },
     {
       title: "Conseil en acquisition",
-      description: "Nous identifions et qualifions les meilleures opportunités d'acquisition pour votre croissance. Notre expertise sectorielle et notre réseau nous permettent de vous proposer des cibles stratégiques.",
+      description: "Identifiez et sécurisez les meilleures opportunités de croissance externe",
       icon: Users,
-      link: "/fusions-acquisitions",
-      color: "from-blue-500 to-blue-600"
+      link: "/acquisition-entreprise",
+      features: [
+        "Ciblage stratégique européen",
+        "Due diligence approfondie",
+        "Négociation optimisée"
+      ],
+      color: "from-[#3E8BFF] to-[#0001ff]"
     },
     {
       title: "Conseil en financement",
-      description: "Nous structurons et négocions vos financements pour optimiser votre structure capitalistique. Notre connaissance des investisseurs et des solutions de financement garantit le succès de vos opérations.",
+      description: "Structurez le financement optimal pour accélérer votre développement",
       icon: Wallet,
-      link: "/levee-de-fonds",
-      color: "from-green-500 to-green-600"
+      link: "/financement",
+      features: [
+        "Levée de fonds growth",
+        "Dette & financements hybrides",
+        "Réseau d'investisseurs qualifiés"
+      ],
+      color: "from-[#0001ff] to-[#3E8BFF]"
     }
   ];
 
-  // Calculer quelle carte afficher en fonction du scroll
-  useEffect(() => {
-    const unsubscribe = scrollYProgress.on("change", (value) => {
-      if (value > 0.25 && value < 0.75) {
-        const normalizedValue = (value - 0.25) / 0.5;
-        const cardIndex = Math.floor(normalizedValue * services.length);
-        setActiveCard(Math.min(cardIndex, services.length - 1));
-      } else if (value <= 0.25) {
-        setActiveCard(0);
-      } else {
-        setActiveCard(services.length - 1);
-      }
-    });
-
-    return () => unsubscribe();
-  }, [scrollYProgress, services.length]);
-
   return (
-    <section ref={sectionRef} className="relative bg-white">
-      {/* Hauteur pour créer l'espace de scroll */}
-      <div className="h-[200vh] relative">
-        {/* Contenu fixe pendant le scroll */}
-        <div className="sticky top-0 h-screen flex items-center py-16 lg:py-20">
-          <div className="container-custom w-full">
-            <div className="max-w-6xl mx-auto">
-              {/* Titre */}
-              <motion.h2 
-                className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 lg:mb-16 text-gray-800"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                Notre périmètre d'intervention
-              </motion.h2>
+    <section className="relative section-padding bg-[#0b062b] overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute h-full w-full" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          }} />
+        </div>
+      </div>
 
-              {/* Grille deux colonnes */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-                {/* Colonne gauche - Critères (fixe) */}
-                <div className="lg:pr-8">
-                  <motion.div
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
-                    className="space-y-6 lg:space-y-8"
-                  >
-                    {criteria.map((criterion, index) => {
-                      const Icon = criterion.icon;
-                      return (
-                        <motion.div
-                          key={index}
-                          className="flex items-start space-x-4"
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.6, delay: index * 0.1 }}
-                          viewport={{ once: true }}
-                        >
-                          <div className="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center">
-                            <Icon className="w-7 h-7 text-primary" />
-                          </div>
-                          <p className="text-lg lg:text-xl font-medium text-gray-800 leading-relaxed whitespace-pre-line pt-1">
-                            {criterion.text}
-                          </p>
-                        </motion.div>
-                      );
-                    })}
-                  </motion.div>
-                </div>
+      {/* Floating elements */}
+      <motion.div
+        className="absolute top-5 left-5 sm:top-10 sm:left-10 w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-[#3E8BFF]/20 blur-xl"
+        animate={{
+          y: [0, -20, 0],
+          scale: [1, 1.1, 1],
+        }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.div
+        className="absolute bottom-5 right-5 sm:bottom-10 sm:right-10 w-16 h-16 sm:w-32 sm:h-32 rounded-full bg-[#0001ff]/20 blur-xl"
+        animate={{
+          y: [0, 20, 0],
+          scale: [1, 1.2, 1],
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
 
-                {/* Colonne droite - Services avec effet de superposition */}
-                <div className="relative h-[450px] lg:h-[500px]">
-                  {/* Cartes empilées */}
-                  <div className="relative h-full">
-                    {services.map((service, index) => {
-                      const Icon = service.icon;
-                      const isActive = index === activeCard;
-                      const isPast = index < activeCard;
-                      
-                      return (
-                        <motion.div
-                          key={index}
-                          className={`absolute inset-0 bg-white rounded-2xl p-8 lg:p-10 shadow-xl ${
-                            isActive ? 'z-30' : isPast ? 'z-10' : 'z-20'
-                          }`}
-                          initial={{ opacity: 0, y: 50, scale: 0.95 }}
-                          animate={{
-                            opacity: isActive ? 1 : isPast ? 0.2 : 0,
-                            y: isActive ? 0 : isPast ? -50 : 60,
-                            scale: isActive ? 1 : isPast ? 0.9 : 0.85,
-                            filter: isActive ? 'blur(0px)' : isPast ? 'blur(6px)' : 'blur(10px)',
-                          }}
-                          transition={{ 
-                            duration: 1, 
-                            ease: [0.43, 0.13, 0.23, 0.96],
-                            opacity: { duration: 0.6 }
-                          }}
-                        >
-                          {/* Gradient overlay */}
-                          <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-[0.03] rounded-2xl`} />
+      <div className="container-custom relative z-10">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <h2 className="heading-2 lg:text-6xl font-bold text-white mb-4 sm:mb-6 px-4 sm:px-0">
+              Notre périmètre{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
+                d'intervention
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg lg:text-xl text-white/70 max-w-2xl mx-auto px-4 sm:px-0">
+              Des solutions sur-mesure pour les dirigeants d'entreprises de 5 à 150M€ de chiffre d'affaires
+            </p>
+          </motion.div>
 
-                          {/* Contenu de la carte */}
-                          <div className="relative h-full flex flex-col justify-between">
-                            {/* Icône et titre */}
-                            <div>
-                              <div className="flex items-center space-x-4 mb-6">
-                                <motion.div 
-                                  className={`w-14 h-14 rounded-xl bg-gradient-to-r ${service.color} flex items-center justify-center shadow-lg`}
-                                  animate={{
-                                    scale: isActive ? [1, 1.05, 1] : 1
-                                  }}
-                                  transition={{ duration: 1.5, repeat: isActive ? Infinity : 0, repeatDelay: 3 }}
-                                >
-                                  <Icon className="w-7 h-7 text-white" />
-                                </motion.div>
-                                <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">
-                                  {service.title}
-                                </h3>
-                              </div>
-
-                              {/* Description */}
-                              <p className="text-gray-600 leading-relaxed text-base lg:text-lg">
-                                {service.description}
-                              </p>
-                            </div>
-
-                            {/* Bouton */}
-                            <div className="mt-8">
-                              <Link href={service.link}>
-                                <motion.button
-                                  className={`inline-flex items-center space-x-2 px-8 py-4 rounded-full font-semibold transition-all duration-300 ${
-                                    isActive 
-                                      ? 'bg-primary text-white hover:bg-primary-dark hover:shadow-lg' 
-                                      : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                                  }`}
-                                  whileHover={isActive ? { scale: 1.05 } : {}}
-                                  whileTap={isActive ? { scale: 0.95 } : {}}
-                                  disabled={!isActive}
-                                >
-                                  <span>En savoir plus</span>
-                                  <motion.div
-                                    animate={isActive ? { x: [0, 5, 0] } : {}}
-                                    transition={{ duration: 1.5, repeat: Infinity }}
-                                  >
-                                    <ArrowRight className="w-5 h-5" />
-                                  </motion.div>
-                                </motion.button>
-                              </Link>
-                            </div>
-                          </div>
-                        </motion.div>
-                      );
-                    })}
+          {/* Services Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  className="group relative"
+                >
+                  <div className="h-full bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 hover:bg-white/15 transition-all duration-300 hover:transform hover:-translate-y-2">
+                    {/* Icon */}
+                    <div className={`w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br ${service.color} rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+                    </div>
+                    
+                    {/* Title */}
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">
+                      {service.title}
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="text-sm sm:text-base text-white/70 mb-4 sm:mb-6">
+                      {service.description}
+                    </p>
+                    
+                    {/* Features */}
+                    <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
+                      {service.features.map((feature, i) => (
+                        <div key={i} className="flex items-center gap-3">
+                          <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#3E8BFF] flex-shrink-0" />
+                          <span className="text-white/80 text-xs sm:text-sm">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    {/* CTA */}
+                    <Link href={service.link}>
+                      <motion.div
+                        className="inline-flex items-center gap-2 text-white font-medium hover:gap-4 transition-all duration-300"
+                        whileHover={{ x: 5 }}
+                      >
+                        <span>En savoir plus</span>
+                        <span className="text-[#3E8BFF]">→</span>
+                      </motion.div>
+                    </Link>
                   </div>
-                </div>
-              </div>
-            </div>
+                </motion.div>
+              );
+            })}
           </div>
+
+          {/* Bottom CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mt-12 sm:mt-16"
+          >
+            <p className="text-sm sm:text-base text-white/60 mb-4 sm:mb-6 px-4 sm:px-0">
+              Une approche exclusive avec un nombre limité de mandats pour garantir un accompagnement premium
+            </p>
+            <Link href="/contact">
+              <motion.button
+                className="bg-[#0001ff] text-white btn-responsive rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 inline-flex items-center gap-2 sm:gap-3"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Discuter de votre projet
+                <span className="text-xl">→</span>
+              </motion.button>
+            </Link>
+          </motion.div>
         </div>
       </div>
     </section>

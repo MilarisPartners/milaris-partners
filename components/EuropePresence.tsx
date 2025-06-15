@@ -1,104 +1,142 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react";
+import { MapPin, Building2 } from "lucide-react";
 
 const EuropePresence = () => {
   const cities = [
-    { name: "Paris", country: "France" },
-    { name: "Milan", country: "Italie" },
-    { name: "Luxembourg", country: "Luxembourg" },
-    { name: "Berlin", country: "Allemagne" },
+    { 
+      name: "Paris", 
+      country: "France 🇫🇷",
+      delay: 0
+    },
+    { 
+      name: "Milan", 
+      country: "Italie 🇮🇹",
+      delay: 0.1
+    },
+    { 
+      name: "Luxembourg", 
+      country: "Luxembourg 🇱🇺",
+      delay: 0.2
+    },
+    { 
+      name: "Berlin", 
+      country: "Allemagne 🇩🇪",
+      delay: 0.3
+    },
   ];
 
   return (
-    <section className="py-16 lg:py-20 bg-white">
-      <div className="container-custom">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Colonne gauche - Villes */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-8">
-                Notre présence <span className="text-primary">Européenne</span>
-              </h2>
-              
-              <div className="space-y-4">
-                {cities.map((city, index) => (
-                  <motion.div
-                    key={city.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="flex items-center space-x-3 group"
-                  >
-                    <motion.div
-                      className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center"
-                      whileHover={{ scale: 1.1, rotate: 360 }}
-                      transition={{ duration: 0.5 }}
-                    >
-                      <MapPin className="w-5 h-5 text-primary" />
-                    </motion.div>
-                    <div>
-                      <p className="text-xl font-semibold text-gray-800 group-hover:text-primary transition-colors">
-                        {city.name}
-                      </p>
-                      <p className="text-sm text-gray-500">{city.country}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+    <section className="section-padding bg-gradient-to-b from-white via-[#0001ff]/5 to-white relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          className="absolute top-0 left-1/4 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-[#3E8BFF]/10 rounded-full blur-3xl"
+          animate={{ 
+            y: [0, 30, 0],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{ duration: 8, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute bottom-0 right-1/4 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-[#0001ff]/10 rounded-full blur-3xl"
+          animate={{ 
+            y: [0, -30, 0],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{ duration: 10, repeat: Infinity }}
+        />
+      </div>
 
-            {/* Colonne droite - Carte placeholder */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="relative bg-gray-100 rounded-2xl h-[400px] overflow-hidden shadow-lg">
-                {/* Placeholder pour la carte */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-gray-400 text-lg font-medium">Carte de l'Europe (PNG à ajouter)</p>
-                </div>
-                
-                {/* Points animés pour les villes */}
-                <div className="absolute inset-0">
-                  {/* Paris */}
-                  <motion.div
-                    className="absolute top-[40%] left-[45%] w-3 h-3 bg-primary rounded-full"
-                    animate={{ scale: [1, 1.5, 1] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  />
-                  {/* Milan */}
-                  <motion.div
-                    className="absolute top-[55%] left-[55%] w-3 h-3 bg-primary rounded-full"
-                    animate={{ scale: [1, 1.5, 1] }}
-                    transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
-                  />
-                  {/* Luxembourg */}
-                  <motion.div
-                    className="absolute top-[38%] left-[50%] w-3 h-3 bg-primary rounded-full"
-                    animate={{ scale: [1, 1.5, 1] }}
-                    transition={{ duration: 2, repeat: Infinity, delay: 1 }}
-                  />
-                  {/* Berlin */}
-                  <motion.div
-                    className="absolute top-[30%] left-[60%] w-3 h-3 bg-primary rounded-full"
-                    animate={{ scale: [1, 1.5, 1] }}
-                    transition={{ duration: 2, repeat: Infinity, delay: 1.5 }}
-                  />
-                </div>
-              </div>
+      <div className="container-custom relative z-10">
+        <div className="max-w-6xl mx-auto">
+          {/* Titre centré */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <motion.div className="flex justify-center mb-4">
+              <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-[#0001ff]" />
             </motion.div>
+            <h2 className="heading-2 lg:text-5xl font-bold text-[#0b062b] mb-4 px-4 sm:px-0">
+              Notre présence{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+                Européenne
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
+              Avec des bureaux dans les principales capitales européennes, nous sommes idéalement positionnés 
+              pour accompagner vos projets transfrontaliers et faciliter vos opérations à l'échelle du continent.
+            </p>
+          </motion.div>
+          
+          {/* Villes sur une ligne */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-4 px-4 sm:px-0">
+            {cities.map((city) => (
+              <motion.div
+                key={city.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: city.delay }}
+                viewport={{ once: true }}
+                className="text-center group"
+              >
+                <motion.div
+                  className="inline-flex flex-col items-center"
+                  whileHover={{ y: -5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  {/* Icône avec fond gradient */}
+                  <motion.div
+                    className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-lg flex items-center justify-center mb-3 sm:mb-4 shadow-lg relative overflow-hidden"
+                    whileHover={{ rotate: [0, -5, 5, 0] }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-white relative z-10" />
+                    <motion.div
+                      className="absolute inset-0 bg-white"
+                      initial={{ scale: 0, opacity: 0 }}
+                      whileHover={{ scale: 1.5, opacity: 0.3 }}
+                      transition={{ duration: 0.5 }}
+                    />
+                  </motion.div>
+                  
+                  {/* Nom de la ville */}
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#0b062b] mb-1 group-hover:text-[#0001ff] transition-colors duration-300">
+                    {city.name}
+                  </h3>
+                  
+                  {/* Pays */}
+                  <p className="text-gray-500 text-xs sm:text-sm font-medium">
+                    {city.country}
+                  </p>
+                  
+                  {/* Ligne décorative */}
+                  <motion.div
+                    className="mt-3 h-1 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] rounded-full"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: 40 }}
+                    transition={{ duration: 0.8, delay: city.delay + 0.3 }}
+                    viewport={{ once: true }}
+                  />
+                </motion.div>
+              </motion.div>
+            ))}
           </div>
+
+          {/* Texte complémentaire */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mt-12 sm:mt-16"
+          >
+          </motion.div>
         </div>
       </div>
     </section>

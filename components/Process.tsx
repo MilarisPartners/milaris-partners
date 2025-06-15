@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Search, Target, Handshake, CheckCircle } from "lucide-react";
+import { Briefcase, Search, Target, Handshake, CheckCircle, Sparkles } from "lucide-react";
 
 const Process = () => {
   const steps = [
@@ -10,59 +10,98 @@ const Process = () => {
       title: "Évaluation initiale",
       description: "Analyse approfondie de votre entreprise et de vos objectifs",
       icon: Briefcase,
-      color: "from-[#c9a961]/20 to-[#c9a961]/10",
+      gradient: "from-[#0001ff] to-[#3E8BFF]",
+      bgGradient: "from-[#0001ff]/10 to-[#3E8BFF]/10",
     },
     {
       number: "02",
       title: "Valorisation",
       description: "Détermination de la juste valeur de votre entreprise",
       icon: Search,
-      color: "from-[#b89a4f]/20 to-[#b89a4f]/10",
+      gradient: "from-[#3E8BFF] to-[#0001ff]",
+      bgGradient: "from-[#3E8BFF]/10 to-[#0001ff]/10",
     },
     {
       number: "03",
       title: "Ciblage stratégique",
       description: "Identification des meilleurs partenaires potentiels",
       icon: Target,
-      color: "from-[#c9a961]/20 to-[#c9a961]/10",
+      gradient: "from-[#0001ff] to-[#3E8BFF]",
+      bgGradient: "from-[#0001ff]/10 to-[#3E8BFF]/10",
     },
     {
       number: "04",
       title: "Négociation",
       description: "Accompagnement expert dans toutes les discussions",
       icon: Handshake,
-      color: "from-[#b89a4f]/20 to-[#b89a4f]/10",
+      gradient: "from-[#3E8BFF] to-[#0001ff]",
+      bgGradient: "from-[#3E8BFF]/10 to-[#0001ff]/10",
     },
     {
       number: "05",
       title: "Finalisation",
       description: "Sécurisation et clôture de la transaction",
       icon: CheckCircle,
-      color: "from-[#c9a961]/20 to-[#c9a961]/10",
+      gradient: "from-[#0001ff] to-[#3E8BFF]",
+      bgGradient: "from-[#0001ff]/10 to-[#3E8BFF]/10",
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-[#f8f9fa] subtle-grid">
-      <div className="container-custom">
+    <section className="section-padding bg-gradient-to-b from-white via-[#0001ff]/5 to-white relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0">
+        <motion.div
+          className="absolute top-20 sm:top-40 left-5 sm:left-20 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-[#0001ff]/10 rounded-full blur-3xl"
+          animate={{ 
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{ duration: 8, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute bottom-20 sm:bottom-40 right-5 sm:right-20 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-[#3E8BFF]/10 rounded-full blur-3xl"
+          animate={{ 
+            scale: [1.2, 1, 1.2],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{ duration: 10, repeat: Infinity }}
+        />
+      </div>
+
+      <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-normal text-[#050e1f] mb-4 font-playfair">
-            Notre processus <span className="text-[#162644] italic">d'accompagnement</span>
+          <motion.div className="flex justify-center mb-4">
+            <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-[#0001ff] animate-pulse" />
+          </motion.div>
+          <h2 className="heading-2 font-bold text-[#0b062b] mb-4 px-4 sm:px-0">
+            Notre processus{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+              d'accompagnement
+            </span>
           </h2>
-          <p className="text-xl text-[#424242] max-w-3xl mx-auto font-light">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
             Une méthodologie éprouvée pour maximiser la valeur de votre transaction
           </p>
         </motion.div>
 
         {/* Timeline */}
         <div className="relative max-w-5xl mx-auto">
-          {/* Ligne centrale */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-[#c9a961]/30 to-transparent hidden lg:block" />
+          {/* Ligne centrale animée */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full hidden lg:block overflow-hidden">
+            <motion.div
+              className="w-full h-full bg-gradient-to-b from-[#0001ff] via-[#3E8BFF] to-[#0001ff]"
+              initial={{ y: "-100%" }}
+              whileInView={{ y: "0%" }}
+              transition={{ duration: 2, ease: "easeOut" }}
+              viewport={{ once: true }}
+            />
+          </div>
 
           {steps.map((step, index) => (
             <motion.div
@@ -70,37 +109,55 @@ const Process = () => {
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className={`relative flex items-center mb-12 lg:mb-0 ${
+              className={`relative flex items-center mb-12 lg:mb-16 ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               }`}
             >
               {/* Contenu */}
               <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? "lg:pr-12 lg:text-right" : "lg:pl-12 lg:text-left"}`}>
                 <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  className="bg-white p-6 shadow-lg border border-gray-100"
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  className={`bg-gradient-to-br ${step.bgGradient} backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-300`}
                 >
                   <div className={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? "lg:flex-row-reverse" : ""}`}>
-                    <div className={`w-16 h-16 bg-gradient-to-br ${step.color} flex items-center justify-center`}>
-                      <step.icon className="w-8 h-8 text-[#c9a961]" />
-                    </div>
+                    <motion.div 
+                      className={`w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br ${step.gradient} rounded-lg flex items-center justify-center shadow-lg`}
+                      whileHover={{ rotate: 360 }}
+                      transition={{ duration: 0.8 }}
+                    >
+                      <step.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                    </motion.div>
                     <div>
-                      <span className="text-[#c9a961] font-bold text-2xl">{step.number}</span>
-                      <h3 className="text-xl font-medium text-[#050e1f]">{step.title}</h3>
+                      <span className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+                        {step.number}
+                      </span>
+                      <h3 className="text-lg sm:text-xl font-bold text-[#0b062b]">{step.title}</h3>
                     </div>
                   </div>
-                  <p className="text-[#424242]">{step.description}</p>
+                  <p className="text-sm sm:text-base text-gray-600">{step.description}</p>
                 </motion.div>
               </div>
 
-              {/* Point central */}
+              {/* Point central animé */}
               <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.2 + 0.2 }}
-                className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#c9a961] rounded-full border-4 border-white hidden lg:block z-10"
+                transition={{ 
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: index * 0.2 + 0.2 
+                }}
+                className="absolute left-1/2 transform -translate-x-1/2 hidden lg:block z-20"
               >
-                <div className="absolute inset-0 bg-[#c9a961] rounded-full animate-ping" />
+                <div className="relative">
+                  <div className="w-8 h-8 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full shadow-lg" />
+                  <motion.div
+                    className="absolute inset-0 bg-[#0001ff] rounded-full"
+                    animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  />
+                </div>
               </motion.div>
 
               {/* Espace pour l'autre côté */}
@@ -114,14 +171,24 @@ const Process = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-center mt-16"
+          className="text-center mt-12 sm:mt-16"
         >
-          <p className="text-lg text-[#424242] mb-6">
+          <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 px-4 sm:px-0">
             Prêt à franchir le pas ? Découvrez comment nous pouvons vous accompagner.
           </p>
-          <button className="bg-[#c9a961] text-[#050e1f] px-8 py-4 font-medium hover:bg-[#b89a4f] transition-colors duration-300">
-            Démarrer votre projet
-          </button>
+          <motion.button 
+            className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] text-white btn-responsive rounded-lg font-medium shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span className="relative z-10">Démarrer votre projet</span>
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-[#3E8BFF] to-[#0001ff]"
+              initial={{ x: "100%" }}
+              whileHover={{ x: 0 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.button>
         </motion.div>
       </div>
     </section>
