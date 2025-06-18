@@ -691,8 +691,8 @@ const AcquisitionEntreprise = () => {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-        <Footer variant="light" />
+      <section style={{ backgroundColor: '#f8f8f8' }}>
+        <Footer variant="dark" />
       </section>
     </main>
   );

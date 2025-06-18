@@ -3,8 +3,14 @@
 import { motion } from "framer-motion";
 import { TrendingUp, Users, Wallet, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const InterventionSection = () => {
+  const { t, language } = useTranslation();
+  
+  const calendlyLink = language === 'IT' 
+    ? 'https://calendly.com/matteo-varennepartners/30min'
+    : 'https://calendly.com/paul-varennepartners/30min';
   const services = [
     {
       title: "Conseil en cession",
@@ -168,7 +174,11 @@ const InterventionSection = () => {
             <p className="text-sm sm:text-base text-white/60 mb-4 sm:mb-6 px-4 sm:px-0">
               Une approche exclusive avec un nombre limité de mandats pour garantir un accompagnement premium
             </p>
-            <Link href="/contact">
+            <a 
+              href={calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.button
                 className="bg-[#0001ff] text-white btn-responsive rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 inline-flex items-center gap-2 sm:gap-3"
                 whileHover={{ scale: 1.05 }}
@@ -177,7 +187,7 @@ const InterventionSection = () => {
                 Discuter de votre projet
                 <span className="text-xl">→</span>
               </motion.button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </div>

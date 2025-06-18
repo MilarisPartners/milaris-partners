@@ -685,7 +685,7 @@ const CessionEntreprise = () => {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-white to-gray-50">
+      <section style={{ backgroundColor: '#f8f8f8' }}>
         <Footer variant="dark" />
       </section>
     </main>

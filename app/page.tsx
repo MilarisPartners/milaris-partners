@@ -19,7 +19,7 @@ export default function Home() {
       <EuropePresence />
       <Expertise />
       <Testimonial />
-      <section className="bg-gradient-to-br from-gray-50 to-gray-100">
+      <section style={{ backgroundColor: '#f8f8f8' }}>
         <Footer variant="dark" />
       </section>
     </main>

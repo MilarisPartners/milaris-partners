@@ -7,7 +7,11 @@ import { useState } from "react";
 import Link from "next/link";
 
 const Process = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
+  
+  const calendlyLink = language === 'IT' 
+    ? 'https://calendly.com/matteo-varennepartners/30min'
+    : 'https://calendly.com/paul-varennepartners/30min';
 
   const steps = [
     {
@@ -166,7 +170,11 @@ const Process = () => {
             <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 px-4 sm:px-0">
               {t("hero.cta.whatChanges")}
             </p>
-            <Link href="/contact" passHref>
+            <a 
+              href={calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.button 
                 className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] text-white btn-responsive rounded-lg font-medium shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
                 whileHover={{ scale: 1.05 }}
@@ -180,7 +188,7 @@ const Process = () => {
                   transition={{ duration: 0.3 }}
                 />
               </motion.button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>

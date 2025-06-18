@@ -312,7 +312,9 @@ const LeveeDeFonds = () => {
         </div>
       </section>
 
-      <Footer />
+      <section style={{ backgroundColor: '#f8f8f8' }}>
+        <Footer variant="dark" />
+      </section>
     </>
   );
 };

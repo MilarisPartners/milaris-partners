@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MapPin, Mail, Linkedin, Target, Globe, Factory, Cpu, Users, Building2 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Equipe = () => {
@@ -20,7 +21,7 @@ const Equipe = () => {
       role: "Managing Director France",
       email: "paul@milaris.partners",
       linkedin: "https://www.linkedin.com/in/paul-poulain/",
-      image: "/team/paul.jpg",
+      image: "/team/paul.png",
       focus: [
         {
           icon: Building2,
@@ -44,7 +45,7 @@ const Equipe = () => {
       role: "Managing Director Italie",
       email: "matteo@milaris.partners",
       linkedin: "https://www.linkedin.com/in/matteoorlandimango/",
-      image: "/team/matteo.jpg",
+      image: "/team/matteo.png",
       focus: [
         {
           icon: Factory,
@@ -119,9 +120,8 @@ const Equipe = () => {
               <motion.div
                 key={member.name}
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
                 className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
               >
                 {/* Member Header */}
@@ -131,9 +131,14 @@ const Equipe = () => {
                       <h2 className="text-3xl font-bold mb-2">{member.name}</h2>
                       <p className="text-white/80 text-lg">{member.role}</p>
                     </div>
-                    {/* Photo placeholder */}
-                    <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center">
-                      <Users className="w-12 h-12 text-white/60" />
+                    {/* Photo */}
+                    <div className="w-24 h-24 relative overflow-hidden rounded-full border-2 border-white/30">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover"
+                      />
                     </div>
                   </div>
                   
@@ -219,7 +224,7 @@ const Equipe = () => {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-gray-50 to-white">
+      <section style={{ backgroundColor: '#f8f8f8' }}>
         <Footer variant="dark" />
       </section>
     </main>

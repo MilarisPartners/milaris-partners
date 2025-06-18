@@ -343,7 +343,7 @@ const Financement = () => {
       </section>
 
       {/* Why Milaris Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -391,18 +391,18 @@ const Financement = () => {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
+                  <div className="bg-white border border-gray-200 p-8 rounded-lg hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                     <div className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-4">
+                    <h3 className="text-xl font-bold text-[#0b062b] mb-4">
                       {item.title}
                     </h3>
-                    <p className="text-white/80 flex-grow">
+                    <p className="text-gray-600 flex-grow">
                       {item.description}
                     </p>
                     <motion.div 
-                      className="mt-6 w-full h-1 bg-white/10 rounded-full overflow-hidden"
+                      className="mt-6 w-full h-1 bg-gray-200 rounded-full overflow-hidden"
                       initial={{ scaleX: 0 }}
                       whileInView={{ scaleX: 1 }}
                       transition={{ duration: 1, delay: index * 0.2 }}
@@ -676,7 +676,11 @@ const Financement = () => {
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
               {t("expertisePages.financement.cta.subtitle")}
             </p>
-            <Link href="/contact">
+            <a 
+              href={calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.button
                 className="bg-white text-[#0001ff] px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 inline-flex items-center gap-3 shadow-lg"
                 whileHover={{ scale: 1.05 }}
@@ -685,13 +689,13 @@ const Financement = () => {
                 {t("expertisePages.financement.cta.button")}
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-        <Footer variant="light" />
+      <section style={{ backgroundColor: '#f8f8f8' }}>
+        <Footer variant="dark" />
       </section>
     </main>
   );

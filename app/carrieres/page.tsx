@@ -343,7 +343,7 @@ const Carrieres = () => {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-gray-50 to-white">
+      <section style={{ backgroundColor: '#f8f8f8' }}>
         <Footer variant="dark" />
       </section>
     </main>

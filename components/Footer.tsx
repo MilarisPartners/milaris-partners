@@ -41,11 +41,11 @@ const Footer = ({ variant = 'dark' }: FooterProps) => {
           <span className="hidden sm:inline">© {currentYear} Milaris Partners. {t("footer.rights")}</span>
           <span className="sm:hidden">© {currentYear}</span>
           <span className={`${dividerClasses} hidden sm:inline`}>|</span>
-          <Link href="#" className={`transition-colors ${linkClasses}`}>
+          <Link href="/mentions-legales" className={`transition-colors ${linkClasses}`}>
             {t("footer.legal")}
           </Link>
           <span className={`${dividerClasses} hidden md:inline`}>|</span>
-          <Link href="#" className={`transition-colors hidden md:inline ${linkClasses}`}>
+          <Link href="/conditions-generales" className={`transition-colors hidden md:inline ${linkClasses}`}>
             {t("footer.privacy")}
           </Link>
         </div>

@@ -25,9 +25,6 @@
   }
 
   /* Styles globaux simplifiés et modernes */
-  * {
-    @apply rounded-lg;
-  }
   
   /* Grille subtile pour les fonds */
   .subtle-grid {

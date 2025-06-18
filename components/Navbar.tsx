@@ -67,7 +67,8 @@ const Navbar = () => {
                         alt="Milaris Partners"
                         width={150}
                         height={30}
-                        className="h-8 w-auto"
+                        className="h-8 w-auto overflow-visible rounded-none"
+                        style={{ objectFit: 'contain', borderRadius: 0 }}
                         priority
                       />
                     </Link>
