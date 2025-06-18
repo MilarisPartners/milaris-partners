@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { MapPin, Building2 } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const EuropePresence = () => {
+  const { t } = useTranslation();
+  
   const cities = [
     { 
       name: "Paris", 
@@ -16,14 +19,9 @@ const EuropePresence = () => {
       delay: 0.1
     },
     { 
-      name: "Luxembourg", 
-      country: "Luxembourg 🇱🇺",
-      delay: 0.2
-    },
-    { 
       name: "Berlin", 
       country: "Allemagne 🇩🇪",
-      delay: 0.3
+      delay: 0.2
     },
   ];
 
@@ -63,19 +61,19 @@ const EuropePresence = () => {
               <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-[#0001ff]" />
             </motion.div>
             <h2 className="heading-2 lg:text-5xl font-bold text-[#0b062b] mb-4 px-4 sm:px-0">
-              Notre présence{" "}
+              {t("europePresence.title.part1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                Européenne
+                {t("europePresence.title.highlight")}
               </span>
+              {t("europePresence.title.part2") && ` ${t("europePresence.title.part2")}`}
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
-              Avec des bureaux dans les principales capitales européennes, nous sommes idéalement positionnés 
-              pour accompagner vos projets transfrontaliers et faciliter vos opérations à l'échelle du continent.
+              {t("europePresence.description")}
             </p>
           </motion.div>
           
           {/* Villes sur une ligne */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-4 px-4 sm:px-0">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
             {cities.map((city) => (
               <motion.div
                 key={city.name}
@@ -128,14 +126,38 @@ const EuropePresence = () => {
             ))}
           </div>
 
-          {/* Texte complémentaire */}
+          {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
-            className="text-center mt-12 sm:mt-16"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 sm:mt-16"
           >
+            <div className="text-center">
+              <h3 className="text-3xl sm:text-4xl font-bold text-[#0001ff] mb-2">
+                {t("europePresence.stats.transactions.value")}
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                {t("europePresence.stats.transactions.label")}
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-3xl sm:text-4xl font-bold text-[#0001ff] mb-2">
+                {t("europePresence.stats.volume.value")}
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                {t("europePresence.stats.volume.label")}
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-3xl sm:text-4xl font-bold text-[#0001ff] mb-2">
+                {t("europePresence.stats.network.value")}
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                {t("europePresence.stats.network.label")}
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -16,36 +16,41 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Carrieres = () => {
+  const { t, language } = useTranslation();
+
+  const calendlyLink = language === 'IT' 
+    ? "https://calendly.com/matteo-varennepartners/30min" 
+    : "https://calendly.com/paul-varennepartners/30min";
+
   const values = [
     {
       icon: Globe,
-      title: "Exposition internationale",
-      description: "Intégrez une équipe présente dans plusieurs pays, et profitez d'opportunités concrètes de collaboration sur des projets à portée internationale — l'idéal pour élargir vos horizons professionnels.",
+      title: t("carrieres.values.value1.title"),
+      description: t("carrieres.values.value1.description"),
       gradient: "from-[#0001ff] to-[#3E8BFF]"
     },
     {
       icon: Cpu,
-      title: "Solutions axées sur la technologie",
-      description: "Chez Miralis Partners, nous mettons la technologie au service de l'efficacité. Nous déployons des outils avancés et des systèmes d'IA de pointe pour optimiser nos processus.",
+      title: t("carrieres.values.value2.title"),
+      description: t("carrieres.values.value2.description"),
       gradient: "from-[#3E8BFF] to-[#0001ff]"
     },
     {
       icon: Users,
-      title: "Environnement jeune et dynamique",
-      description: "Évoluez dans un cadre stimulant, ouvert aux idées neuves et aux initiatives. Nous valorisons la curiosité, l'apprentissage continu et l'esprit d'équipe.",
+      title: t("carrieres.values.value3.title"),
+      description: t("carrieres.values.value3.description"),
       gradient: "from-[#0001ff] to-[#3E8BFF]"
     }
   ];
 
   const benefits = [
-    "Opportunités de croissance et développement personnel",
-    "Projets stimulants avec des clients prestigieux",
-    "Formation continue et mentorat",
-    "Environnement de travail flexible",
-    "Rémunération compétitive et avantages",
-    "Culture d'entreprise collaborative et inclusive"
+    t("carrieres.benefits.benefit1"),
+    t("carrieres.benefits.benefit2"),
+    t("carrieres.benefits.benefit3"),
+    t("carrieres.benefits.benefit4")
   ];
 
   return (
@@ -88,7 +93,7 @@ const Carrieres = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Sparkles className="w-5 h-5 text-[#0001ff]" />
-              <span className="text-[#0001ff] font-semibold">Rejoignez-nous</span>
+              <span className="text-[#0001ff] font-semibold">{t("carrieres.hero.badge")}</span>
             </motion.div>
             
             <motion.h1 
@@ -97,9 +102,9 @@ const Carrieres = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Rejoignez notre équipe{" "}
+              {t("carrieres.hero.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                innovante
+                {t("carrieres.hero.title2")}
               </span>
             </motion.h1>
             <motion.p 
@@ -108,8 +113,7 @@ const Carrieres = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Notre réussite repose sur une équipe talentueuse de professionnels, dont la diversité 
-              d'expériences et la richesse des idées nourrissent notre ambition d'excellence et d'innovation.
+              {t("carrieres.hero.description")}
             </motion.p>
           </motion.div>
         </div>
@@ -126,13 +130,13 @@ const Carrieres = () => {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
-              Pourquoi nous{" "}
+              {t("carrieres.workWithUs.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                rejoindre
+                {t("carrieres.workWithUs.title2")}
               </span> ?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Découvrez ce qui fait de Miralis Partners un environnement de travail unique
+              {t("carrieres.workWithUs.subtitle")}
             </p>
           </motion.div>
 
@@ -177,10 +181,10 @@ const Carrieres = () => {
             className="text-center mb-12"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
-              Nos avantages
+              {t("carrieres.benefits.title")}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Nous investissons dans le bien-être et le développement de nos collaborateurs
+              {t("carrieres.benefits.subtitle")}
             </p>
           </motion.div>
 
@@ -228,9 +232,9 @@ const Carrieres = () => {
             className="text-center"
           >
             <h2 className="heading-2 font-bold text-white mb-12">
-              Opportunités{" "}
+              {t("carrieres.opportunities.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
-                actuelles
+                {t("carrieres.opportunities.title2")}
               </span>
             </h2>
 
@@ -253,9 +257,7 @@ const Carrieres = () => {
                   </div>
                 </div>
                 <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
-                  Nous sommes en permanence à la recherche de profils ambitieux, passionnés par 
-                  l'excellence et l'innovation. Si vous aspirez à avoir un impact réel, à apprendre 
-                  chaque jour et à progresser dans un environnement bienveillant, parlons-en.
+                  {t("carrieres.opportunities.description")}
                 </p>
               </div>
             </motion.div>
@@ -274,9 +276,9 @@ const Carrieres = () => {
             className="text-center mb-12"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
-              Comment{" "}
+              {t("carrieres.howToApply.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                postuler
+                {t("carrieres.howToApply.title2")}
               </span> ?
             </h2>
           </motion.div>
@@ -293,15 +295,14 @@ const Carrieres = () => {
                 <Send className="w-10 h-10 text-white" />
               </div>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Envoyez votre CV et une lettre de motivation présentant votre parcours, 
-                vos aspirations et ce qui vous attire chez Miralis Partners, à l'adresse suivante :
+                {t("carrieres.howToApply.description")}
               </p>
               <a 
-                href="mailto:careers@miralispartners.com"
+                href="mailto:careers@milaris.partners"
                 className="inline-flex items-center gap-3 text-2xl text-[#0001ff] hover:text-[#3E8BFF] transition-colors duration-300"
               >
                 <Mail className="w-6 h-6" />
-                <span className="font-semibold">careers@miralispartners.com</span>
+                <span className="font-semibold">careers@milaris.partners</span>
               </a>
             </div>
           </motion.div>
@@ -319,29 +320,32 @@ const Carrieres = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-6">
-              Prêt à façonner l'avenir avec{" "}
+              {t("carrieres.cta.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                nous
+                {t("carrieres.cta.title2")}
               </span> ?
             </h2>
             <p className="text-xl text-gray-600 mb-10">
-              Rejoignez une équipe où votre talent sera valorisé et où vous pourrez 
-              contribuer à des projets d'envergure internationale.
+              {t("carrieres.cta.subtitle")}
             </p>
             <motion.a 
-              href="mailto:careers@miralispartners.com"
+              href={calendlyLink}
+              target="_blank" 
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] text-white px-8 py-4 rounded-lg font-medium shadow-lg hover:shadow-2xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Postulez maintenant
+              {t("carrieres.cta.button")}
               <ArrowRight className="w-5 h-5" />
             </motion.a>
           </motion.div>
         </div>
       </section>
 
-      <Footer />
+      <section className="bg-gradient-to-br from-gray-50 to-white">
+        <Footer variant="dark" />
+      </section>
     </main>
   );
 };

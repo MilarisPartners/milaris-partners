@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { ShoppingBag, Globe, Heart, Briefcase, Factory, Zap, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Expertise = () => {
+  const { t } = useTranslation();
   const [backgroundElements, setBackgroundElements] = useState<{
     background: string;
     left: string;
@@ -32,52 +34,46 @@ const Expertise = () => {
 
   const sectors = [
     {
+      key: 'consumer',
       icon: ShoppingBag,
-      title: "Biens de consommation",
-      description: "Expertise approfondie dans le secteur des biens de consommation courante et durables",
       gradient: "from-[#0001ff] to-[#3E8BFF]",
       bgGradient: "from-[#0001ff]/20 to-[#3E8BFF]/20",
       shadowColor: "shadow-[#0001ff]/30",
     },
     {
+      key: 'tmt',
       icon: Globe,
-      title: "Technologies / Media / Telecom",
-      description: "Accompagnement des entreprises innovantes dans leur transformation digitale",
-      gradient: "from-[#3E8BFF] to-[#0001ff]",
-      bgGradient: "from-[#3E8BFF]/20 to-[#0001ff]/20",
-      shadowColor: "shadow-[#3E8BFF]/30",
-    },
-    {
-      icon: Heart,
-      title: "Santé",
-      description: "Conseil spécialisé pour les acteurs du secteur médical et pharmaceutique",
-      gradient: "from-green-500 to-teal-500",
-      bgGradient: "from-green-500/20 to-teal-500/20",
-      shadowColor: "shadow-green-500/30",
-    },
-    {
-      icon: Factory,
-      title: "Industrie",
-      description: "Support stratégique pour les entreprises industrielles et manufacturières",
       gradient: "from-purple-500 to-pink-500",
       bgGradient: "from-purple-500/20 to-pink-500/20",
       shadowColor: "shadow-purple-500/30",
     },
     {
-      icon: Briefcase,
-      title: "Services aux entreprises",
-      description: "Expertise dans l'optimisation et la valorisation des services B2B",
-      gradient: "from-orange-500 to-red-500",
-      bgGradient: "from-orange-500/20 to-red-500/20",
-      shadowColor: "shadow-orange-500/30",
+      key: 'healthcare',
+      icon: Heart,
+      gradient: "from-red-500 to-orange-500",
+      bgGradient: "from-red-500/20 to-orange-500/20",
+      shadowColor: "shadow-red-500/30",
     },
     {
+      key: 'industry',
+      icon: Factory,
+      gradient: "from-amber-500 to-yellow-500",
+      bgGradient: "from-amber-500/20 to-yellow-500/20",
+      shadowColor: "shadow-amber-500/30",
+    },
+    {
+      key: 'services',
+      icon: Briefcase,
+      gradient: "from-indigo-500 to-blue-500",
+      bgGradient: "from-indigo-500/20 to-blue-500/20",
+      shadowColor: "shadow-indigo-500/30",
+    },
+    {
+      key: 'energy',
       icon: Zap,
-      title: "Énergie & Environnement",
-      description: "Accompagnement dans la transition énergétique et les projets durables",
-      gradient: "from-teal-500 to-green-500",
-      bgGradient: "from-teal-500/20 to-green-500/20",
-      shadowColor: "shadow-teal-500/30",
+      gradient: "from-green-500 to-emerald-500",
+      bgGradient: "from-green-500/20 to-emerald-500/20",
+      shadowColor: "shadow-green-500/30",
     },
   ];
 
@@ -122,13 +118,13 @@ const Expertise = () => {
               <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-[#0001ff] animate-pulse" />
             </motion.div>
             <h2 className="heading-2 lg:text-5xl font-bold text-[#0b062b] mb-4 px-4 sm:px-0">
-              Notre expertise{" "}
+              {t("expertise.title")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                sectorielle
+                {t("expertise.titleHighlight")}
               </span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
-              Une connaissance approfondie des dynamiques de marché dans six secteurs clés
+              {t("expertise.subtitle")}
             </p>
           </motion.div>
 
@@ -136,7 +132,7 @@ const Expertise = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-0">
             {sectors.map((sector, index) => (
               <motion.div
-                key={sector.title}
+                key={sector.key}
                 initial={{ opacity: 0, y: 20, rotateY: -30 }}
                 whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.08 }}
@@ -194,12 +190,12 @@ const Expertise = () => {
                   
                   {/* Titre avec effet de survol */}
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0b062b] mb-2 sm:mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#0b062b] group-hover:to-[#0001ff] transition-all duration-300">
-                    {sector.title}
+                    {t(`expertise.sectors.${sector.key}.title`)}
                   </h3>
                   
                   {/* Description */}
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
-                    {sector.description}
+                    {t(`expertise.sectors.${sector.key}.description`)}
                   </p>
 
                   {/* Indicateur de hover */}

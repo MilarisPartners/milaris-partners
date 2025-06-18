@@ -6,77 +6,86 @@ import Footer from "@/components/Footer";
 import { ArrowRight, CheckCircle, TrendingUp, FileText, Users, MessageSquare, DollarSign, Clock, Building2, Briefcase, ChevronDown, Cpu, Shield } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CessionEntreprise = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const { t } = useTranslation();
+  const { language } = useLanguage();
+  
+  // Calendly link based on language
+  const calendlyLink = language === 'IT' 
+    ? 'https://calendly.com/matteo-varennepartners/30min'
+    : 'https://calendly.com/paul-varennepartners/30min';
 
   const timeline = [
     {
-      title: "Analyse stratégique",
-      description: "Compréhension de vos objectifs, évaluation de la société, identification des points de valorisation",
-      duration: "2–4 semaines",
+      title: t("expertisePages.cession.timeline.steps.strategic.title"),
+      description: t("expertisePages.cession.timeline.steps.strategic.description"),
+      duration: t("expertisePages.cession.timeline.steps.strategic.duration"),
       icon: TrendingUp,
     },
     {
-      title: "Préparation",
-      description: "Constitution des documents de présentation (teaser, info mémo), mise en place d'une data room",
-      duration: "4–6 semaines",
+      title: t("expertisePages.cession.timeline.steps.preparation.title"),
+      description: t("expertisePages.cession.timeline.steps.preparation.description"),
+      duration: t("expertisePages.cession.timeline.steps.preparation.duration"),
       icon: FileText,
     },
     {
-      title: "Ciblage acquéreurs",
-      description: "Identification et approche d'acquéreurs stratégiques et financiers adaptés à votre profil",
-      duration: "6–8 semaines",
+      title: t("expertisePages.cession.timeline.steps.targeting.title"),
+      description: t("expertisePages.cession.timeline.steps.targeting.description"),
+      duration: t("expertisePages.cession.timeline.steps.targeting.duration"),
       icon: Users,
     },
     {
-      title: "Organisation discussions",
-      description: "Gestion des échanges, visites, Q&A, coordination des offres concurrentielles",
-      duration: "8–12 semaines",
+      title: t("expertisePages.cession.timeline.steps.discussions.title"),
+      description: t("expertisePages.cession.timeline.steps.discussions.description"),
+      duration: t("expertisePages.cession.timeline.steps.discussions.duration"),
       icon: MessageSquare,
     },
     {
-      title: "Négociation & Closing",
-      description: "Assistance dans les négociations, coordination avec les conseils juridiques jusqu'à la signature",
-      duration: "4–8 semaines",
+      title: t("expertisePages.cession.timeline.steps.closing.title"),
+      description: t("expertisePages.cession.timeline.steps.closing.description"),
+      duration: t("expertisePages.cession.timeline.steps.closing.duration"),
       icon: DollarSign,
     },
   ];
 
   const services = [
     {
-      title: "Évaluation et positionnement",
-      description: "Analyse de votre entreprise, identification des leviers de valeur et positionnement stratégique optimal sur le marché",
+      title: t("expertisePages.cession.services.items.evaluation.title"),
+      description: t("expertisePages.cession.services.items.evaluation.description"),
       icon: TrendingUp,
     },
     {
-      title: "Mise en marché structurée",
-      description: "Organisation d'un processus concurrentiel avec notre réseau d'acquéreurs stratégiques et financiers",
+      title: t("expertisePages.cession.services.items.market.title"),
+      description: t("expertisePages.cession.services.items.market.description"),
       icon: Users,
     },
     {
-      title: "Accompagnement jusqu'au closing",
-      description: "Négociation, coordination juridique et fiscale, sécurisation de l'opération jusqu'à la signature",
+      title: t("expertisePages.cession.services.items.support.title"),
+      description: t("expertisePages.cession.services.items.support.description"),
       icon: CheckCircle,
     },
   ];
 
   const faqs = [
     {
-      question: "Combien de temps prend une cession d'entreprise ?",
-      answer: "Entre 6 et 9 mois en moyenne pour une opération complète, selon la complexité de l'entreprise, le profil des acquéreurs ciblés et les éventuels enjeux réglementaires.",
+      question: t("expertisePages.cession.faq.questions.q1.question"),
+      answer: t("expertisePages.cession.faq.questions.q1.answer"),
     },
     {
-      question: "Quelle est la différence entre acquéreur stratégique et financier ?",
-      answer: "Les acquéreurs stratégiques sont des industriels cherchant des synergies, tandis que les investisseurs financiers (fonds de private equity) visent le développement et la revente à terme.",
+      question: t("expertisePages.cession.faq.questions.q2.question"),
+      answer: t("expertisePages.cession.faq.questions.q2.answer"),
     },
     {
-      question: "Comment garantissez-vous la confidentialité ?",
-      answer: "Nous utilisons des NDAs, codes projets, data rooms sécurisées et une approche progressive des acquéreurs pour maintenir la confidentialité tout au long du processus.",
+      question: t("expertisePages.cession.faq.questions.q3.question"),
+      answer: t("expertisePages.cession.faq.questions.q3.answer"),
     },
     {
-      question: "Quel est le coût de votre accompagnement ?",
-      answer: "Nos honoraires sont principalement basés sur le succès de l'opération, avec un pourcentage de la valeur de transaction. Contactez-nous pour une proposition personnalisée.",
+      question: t("expertisePages.cession.faq.questions.q4.question"),
+      answer: t("expertisePages.cession.faq.questions.q4.answer"),
     },
   ];
 
@@ -120,7 +129,7 @@ const CessionEntreprise = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <TrendingUp className="w-5 h-5 text-[#0001ff]" />
-              <span className="text-[#0001ff] font-semibold">Expertise cession</span>
+              <span className="text-[#0001ff] font-semibold">{t("expertisePages.cession.hero.badge")}</span>
             </motion.div>
             
             <motion.h1 
@@ -129,7 +138,7 @@ const CessionEntreprise = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Vendre son entreprise est une étape majeure.
+              {t("expertisePages.cession.hero.title")}
             </motion.h1>
             <motion.p 
               className="text-xl md:text-2xl mb-8 text-gray-700"
@@ -137,7 +146,7 @@ const CessionEntreprise = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Nous en faisons une réussite.
+              {t("expertisePages.cession.hero.subtitle")}
             </motion.p>
             <motion.p 
               className="text-lg mb-12 text-gray-600 max-w-3xl mx-auto"
@@ -145,24 +154,23 @@ const CessionEntreprise = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Chez Miralis Partners, nous accompagnons les dirigeants dans la cession totale ou partielle de leur entreprise, 
-              en structurant une démarche stratégique, confidentielle et optimisée.
+              {t("expertisePages.cession.hero.description")}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Link href="/contact">
+              <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
                 <motion.button
                   className="bg-[#0001ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 inline-flex items-center gap-3 shadow-lg hover:shadow-xl"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Discutons de votre projet
+                  {t("expertisePages.cession.hero.cta")}
                   <ArrowRight className="w-5 h-5" />
                 </motion.button>
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
         </div>
@@ -179,10 +187,10 @@ const CessionEntreprise = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Ce que nous faisons pour vous
+              {t("expertisePages.cession.services.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Notre mission : maximiser la valeur de votre entreprise et sécuriser votre transmission
+              {t("expertisePages.cession.services.subtitle")}
             </p>
           </motion.div>
 
@@ -232,26 +240,26 @@ const CessionEntreprise = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Déroulé typique d'une cession
+              {t("expertisePages.cession.timeline.title")}
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Une approche structurée, en moyenne sur 6 à 9 mois
+              {t("expertisePages.cession.timeline.subtitle")}
             </p>
             <div className="flex items-center justify-center gap-8 text-sm">
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full"></div>
-                <span className="text-gray-600">Étapes clés</span>
+                <span className="text-gray-600">{t("expertisePages.cession.timeline.legend.steps")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#0001ff]" />
-                <span className="text-gray-600">Durée moyenne par étape</span>
+                <span className="text-gray-600">{t("expertisePages.cession.timeline.legend.duration")}</span>
               </div>
             </div>
           </motion.div>
 
           <div className="max-w-5xl mx-auto relative">
             {/* Trait vertical continu avec gradient */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#0001ff]/20 via-[#3E8BFF]/30 to-[#0001ff]/20"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-[calc(100%-4.5rem)] bg-gradient-to-b from-[#0001ff]/20 via-[#3E8BFF]/30 to-[#0001ff]/20"></div>
             
             {timeline.map((step, index) => {
               const Icon = step.icon;
@@ -268,7 +276,7 @@ const CessionEntreprise = () => {
                 >
                   <div className="flex-1">
                     <motion.div 
-                      className={`bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 ${
+                      className={`p-8 ${
                         index % 2 === 0 ? "text-right" : "text-left"
                       }`}
                       whileHover={{ scale: 1.02 }}
@@ -306,17 +314,6 @@ const CessionEntreprise = () => {
                 </motion.div>
               );
             })}
-            
-            {/* Indicateur de fin */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-            >
-              <div className="w-4 h-4 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full"></div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -332,8 +329,8 @@ const CessionEntreprise = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">98%</h3>
-              <p className="text-white/80">Taux de succès des opérations</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.cession.stats.successRate.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.cession.stats.successRate.label")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -342,8 +339,8 @@ const CessionEntreprise = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">6-9</h3>
-              <p className="text-white/80">Mois en moyenne par cession</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.cession.stats.duration.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.cession.stats.duration.label")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -352,8 +349,8 @@ const CessionEntreprise = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">+25%</h3>
-              <p className="text-white/80">Valorisation moyenne obtenue</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.cession.stats.valuation.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.cession.stats.valuation.label")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -362,8 +359,8 @@ const CessionEntreprise = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">100%</h3>
-              <p className="text-white/80">Confidentialité garantie</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.cession.stats.confidentiality.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.cession.stats.confidentiality.label")}</p>
             </motion.div>
           </div>
         </div>
@@ -387,10 +384,10 @@ const CessionEntreprise = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Pourquoi Miralis Partners ?
+              {t("expertisePages.cession.whyMilaris.title")}
             </h2>
             <p className="text-xl text-white/70">
-              Notre expertise au service de votre réussite
+              {t("expertisePages.cession.whyMilaris.subtitle")}
             </p>
           </motion.div>
 
@@ -398,20 +395,20 @@ const CessionEntreprise = () => {
             {[
               {
                 icon: TrendingUp,
-                title: "Processus concurrentiel structuré",
-                description: "Nous organisons une mise en concurrence optimale pour maximiser la valorisation de votre entreprise",
+                title: t("expertisePages.cession.whyMilaris.items.process.title"),
+                description: t("expertisePages.cession.whyMilaris.items.process.description"),
                 gradient: "from-[#0001ff] to-[#3E8BFF]"
               },
               {
                 icon: Cpu,
-                title: "Réseau d'acquéreurs augmenté par l'IA",
-                description: "Notre technologie IA nous permet d'identifier et d'approcher un réseau d'acquéreurs plus large, générant plus d'offres tout en préservant la confidentialité",
+                title: t("expertisePages.cession.whyMilaris.items.network.title"),
+                description: t("expertisePages.cession.whyMilaris.items.network.description"),
                 gradient: "from-[#3E8BFF] to-[#0001ff]"
               },
               {
                 icon: Shield,
-                title: "Confidentialité & alignement",
-                description: "Approche sur-mesure, confidentielle et indépendante, avec votre succès comme seul objectif",
+                title: t("expertisePages.cession.whyMilaris.items.confidentiality.title"),
+                description: t("expertisePages.cession.whyMilaris.items.confidentiality.description"),
                 gradient: "from-[#0001ff] to-[#3E8BFF]"
               }
             ].map((item, index) => {
@@ -425,7 +422,7 @@ const CessionEntreprise = () => {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
+                  <div className={`bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg hover:bg-white/15 transition-all duration-300 h-full flex flex-col ${index === 2 ? 'rounded-b-none' : ''}`}>
                     <div className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>
@@ -463,10 +460,10 @@ const CessionEntreprise = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Nos réseaux d'acquéreurs
+              {t("expertisePages.cession.acquirers.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Accès privilégié aux deux types d'acquéreurs pour optimiser votre cession
+              {t("expertisePages.cession.acquirers.subtitle")}
             </p>
           </motion.div>
 
@@ -484,11 +481,11 @@ const CessionEntreprise = () => {
                     <Building2 className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#0b062b]">
-                    Acquéreurs Stratégiques
+                    {t("expertisePages.cession.acquirers.strategic.title")}
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Industriels et sociétés de votre secteur cherchant à se renforcer, se diversifier ou réaliser des synergies
+                  {t("expertisePages.cession.acquirers.strategic.description")}
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -496,8 +493,8 @@ const CessionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#0001ff]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Valorisation basée sur les synergies</p>
-                      <p className="text-sm text-gray-600">Maximisation de la valeur par l'intégration</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.cession.acquirers.strategic.benefits.synergies.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.cession.acquirers.strategic.benefits.synergies.subtitle")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -505,8 +502,8 @@ const CessionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#0001ff]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Intégration dans un groupe existant</p>
-                      <p className="text-sm text-gray-600">Continuité et développement assuré</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.cession.acquirers.strategic.benefits.integration.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.cession.acquirers.strategic.benefits.integration.subtitle")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -514,8 +511,8 @@ const CessionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#0001ff]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Continuité opérationnelle</p>
-                      <p className="text-sm text-gray-600">Préservation des équipes et savoir-faire</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.cession.acquirers.strategic.benefits.continuity.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.cession.acquirers.strategic.benefits.continuity.subtitle")}</p>
                     </div>
                   </div>
                 </div>
@@ -529,17 +526,17 @@ const CessionEntreprise = () => {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border border-[#3E8BFF]/10 hover:border-[#3E8BFF]/30">
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border border-[#3E8BFF]/10 hover:border-[#3E8BFF]/30 rounded-b-none">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3E8BFF] to-[#0001ff] rounded-full flex items-center justify-center shadow-lg">
                     <Briefcase className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#0b062b]">
-                    Investisseurs Financiers
+                    {t("expertisePages.cession.acquirers.financial.title")}
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Fonds de private equity et family offices investissant pour développer l'entreprise
+                  {t("expertisePages.cession.acquirers.financial.description")}
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -547,8 +544,8 @@ const CessionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Focus sur la croissance</p>
-                      <p className="text-sm text-gray-600">Ressources pour accélérer le développement</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.cession.acquirers.financial.benefits.growth.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.cession.acquirers.financial.benefits.growth.subtitle")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -556,8 +553,8 @@ const CessionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Maintien du management</p>
-                      <p className="text-sm text-gray-600">Continuité de la direction opérationnelle</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.cession.acquirers.financial.benefits.management.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.cession.acquirers.financial.benefits.management.subtitle")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -565,8 +562,8 @@ const CessionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Perspective de sortie</p>
-                      <p className="text-sm text-gray-600">Horizon d'investissement 3-7 ans</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.cession.acquirers.financial.benefits.exit.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.cession.acquirers.financial.benefits.exit.subtitle")}</p>
                     </div>
                   </div>
                 </div>
@@ -597,10 +594,10 @@ const CessionEntreprise = () => {
               <span className="text-[#0001ff] font-semibold">FAQ</span>
             </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Questions fréquentes
+              {t("expertisePages.cession.faq.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Démocratisons ensemble la cession d'entreprise
+              {t("expertisePages.cession.faq.subtitle")}
             </p>
           </motion.div>
 
@@ -672,23 +669,25 @@ const CessionEntreprise = () => {
             className="text-center mt-16"
           >
             <p className="text-gray-600 mb-6">
-              D'autres questions sur la cession d'entreprise ?
+              {t("expertisePages.cession.faq.cta.text")}
             </p>
-            <Link href="/contact">
+            <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
               <motion.button
                 className="bg-[#0001ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 inline-flex items-center gap-3"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Contactez un expert
+                {t("expertisePages.cession.faq.cta.button")}
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
 
-      <Footer />
+      <section className="bg-gradient-to-b from-white to-gray-50">
+        <Footer variant="dark" />
+      </section>
     </main>
   );
 };

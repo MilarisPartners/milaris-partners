@@ -5,54 +5,61 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MapPin, Mail, Linkedin, Target, Globe, Factory, Cpu, Users, Building2 } from "lucide-react";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Equipe = () => {
+  const { t, language } = useTranslation();
+
+  const calendlyLink = language === 'IT' 
+    ? "https://calendly.com/matteo-varennepartners/30min" 
+    : "https://calendly.com/paul-varennepartners/30min";
+
   const team = [
     {
       name: "Paul Poulain",
       role: "Managing Director France",
-      email: "paul@miralispartners.com",
-      linkedin: "https://linkedin.com/in/paulpoulain",
-      image: "/team/paul.jpg", // Placeholder
+      email: "paul@milaris.partners",
+      linkedin: "https://www.linkedin.com/in/paul-poulain/",
+      image: "/team/paul.jpg",
       focus: [
         {
           icon: Building2,
-          title: "Accompagnement régional",
-          description: "Accompagnement des entreprises locales en région dans leurs opérations primaires et secondaires dans divers domaines en fonction des tendances de marché"
+          title: t("equipe.paul.focus1.title"),
+          description: t("equipe.paul.focus1.description")
         },
         {
           icon: Globe,
-          title: "Expansion internationale",
-          description: "Cession et recherche de partenaires à l'échelle mondiale pour les entreprises françaises"
+          title: t("equipe.paul.focus2.title"),
+          description: t("equipe.paul.focus2.description")
         },
         {
           icon: Target,
-          title: "Mandats Buy-Side",
-          description: "Accompagnement des fonds d'investissement français dans leurs mandats à l'achat à l'étranger pour profiter des opportunités sous-exploitées en Italie et Allemagne"
+          title: t("equipe.paul.focus3.title"),
+          description: t("equipe.paul.focus3.description")
         }
       ]
     },
     {
-      name: "Matteo Rossi",
+      name: "Matteo Orlandi Mango",
       role: "Managing Director Italie",
-      email: "matteo@miralispartners.com",
-      linkedin: "https://linkedin.com/in/matteorossi",
-      image: "/team/matteo.jpg", // Placeholder
+      email: "matteo@milaris.partners",
+      linkedin: "https://www.linkedin.com/in/matteoorlandimango/",
+      image: "/team/matteo.jpg",
       focus: [
         {
           icon: Factory,
-          title: "Secteurs industriels & tech",
-          description: "Accompagnement des entrepreneurs italiens industriels et technologiques sur des opérations primaires"
+          title: t("equipe.matteo.focus1.title"),
+          description: t("equipe.matteo.focus1.description")
         },
         {
           icon: Users,
-          title: "Partenariats européens",
-          description: "Cession et recherche de partenaires à travers l'Europe pour les entreprises italiennes"
+          title: t("equipe.matteo.focus2.title"),
+          description: t("equipe.matteo.focus2.description")
         },
         {
           icon: Cpu,
-          title: "Origination Italie",
-          description: "Identification de pépites italiennes pour nos mandats en buy-side"
+          title: t("equipe.matteo.focus3.title"),
+          description: t("equipe.matteo.focus3.description")
         }
       ]
     }
@@ -92,13 +99,13 @@ const Equipe = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b062b] mb-6">
-              Notre{" "}
+              {t("equipe.hero.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                équipe
+                {t("equipe.hero.title2")}
               </span>
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Des experts passionnés par la création de valeur et l'accompagnement des entreprises dans leurs projets stratégiques
+              {t("equipe.hero.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -143,9 +150,8 @@ const Equipe = () => {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition-colors"
+                      className="inline-flex items-center justify-center bg-white/20 px-4 py-2 hover:bg-white/30 transition-colors"
                     >
-                      <Linkedin className="w-4 h-4" />
                       <span className="text-sm">LinkedIn</span>
                     </a>
                   </div>
@@ -153,7 +159,7 @@ const Equipe = () => {
 
                 {/* Focus Areas */}
                 <div className="p-8">
-                  <h3 className="text-xl font-bold text-[#0b062b] mb-6">Domaines d'expertise</h3>
+                  <h3 className="text-xl font-bold text-[#0b062b] mb-6">{t("equipe.focus.title")}</h3>
                   <div className="space-y-6">
                     {member.focus.map((area, idx) => {
                       const Icon = area.icon;
@@ -195,27 +201,29 @@ const Equipe = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-6">
-              Prêt à rencontrer notre équipe ?
+              {t("equipe.cta.title")}
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Discutons de votre projet et voyons comment nous pouvons vous accompagner dans votre réussite
+              {t("equipe.cta.subtitle")}
             </p>
-            <Link href="/contact">
+            <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
               <motion.button
                 className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] text-white px-8 py-4 rounded-lg font-medium shadow-lg hover:shadow-2xl transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Planifier un échange
+                {t("equipe.cta.button")}
               </motion.button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
 
-      <Footer />
+      <section className="bg-gradient-to-br from-gray-50 to-white">
+        <Footer variant="dark" />
+      </section>
     </main>
   );
 };
 
-export default Equipe; 
+export default Equipe;

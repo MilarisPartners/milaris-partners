@@ -5,15 +5,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import ContactModal from "./ContactModal";
 import { getAssetPath } from "@/utils/getAssetPath";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("FR");
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isExpertisesOpen, setIsExpertisesOpen] = useState(false);
+  const { t, language, setLanguage } = useTranslation();
+
+  const calendlyLink = language === 'IT' 
+    ? 'https://calendly.com/matteo-varennepartners/30min'
+    : 'https://calendly.com/paul-varennepartners/30min';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,12 +28,12 @@ const Navbar = () => {
   }, []);
 
   const expertises = [
-    { label: "Cession d'entreprise", href: "/cession-entreprise" },
-    { label: "Acquisition d'entreprise", href: "/acquisition-entreprise" },
-    { label: "Financement", href: "/financement" },
+    { label: t("navbar.businessSale"), href: "/cession-entreprise" },
+    { label: t("navbar.businessAcquisition"), href: "/acquisition-entreprise" },
+    { label: t("navbar.financing"), href: "/financement" },
   ];
 
-  const languages = ["FR", "EN", "IT"];
+  const languages = ["FR", "EN", "IT"] as const;
 
   return (
     <>
@@ -82,7 +85,7 @@ const Navbar = () => {
                       href="/"
                       className="transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm"
                     >
-                      A propos
+                      {t("navbar.about")}
                     </Link>
                     
                     {/* Expertises Dropdown */}
@@ -92,7 +95,7 @@ const Navbar = () => {
                         onMouseEnter={() => setIsExpertisesOpen(true)}
                         onMouseLeave={() => setIsExpertisesOpen(false)}
                       >
-                        <span>Expertises</span>
+                        <span>{t("navbar.expertises")}</span>
                         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isExpertisesOpen ? 'rotate-180' : ''}`} />
                       </button>
                       <div 
@@ -118,29 +121,29 @@ const Navbar = () => {
                       href="/equipe"
                       className="transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm"
                     >
-                      Équipe
+                      {t("navbar.team")}
                     </Link>
                     
                     <Link
                       href="/carrieres"
                       className="transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm"
                     >
-                      Carrière
+                      {t("navbar.career")}
                     </Link>
                     
                     {/* Language Selector */}
                     <div className="relative group">
                       <button className="flex items-center space-x-1 transition-all duration-300 font-medium text-gray-700 hover:text-primary text-sm">
-                        <span>{selectedLanguage}</span>
+                        <span>{language}</span>
                         <ChevronDown className="w-4 h-4" />
                       </button>
                       <div className="absolute right-0 mt-2 w-20 bg-white rounded-lg shadow-soft border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
                         {languages.map((lang) => (
                           <button
                             key={lang}
-                            onClick={() => setSelectedLanguage(lang)}
+                            onClick={() => setLanguage(lang)}
                             className={`block w-full px-4 py-2 text-left hover:bg-primary/10 transition-colors duration-300 text-sm ${
-                              lang === selectedLanguage ? "text-primary font-semibold" : "text-gray-700"
+                              lang === language ? "text-primary font-semibold" : "text-gray-700"
                             }`}
                           >
                             {lang}
@@ -150,12 +153,14 @@ const Navbar = () => {
                     </div>
 
                     {/* CTA Button */}
-                    <button
-                      onClick={() => setIsContactModalOpen(true)}
+                    <a
+                      href={calendlyLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#0b062b] transition-all duration-300"
                     >
-                      Nous contacter
-                    </button>
+                      {t("navbar.contact")}
+                    </a>
                   </motion.div>
 
                   {/* Mobile Menu Button */}
@@ -191,12 +196,12 @@ const Navbar = () => {
                 className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-sm font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                A propos
+                {t("navbar.about")}
               </Link>
               
               {/* Mobile Expertises */}
               <div className="px-6 py-3">
-                <p className="text-sm font-medium text-gray-700 mb-2">Expertises</p>
+                <p className="text-sm font-medium text-gray-700 mb-2">{t("navbar.expertises")}</p>
                 {expertises.map((expertise) => (
                   <Link
                     key={expertise.label}
@@ -214,7 +219,7 @@ const Navbar = () => {
                 className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-sm font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Équipe
+                {t("navbar.team")}
               </Link>
               
               <Link
@@ -222,7 +227,7 @@ const Navbar = () => {
                 className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-sm font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Carrière
+                {t("navbar.career")}
               </Link>
               
               <div className="px-6 py-3 border-t border-gray-100 mt-2">
@@ -230,9 +235,9 @@ const Navbar = () => {
                   {languages.map((lang) => (
                     <button
                       key={lang}
-                      onClick={() => setSelectedLanguage(lang)}
+                      onClick={() => setLanguage(lang)}
                       className={`px-4 py-2 text-sm rounded-lg transition-all duration-300 ${
-                        lang === selectedLanguage
+                        lang === language
                           ? "bg-[#0001ff] text-white"
                           : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                       }`}
@@ -244,15 +249,14 @@ const Navbar = () => {
               </div>
               
               <div className="px-6 pt-3">
-                <button
-                  onClick={() => {
-                    setIsContactModalOpen(true);
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="w-full bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#0b062b] transition-all duration-300"
+                <a
+                  href={calendlyLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full block text-center bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#0b062b] transition-all duration-300"
                 >
-                  Nous contacter
-                </button>
+                  {t("navbar.contact")}
+                </a>
               </div>
             </motion.div>
           )}
@@ -272,16 +276,16 @@ const Navbar = () => {
             {/* Language Selector */}
             <div className="relative group">
               <button className="flex items-center space-x-1 bg-white/90 backdrop-blur-md px-4 py-2 rounded-lg shadow-soft transition-all duration-300 font-medium text-gray-700 hover:text-[#0001ff] text-sm">
-                <span>{selectedLanguage}</span>
+                <span>{language}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute right-0 mt-2 w-20 bg-white rounded-lg shadow-soft border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
                 {languages.map((lang) => (
                   <button
                     key={lang}
-                    onClick={() => setSelectedLanguage(lang)}
+                    onClick={() => setLanguage(lang)}
                     className={`block w-full px-4 py-2 text-left hover:bg-[#0001ff]/10 transition-colors duration-300 text-sm ${
-                      lang === selectedLanguage ? "text-[#0001ff] font-semibold" : "text-gray-700"
+                      lang === language ? "text-[#0001ff] font-semibold" : "text-gray-700"
                     }`}
                   >
                     {lang}
@@ -291,21 +295,17 @@ const Navbar = () => {
             </div>
 
             {/* CTA Button */}
-            <button
-              onClick={() => setIsContactModalOpen(true)}
+            <a
+              href={calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#0b062b] transition-all duration-300 shadow-soft"
             >
-              Nous contacter
-            </button>
+              {t("navbar.contact")}
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Contact Modal */}
-      <ContactModal 
-        isOpen={isContactModalOpen} 
-        onClose={() => setIsContactModalOpen(false)} 
-      />
     </>
   );
 };

@@ -115,7 +115,7 @@ Les couleurs sont définies dans :
 
 ## 🤝 Support
 
-Pour toute question ou support, contactez : contact@miralispartners.com
+Pour toute question ou support, contactez : contact@milaris.partners
 
 ## 📄 Licence
 

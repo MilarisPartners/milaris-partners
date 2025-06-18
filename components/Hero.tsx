@@ -1,13 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles } from "lucide-react";
+import { ArrowDown, Sparkles, X } from "lucide-react";
 import Globe3D from "./Globe3D";
-import { useState } from "react";
-import ContactModal from "./ContactModal";
+import { useState, useEffect } from "react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Hero = () => {
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [showVarennePopup, setShowVarennePopup] = useState(false);
+  const { t, language } = useTranslation();
+
+  const calendlyLink = language === 'IT' 
+    ? 'https://calendly.com/matteo-varennepartners/30min'
+    : 'https://calendly.com/paul-varennepartners/30min';
+
+  useEffect(() => {
+    // Vérifie si c'est la première visite
+    const hasSeenPopup = localStorage.getItem('hasSeenVarennePopup');
+    if (!hasSeenPopup) {
+      setTimeout(() => {
+        setShowVarennePopup(true);
+        localStorage.setItem('hasSeenVarennePopup', 'true');
+      }, 2000); // Affiche après 2 secondes
+    }
+  }, []);
 
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
@@ -134,18 +150,6 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="max-w-4xl mx-auto text-center"
         >
-          {/* Phrase catchy */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="mb-6 sm:mb-8"
-          >
-            <p className="text-sm sm:text-base md:text-lg text-gray-500 font-light">
-              Anciennement Varenne Partners
-            </p>
-          </motion.div>
-
           {/* Titre principal */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -154,7 +158,7 @@ const Hero = () => {
             className="heading-1 font-bold mb-6 sm:mb-8 relative"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-primary to-gray-900 animate-gradient-x">
-              Le M&A, simplement.
+              {t("hero.title")}
             </span>
             {/* Glow effect */}
             <motion.div
@@ -171,11 +175,10 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
           >
-            <span className="font-bold text-primary">Milaris Partners</span> accompagne les{" "}
-            <span className="font-semibold text-blue-bright">dirigeants de TPE/PME</span>, 
-            les <span className="font-semibold text-blue-bright">actionnaires</span> et les{" "}
-            <span className="font-semibold text-blue-bright">investisseurs</span> à vendre, acquérir 
-            ou financer des entreprises dans les meilleures conditions.
+            <span className="font-bold text-primary">{t("hero.description.part1")}</span> {t("hero.description.part2")}{" "}
+            <span className="font-semibold text-blue-bright">{t("hero.description.part3")}</span>{t("hero.description.part4")} 
+            {t("hero.description.part5")} <span className="font-semibold text-blue-bright">{t("hero.description.part6")}</span> {t("hero.description.part7")}{" "}
+            <span className="font-semibold text-blue-bright">{t("hero.description.part8")}</span>
           </motion.p>
 
           {/* CTA Buttons */}
@@ -185,27 +188,29 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0"
           >
-            <motion.button 
-              onClick={() => setIsContactModalOpen(true)}
-              className="bg-[#0001ff] text-white btn-responsive rounded-lg font-medium transition-all duration-300 hover:shadow-2xl hover:scale-105 relative overflow-hidden group w-full sm:w-auto"
+            <motion.a 
+              href={calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#0001ff] text-white btn-responsive rounded-lg font-medium transition-all duration-300 hover:shadow-2xl hover:scale-105 relative overflow-hidden group w-full sm:w-auto block"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="relative z-10">Planifier un échange</span>
+              <span className="relative z-10">{t("hero.cta.scheduleCall")}</span>
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]"
                 initial={{ x: "100%" }}
                 whileHover={{ x: 0 }}
                 transition={{ duration: 0.3 }}
               />
-            </motion.button>
+            </motion.a>
             <motion.button 
               onClick={scrollToAbout}
               className="bg-white/80 backdrop-blur-sm text-[#0b062b] border-2 border-[#0001ff]/30 btn-responsive rounded-lg font-medium hover:border-[#0001ff] hover:bg-[#0001ff]/5 hover:shadow-lg transition-all duration-300 relative overflow-hidden w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Ce qui change chez nous ?
+              {t("hero.cta.whatChanges")}
             </motion.button>
           </motion.div>
         </motion.div>
@@ -230,11 +235,32 @@ const Hero = () => {
         </motion.div>
       </motion.div>
 
-      {/* Contact Modal */}
-      <ContactModal 
-        isOpen={isContactModalOpen} 
-        onClose={() => setIsContactModalOpen(false)} 
-      />
+      {/* Varenne Partners Popup */}
+      {showVarennePopup && (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          className="fixed bottom-4 left-4 z-50 bg-white rounded-lg shadow-2xl p-4 max-w-xs"
+        >
+          <div className="flex items-start justify-between">
+            <div>
+              <p className="text-sm text-gray-600 mb-1">
+                {language === 'FR' && 'Anciennement'}
+                {language === 'EN' && 'Formerly'}
+                {language === 'IT' && 'Precedentemente'}
+              </p>
+              <p className="font-bold text-[#0b062b]">Varenne Partners</p>
+            </div>
+            <button
+              onClick={() => setShowVarennePopup(false)}
+              className="ml-4 p-1 rounded-full hover:bg-gray-100 transition-colors"
+            >
+              <X className="w-4 h-4 text-gray-500" />
+            </button>
+          </div>
+        </motion.div>
+      )}
     </section>
   );
 };

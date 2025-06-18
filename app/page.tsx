@@ -19,7 +19,9 @@ export default function Home() {
       <EuropePresence />
       <Expertise />
       <Testimonial />
-      <Footer />
+      <section className="bg-gradient-to-br from-gray-50 to-gray-100">
+        <Footer variant="dark" />
+      </section>
     </main>
   );
 }

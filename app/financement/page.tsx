@@ -6,77 +6,80 @@ import Footer from "@/components/Footer";
 import { ArrowRight, CheckCircle, DollarSign, FileText, Search, Handshake, MessageSquare, Clock, TrendingUp, Briefcase, ChevronDown, Users, Shield, Calculator, Wallet, LineChart } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Financement = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const { t } = useTranslation();
+  const { language } = useLanguage();
+  
+  // Calendly link based on language
+  const calendlyLink = language === 'IT' 
+    ? 'https://calendly.com/matteo-varennepartners/30min'
+    : 'https://calendly.com/paul-varennepartners/30min';
 
   const timeline = [
     {
-      title: "Analyse des besoins",
-      description: "Compréhension de vos objectifs, évaluation des besoins de financement et définition de la stratégie",
-      duration: "1–2 semaines",
-      icon: Search,
-    },
-    {
-      title: "Préparation des documents",
-      description: "Constitution du dossier investisseur (deck, business plan, financial model, termsheet)",
-      duration: "2–4 semaines",
+      title: t("expertisePages.financement.timeline.steps.preparation.title"),
+      description: t("expertisePages.financement.timeline.steps.preparation.description"),
+      duration: t("expertisePages.financement.timeline.steps.preparation.duration"),
       icon: FileText,
     },
     {
-      title: "Ciblage des financeurs",
-      description: "Identification et approche des investisseurs ou banquiers adaptés à votre profil",
-      duration: "3–6 semaines",
-      icon: Users,
+      title: t("expertisePages.financement.timeline.steps.identification.title"),
+      description: t("expertisePages.financement.timeline.steps.identification.description"),
+      duration: t("expertisePages.financement.timeline.steps.identification.duration"),
+      icon: Search,
     },
     {
-      title: "Négociation",
-      description: "Gestion des discussions, négociation des termes clés et coordination des due diligences",
-      duration: "4–8 semaines",
+      title: t("expertisePages.financement.timeline.steps.pitch.title"),
+      description: t("expertisePages.financement.timeline.steps.pitch.description"),
+      duration: t("expertisePages.financement.timeline.steps.pitch.duration"),
+      icon: MessageSquare,
+    },
+    {
+      title: t("expertisePages.financement.timeline.steps.closing.title"),
+      description: t("expertisePages.financement.timeline.steps.closing.description"),
+      duration: t("expertisePages.financement.timeline.steps.closing.duration"),
       icon: Handshake,
-    },
-    {
-      title: "Finalisation",
-      description: "Coordination juridique, structuration finale et accompagnement jusqu'au closing",
-      duration: "2–4 semaines",
-      icon: Shield,
     },
   ];
 
   const services = [
     {
-      title: "Levée de fonds en capital (equity)",
-      description: "Recherche d'investisseurs, structuration de l'opération et organisation du processus concurrentiel",
-      icon: TrendingUp,
+      title: t("expertisePages.financement.services.items.planning.title"),
+      description: t("expertisePages.financement.services.items.planning.description"),
+      icon: FileText,
     },
     {
-      title: "Financement par dette",
-      description: "Dette bancaire, dette privée et financement structuré selon vos besoins de croissance",
-      icon: Briefcase,
+      title: t("expertisePages.financement.services.items.search.title"),
+      description: t("expertisePages.financement.services.items.search.description"),
+      icon: Search,
     },
     {
-      title: "Solutions hybrides et mixtes",
-      description: "Structuration de solutions combinant dette et capital pour optimiser votre financement",
-      icon: LineChart,
+      title: t("expertisePages.financement.services.items.negotiation.title"),
+      description: t("expertisePages.financement.services.items.negotiation.description"),
+      icon: Handshake,
     },
   ];
 
   const faqs = [
     {
-      question: "Combien de temps prend une levée de fonds ?",
-      answer: "Entre 2 et 6 mois en moyenne, selon le type de financement recherché et le niveau de préparation initiale. Les financements par dette sont généralement plus rapides que les levées de fonds en equity.",
+      question: t("expertisePages.financement.faq.questions.q1.question"),
+      answer: t("expertisePages.financement.faq.questions.q1.answer"),
     },
     {
-      question: "Quelle est la différence entre debt et equity ?",
-      answer: "L'equity implique une dilution du capital contre des fonds propres, tandis que la dette est un emprunt à rembourser avec intérêts. L'equity offre plus de flexibilité mais dilue, la dette préserve le capital mais impose des remboursements réguliers.",
+      question: t("expertisePages.financement.faq.questions.q2.question"),
+      answer: t("expertisePages.financement.faq.questions.q2.answer"),
     },
     {
-      question: "Comment optimiser ma valorisation ?",
-      answer: "Une valorisation optimale résulte d'une préparation rigoureuse : business plan solide, métriques de croissance démontrées, processus concurrentiel bien organisé et timing adapté au marché. Notre expertise permet de maximiser chaque levier.",
+      question: t("expertisePages.financement.faq.questions.q3.question"),
+      answer: t("expertisePages.financement.faq.questions.q3.answer"),
     },
     {
-      question: "Quels montants pouvez-vous lever ?",
-      answer: "Nous accompagnons des levées de 1M€ à plus de 100M€, en equity comme en dette. Notre réseau couvre tous types de tickets, des business angels aux grands fonds institutionnels européens.",
+      question: t("expertisePages.financement.faq.questions.q4.question"),
+      answer: t("expertisePages.financement.faq.questions.q4.answer"),
     },
   ];
 
@@ -119,41 +122,41 @@ const Financement = () => {
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <DollarSign className="w-5 h-5 text-[#0001ff]" />
-              <span className="text-[#0001ff] font-semibold">Expertise Financement</span>
+              <TrendingUp className="w-5 h-5 text-[#0001ff]" />
+              <span className="text-[#0001ff] font-semibold">{t("expertisePages.financement.hero.badge")}</span>
             </motion.div>
             
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#0b062b]"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-[#0b062b]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Donner les moyens de vos ambitions : capital, dette, structuration.
+              {t("expertisePages.financement.hero.title")}
             </motion.h1>
             <motion.p 
               className="text-lg mb-12 text-gray-600 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Nous accompagnons les entreprises dans leur recherche de financement, que ce soit pour soutenir la croissance, refinancer une dette, investir dans un projet ou structurer un rachat.
+              {t("expertisePages.financement.hero.description")}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Link href="/contact">
+              <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
                 <motion.button
                   className="bg-[#0001ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 inline-flex items-center gap-3 shadow-lg hover:shadow-xl"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Structurons votre financement
+                  {t("expertisePages.financement.hero.cta")}
                   <ArrowRight className="w-5 h-5" />
                 </motion.button>
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
         </div>
@@ -170,10 +173,10 @@ const Financement = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Nos expertises
+              {t("expertisePages.financement.services.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Solutions complètes de financement adaptées à chaque étape de votre développement
+              {t("expertisePages.financement.services.subtitle")}
             </p>
           </motion.div>
 
@@ -223,26 +226,26 @@ const Financement = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Déroulé typique d'un financement
+              {t("expertisePages.financement.timeline.title")}
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Une approche structurée, de 2 à 6 mois selon le type de financement
+              {t("expertisePages.financement.timeline.subtitle")}
             </p>
             <div className="flex items-center justify-center gap-8 text-sm">
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full"></div>
-                <span className="text-gray-600">Étapes clés</span>
+                <span className="text-gray-600">{t("expertisePages.financement.timeline.legend.steps")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#0001ff]" />
-                <span className="text-gray-600">Durée moyenne par étape</span>
+                <span className="text-gray-600">{t("expertisePages.financement.timeline.legend.duration")}</span>
               </div>
             </div>
           </motion.div>
 
           <div className="max-w-5xl mx-auto relative">
             {/* Trait vertical continu avec gradient */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#0001ff]/20 via-[#3E8BFF]/30 to-[#0001ff]/20"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-[calc(100%-4.5rem)] bg-gradient-to-b from-[#0001ff]/20 via-[#3E8BFF]/30 to-[#0001ff]/20"></div>
             
             {timeline.map((step, index) => {
               const Icon = step.icon;
@@ -259,7 +262,7 @@ const Financement = () => {
                 >
                   <div className="flex-1">
                     <motion.div 
-                      className={`bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 ${
+                      className={`p-8 ${
                         index % 2 === 0 ? "text-right" : "text-left"
                       }`}
                       whileHover={{ scale: 1.02 }}
@@ -297,17 +300,6 @@ const Financement = () => {
                 </motion.div>
               );
             })}
-            
-            {/* Indicateur de fin */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-            >
-              <div className="w-4 h-4 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full"></div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -315,7 +307,7 @@ const Financement = () => {
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -323,8 +315,8 @@ const Financement = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">100M€+</h3>
-              <p className="text-white/80">Levés pour nos clients</p>
+              <h3 className="text-5xl font-bold text-white mb-2">Série A+</h3>
+              <p className="text-white/80">A partir de la série A</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -333,7 +325,7 @@ const Financement = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">200+</h3>
+              <h3 className="text-5xl font-bold text-white mb-2">250k+</h3>
               <p className="text-white/80">Investisseurs actifs</p>
             </motion.div>
             <motion.div
@@ -343,45 +335,28 @@ const Financement = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">95%</h3>
-              <p className="text-white/80">Taux de succès</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <h3 className="text-5xl font-bold text-white mb-2">3,5x</h3>
-              <p className="text-white/80">Multiple moyen obtenu</p>
+              <h3 className="text-5xl font-bold text-white mb-2">2M+</h3>
+              <p className="text-white/80">Seuil minimal d'intervention</p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Why Miralis Section */}
-      <section className="py-20 bg-[#0b062b] relative overflow-hidden">
-        {/* Background pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute h-full w-full" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }} />
-        </div>
-
-        <div className="container-custom relative z-10">
+      {/* Why Milaris Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Pourquoi Miralis Partners ?
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
+              {t("expertisePages.financement.whyMilaris.title")}
             </h2>
-            <p className="text-xl text-white/70">
-              Notre expertise au service de votre financement optimal
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              {t("expertisePages.financement.whyMilaris.subtitle")}
             </p>
           </motion.div>
 
@@ -696,10 +671,10 @@ const Financement = () => {
             className="text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Prêt à financer votre croissance ?
+              {t("expertisePages.financement.cta.title")}
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Discutons de vos besoins de financement et explorons ensemble les meilleures options pour soutenir votre développement.
+              {t("expertisePages.financement.cta.subtitle")}
             </p>
             <Link href="/contact">
               <motion.button
@@ -707,7 +682,7 @@ const Financement = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Contactez-nous
+                {t("expertisePages.financement.cta.button")}
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </Link>
@@ -715,9 +690,11 @@ const Financement = () => {
         </div>
       </section>
 
-      <Footer />
+      <section className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+        <Footer variant="light" />
+      </section>
     </main>
   );
 };
 
-export default Financement; 
+export default Financement;

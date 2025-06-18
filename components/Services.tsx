@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Search, FileText, Target, Handshake, DollarSign, Users, Presentation, Sparkles } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Services = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="services" className="section-padding bg-gradient-to-b from-white via-primary/5 to-white relative overflow-hidden">
       {/* Decorative background elements */}
@@ -42,17 +45,16 @@ const Services = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                Fusions et{" "}
+                {t("services.ma.title")}{" "}
                 <span className="relative">
                   <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-bright">
-                    Acquisitions
+                    {t("services.ma.titleHighlight")}
                   </span>
                   <Sparkles className="absolute -top-2 -right-2 w-6 h-6 text-primary animate-pulse" />
                 </span>
               </motion.h2>
               <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
-                Notre équipe d'experts vous accompagne dans toutes les étapes de votre projet de cession ou d'acquisition. 
-                Avec une approche personnalisée et un réseau international, nous maximisons la valeur de votre transaction.
+                {t("services.ma.description")}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <motion.div
@@ -66,8 +68,8 @@ const Services = () => {
                       <Search className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Analyse</h4>
-                      <p className="text-xs sm:text-sm text-gray-600">Évaluation approfondie de votre entreprise</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{t("services.ma.steps.analysis.title")}</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">{t("services.ma.steps.analysis.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -82,8 +84,8 @@ const Services = () => {
                       <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Valorisation</h4>
-                      <p className="text-xs sm:text-sm text-gray-600">Détermination de la juste valeur</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{t("services.ma.steps.valuation.title")}</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">{t("services.ma.steps.valuation.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -98,8 +100,8 @@ const Services = () => {
                       <Target className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Ciblage</h4>
-                      <p className="text-xs sm:text-sm text-gray-600">Identification des acquéreurs potentiels</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{t("services.ma.steps.targeting.title")}</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">{t("services.ma.steps.targeting.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -114,8 +116,8 @@ const Services = () => {
                       <Handshake className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Négociation</h4>
-                      <p className="text-xs sm:text-sm text-gray-600">Accompagnement jusqu'à la signature</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{t("services.ma.steps.negotiation.title")}</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">{t("services.ma.steps.negotiation.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -144,7 +146,7 @@ const Services = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <p className="text-xs sm:text-sm font-medium text-gray-700">Excellence • Innovation • Résultats</p>
+                <p className="text-xs sm:text-sm font-medium text-gray-700">{t("services.ma.tagline")}</p>
               </motion.div>
             </motion.div>
           </div>
@@ -180,7 +182,7 @@ const Services = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <p className="text-xs sm:text-sm font-medium text-gray-700">Croissance • Financement • Succès</p>
+                <p className="text-xs sm:text-sm font-medium text-gray-700">{t("services.fundraising.tagline")}</p>
               </motion.div>
             </motion.div>
             <div className="order-1 lg:order-2">
@@ -190,17 +192,16 @@ const Services = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                Levée de{" "}
+                {t("services.fundraising.title")}{" "}
                 <span className="relative">
                   <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-sky to-primary">
-                    fonds
+                    {t("services.fundraising.titleHighlight")}
                   </span>
                   <Sparkles className="absolute -bottom-2 -left-2 w-6 h-6 text-blue-sky animate-pulse" />
                 </span>
               </motion.h2>
               <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
-                Accélérez votre croissance avec notre expertise en levée de fonds. Nous vous connectons avec les investisseurs 
-                les plus pertinents et vous accompagnons dans la structuration et la négociation de votre financement.
+                {t("services.fundraising.description")}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <motion.div
@@ -209,13 +210,13 @@ const Services = () => {
                   transition={{ duration: 0.6 }}
                   className="group"
                 >
-                                      <div className="flex items-start space-x-3 p-4 rounded-xl bg-gradient-to-br from-white to-blue-sky/5 border border-blue-sky/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-sky to-primary rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Business Plan</h4>
-                        <p className="text-xs sm:text-sm text-gray-600">Structuration de votre projet</p>
+                  <div className="flex items-start space-x-3 p-4 rounded-xl bg-gradient-to-br from-white to-blue-sky/5 border border-blue-sky/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-sky to-primary rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{t("services.fundraising.steps.businessPlan.title")}</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">{t("services.fundraising.steps.businessPlan.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -225,13 +226,13 @@ const Services = () => {
                   transition={{ duration: 0.6, delay: 0.1 }}
                   className="group"
                 >
-                                      <div className="flex items-start space-x-3 p-4 rounded-xl bg-gradient-to-br from-white to-primary/5 border border-primary/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-blue-bright rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Réseau</h4>
-                        <p className="text-xs sm:text-sm text-gray-600">Accès à notre réseau d'investisseurs</p>
+                  <div className="flex items-start space-x-3 p-4 rounded-xl bg-gradient-to-br from-white to-primary/5 border border-primary/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-blue-bright rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{t("services.fundraising.steps.network.title")}</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">{t("services.fundraising.steps.network.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -241,13 +242,13 @@ const Services = () => {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="group"
                 >
-                                      <div className="flex items-start space-x-3 p-4 rounded-xl bg-gradient-to-br from-white to-blue-sky/5 border border-blue-sky/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-sky to-primary rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <Presentation className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Présentation</h4>
-                        <p className="text-xs sm:text-sm text-gray-600">Préparation des pitchs</p>
+                  <div className="flex items-start space-x-3 p-4 rounded-xl bg-gradient-to-br from-white to-blue-sky/5 border border-blue-sky/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-sky to-primary rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <Presentation className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{t("services.fundraising.steps.presentation.title")}</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">{t("services.fundraising.steps.presentation.description")}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -257,13 +258,13 @@ const Services = () => {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="group"
                 >
-                                      <div className="flex items-start space-x-3 p-4 rounded-xl bg-gradient-to-br from-white to-primary/5 border border-primary/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-blue-bright rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <DollarSign className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Closing</h4>
-                        <p className="text-xs sm:text-sm text-gray-600">Finalisation du financement</p>
+                  <div className="flex items-start space-x-3 p-4 rounded-xl bg-gradient-to-br from-white to-primary/5 border border-primary/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-blue-bright rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <DollarSign className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{t("services.fundraising.steps.closing.title")}</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">{t("services.fundraising.steps.closing.description")}</p>
                     </div>
                   </div>
                 </motion.div>

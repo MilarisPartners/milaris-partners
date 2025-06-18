@@ -2,9 +2,11 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { ArrowRight, Brain, Target, Clock, TrendingUp, Globe } from "lucide-react";
+import { Brain, Target, Clock, TrendingUp, Globe } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const AISection = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,30 +25,30 @@ const AISection = () => {
 
   const features = [
     {
-      text: "Identifier des acquéreurs hors radar",
+      key: "identifyBuyers",
       icon: Target,
-      stat: "2000+"
+      value: "500k+",
     },
     {
-      text: "Qualifier rapidement des cibles pertinentes", 
+      key: "qualifyTargets", 
       icon: Brain,
-      stat: "85%"
+      value: "85%",
     },
     {
-      text: "Gagner des semaines sur la phase de sourcing",
+      key: "saveSourcing",
       icon: Clock,
-      stat: "3-5x"
+      value: "2-4x",
     },
     {
-      text: "Objectiver la valorisation d'une cible",
+      key: "objectiveValuation",
       icon: TrendingUp,
-      stat: "95%"
+      value: "95%",
     },
     {
-      text: "Market knowledge puissant secteur agnostique",
+      key: "marketKnowledge",
       icon: Globe,
-      stat: "50+"
-    }
+      value: "50+",
+    },
   ];
 
   // Progress bar width
@@ -69,6 +71,12 @@ const AISection = () => {
 
     return () => unsubscribe();
   }, [scrollYProgress, features.length]);
+
+  const stats = [
+    { key: "data" },
+    { key: "transactions" },
+    { key: "accuracy" },
+  ];
 
   return (
     <section ref={sectionRef} className="relative bg-gradient-to-br from-gray-50 via-[#0001ff]/5 to-gray-50">
@@ -96,13 +104,11 @@ const AISection = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
-                Notre{" "}
+                {t("aiSection.title.part1")}{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                  Intelligence Artificielle
-                </span>
-                <br className="hidden sm:block" />
-                <span className="sm:hidden"> </span>
-                au service de vos transactions
+                  {t("aiSection.title.highlight")}
+                </span>{" "}
+                {t("aiSection.title.part2")}
               </motion.h2>
 
               {/* Content Grid */}
@@ -116,45 +122,25 @@ const AISection = () => {
                 >
                   {/* Stats - Simplifiées sur mobile */}
                   <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6 sm:mb-8">
-                    {["5M+", "250k", "99.9%"].map((stat, index) => (
-                      <div key={index} className="text-center">
+                    {stats.map((stat, index) => (
+                      <div key={stat.key} className="text-center">
                         <div className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0001ff]">
-                          {stat}
+                          {t(`aiSection.stats.${stat.key}.value`)}
                         </div>
                         <div className="text-[10px] sm:text-xs text-gray-500">
-                          {["Données", "Transactions", "Précision"][index]}
+                          {t(`aiSection.stats.${stat.key}.label`)}
                         </div>
                       </div>
                     ))}
                   </div>
 
                   <p className="text-gray-700 leading-relaxed text-sm sm:text-base lg:text-lg">
-                    <span className="font-bold text-lg sm:text-xl lg:text-2xl text-[#0001ff] block mb-3 sm:mb-4">
-                      Technologie IA propriétaire
-                    </span> 
-                    développée par Milaris Partners. En exploitant des millions de données 
-                    de marché et d'investisseurs, notre moteur de matching interne révèle 
-                    la valeur cachée dans l'espace fragmenté des fusions-acquisitions de 
-                    petites et moyennes capitalisations — là où les réseaux traditionnels 
-                    échouent et où la fiabilité est essentielle.
+                    {t("aiSection.description")}
                   </p>
                 </motion.div>
 
                 {/* Right Column - Features qui changent de couleur */}
                 <div className="relative">
-                  {/* Arrow qui suit l'item actif */}
-                  <motion.div
-                    className="absolute -left-12 hidden lg:flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full"
-                    animate={{ 
-                      y: activeIndex >= 0 ? activeIndex * 76 + 20 : -40,
-                      opacity: activeIndex >= 0 ? 1 : 0,
-                      scale: activeIndex >= 0 ? 1 : 0.8,
-                    }}
-                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                  >
-                    <ArrowRight className="w-4 h-4 text-primary" />
-                  </motion.div>
-
                   {/* Features List */}
                   <div className="space-y-2 sm:space-y-3">
                     {features.map((feature, index) => {
@@ -163,7 +149,7 @@ const AISection = () => {
                       
                       return (
                         <motion.div
-                          key={index}
+                          key={feature.key}
                           className={`
                             relative py-3 sm:py-4 px-3 sm:px-5 rounded-lg border-2 transition-all duration-700
                             ${isActive && !isMobile
@@ -179,32 +165,31 @@ const AISection = () => {
                             ease: "easeOut"
                           }}
                           viewport={{ once: true }}
-                                                  >
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center space-x-2 sm:space-x-3 flex-1">
-                                <motion.div
-                                  animate={{ 
-                                    rotate: isActive && !isMobile ? 360 : 0,
-                                    scale: isActive && !isMobile ? 1.1 : 1
-                                  }}
-                                  transition={{ duration: 0.7 }}
-                                  className="flex-shrink-0"
-                                >
-                                  <Icon className={`w-4 h-4 sm:w-5 sm:h-5 ${isActive && !isMobile ? 'text-white' : 'text-[#0001ff]'}`} />
-                                </motion.div>
+                        >
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center space-x-2 sm:space-x-3 flex-1">
+                              <motion.div
+                                animate={{ 
+                                  rotate: isActive && !isMobile ? 360 : 0,
+                                  scale: isActive && !isMobile ? 1.1 : 1
+                                }}
+                                transition={{ duration: 0.7 }}
+                                className="flex-shrink-0"
+                              >
+                                <Icon className={`w-4 h-4 sm:w-5 sm:h-5 ${isActive && !isMobile ? 'text-white' : 'text-[#0001ff]'}`} />
+                              </motion.div>
+                              <div className="flex-1">
                                 <p className="text-xs sm:text-sm lg:text-base font-medium">
-                                  {feature.text}
+                                  {t(`aiSection.features.${feature.key}.title`)}
                                 </p>
                               </div>
-                              
-                              <motion.div 
-                                className={`font-bold text-xs sm:text-sm lg:text-base ${isActive && !isMobile ? 'text-white' : 'text-[#0001ff]'} flex-shrink-0`}
-                                animate={{ scale: isActive && !isMobile ? [1, 1.1, 1] : 1 }}
-                                transition={{ duration: 0.5 }}
-                              >
-                                {feature.stat}
-                              </motion.div>
+                              <div className="text-right flex-shrink-0">
+                                <span className={`text-sm sm:text-base lg:text-lg font-bold ${isActive && !isMobile ? 'text-white' : 'text-[#0001ff]'}`}>
+                                  {feature.value}
+                                </span>
+                              </div>
                             </div>
+                          </div>
                         </motion.div>
                       );
                     })}

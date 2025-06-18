@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Work_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -37,7 +38,9 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <body className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

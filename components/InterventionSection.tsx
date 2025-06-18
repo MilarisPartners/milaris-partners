@@ -25,7 +25,7 @@ const InterventionSection = () => {
       link: "/acquisition-entreprise",
       features: [
         "Ciblage stratégique européen",
-        "Due diligence approfondie",
+        "Approche confidentielle",
         "Négociation optimisée"
       ],
       color: "from-[#3E8BFF] to-[#0001ff]"

@@ -4,10 +4,12 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Building2, Users, Cpu } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const { t } = useTranslation();
 
   return (
     <section id="about" className="section-padding bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5 relative overflow-hidden">
@@ -45,10 +47,10 @@ const About = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            Une volonté profonde de valoriser nos{" "}
+            {t("about.title.part1")}{" "}
             <span className="relative">
               <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                entreprises locales
+                {t("about.title.part2")}
               </span>
               <motion.span
                 className="absolute inset-0 bg-[#0001ff]/20 blur-xl"
@@ -56,7 +58,7 @@ const About = () => {
                 transition={{ duration: 3, repeat: Infinity }}
               />
             </span>{" "}
-            à leur juste valeur
+            {t("about.title.part3")}
           </motion.h2>
           
           <div className="max-w-5xl mx-auto space-y-8">
@@ -70,7 +72,7 @@ const About = () => {
                 <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
               <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                <span className="font-bold text-[#0001ff]">Miralis Partners</span> accompagne les PME et ETI dans leurs projets stratégiques de cession et levée de fonds. Face aux défis de visibilité et d'expertise que rencontrent de nombreuses entreprises en France et en Italie, nous apportons des solutions concrètes et personnalisées.
+                <span className="font-bold text-[#0001ff]">{t("about.content.point1.title")}</span> {t("about.content.point1.text")}
               </p>
             </motion.div>
             
@@ -84,7 +86,7 @@ const About = () => {
                 <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
               <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                Présents en <span className="font-semibold text-[#0b062b]">France</span>, <span className="font-semibold text-[#0b062b]">Italie</span> et au <span className="font-semibold text-[#0b062b]">Luxembourg</span>, nous privilégions une approche exclusive avec un nombre limité de mandats. Cette stratégie garantit un accompagnement sur-mesure, discret et efficace, fondé sur une relation de confiance durable.
+                {t("about.content.point2.text1")} <span className="font-semibold text-[#0b062b]">{t("about.content.point2.country1")}</span>, <span className="font-semibold text-[#0b062b]">{t("about.content.point2.country2")}</span> {t("about.content.point2.text2")} <span className="font-semibold text-[#0b062b]">{t("about.content.point2.country3")}</span>{t("about.content.point2.text3")}
               </p>
             </motion.div>
             
@@ -98,7 +100,7 @@ const About = () => {
                 <Cpu className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
               <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                En pionniers de l'intégration de <span className="font-bold bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] bg-clip-text text-transparent">l'intelligence artificielle</span> à nos processus, nous utilisons une technologie propriétaire optimisant chaque étape de la transaction, augmentant ainsi significativement vos chances de succès. Forts d'une expertise financière solide et d'un réseau international d'investisseurs, nous sommes déterminés à transformer vos ambitions en réalités concrètes.
+                {t("about.content.point3.text1")} <span className="font-bold bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] bg-clip-text text-transparent">{t("about.content.point3.ai")}</span> {t("about.content.point3.text2")}
               </p>
             </motion.div>
 

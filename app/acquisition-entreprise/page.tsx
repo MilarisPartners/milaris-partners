@@ -6,77 +6,80 @@ import Footer from "@/components/Footer";
 import { ArrowRight, CheckCircle, Target, Search, Handshake, FileText, MessageSquare, DollarSign, Clock, Building2, Briefcase, ChevronDown, Cpu, Shield, TrendingUp, Brain, Globe } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const AcquisitionEntreprise = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const { t } = useTranslation();
+  const { language } = useLanguage();
+  
+  // Calendly link based on language
+  const calendlyLink = language === 'IT' 
+    ? 'https://calendly.com/matteo-varennepartners/30min'
+    : 'https://calendly.com/paul-varennepartners/30min';
 
   const timeline = [
     {
-      title: "Stratégie d'acquisition",
-      description: "Définition des critères de ciblage, secteurs prioritaires et synergies recherchées",
-      duration: "2–3 semaines",
-      icon: Target,
-    },
-    {
-      title: "Identification des cibles",
-      description: "Sourcing via notre outil IA, qualification et première approche des cibles prioritaires",
-      duration: "4–8 semaines",
+      title: t("expertisePages.acquisition.timeline.steps.setup.title"),
+      description: t("expertisePages.acquisition.timeline.steps.setup.description"),
+      duration: t("expertisePages.acquisition.timeline.steps.setup.duration"),
       icon: Search,
     },
     {
-      title: "Approche discrète",
-      description: "Prise de contact confidentielle, analyse de l'intérêt et premiers échanges",
-      duration: "2–4 semaines",
-      icon: MessageSquare,
+      title: t("expertisePages.acquisition.timeline.steps.identification.title"),
+      description: t("expertisePages.acquisition.timeline.steps.identification.description"),
+      duration: t("expertisePages.acquisition.timeline.steps.identification.duration"),
+      icon: Target,
     },
     {
-      title: "Analyse et valorisation",
-      description: "Modélisation financière, estimation des synergies, recommandations stratégiques",
-      duration: "3–6 semaines",
+      title: t("expertisePages.acquisition.timeline.steps.analysis.title"),
+      description: t("expertisePages.acquisition.timeline.steps.analysis.description"),
+      duration: t("expertisePages.acquisition.timeline.steps.analysis.duration"),
       icon: FileText,
     },
     {
-      title: "Négociation & Closing",
-      description: "Coordination des audits, structuration du montage et négociation jusqu'à la signature",
-      duration: "4–8 semaines",
+      title: t("expertisePages.acquisition.timeline.steps.nego.title"),
+      description: t("expertisePages.acquisition.timeline.steps.nego.description"),
+      duration: t("expertisePages.acquisition.timeline.steps.nego.duration"),
       icon: Handshake,
     },
   ];
 
   const services = [
     {
-      title: "Définition de la stratégie d'acquisition",
-      description: "Secteurs cibles, géographie, taille, synergies recherchées selon vos objectifs de croissance",
-      icon: Target,
-    },
-    {
-      title: "Identification et qualification de cibles",
-      description: "Via notre réseau, nos bases propriétaires et notre outil IA pour un sourcing optimal",
+      title: t("expertisePages.acquisition.services.items.strategy.title"),
+      description: t("expertisePages.acquisition.services.items.strategy.description"),
       icon: Search,
     },
     {
-      title: "Structuration et négociation",
-      description: "Coordination des audits, structuration du montage (LBO, prise de participation), négociation des conditions",
+      title: t("expertisePages.acquisition.services.items.identification.title"),
+      description: t("expertisePages.acquisition.services.items.identification.description"),
+      icon: Target,
+    },
+    {
+      title: t("expertisePages.acquisition.services.items.structuring.title"),
+      description: t("expertisePages.acquisition.services.items.structuring.description"),
       icon: Handshake,
     },
   ];
 
   const faqs = [
     {
-      question: "Combien de temps prend une acquisition d'entreprise ?",
-      answer: "Entre 3 et 12 mois selon le contexte : acquisition opportuniste rapide ou processus structuré avec plusieurs cibles. Notre approche méthodique permet d'optimiser les délais tout en sécurisant chaque étape.",
+      question: t("expertisePages.acquisition.faq.questions.q1.question"),
+      answer: t("expertisePages.acquisition.faq.questions.q1.answer"),
     },
     {
-      question: "Comment identifiez-vous les cibles d'acquisition ?",
-      answer: "Nous combinons trois approches : notre réseau direct dans vos secteurs cibles, nos bases de données propriétaires enrichies en continu, et notre outil IA qui identifie des opportunités off-market invisibles autrement.",
+      question: t("expertisePages.acquisition.faq.questions.q2.question"),
+      answer: t("expertisePages.acquisition.faq.questions.q2.answer"),
     },
     {
-      question: "Quels types de montages proposez-vous ?",
-      answer: "Nous structurons tous types de montages : acquisition simple, LBO avec effet de levier, prise de participation minoritaire ou majoritaire, carve-out de divisions, stratégies build-up. Chaque montage est optimisé selon vos contraintes.",
+      question: t("expertisePages.acquisition.faq.questions.q3.question"),
+      answer: t("expertisePages.acquisition.faq.questions.q3.answer"),
     },
     {
-      question: "Travaillez-vous sur des acquisitions internationales ?",
-      answer: "Oui, notre expertise franco-italienne nous permet d'accompagner des acquisitions cross-border, particulièrement entre la France et l'Italie. Notre réseau européen facilite également les opérations dans d'autres pays.",
+      question: t("expertisePages.acquisition.faq.questions.q4.question"),
+      answer: t("expertisePages.acquisition.faq.questions.q4.answer"),
     },
   ];
 
@@ -119,41 +122,41 @@ const AcquisitionEntreprise = () => {
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <Target className="w-5 h-5 text-[#0001ff]" />
-              <span className="text-[#0001ff] font-semibold">Expertise Acquisition</span>
+              <TrendingUp className="w-5 h-5 text-[#0001ff]" />
+              <span className="text-[#0001ff] font-semibold">{t("expertisePages.acquisition.hero.badge")}</span>
             </motion.div>
             
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#0b062b]"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-[#0b062b]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Croître par croissance externe : méthodique, ciblé, efficace.
+              {t("expertisePages.acquisition.hero.title")}
             </motion.h1>
             <motion.p 
               className="text-lg mb-12 text-gray-600 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Miralis Partners conseille des dirigeants, groupes industriels et investisseurs dans leurs opérations de croissance externe : acquisition d'un concurrent, d'un fournisseur, d'un acteur complémentaire ou d'une cible de diversification.
+              {t("expertisePages.acquisition.hero.description")}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Link href="/contact">
+              <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
                 <motion.button
                   className="bg-[#0001ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 inline-flex items-center gap-3 shadow-lg hover:shadow-xl"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Explorons vos opportunités
+                  {t("expertisePages.acquisition.hero.cta")}
                   <ArrowRight className="w-5 h-5" />
                 </motion.button>
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
         </div>
@@ -170,10 +173,10 @@ const AcquisitionEntreprise = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Ce que nous faisons pour vous
+              {t("expertisePages.acquisition.services.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Notre mission : identifier les meilleures opportunités et sécuriser vos acquisitions
+              {t("expertisePages.acquisition.services.subtitle")}
             </p>
           </motion.div>
 
@@ -223,26 +226,26 @@ const AcquisitionEntreprise = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Déroulé typique d'une acquisition
+              {t("expertisePages.acquisition.timeline.title")}
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Une approche structurée, de 3 à 12 mois selon le contexte
+              {t("expertisePages.acquisition.timeline.subtitle")}
             </p>
             <div className="flex items-center justify-center gap-8 text-sm">
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full"></div>
-                <span className="text-gray-600">Étapes clés</span>
+                <span className="text-gray-600">{t("expertisePages.acquisition.timeline.legend.steps")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#0001ff]" />
-                <span className="text-gray-600">Durée moyenne par étape</span>
+                <span className="text-gray-600">{t("expertisePages.acquisition.timeline.legend.duration")}</span>
               </div>
             </div>
           </motion.div>
 
           <div className="max-w-5xl mx-auto relative">
             {/* Trait vertical continu avec gradient */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#0001ff]/20 via-[#3E8BFF]/30 to-[#0001ff]/20"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-[calc(100%-4.5rem)] bg-gradient-to-b from-[#0001ff]/20 via-[#3E8BFF]/30 to-[#0001ff]/20"></div>
             
             {timeline.map((step, index) => {
               const Icon = step.icon;
@@ -259,7 +262,7 @@ const AcquisitionEntreprise = () => {
                 >
                   <div className="flex-1">
                     <motion.div 
-                      className={`bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 ${
+                      className={`p-8 ${
                         index % 2 === 0 ? "text-right" : "text-left"
                       }`}
                       whileHover={{ scale: 1.02 }}
@@ -297,17 +300,6 @@ const AcquisitionEntreprise = () => {
                 </motion.div>
               );
             })}
-            
-            {/* Indicateur de fin */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-            >
-              <div className="w-4 h-4 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full"></div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -323,8 +315,8 @@ const AcquisitionEntreprise = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">500+</h3>
-              <p className="text-white/80">Cibles analysées par an</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.acquisition.stats.targets.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.acquisition.stats.targets.label")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -333,8 +325,8 @@ const AcquisitionEntreprise = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">2x</h3>
-              <p className="text-white/80">Plus rapide grâce à l'IA</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.acquisition.stats.speed.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.acquisition.stats.speed.label")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -343,8 +335,8 @@ const AcquisitionEntreprise = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">85%</h3>
-              <p className="text-white/80">D'opportunités off-market</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.acquisition.stats.offmarket.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.acquisition.stats.offmarket.label")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -353,8 +345,8 @@ const AcquisitionEntreprise = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">100%</h3>
-              <p className="text-white/80">Confidentialité garantie</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.acquisition.stats.confidentiality.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.acquisition.stats.confidentiality.label")}</p>
             </motion.div>
           </div>
         </div>
@@ -378,10 +370,10 @@ const AcquisitionEntreprise = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Notre savoir-faire
+              {t("expertisePages.acquisition.expertise.title")}
             </h2>
             <p className="text-xl text-white/70">
-              Des avantages concurrentiels uniques au service de vos acquisitions
+              {t("expertisePages.acquisition.expertise.subtitle")}
             </p>
           </motion.div>
 
@@ -389,20 +381,20 @@ const AcquisitionEntreprise = () => {
             {[
               {
                 icon: Brain,
-                title: "Outil IA de sourcing avancé",
-                description: "Notre technologie propriétaire identifie des opportunités off-market dans tous les secteurs, invisibles sur le marché traditionnel",
+                title: t("expertisePages.acquisition.expertise.items.ai.title"),
+                description: t("expertisePages.acquisition.expertise.items.ai.description"),
                 gradient: "from-[#0001ff] to-[#3E8BFF]"
               },
               {
                 icon: Globe,
-                title: "Expertise franco-italienne",
-                description: "Notre équipe binationale offre un accès privilégié aux deux marchés les plus complémentaires d'Europe",
+                title: t("expertisePages.acquisition.expertise.items.franco.title"),
+                description: t("expertisePages.acquisition.expertise.items.franco.description"),
                 gradient: "from-[#3E8BFF] to-[#0001ff]"
               },
               {
                 icon: Target,
-                title: "Opportunités exclusives",
-                description: "Capacité à générer des opportunités non visibles, grâce à notre réseau et notre approche directe",
+                title: t("expertisePages.acquisition.expertise.items.exclusive.title"),
+                description: t("expertisePages.acquisition.expertise.items.exclusive.description"),
                 gradient: "from-[#0001ff] to-[#3E8BFF]"
               }
             ].map((item, index) => {
@@ -416,7 +408,7 @@ const AcquisitionEntreprise = () => {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
+                  <div className={`bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-lg hover:bg-white/15 transition-all duration-300 h-full flex flex-col ${index === 2 ? 'rounded-b-none' : ''}`}>
                     <div className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>
@@ -454,10 +446,10 @@ const AcquisitionEntreprise = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Types d'acquisitions
+              {t("expertisePages.acquisition.types.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Expertise dans tous les montages et secteurs d'activité
+              {t("expertisePages.acquisition.types.subtitle")}
             </p>
           </motion.div>
 
@@ -475,11 +467,11 @@ const AcquisitionEntreprise = () => {
                     <Building2 className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#0b062b]">
-                    Acquisitions Stratégiques
+                    {t("expertisePages.acquisition.types.strategic.title")}
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Acquisition de concurrents, fournisseurs ou acteurs complémentaires pour renforcer votre positionnement
+                  {t("expertisePages.acquisition.types.strategic.description")}
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -487,8 +479,8 @@ const AcquisitionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#0001ff]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Consolidation sectorielle</p>
-                      <p className="text-sm text-gray-600">Renforcez votre position de leader</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.acquisition.types.strategic.items.consolidation.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.acquisition.types.strategic.items.consolidation.subtitle")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -496,8 +488,8 @@ const AcquisitionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#0001ff]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Intégration verticale</p>
-                      <p className="text-sm text-gray-600">Sécurisez votre chaîne de valeur</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.acquisition.types.strategic.items.vertical.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.acquisition.types.strategic.items.vertical.subtitle")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -505,8 +497,8 @@ const AcquisitionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#0001ff]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Extension géographique</p>
-                      <p className="text-sm text-gray-600">Conquérez de nouveaux marchés</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.acquisition.types.strategic.items.geographic.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.acquisition.types.strategic.items.geographic.subtitle")}</p>
                     </div>
                   </div>
                 </div>
@@ -520,17 +512,17 @@ const AcquisitionEntreprise = () => {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border border-[#3E8BFF]/10 hover:border-[#3E8BFF]/30">
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border border-[#3E8BFF]/10 hover:border-[#3E8BFF]/30 rounded-b-none">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3E8BFF] to-[#0001ff] rounded-full flex items-center justify-center shadow-lg">
                     <Briefcase className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#0b062b]">
-                    Montages Complexes
+                    {t("expertisePages.acquisition.types.complex.title")}
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  LBO, carve-out, build-up selon vos contraintes financières et objectifs de développement
+                  {t("expertisePages.acquisition.types.complex.description")}
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -538,8 +530,8 @@ const AcquisitionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">LBO et montages effet de levier</p>
-                      <p className="text-sm text-gray-600">Optimisez votre structure financière</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.acquisition.types.complex.items.lbo.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.acquisition.types.complex.items.lbo.subtitle")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -547,8 +539,8 @@ const AcquisitionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Carve-out de divisions</p>
-                      <p className="text-sm text-gray-600">Extrayez la valeur cachée</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.acquisition.types.complex.items.carveout.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.acquisition.types.complex.items.carveout.subtitle")}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -556,8 +548,8 @@ const AcquisitionEntreprise = () => {
                       <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Stratégies build-up</p>
-                      <p className="text-sm text-gray-600">Créez un leader par acquisitions successives</p>
+                      <p className="font-semibold text-gray-800">{t("expertisePages.acquisition.types.complex.items.buildup.title")}</p>
+                      <p className="text-sm text-gray-600">{t("expertisePages.acquisition.types.complex.items.buildup.subtitle")}</p>
                     </div>
                   </div>
                 </div>
@@ -588,10 +580,10 @@ const AcquisitionEntreprise = () => {
               <span className="text-[#0001ff] font-semibold">FAQ</span>
             </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Questions fréquentes
+              {t("expertisePages.acquisition.faq.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Tout ce que vous devez savoir sur les acquisitions d'entreprise
+              {t("expertisePages.acquisition.faq.subtitle")}
             </p>
           </motion.div>
 
@@ -678,31 +670,30 @@ const AcquisitionEntreprise = () => {
             className="text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Prêts à accélérer votre croissance ?
+              {t("expertisePages.acquisition.cta.title")}
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Que vous ayez une cible en vue ou souhaitiez explorer le marché, discutons de vos opportunités d'acquisition en toute confidentialité.
+              {t("expertisePages.acquisition.cta.subtitle")}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/contact">
+            <div className="flex justify-center">
+              <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
                 <motion.button
                   className="bg-white text-[#0001ff] px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 inline-flex items-center gap-3 shadow-lg"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Explorons vos opportunités
+                  {t("expertisePages.acquisition.cta.button")}
                   <ArrowRight className="w-5 h-5" />
                 </motion.button>
-              </Link>
-              <a href="tel:+33100000000" className="text-white hover:text-white/80 transition-colors duration-300 font-medium">
-                +33 1 XX XX XX XX
               </a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      <Footer />
+      <section className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+        <Footer variant="light" />
+      </section>
     </main>
   );
 };
