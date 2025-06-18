@@ -49,6 +49,8 @@ const config: Config = {
         "slide-up": "slideUp 0.5s ease-out",
         "float": "float 6s ease-in-out infinite",
         "gradient-x": "gradient-x 3s ease infinite",
+        "spin-slow": "spin 40s linear infinite",
+        "spin-reverse-slow": "spin 40s linear infinite reverse",
       },
       keyframes: {
         fadeIn: {

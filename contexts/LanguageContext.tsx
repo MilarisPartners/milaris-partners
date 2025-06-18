@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { translations } from '../locales/translations';
+import { translations } from '@/locales/translations';
 
 type Language = 'FR' | 'EN' | 'IT';
 
@@ -18,15 +18,19 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   useEffect(() => {
     // Check if there's a saved language preference
-    const savedLanguage = localStorage.getItem('language') as Language;
-    if (savedLanguage && ['FR', 'EN', 'IT'].includes(savedLanguage)) {
-      setLanguage(savedLanguage);
+    if (typeof window !== 'undefined') {
+      const savedLanguage = localStorage.getItem('language') as Language;
+      if (savedLanguage && ['FR', 'EN', 'IT'].includes(savedLanguage)) {
+        setLanguage(savedLanguage);
+      }
     }
   }, []);
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
-    localStorage.setItem('language', lang);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('language', lang);
+    }
   };
 
   const t = (key: string): string => {
