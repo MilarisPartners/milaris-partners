@@ -4,11 +4,10 @@ import { motion } from "framer-motion";
 import { Briefcase, Search, Target, Handshake, CheckCircle, Sparkles } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 import { useState } from "react";
-import ContactModal from "./ContactModal";
+import Link from "next/link";
 
 const Process = () => {
   const { t } = useTranslation();
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const steps = [
     {
@@ -167,29 +166,24 @@ const Process = () => {
             <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 px-4 sm:px-0">
               {t("hero.cta.whatChanges")}
             </p>
-            <motion.button 
-              onClick={() => setIsContactModalOpen(true)}
-              className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] text-white btn-responsive rounded-lg font-medium shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span className="relative z-10">{t("hero.cta.scheduleCall")}</span>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-[#3E8BFF] to-[#0001ff]"
-                initial={{ x: "100%" }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.3 }}
-              />
-            </motion.button>
+            <Link href="/contact" passHref>
+              <motion.button 
+                className="bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] text-white btn-responsive rounded-lg font-medium shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="relative z-10">{t("hero.cta.scheduleCall")}</span>
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-[#3E8BFF] to-[#0001ff]"
+                  initial={{ x: "100%" }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.button>
+            </Link>
           </motion.div>
         </div>
       </section>
-
-      {/* Contact Modal */}
-      <ContactModal 
-        isOpen={isContactModalOpen} 
-        onClose={() => setIsContactModalOpen(false)} 
-      />
     </>
   );
 };
