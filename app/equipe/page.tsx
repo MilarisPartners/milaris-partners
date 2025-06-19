@@ -132,12 +132,14 @@ const Equipe = () => {
                       <p className="text-white/80 text-lg">{member.role}</p>
                     </div>
                     {/* Photo */}
-                    <div className="w-24 h-24 relative overflow-hidden rounded-full border-2 border-white/30">
+                    <div className="w-24 h-24 overflow-hidden rounded-full border-2 border-white/30 flex items-center justify-center">
                       <Image
                         src={member.image}
                         alt={member.name}
-                        fill
-                        className="object-cover"
+                        width={96}
+                        height={96}
+                        className="object-cover rounded-full"
+                        priority={index === 0}
                       />
                     </div>
                   </div>
