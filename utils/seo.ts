@@ -326,7 +326,6 @@ export function generateMetadata(
     },
     verification: {
       google: 'your-google-verification-code',
-      bing: 'your-bing-verification-code',
     },
     other: {
       'msapplication-TileColor': '#0001ff',

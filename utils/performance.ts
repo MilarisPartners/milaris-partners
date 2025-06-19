@@ -33,11 +33,11 @@ export const lazyLoadNonCritical = () => {
         document.head.appendChild(script);
 
         window.dataLayer = window.dataLayer || [];
-        function gtag(...args: any[]) {
+        window.gtag = function(...args: any[]) {
           window.dataLayer.push(args);
-        }
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', 'GA_MEASUREMENT_ID');
       }
     };
 
