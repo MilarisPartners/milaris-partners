@@ -843,6 +843,13 @@ export const translations = {
         subtitle: "Rejoignez une équipe où votre talent sera valorisé et où vous pourrez contribuer à des projets d'envergure internationale.",
         button: "Postulez maintenant"
       }
+    },
+    cookies: {
+      title: "Cookies & Confidentialité",
+      description: "Nous utilisons des cookies pour améliorer votre expérience et analyser l'utilisation de notre site. En continuant, vous acceptez notre politique de cookies.",
+      accept: "Accepter",
+      reject: "Refuser",
+      privacyPolicy: "Politique de confidentialité"
     }
   },
   EN: {
@@ -1689,6 +1696,13 @@ export const translations = {
         subtitle: "Join a team where your talent will be valued and where you can contribute to major international projects.",
         button: "Apply now"
       }
+    },
+    cookies: {
+      title: "Cookies & Privacy",
+      description: "We use cookies to improve your experience and analyze our site usage. By continuing, you accept our cookie policy.",
+      accept: "Accept",
+      reject: "Decline",
+      privacyPolicy: "Privacy policy"
     }
   },
   IT: {
@@ -2535,6 +2549,13 @@ export const translations = {
         subtitle: "Unisciti a un team in cui il tuo talento sarà valorizzato e dove potrai contribuire a importanti progetti internazionali.",
         button: "Candidati ora"
       }
+    },
+    cookies: {
+      title: "Cookie e Privacy",
+      description: "Utilizziamo i cookie per migliorare la tua esperienza e analizzare l'uso del nostro sito. Continuando, accetti la nostra politica sui cookie.",
+      accept: "Accettare",
+      reject: "Rifiutare",
+      privacyPolicy: "Informativa sulla privacy"
     }
   }
 }; 

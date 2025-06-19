@@ -4,6 +4,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { generateMetadata as generateSEOMetadata, generateStructuredData } from "@/utils/seo";
 import StructuredData from "@/components/StructuredData";
+import CookieBanner from "@/components/CookieBanner";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
         <LanguageProvider>
           <StructuredData data={organizationData} />
           {children}
+          <CookieBanner />
         </LanguageProvider>
       </body>
     </html>
