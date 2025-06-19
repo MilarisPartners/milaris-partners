@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Timeline from "@/components/Timeline";
 import { ArrowRight, CheckCircle, DollarSign, FileText, Search, Handshake, MessageSquare, Clock, TrendingUp, Briefcase, ChevronDown, Users, Shield, Calculator, Wallet, LineChart } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
@@ -216,93 +217,15 @@ const Financement = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              {t("expertisePages.financement.timeline.title")}
-            </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              {t("expertisePages.financement.timeline.subtitle")}
-            </p>
-            <div className="flex items-center justify-center gap-8 text-sm">
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full"></div>
-                <span className="text-gray-600">{t("expertisePages.financement.timeline.legend.steps")}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-[#0001ff]" />
-                <span className="text-gray-600">{t("expertisePages.financement.timeline.legend.duration")}</span>
-              </div>
-            </div>
-          </motion.div>
-
-          <div className="max-w-5xl mx-auto relative">
-            {/* Trait vertical continu avec gradient */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-[calc(100%-4.5rem)] bg-gradient-to-b from-[#0001ff]/20 via-[#3E8BFF]/30 to-[#0001ff]/20"></div>
-            
-            {timeline.map((step, index) => {
-              const Icon = step.icon;
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`flex items-center gap-12 mb-16 relative ${
-                    index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                  }`}
-                >
-                  <div className="flex-1">
-                    <motion.div 
-                      className={`p-8 ${
-                        index % 2 === 0 ? "text-right" : "text-left"
-                      }`}
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      <h3 className="text-2xl font-bold text-[#0b062b] mb-3">
-                        {step.title}
-                      </h3>
-                      <p className="text-gray-600 mb-4 leading-relaxed">
-                        {step.description}
-                      </p>
-                      <div className={`inline-flex items-center gap-2 px-4 py-2 bg-[#0001ff]/10 rounded-full ${
-                        index % 2 === 0 ? "float-right" : ""
-                      }`}>
-                        <Clock className="w-4 h-4 text-[#0001ff]" />
-                        <span className="text-[#0001ff] font-semibold text-sm">{step.duration}</span>
-                      </div>
-                    </motion.div>
-                  </div>
-                  
-                  <motion.div 
-                    className="relative z-10"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full flex items-center justify-center border-4 border-white shadow-xl">
-                      <Icon className="w-10 h-10 text-white" />
-                    </div>
-                    {/* Numéro d'étape */}
-                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md">
-                      <span className="text-[#0001ff] font-bold text-sm">{index + 1}</span>
-                    </div>
-                  </motion.div>
-                  
-                  <div className="flex-1" />
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      <Timeline
+        steps={timeline}
+        title={t("expertisePages.financement.timeline.title")}
+        subtitle={t("expertisePages.financement.timeline.subtitle")}
+        legend={{
+          steps: t("expertisePages.financement.timeline.legend.steps"),
+          duration: t("expertisePages.financement.timeline.legend.duration")
+        }}
+      />
 
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Work_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { generateMetadata as generateSEOMetadata, generateStructuredData } from "@/utils/seo";
+import StructuredData from "@/components/StructuredData";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -18,27 +20,30 @@ const playfairDisplay = Playfair_Display({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: "Milaris Partners - Excellence en Fusions & Acquisitions",
-  description: "Cabinet de conseil spécialisé en fusions-acquisitions et levée de fonds pour les TPE/PME en France et en Italie.",
-  keywords: "M&A, fusions acquisitions, levée de fonds, conseil financier, TPE, PME, transmission entreprise",
-  openGraph: {
-    title: "Milaris Partners - Conseil M&A pour TPE et PME",
-    description: "Un accompagnement sur mesure dédié aux TPE et PME pour la transmission d'entreprise",
-    type: "website",
-    locale: "fr_FR",
-  },
-};
+// Métadonnées SEO optimisées pour la page d'accueil
+export const metadata: Metadata = generateSEOMetadata('home', 'fr');
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Données structurées pour l'organisation
+  const organizationData = generateStructuredData.organization('fr');
+
   return (
     <html lang="fr" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content="#0001ff" />
+        <meta name="msapplication-TileColor" content="#0001ff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </head>
       <body className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}>
         <LanguageProvider>
+          <StructuredData data={organizationData} />
           {children}
         </LanguageProvider>
       </body>

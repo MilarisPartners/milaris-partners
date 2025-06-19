@@ -3,10 +3,12 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { MapPin, Mail, Linkedin, Target, Globe, Factory, Cpu, Users, Building2 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "@/hooks/useTranslation";
+import { generateStructuredData } from "@/utils/seo";
 
 const Equipe = () => {
   const { t, language } = useTranslation();
@@ -14,6 +16,24 @@ const Equipe = () => {
   const calendlyLink = language === 'IT' 
     ? "https://calendly.com/matteo-varennepartners/30min" 
     : "https://calendly.com/paul-varennepartners/30min";
+
+  // Données structurées pour les membres de l'équipe
+  const teamStructuredData = [
+    generateStructuredData.person(
+      "Paul Poulain",
+      "Managing Director France",
+      "paul@milaris.partners",
+      "https://www.linkedin.com/in/paul-poulain/",
+      language as 'fr' | 'it' | 'en'
+    ),
+    generateStructuredData.person(
+      "Matteo Orlandi Mango",
+      "Managing Director Italie",
+      "matteo@milaris.partners",
+      "https://www.linkedin.com/in/matteoorlandimango/",
+      language as 'fr' | 'it' | 'en'
+    )
+  ];
 
   const team = [
     {
@@ -68,6 +88,11 @@ const Equipe = () => {
 
   return (
     <main className="min-h-screen">
+      <SEOHead 
+        pageName="equipe" 
+        language={language as 'fr' | 'it' | 'en'} 
+        customStructuredData={teamStructuredData}
+      />
       <Navbar />
 
       {/* Hero Section */}
