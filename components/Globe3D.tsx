@@ -29,7 +29,7 @@ const Globe3D = () => {
                   key={`meridian-${i}`}
                   cx="200"
                   cy="200"
-                  rx={198 * Math.cos((i * Math.PI) / 8)}
+                  rx={Math.abs(198 * Math.cos((i * Math.PI) / 8))}
                   ry="198"
                   fill="none"
                   stroke="#E5E7EB"

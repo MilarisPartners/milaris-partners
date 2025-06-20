@@ -38,12 +38,22 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/logo-dark.png" type="image/png" />
         <meta name="theme-color" content="#0001ff" />
         <meta name="msapplication-TileColor" content="#0001ff" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>
       <body className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}>
+        {/* Redirection www vers racine (compatibilité GitHub Pages) */}
+        <Script id="www-redirect" strategy="beforeInteractive">
+          {`
+            if (typeof window !== 'undefined' && window.location.hostname.startsWith('www.')) {
+              const newUrl = window.location.href.replace(/^https?:\\/\\/www\\./, window.location.protocol + '//');
+              window.location.replace(newUrl);
+            }
+          `}
+        </Script>
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-E93DE5LSJB"
