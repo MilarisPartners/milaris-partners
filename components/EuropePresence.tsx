@@ -125,40 +125,6 @@ const EuropePresence = () => {
               </motion.div>
             ))}
           </div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 sm:mt-16"
-          >
-            <div className="text-center">
-              <h3 className="text-3xl sm:text-4xl font-bold text-[#0001ff] mb-2">
-                {t("europePresence.stats.transactions.value")}
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                {t("europePresence.stats.transactions.label")}
-              </p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-3xl sm:text-4xl font-bold text-[#0001ff] mb-2">
-                {t("europePresence.stats.volume.value")}
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                {t("europePresence.stats.volume.label")}
-              </p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-3xl sm:text-4xl font-bold text-[#0001ff] mb-2">
-                {t("europePresence.stats.network.value")}
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                {t("europePresence.stats.network.label")}
-              </p>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { MapPin, Mail, Linkedin, Target, Globe, Factory, Cpu, Users, Building2 } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import OptimizedImage from "@/components/OptimizedImage";
 import { useTranslation } from "@/hooks/useTranslation";
 import { generateStructuredData } from "@/utils/seo";
 
@@ -41,7 +41,7 @@ const Equipe = () => {
       role: "Managing Director France",
       email: "paul@milaris.partners",
       linkedin: "https://www.linkedin.com/in/paul-poulain/",
-      image: "/team/paul.png",
+      image: "/team/paul-optimized.jpg",
       focus: [
         {
           icon: Building2,
@@ -65,7 +65,7 @@ const Equipe = () => {
       role: "Managing Director Italie",
       email: "matteo@milaris.partners",
       linkedin: "https://www.linkedin.com/in/matteoorlandimango/",
-      image: "/team/matteo.png",
+      image: "/team/matteo-optimized.jpg",
       focus: [
         {
           icon: Factory,
@@ -158,12 +158,12 @@ const Equipe = () => {
                     </div>
                     {/* Photo */}
                     <div className="w-24 h-24 overflow-hidden rounded-full border-2 border-white/30 flex items-center justify-center">
-                      <Image
+                      <OptimizedImage
                         src={member.image}
                         alt={member.name}
                         width={96}
                         height={96}
-                        className="object-cover rounded-full"
+                        className="object-cover rounded-full w-full h-full"
                         priority={index === 0}
                       />
                     </div>

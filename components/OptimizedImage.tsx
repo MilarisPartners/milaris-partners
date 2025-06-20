@@ -1,7 +1,8 @@
 "use client";
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
+import { getAssetPath } from '@/utils/assetPath';
 
 interface OptimizedImageProps {
   src: string;
@@ -24,14 +25,20 @@ export default function OptimizedImage({
   priority = false,
   fallbackSrc = '/team/default-avatar.jpg'
 }: OptimizedImageProps) {
-  const [imageSrc, setImageSrc] = useState(src);
-  const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Utiliser l'utilitaire pour gérer les chemins
+  const imageSrc = useMemo(() => {
+    if (hasError) {
+      return getAssetPath(fallbackSrc);
+    }
+    return getAssetPath(src);
+  }, [src, fallbackSrc, hasError]);
 
   const handleError = () => {
-    console.warn(`Failed to load image: ${imageSrc}`);
+    console.warn(`Failed to load image: ${src}`);
     setHasError(true);
-    setImageSrc(fallbackSrc);
   };
 
   const handleLoad = () => {

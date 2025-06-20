@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Work_Sans, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { generateMetadata as generateSEOMetadata, generateStructuredData } from "@/utils/seo";
@@ -43,6 +44,20 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>
       <body className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-E93DE5LSJB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E93DE5LSJB');
+          `}
+        </Script>
+
         <LanguageProvider>
           <StructuredData data={organizationData} />
           {children}

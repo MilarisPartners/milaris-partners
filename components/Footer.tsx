@@ -4,9 +4,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/useTranslation";
 
-type FooterProps = {
+interface FooterProps {
   variant?: 'light' | 'dark';
-};
+}
 
 const Footer = ({ variant = 'dark' }: FooterProps) => {
   const { t } = useTranslation();
@@ -24,6 +24,13 @@ const Footer = ({ variant = 'dark' }: FooterProps) => {
 
   const dividerClasses = isLight ? "text-gray-300" : "text-white/40";
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <footer className="py-12 px-4">
       <motion.div 
@@ -33,9 +40,12 @@ const Footer = ({ variant = 'dark' }: FooterProps) => {
         transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
         viewport={{ once: true }}
       >
-        <div className="font-bold text-sm sm:text-base">
+        <button
+          onClick={scrollToTop}
+          className="font-bold text-sm sm:text-base hover:opacity-80 transition-opacity cursor-pointer"
+        >
           Milaris Partners
-        </div>
+        </button>
 
         <div className={`flex items-center flex-wrap justify-end gap-x-3 sm:gap-x-4 text-xs sm:text-sm ${linkClasses}`}>
           <span className="hidden sm:inline">© {currentYear} Milaris Partners. {t("footer.rights")}</span>
