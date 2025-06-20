@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production'
-const repoName = 'miralis-partners' // Nom correct du repository GitHub
-
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}/` : '',
+  basePath: '', // Pas de basePath car domaine personnalisé
+  assetPrefix: '', // Pas d'assetPrefix car domaine personnalisé
   images: {
     unoptimized: true, // Requis pour l'export statique
     remotePatterns: [
