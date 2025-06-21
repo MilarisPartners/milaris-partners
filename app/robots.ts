@@ -21,23 +21,23 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'GPTBot',
-        disallow: '/',
+        allow: '/',
       },
       {
         userAgent: 'ChatGPT-User',
-        disallow: '/',
+        allow: '/',
       },
       {
         userAgent: 'CCBot',
-        disallow: '/',
+        allow: '/',
       },
       {
         userAgent: 'anthropic-ai',
-        disallow: '/',
+        allow: '/',
       },
       {
         userAgent: 'Claude-Web',
-        disallow: '/',
+        allow: '/',
       }
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
