@@ -24,21 +24,21 @@ export interface PageSEO {
 export const seoConfig: PageSEO = {
   home: {
     fr: {
-      title: "Milaris Partners - Cabinet M&A spécialisé TPE/PME | Fusions-Acquisitions",
+      title: "Milaris Partners - Conseil en Fusion-Acquisition",
       description: "Cabinet de conseil en fusions-acquisitions et levée de fonds spécialisé dans l'accompagnement des TPE/PME en France et Italie. Expertise sectorielle et technologie IA propriétaire.",
       keywords: ["M&A", "fusions acquisitions", "levée de fonds", "TPE", "PME", "ETI", "cession entreprise", "acquisition entreprise", "conseil financier", "France", "Italie"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "website"
     },
     it: {
-      title: "Milaris Partners - Consulenza M&A per PMI | Fusioni e Acquisizioni",
+      title: "Milaris Partners - Consulenza in Fusioni e Acquisizioni",
       description: "Consulenza specializzata in fusioni e acquisizioni e raccolta fondi per PMI in Francia e Italia. Competenza settoriale e tecnologia IA proprietaria.",
       keywords: ["M&A", "fusioni acquisizioni", "raccolta fondi", "PMI", "cessione impresa", "acquisizione impresa", "consulenza finanziaria", "Francia", "Italia"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "website"
     },
     en: {
-      title: "Milaris Partners - M&A Advisory for SMEs | Mergers & Acquisitions",
+      title: "Milaris Partners - Merger & Acquisition Advisory",
       description: "Specialized M&A and fundraising advisory for SMEs in France and Italy. Sector expertise and proprietary AI technology.",
       keywords: ["M&A", "mergers acquisitions", "fundraising", "SME", "business sale", "business acquisition", "financial advisory", "France", "Italy"],
       ogImage: "/og-images/home-fr.svg",
