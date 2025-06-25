@@ -12,7 +12,7 @@ export const translations = {
     },
     hero: {
       subtitle: "",
-      title: "Le M&A, simplement.",
+      title: "Le M&A, simplement",
       description: {
         part1: "Milaris Partners",
         part2: "accompagne les",
