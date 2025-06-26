@@ -5,7 +5,7 @@ const Loader = () => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const hide = setTimeout(() => setVisible(false), 1000);
+    const hide = setTimeout(() => setVisible(false), 1500);
     return () => clearTimeout(hide);
   }, []);
 
