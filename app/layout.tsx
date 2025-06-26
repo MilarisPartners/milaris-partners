@@ -6,6 +6,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { generateMetadata as generateSEOMetadata, generateStructuredData } from "@/utils/seo";
 import StructuredData from "@/components/StructuredData";
 import CookieBanner from "@/components/CookieBanner";
+import Loader from "@/components/Loader";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -68,6 +69,7 @@ export default function RootLayout({
           `}
         </Script>
 
+        <Loader />
         <LanguageProvider>
           <StructuredData data={organizationData} />
           {children}
