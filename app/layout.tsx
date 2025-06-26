@@ -38,8 +38,6 @@ export default function RootLayout({
     <html lang="fr" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/logo-dark.png" type="image/png" />
         <meta name="theme-color" content="#0001ff" />
         <meta name="msapplication-TileColor" content="#0001ff" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
