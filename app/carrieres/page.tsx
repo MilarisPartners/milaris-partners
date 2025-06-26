@@ -133,7 +133,7 @@ const Carrieres = () => {
               {t("carrieres.workWithUs.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
                 {t("carrieres.workWithUs.title2")}
-              </span> ?
+              </span>{language === "EN" ? "?" : " ?"}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               {t("carrieres.workWithUs.subtitle")}
@@ -279,7 +279,7 @@ const Carrieres = () => {
               {t("carrieres.howToApply.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
                 {t("carrieres.howToApply.title2")}
-              </span> ?
+              </span>{language === "EN" ? "?" : " ?"}
             </h2>
           </motion.div>
 
@@ -321,9 +321,10 @@ const Carrieres = () => {
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-6">
               {t("carrieres.cta.title1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                {t("carrieres.cta.title2")}
-              </span> ?
+              {language === "EN"
+                ? <>{t("carrieres.cta.title2")}? </>
+                : <><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">{t("carrieres.cta.title2")}</span> ?</>
+              }
             </h2>
             <p className="text-xl text-gray-600 mb-10">
               {t("carrieres.cta.subtitle")}

@@ -425,6 +425,11 @@ export const translations = {
             text: "D'autres questions sur la cession d'entreprise ?",
             button: "Contactez un expert"
           }
+        },
+        cta: {
+          title: "Prêt à réussir votre transmission ?",
+          subtitle: "Que vous ayez un projet précis ou souhaitiez explorer vos options, discutons de votre cession en toute confidentialité.",
+          button: "Discuter de votre projet"
         }
       },
       acquisition: {
@@ -1245,6 +1250,7 @@ export const translations = {
         hero: {
           badge: "Sell-side Advisory",
           title: "Selling your company is a defining milestone",
+          subtitle: "We help you make the right decisions at every step of your sale process.",
           description: "Milaris Partners supports business owners throughout partial or total sales, ensuring strategic, confidential, value-driven outcomes aligned to long-term goals.",
           cta: "Let's discuss your project"
         },
@@ -1402,6 +1408,11 @@ export const translations = {
             text: "Other questions about business sales?",
             button: "Contact an expert"
           }
+        },
+        cta: {
+          title: "Ready to sell your business?",
+          subtitle: "Whether you're actively considering a sale or exploring your strategic options, let's confidentially evaluate how to maximize the value of your business.",
+          button: "Let's discuss your project"
         }
       },
       acquisition: {
@@ -1892,11 +1903,11 @@ export const translations = {
         },
         {
           heading: "Disclaimer regarding links",
-          content: "The website may include links to other websites or Internet sources, added by third parties. Milaris Partners has no control over these external sites and sources and is not responsible for their availability, content, fairness, timeliness, quality, completeness, relevance, or legality of any advertising, product, service, or other material available on or from these sites or sources. Visitors acknowledge that Milaris Partners is not responsible for direct or consequential losses resulting from the use of or reliance on the content of these sites or sources, or any goods or services available on these sites or from these sources, viewed online or obtained by email or any other means. The confidentiality and integrity of information on the Internet are not guaranteed. Any email sent by users of the site may be intercepted or altered. Milaris Partners is not responsible for intercepted or altered messages. Milaris Partners believes that all sites mentioned on this website, directly or via hyperlinks, belong to reputable and ethical companies. However, Milaris Partners has no connection with most of these companies and has not verified them. The information presented on this site has been obtained from sources deemed reliable, and every effort has been made to ensure its accuracy. Despite these precautions, Milaris Partners cannot be held responsible for the accuracy of this information. Each user assumes full responsibility for the use of all or part of the information presented on this site."
+          content: "The website may include links to other websites or Internet sources, added by third parties. Milaris Partners has no control over these external sites and sources and is not responsible for their availability, content, fairness, timeliness, quality, completeness, relevance, or legality of any advertising, product, service, or other material available on or from these sites or sources. Visitors acknowledge that Milaris Partners is not responsible for direct or consequential losses resulting from the use of or reliance on the content of these sites or sources, or any goods or services available on these sites or from these sources, viewed online or obtained by email or any other means. The confidentiality and integrity of information on the Internet are not guaranteed. Any email sent by users of the site may be intercepted or altered. Milaris Partners is not responsible for intercepted or altered messages. Milaris Partners believes that all sites mentioned on this website, directly or via hyperlinks, appartiennent à des entreprises réputées et éthiques. Cependant, Milaris Partners n'a aucun lien avec la plupart de ces entreprises et ne les a pas vérifiées. Les informations présentées sur ce site ont été obtenues de sources jugées fiables, et tous les efforts ont été faits pour assurer leur exactitude. Malgré ces précautions, Milaris Partners ne peut être tenu responsable de l'exactitude de ces informations. Chaque utilisateur assume l'entière responsabilité de l'utilisation de tout ou partie des informations présentées sur ce site."
         },
         {
           heading: "Intellectual Property and Counterfeiting",
-          content: "https://milaris.partners/ holds the intellectual property rights and usage rights to all elements accessible on the website, including texts, images, graphics, and logos. Any reproduction, representation, modification, publication, or adaptation of all or part of the elements of the site, regardless of the means or process used, is prohibited without the prior written authorization of https://milaris.partners/. Toute utilisation non autorisée du site ou de l'un de ses contenus sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de la Propriété Intellectuelle."
+          content: "https://milaris.partners/ holds the intellectual property rights and usage rights to all elements accessible on the website, including texts, images, graphismes et logos. Toute reproduction, représentation, modification, publication, ou adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de https://milaris.partners/. Toute utilisation non autorisée du site ou de l'un de ses contenus sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de la Propriété Intellectuelle."
         },
         {
           heading: "Contact details",
@@ -1917,19 +1928,19 @@ export const translations = {
         },
         {
           heading: "Responsables de la collecte des données personnelles",
-          content: "For personal data collected as part of creating the user account and browsing the site, the data controller is: Milaris Partners SAS. As the data controller, https://milaris.partners/ undertakes to respect the legal framework in force. Whenever https://milaris.partners/ processes personal data, it takes all reasonable measures to ensure the accuracy and relevance of the personal data with regard to the purposes for which they are processed."
+          content: "For personal data collected as part of creating the user account and browsing the site, the data controller is: Milaris Partners SAS. As the data controller, https://milaris.partners/ undertakes to respect the legal framework in force. Whenever https://milaris.partners/ traite des données personnelles, elle prend toutes les mesures raisonnables pour s'assurer de l'exactitude et de la pertinence des données personnelles au regard des finalités pour lesquelles elles sont traitées."
         },
         {
           heading: "Finalité de la collecte des données",
-          content: "https://milaris.partners/ may process all or part of the data: To allow navigation on the Site. To prevent and combat computer fraud (spamming, hacking, etc.): equipment used for navigation, IP address, hashed password. To improve navigation on the Site: connection and usage data. To conduct communication campaigns (sms, email): phone number, email address. https://milaris.partners/ does not sell your personal data, which is only used when necessary or for statistical and analytical purposes."
+          content: "https://milaris.partners/ peut traiter tout ou partie des données : Pour permettre la navigation sur le Site. Pour prévenir et lutter contre la fraude informatique (spamming, hacking, etc.) : matériel utilisé pour la navigation, adresse IP, mot de passe haché. Pour améliorer la navigation sur le Site : données de connexion et d'utilisation. Pour mener des campagnes de communication (sms, email) : numéro de téléphone, adresse email. https://milaris.partners/ ne vend pas vos données personnelles, qui sont uniquement utilisées en cas de nécessité ou à des fins statistiques et d'analyses."
         },
         {
-          heading: "Diritti d'accès, de rectification et d'opposition",
-          content: "In accordance with European regulations, users of https://milaris.partners/ have the following rights: Right of access (article 15 GDPR) and rectification (article 16 GDPR), updating, completion of user data. Right to block or delete user data (article 17 GDPR) when they are inaccurate, incomplete, equivocal, outdated, or whose collection, use, communication, or storage is prohibited. Right to withdraw consent at any time (article 13-2c GDPR). Right to limit the processing of user data (article 18 GDPR). Right to object to the processing of user data (article 21 GDPR). Right to the portability of data provided by users when these data are subject to automated processing based on their consent or on a contract (article 20 GDPR). Right to define the fate of user data after their death and to choose to whom https://milaris.partners/ should communicate (or not) their data to a third party previously designated."
+          heading: "Droits d'accès, de rectification et d'opposition",
+          content: "Conformément à la réglementation européenne, les utilisateurs de https://milaris.partners/ disposent des droits suivants : Droit d'accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données des utilisateurs. Droit de verrouillage ou d'effacement des données des utilisateurs (article 17 RGPD) lorsqu'elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l'utilisation, la communication ou la conservation est interdite. Droit de retirer à tout moment un consentement (article 13-2c RGPD). Droit à la limitation du traitement des données des utilisateurs (article 18 RGPD). Droit d'opposition au traitement des données des utilisateurs (article 21 RGPD). Droit à la portabilité des données fournies par les utilisateurs lorsque ces données font l'objet de traitements automatisés fondés sur leur consentement ou sur un contrat (article 20 RGPD). Droit de définir le sort des données des utilisateurs après leur mort et de choisir à qui https://milaris.partners/ devra communiquer (ou non) ses données à un tiers qu'ils auront préalablement désigné."
         },
         {
           heading: "Non-communication des données personnelles",
-          content: "https://milaris.partners/ s'abstient de traiter, héberger ou transférer les Informations collectées sur ses Visiteurs vers un pays situé en dehors de l'Union européenne ou reconnu comme 'inadéquat' par la Commission européenne sans en informer préalablement le client. Pour autant, https://milaris.partners/ reste libre du choix de ses sous-traitants techniques et commerciaux, à condition qu'ils présentent des garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679). https://milaris.partners/ s'engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu'elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l'intégrité ou la confidentialité des Informations du Client est portée à la connaissance de https://milaris.partners/, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs, https://milaris.partners/ ne collecte aucune 'donnée sensible'. Les données personnelles de l'Utilisateur peuvent être traitées par des filiales de https://milaris.partners/ et des sous-traitants (prestataires de services), exclusivement pour réaliser les finalités de la présente politique. Ne s'y présentant pas, les principales personnes susceptibles d'avoir accès aux données des Utilisateurs de https://milaris.partners/ sont principalement les agents de notre service client."
+          content: "https://milaris.partners/ s'abstient de traiter, héberger ou transférer les Informations collectées sur ses Visiteurs vers un pays situé en dehors de l'Union européenne ou reconnu comme 'inadéquat' par la Commission européenne sans en informer préalablement le client. Pour autant, https://milaris.partners/ reste libre du choix de ses sous-traitants techniques et commerciaux, à condition qu'ils présentent des garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679). https://milaris.partners/ s'engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu'elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l'intégrité ou la confidentialité des Informations du Client est portée à la connaissance de https://milaris.partners/, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs, https://milaris.partners/ ne collecte aucune 'donnée sensible'. Les données personnelles de l'Utilisateur peuvent être traitées par des filiales de https://milaris.partners/ et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique. Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d'avoir accès aux données des Utilisateurs de https://milaris.partners/ sont principalement les agents de notre service client."
         },
         {
           heading: "Notification d'incident",
@@ -1941,15 +1952,15 @@ export const translations = {
         },
         {
           heading: "Liens hypertextes 'cookies' et balises ('tags') internet",
-          content: "Le site https://milaris.partners/ contient une série de liens hypertextes vers d'autres sites, mis en place avec l'autorisation de https://milaris.partners/. Toutefois, https://milaris.partners/ ne peut pas vérifier le contenu des sites ainsi visités et, par conséquent, ne prend aucune responsabilité à ce sujet. Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez désactiver ces cookies gratuitement à tout moment depuis les options de désactivation disponibles et rappelées ci-dessous, sachant que cela peut réduire ou empêcher l'accès à tout ou partie des Services proposés par le site."
+          content: "Le site https://milaris.partners/ contient une série de liens hypertextes vers d'autres sites, mis en place avec l'autorisation de https://milaris.partners/. Toutefois, https://milaris.partners/ ne peut pas vérifier le contenu des sites ainsi visités et, par conséquent, ne prend aucune responsabilité à ce sujet. Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez désactiver ces cookies gratuitement à tout moment depuis les options de désactivation disponibles et rappelées ci-dessous, sapant que ci cela peut réduire ou empêcher l'accès à tout ou partie des Services proposés par le site."
         },
         {
           heading: "Balises Internet",
-          content: "https://milaris.partners/ peut occasionnellement utiliser des balises Internet et les déployer par l'intermédiaire d'un partenaire spécialisé en analyse web, qui peut être situé (et donc stocker les informations correspondantes, y compris l'adresse IP de l'Utilisateur) dans un pays étranger. Cette technologie permet à https://milaris.partners/ d'évaluer les réponses des visiteurs au Site et l'efficacité de ses actions (par exemple, le nombre de fois qu'une page est ouverte et les informations consultées) et l'utilisation de ce Site par l'Utilisateur. Le prestataire externe peut collecter des informations sur les visiteurs du Site et d'autres sites web qui utilisent ces balises, compiler des rapports sur l'activité du Site pour https://milaris.partners/, et fournir d'autres services liés à l'utilisation du Site et d'Internet."
+          content: "https://milaris.partners/ peut occasionnellement utiliser des balises Internet et les déployer par l'intermédiaire d'un partenaire spécialisé en analyse web, qui peut être situé (et donc stocker les informations correspondantes, y compris l'adresse IP de l'Utilisateur) dans un pays étranger. Questa tecnologia consente a https://milaris.partners/ di valutare le risposte dei visitatori al Sito e l'efficacia delle sue azioni (ad esempio, il numero di volte in cui una pagina viene aperta e le informazioni visualizzate) e l'utilizzo di questo Sito da parte dell'Utente. Il fornitore esterno può raccogliere informazioni sui visitatori del Sito e di altri siti web che utilizzano questi tag, compilare rapporti sull'attività del Sito per https://milaris.partners/ e fornire altri servizi relativi all'utilizzo del Sito e di Internet."
         },
         {
-          heading: "Loi applicable et juridiction",
-          content: "Tout litige en relation avec l'utilisation du site https://milaris.partners/ est soumis à la loi française. Sauf dans les cas où la loi ne le permet pas, la juridiction exclusive est attribuée aux tribunaux compétents de Paris."
+          heading: "Droit applicable et juridiction",
+          content: "Qualsiasi controversia relativa all'utilizzo del sito https://milaris.partners/ è soggetta alla legge francese. Salvo nei casi in cui la legge non lo consenta, la giurisdizione esclusiva è attribuita ai tribunali competenti di Parigi."
         }
       ]
     }
@@ -2380,6 +2391,11 @@ export const translations = {
             text: "Altre domande sulla cessione d'azienda?",
             button: "Contatta un esperto"
           }
+        },
+        cta: {
+          title: "Pronto a valorizzare la tua cessione?",
+          subtitle: "Che tu abbia un progetto definito o voglia esplorare le opzioni, parliamo della tua cessione in totale riservatezza.",
+          button: "Parla del tuo progetto"
         }
       },
       acquisition: {

@@ -142,14 +142,6 @@ const CessionEntreprise = () => {
               {t("expertisePages.cession.hero.title")}
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl mb-8 text-gray-700"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              {t("expertisePages.cession.hero.subtitle")}
-            </motion.p>
-            <motion.p 
               className="text-lg mb-12 text-gray-600 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -582,28 +574,48 @@ const CessionEntreprise = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* CTA Section */}
+      {/* CTA Final Section */}
+      <section className="py-20 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] relative overflow-hidden">
+        <div className="absolute inset-0">
+          <motion.div
+            className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"
+            animate={{ 
+              scale: [1, 1.2, 1],
+              rotate: [0, 90, 0],
+            }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          />
+        </div>
+        
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mt-16"
+            className="text-center"
           >
-            <p className="text-gray-600 mb-6">
-              {t("expertisePages.cession.faq.cta.text")}
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              {t("expertisePages.cession.cta.title")}
+            </h2>
+            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+              {t("expertisePages.cession.cta.subtitle")}
             </p>
-            <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
-              <motion.button
-                className="bg-[#0001ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 inline-flex items-center gap-3"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {t("expertisePages.cession.faq.cta.button")}
-                <ArrowRight className="w-5 h-5" />
-              </motion.button>
-            </a>
+            <div className="flex justify-center">
+              <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  className="bg-white text-[#0001ff] px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 inline-flex items-center gap-3 shadow-lg"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {t("expertisePages.cession.cta.button")}
+                  <ArrowRight className="w-5 h-5" />
+                </motion.button>
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
