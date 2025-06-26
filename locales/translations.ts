@@ -857,15 +857,15 @@ export const translations = {
       about: "About",
       expertises: "Expertise",
       team: "Team",
-      career: "Career",
+      career: "Careers",
       contact: "Contact us",
-      businessSale: "Business Sale",
-      businessAcquisition: "Business Acquisition",
-      financing: "Financing",
+      businessSale: "Sell-side Advisory",
+      businessAcquisition: "Buy-side Advisory",
+      financing: "Fundraising Advisory",
     },
     hero: {
       subtitle: "",
-      title: "M&A, made simple.",
+      title: "Mastering the art of simplifying M&A",
       description: {
         part1: "Milaris Partners",
         part2: "supports",
@@ -878,7 +878,7 @@ export const translations = {
       },
       cta: {
         scheduleCall: "Schedule a call",
-        whatChanges: "Why Milaris Partners?"
+        whatChanges: "Our approach"
       }
     },
     about: {
@@ -889,8 +889,8 @@ export const translations = {
       },
       content: {
         point1: {
-          title: "Founded by a Franco-Italian duo, Milaris Partners",
-          text: "is a Paris-based firm with a resolutely European outlook. We support VSEs, SMEs and mid-caps in their sale and fundraising operations, expanding their horizons far beyond local buyers."
+          title: "Milaris Partners, a Paris-based advisory firm founded by a Franco-Italian team",
+          text: "with a distinctly European outlook, advises SMEs on sell-side, buy-side, and fundraising transactions, enabling clients to access wider strategic opportunities."
         },
         point2: {
           text1: "Present in",
@@ -898,12 +898,12 @@ export const translations = {
           country2: "Italy",
           text2: "and",
           country3: "Germany",
-          text3: ", we favor an exclusive approach with a limited number of mandates. Rigorous methodology, international network, deal sense: we open up the field of possibilities to maximize value, options and success."
+          text3: ", we approach each mandate selectively, leveraging rigorous methods, our extensive international network, and keen deal intuition—opening strategic pathways to maximize value and secure successful outcomes."
         },
         point3: {
-          text1: "Pioneers in integrating",
+          text1: "As pioneers in applying",
           ai: "artificial intelligence",
-          text2: "in M&A, our proprietary technology optimizes every step of the transaction to maximize your chances of success."
+          text2: "to mergers and acquisitions, we've created proprietary technology that elevates every phase of the transaction, providing our clients with an unmatched strategic advantage to succeed."
         }
       }
     },
@@ -967,7 +967,7 @@ export const translations = {
           description: "Deep expertise in the fast-moving and durable consumer goods sector"
         },
         tmt: {
-          title: "Technology / Media / Telecom",
+          title: "Technology",
           description: "Supporting innovative companies in their digital transformation"
         },
         healthcare: {
@@ -975,7 +975,7 @@ export const translations = {
           description: "Specialized advice for medical and pharmaceutical sector players"
         },
         industry: {
-          title: "Industry",
+          title: "Industrials",
           description: "Strategic support for industrial and manufacturing companies"
         },
         services: {
@@ -990,40 +990,40 @@ export const translations = {
     },
     aiSection: {
       title: {
-        part1: "Our",
-        highlight: "Artificial Intelligence",
-        part2: "at the service of your transactions"
+        part1: "Our proprietary",
+        highlight: "AI-enhanced advisory",
+        part2: "for complex transactions"
       },
-      description: "Proprietary AI technology developed by Milaris Partners. By leveraging millions of market and investor data points, our internal matching engine reveals hidden value in the fragmented small and mid-cap M&A space — where traditional networks fail and reliability is essential.",
+      description: "Proprietary AI technology developed by Milaris Partners. We leverage millions of market and investor data points to uncover hidden value in the fragmented small and mid-cap M&A landscape — where traditional networks fall short and reliability is key. Our internal matching engine enables unparalleled precision and speed in deal sourcing and evaluation.",
       features: {
         identifyBuyers: {
           title: "Identify off-radar buyers",
         },
         qualifyTargets: {
-          title: "Quickly qualify relevant targets",
+          title: "Rapid qualification of relevant targets",
         },
         saveSourcing: {
-          title: "Save weeks on the sourcing phase",
+          title: "Significantly reduce sourcing time",
         },
         objectiveValuation: {
-          title: "Objectify target valuation",
+          title: "Objective target valuation",
         },
         marketKnowledge: {
-          title: "Powerful sector-agnostic market knowledge",
+          title: "Robust, sector-agnostic market expertise",
         }
       },
       stats: {
         data: {
           value: "5M+",
-          label: "Data"
+          label: "Data points analyzed"
         },
         transactions: {
           value: "250k",
-          label: "Transactions"
+          label: "Transactions processed"
         },
         accuracy: {
           value: "99,9%",
-          label: "Accuracy"
+          label: "Model accuracy"
         }
       }
     },
@@ -1060,7 +1060,7 @@ export const translations = {
         highlight: "European",
         part2: "presence"
       },
-      description: "With native experts integrated into our teams and present in major European capitals, we support your cross-border projects close to the ground.",
+      description: "With native experts embedded in our teams and offices in key European hubs, we support your cross-border transactions with on-the-ground insight.",
       stats: {
         transactions: {
           value: "+150",
@@ -1118,61 +1118,60 @@ export const translations = {
     expertisePages: {
       cession: {
         hero: {
-          badge: "Business Sale Expertise",
-          title: "Selling your business is a major step.",
-          subtitle: "We make it a success.",
-          description: "At Milaris Partners, we support business leaders in the total or partial sale of their company, structuring a strategic, confidential and optimized approach.",
+          badge: "Sell-side Advisory",
+          title: "Selling your company is a defining milestone",
+          description: "Milaris Partners supports business owners throughout partial or total sales, ensuring strategic, confidential, value-driven outcomes aligned to long-term goals.",
           cta: "Let's discuss your project"
         },
         services: {
-          title: "What we do for you",
-          subtitle: "Our mission: maximize your company's value and secure your succession",
+          title: "What we do for you?",
+          subtitle: "Our mission: maximizing your company’s value for smooth succession",
           items: {
             evaluation: {
-              title: "Valuation and positioning",
-              description: "Analysis of your company, identification of value drivers and optimal strategic positioning in the market"
+              title: "Valuation & Strategic positioning",
+              description: "We analyze your business, pinpoint key value drivers, and position it clearly to attract real buyers"
             },
             market: {
-              title: "Structured go-to-market",
-              description: "Organization of a competitive process with our network of strategic and financial buyers"
+              title: "Market engagement",
+              description: "We run targeted competitive processes using our own database and network of strategic and financial investors"
             },
             support: {
-              title: "Support through closing",
-              description: "Negotiation, legal and tax coordination, securing the transaction through to signing"
+              title: "Transaction execution",
+              description: "We lead negotiations, due diligence, and deal documentation, aligning legal, financial, and tax terms"
             }
           }
         },
         timeline: {
-          title: "Typical sale process",
-          subtitle: "A structured approach, on average over 6 to 9 months",
+          title: "Transaction timeline",
+          subtitle: "Our engagements typically span 6 to 9 months",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
           },
           steps: {
             strategic: {
-              title: "Strategic analysis",
-              description: "Understanding your objectives, company valuation, identification of value points",
+              title: "Strategic review",
+              description: "Set clear objectives, analyze your business, identify value-boosting strategies",
               duration: "2–4 weeks"
             },
             preparation: {
               title: "Preparation",
-              description: "Creation of presentation documents (teaser, info memo), setting up a data room",
+              description: "Craft marketing materials, financial review, and efficiently prepare data room",
               duration: "4–6 weeks"
             },
             targeting: {
-              title: "Buyer targeting",
-              description: "Identification and approach of strategic and financial buyers suited to your profile",
+              title: "Buyer outreach",
+              description: "Identify and initiate contact with qualified strategic and financial investors",
               duration: "6–8 weeks"
             },
             discussions: {
-              title: "Managing discussions",
-              description: "Managing exchanges, visits, Q&A, coordination of competitive offers",
+              title: "Due Diligence & Offers",
+              description: "Coordinate due diligence, management meetings, Q&A sessions, and deal negotiation",
               duration: "8–12 weeks"
             },
             closing: {
-              title: "Negotiation & Closing",
-              description: "Assistance in negotiations, coordination with legal advisors through to signing",
+              title: "Negotiations & Closing",
+              description: "Finalize deal terms, structure legal documentation, and execute the transaction",
               duration: "4–8 weeks"
             }
           }
@@ -1196,82 +1195,82 @@ export const translations = {
           }
         },
         whyMilaris: {
-          title: "Why Milaris Partners?",
-          subtitle: "Our expertise at the service of your success",
+          title: "Why choose Milaris Partners?",
+          subtitle: "Our expertise to make high-impact M&A solutions",
           items: {
             process: {
-              title: "Structured competitive process",
-              description: "We organize optimal competition to maximize your company's valuation"
+              title: "Structured and competitive sale process",
+              description: "We run structured, rigorous sale processes to build competition among multiple qualified buyers. Clear milestones and disciplined execution ensure optimal valuation and terms, aligning transaction outcomes with your strategic objectives."
             },
             network: {
-              title: "AI-enhanced buyer network",
-              description: "Our AI technology allows us to identify and approach a network of buyers that is both broader and more relevant, targeting those whose acquisition rationale is truly aligned — generating more offers while preserving confidentiality."
+              title: "AI-enhanced sourcing technology",
+              description: "Our proprietary AI-driven sourcing platform identifies and prioritizes qualified strategic and financial buyers beyond conventional networks, ensuring confidentiality and precise targeting to enhance transaction value and strategic fit."
             },
             confidentiality: {
-              title: "Confidentiality & alignment",
-              description: "Tailor-made, confidential and independent approach, with your success as our only objective"
+              title: "Independent advisory model",
+              description: "As an independent firm, we offer tailored, conflict-free advisory. Combining deep M&A expertise with analytical rigor, we provide hands-on guidance and remain directly involved throughout your transaction."
             }
           }
         },
         acquirers: {
           title: "Our buyer networks",
-          subtitle: "Privileged access to both types of buyers to optimize your sale",
+          subtitle: "We maintain close relationships with both strategic acquirers and financial investors",
           strategic: {
             title: "Strategic Buyers",
-            description: "Industrials and companies in your sector looking to strengthen, diversify or achieve synergies",
+            description: "Industrial players and sector companies seeking growth, diversification, or synergy",
             benefits: {
               synergies: {
-                title: "Valuation based on synergies",
-                subtitle: "Value maximization through integration"
+                title: "Valuation capturing synergies",
+                subtitle: "Maximizing value through integration"
               },
               integration: {
-                title: "Integration into an existing group",
-                subtitle: "Continuity and assured development"
+                title: "Integration into established groups",
+                subtitle: "Ensuring continuity and growth"
               },
               continuity: {
-                title: "Operational continuity",
-                subtitle: "Preservation of teams and know-how"
+                title: "Operational continuity assured",
+                subtitle: "Preserving teams and expertise"
               }
             }
           },
           financial: {
             title: "Financial Investors",
-            description: "Private equity funds and family offices investing to develop the company",
+            description: "Private equity funds and family offices seeking investments for business growth",
             benefits: {
               growth: {
-                title: "Focus on growth",
-                subtitle: "Resources to accelerate development"
+                title: "Growth-oriented strategy",
+                subtitle: "Capital resources to drive expansion"
               },
               management: {
-                title: "Management retention",
-                subtitle: "Continuity of operational leadership"
+                title: "Retention of management teams",
+                subtitle: "Preservation of operational leadership"
               },
               exit: {
-                title: "Exit perspective",
-                subtitle: "3-7 year investment horizon"
+                title: "Clear exit strategy",
+                subtitle: "Investment horizon: 3–7 years"
               }
             }
           }
         },
         faq: {
-          title: "Frequently asked questions",
-          subtitle: "Let's democratize business sales together",
+          title: "Frequently Asked Questions",
+          subtitle: "Let’s democratize the M&A process",
           questions: {
             q1: {
-              question: "How long does a business sale take?",
-              answer: "Between 6 and 9 months on average for a complete transaction, depending on the company's complexity, the profile of targeted buyers and any regulatory issues."
+              question: "How long does the sale process typically take?",
+              answer: "6 to 9 months, depending on company size, complexity, and market conditions."
             },
             q2: {
-              question: "What is the difference between strategic and financial buyers?",
-              answer: "Strategic buyers are industrials seeking synergies, while financial investors (private equity funds) aim for development and eventual resale."
+              question: "How is confidentiality managed throughout the process?",
+              answer: "All outreach is anonymous until NDAs are signed. Only pre-qualified buyers are granted access to sensitive materials."
             },
             q3: {
-              question: "How do you ensure confidentiality?",
-              answer: "Each exchange is carried out under a confidentiality agreement. We use NDAs, project codes, secure data rooms and a progressive approach to buyers to maintain confidentiality throughout the process."
+              question: "What are your fees?",
+              answer: "Our compensation is primarily success-based and aligned with transaction completion. Details are discussed during the initial consultation."
             },
             q4: {
-              question: "What is the cost of your support?",
-              answer: "Our fees are mainly based on the success of the transaction, with a percentage of the transaction value. Contact us for a personalized proposal."
+              question: "What is the difference between a strategic and financial buyer?",
+              answer: "Strategic buyers seek operational synergies; financial buyers aim to generate a return on investment. Each brings different advantages."
             }
           },
           cta: {
@@ -1282,32 +1281,32 @@ export const translations = {
       },
       acquisition: {
         hero: {
-          badge: "Acquisition Expertise",
-          title: "Growing through external growth: methodical, targeted, effective.",
-          description: "Milaris Partners advises managers, industrial groups and investors in their external growth operations: acquisition of a competitor, supplier, complementary player or diversification target.",
+          badge: "Buy-side Advisory",
+          title: "Unlocking sustainable business growth through targeted acquisitions",
+          description: "Milaris Partners advises companies, entrepreneurs, and investors to develop and execute tailored acquisition strategies aligned with their growth objectives.",
           cta: "Let's explore your opportunities"
         },
         services: {
-          title: "What we do for you",
-          subtitle: "Our mission: identify the best opportunities and secure your acquisitions",
+          title: "What we do for you?",
+          subtitle: "Our mission: identify strategic opportunities, deliver precise deals",
           items: {
             strategy: {
-              title: "Acquisition strategy definition",
-              description: "Target sectors, geography, size, synergies sought according to your growth objectives"
+              title: "Acquisition strategy development",
+              description: "Target sectors, geographies, company size, and synergies aligned with your growth objectives"
             },
             identification: {
-              title: "Target identification and qualification",
-              description: "Via our network, proprietary databases and AI tool for optimal sourcing"
+              title: "Target sourcing & Qualification",
+              description: "VWe use proprietary data, trusted networks, and AI tools to source qualified, strategic targets"
             },
             structuring: {
-              title: "Structuring and negotiation",
-              description: "Audit coordination, deal structuring (LBO, equity stake), negotiation of terms"
+              title: "Deal execution & Negotiation",
+              description: "We manage due diligence, deal structuring, and negotiations — securing optimal terms with minimal risk."
             }
           }
         },
         timeline: {
-          title: "Typical acquisition process",
-          subtitle: "A structured approach, from 3 to 12 months depending on context",
+          title: "Transaction timeline",
+          subtitle: "Our engagements typically span 3 to 12 months",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
@@ -1315,22 +1314,22 @@ export const translations = {
           steps: {
             setup: {
               title: "Strategy definition",
-              description: "Detailed criteria, geographic zones, budget and structure of the proposed deal",
+              description: "Define clear acquisition criteria—sector, geography, size, and structure",
               duration: "1–2 weeks"
             },
             identification: {
               title: "Target identification",
-              description: "Sourcing via our AI tool, qualification and anonymous approach of priority targets",
+              description: "Source targets via proprietary AI, sector insights, and discreet outreach",
               duration: "4–8 weeks"
             },
             analysis: {
               title: "Analysis and valuation",
-              description: "In-depth evaluation, integration business plan and optimal price determination",
+              description: "Assess targets with diligence, integration planning, and strategic valuation",
               duration: "3–6 weeks"
             },
             nego: {
               title: "Negotiation & Closing",
-              description: "Audit management, legal coordination of structures and support for negotiations through to signing.",
+              description: "Audit oversight, legal structuring, and negotiation support through signing",
               duration: "4–8 weeks"
             }
           }
@@ -1338,11 +1337,11 @@ export const translations = {
         stats: {
           targets: {
             value: "500+",
-            label: "Targets analyzed per year"
+            label: "Targets reviewed per year"
           },
           speed: {
             value: "2x",
-            label: "Faster thanks to AI"
+            label: "Faster sourcing powered by AI"
           },
           offmarket: {
             value: "85%",
@@ -1355,141 +1354,141 @@ export const translations = {
         },
         expertise: {
           title: "Our expertise",
-          subtitle: "Unique competitive advantages at the service of your acquisitions",
+          subtitle: "Our expertise to make high-impact M&A solutions",
           items: {
             ai: {
-              title: "Advanced AI sourcing tool",
-              description: "Our proprietary technology identifies off-market opportunities across all sectors, invisible in the traditional market"
+              title: "AI-powered sourcing",
+              description: "Our AI-driven platform uncovers off-market targets with speed and precision, blending algorithmic sourcing with expert validation for smarter deal origination"
             },
             franco: {
               title: "Franco-Italian expertise",
-              description: "Our binational team offers privileged access to two key markets — enriched by a German presence to cover the continent's key economic triangle."
+              description: "Our Franco-Italian team, with German reach, bridges mid-cap firms and investors—enhancing cross-border alignment, deal flow, and successful outcomes"
             },
             exclusive: {
               title: "Exclusive opportunities",
-              description: "Ability to generate invisible opportunities, thanks to our network and direct approach"
+              description: "We unlock proprietary deal flow through networks, relationships, and direct outreach—delivering exclusive, high-conviction opportunities with less competition"
             }
           }
         },
         types: {
           title: "Types of acquisitions",
-          subtitle: "Expertise in all structures and business sectors",
+          subtitle: "Expertise across all transaction structures and industry sectors",
           strategic: {
             title: "Strategic Acquisitions",
-            description: "Acquisition of competitors, suppliers or complementary players to strengthen your positioning",
+            description: "Acquisition of competitors, suppliers, or complementary businesses to enhance your strategic positioning",
             items: {
               consolidation: {
                 title: "Sector consolidation",
-                subtitle: "Strengthen your leadership position"
+                subtitle: "Reinforce your leadership within the industry"
               },
               vertical: {
                 title: "Vertical integration",
-                subtitle: "Secure your value chain"
+                subtitle: "Strengthen control across your value chain"
               },
               geographic: {
                 title: "Geographic expansion",
-                subtitle: "Conquer new markets"
+                subtitle: "Enter and scale in new markets"
               }
             }
           },
           complex: {
             title: "Complex Structures",
-            description: "LBO, carve-out, build-up according to your financial constraints and development objectives",
+            description: "LBO, carve-out, or build-up transactions tailored to your financial constraints and strategic goals",
             items: {
               lbo: {
                 title: "LBO and leveraged structures",
-                subtitle: "Optimize your financial structure"
+                subtitle: "Optimize capital structure and return on equity"
               },
               carveout: {
                 title: "Division carve-outs",
-                subtitle: "Extract hidden value"
+                subtitle: "Unlock hidden value through targeted divestitures"
               },
               buildup: {
                 title: "Build-up strategies",
-                subtitle: "Create a leader through successive acquisitions"
+                subtitle: "Drive scale and leadership via successive acquisitions"
               }
             }
           }
         },
         faq: {
-          title: "Frequently asked questions",
-          subtitle: "Everything you need to know about business acquisitions",
+          title: "Frequently Asked Questions",
+          subtitle: "Everything you need to know about the buy-side M&A process",
           questions: {
             q1: {
               question: "How long does a business acquisition take?",
-              answer: "Between 3 and 12 months depending on context: quick opportunistic acquisition or structured process with multiple targets. Our methodical approach optimizes timelines while securing each step."
+              answer: "3 to 12 months, depending on the context — from opportunistic one-off deals to competitive, multi-target processes. Our structured approach ensures both efficiency and deal security."
             },
             q2: {
               question: "How do you identify acquisition targets?",
-              answer: "We combine three approaches: our direct network in your target sectors, our continuously enriched proprietary databases, and our AI tool that identifies otherwise invisible off-market opportunities."
+              answer: "We leverage a proprietary sourcing mix: trusted sector networks, enriched internal databases, and an AI tool that reveals off-market and hard-to-access opportunities."
             },
             q3: {
-              question: "What types of structures do you offer?",
-              answer: "We structure all types of deals: simple acquisition, leveraged LBO, minority or majority stake, division carve-outs, build-up strategies. Each structure is optimized according to your constraints."
+              question: "What types of deal structures do you offer?",
+              answer: "We structure a full range of transactions: full acquisitions, LBOs, minority/majority stakes, carve-outs, and buy-and-build strategies — tailored to your strategic and financial constraints."
             },
             q4: {
-              question: "Do you work on international acquisitions?",
-              answer: "Yes, our Franco-Italian DNA allows us to manage cross-border acquisitions, particularly between France and Italy. Thanks to our European network — notably in Germany — we also facilitate operations in other countries."
+              question: "Do you manage international transactions?",
+              answer: "Yes. Our Franco-Italian DNA gives us strong cross-border execution capabilities, especially between France and Italy. Our broader European network also supports transactions across other key markets."
             }
           }
         },
         cta: {
           title: "Ready to accelerate your growth?",
-          subtitle: "Whether you have a target in sight or want to explore the market, let's discuss your acquisition opportunities in complete confidentiality.",
+          subtitle: "Whether you're targeting a specific company or simply exploring strategic options, let’s confidentially assess your acquisition opportunities.",
           button: "Let's explore your opportunities"
         }
       },
       financement: {
         hero: {
-          badge: "Financing Expertise",
-          title: "Giving means to your ambitions: capital, debt, structuring.",
-          description: "We support companies in their search for financing, whether to support growth, refinance debt, invest in a project or structure a buyout.",
+          badge: "Financing Advisory",
+          title: "Empowering your strategic vision through tailored capital solutions",
+          description: "We advise on growth capital, debt, and M&A financing—structuring optimal solutions for acquisitions, buyouts, or refinancing to meet your objectives.",
           cta: "Let's structure your financing"
         },
         services: {
-          title: "Our expertise",
-          subtitle: "Complete financing solutions adapted to each stage of your development",
+          title: "What we do for you?",
+          subtitle: "End-to-end execution capabilities across all financing stages, from preparation to closing",
           items: {
             planning: {
-              title: "Preparation and structuring",
-              description: "Business plan, financial modeling, need structuring and demand optimization"
+              title: "Preparation & Structuring",
+              description: "We craft investor-ready materials: plans, models, forecasts, and capital structures for your deal"
             },
             search: {
-              title: "Funder search",
-              description: "Access to our network of banks, debt funds, capital investors according to your needs"
+              title: "Targeted funder origination",
+              description: "We engage select lenders and investors, matching your deal with the right capital providers"
             },
             negotiation: {
-              title: "Terms negotiation",
-              description: "Optimization of terms: rates, covenants, guarantees, dilution to preserve your interests"
+              title: "Negotiation",
+              description: "We negotiate pricing, terms, and covenants to secure flexible financing aligned with your strategy"
             }
           }
         },
         timeline: {
-          title: "Typical financing process",
-          subtitle: "A structured approach, from 2 to 6 months depending on the type of financing",
+          title: "Transaction timeline",
+          subtitle: "Our engagements typically span 2 to 6 months",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
           },
           steps: {
             preparation: {
-              title: "File preparation",
-              description: "Business plan, financial modeling, pitch preparation and key documents",
+              title: "Investment materials",
+              description: "Model, business plan & investor deck to frame the equity story",
               duration: "2–3 weeks"
             },
             identification: {
-              title: "Funder identification",
-              description: "Selection of relevant partners according to your profile and specific needs",
+              title: "Capital sourcing",
+              description: "Targeted outreach to relevant lenders and investors",
               duration: "1–2 weeks"
             },
             pitch: {
-              title: "Pitch and negotiation",
-              description: "Investor presentations, Q&A management, term sheet negotiations",
+              title: "Marketing & Terms",
+              description: "Investor meetings, Q&A, and term sheet negotiations",
               duration: "4–8 weeks"
             },
             closing: {
-              title: "Documentation & Closing",
-              description: "Due diligence, finalization of legal documentation and fund release",
+              title: "Due Diligence & Closing",
+              description: "DDue diligence, legal docs, and fund disbursement",
               duration: "3–6 weeks"
             }
           }
@@ -1501,59 +1500,59 @@ export const translations = {
           },
           investors: {
             value: "250k+",
-            label: "Active investors"
+            label: "Active investors in our network"
           },
           minimum: {
             value: "€2M+",
-            label: "Minimum intervention threshold"
+            label: "Minimum ticket size"
           }
         },
         whyMilaris: {
-          title: "Why Milaris Partners?",
-          subtitle: "Our expertise at the service of your optimal financing",
+          title: "Why choose Milaris Partners?",
+          subtitle: "Our expertise to make high-impact M&A solutions",
           items: {
             access: {
               title: "Direct access to decision-makers",
-              description: "Privileged network of investors and bankers to accelerate your financing discussions"
+              description: "We connect you to top investors and lenders for faster access to senior decision-makers and deals"
             },
             expertise: {
               title: "Negotiation expertise",
-              description: "Experience in negotiating key terms: dilution, leverage, covenants to optimize your conditions"
+              description: "We structure complex financing, optimizing key terms to align with strategy and preserve flexibility"
             },
             optimization: {
-              title: "Cost of capital optimization",
-              description: "Ability to structure flexible solutions and optimize your financing cost"
+              title: "Capital structure & Cost optimization",
+              description: "We design tailored capital solutions that balance cost, flexibility, and long-term scalability"
             }
           }
         },
         types: {
           title: "Types of financing",
-          subtitle: "Solutions adapted to your specific needs and constraints",
+          subtitle: "Solutions tailored to your needs and specific constraints",
           equity: {
             title: "Equity fundraising",
             description: "To finance your growth while maintaining flexibility",
             items: {
               vc: {
-                title: "Venture Capital (VC) funds",
+                title: "Venture Capital funds",
                 subtitle: "For hyper-growth startups"
               },
               pe: {
-                title: "Private Equity (PE) funds",
+                title: "Private Equity funds",
                 subtitle: "For mature companies"
               },
               family: {
                 title: "Family Offices and private investors",
-                subtitle: "For long-term partnership"
+                subtitle: "For long-term partnerships"
               },
               angels: {
                 title: "Business Angels and investment clubs",
-                subtitle: "For seed phases"
+                subtitle: "For seed/early-stage funding"
               }
             }
           },
           debt: {
             title: "Debt financing",
-            description: "Debt solutions to preserve your capital and optimize your structure",
+            description: "To preserve your capital and optimize your structure",
             items: {
               bank: {
                 title: "Traditional bank debt",
@@ -1565,34 +1564,34 @@ export const translations = {
               },
               bonds: {
                 title: "Bonds and bond financing",
-                subtitle: "For significant needs"
+                subtitle: "For significant funding needs"
               },
               lease: {
                 title: "Leasing and specialized solutions",
-                subtitle: "Specific asset financing"
+                subtitle: "Asset-specific financing"
               }
             }
           }
         },
         faq: {
-          title: "Frequently asked questions",
+          title: "Frequently Asked Questions",
           subtitle: "Everything you need to know about corporate financing",
           questions: {
             q1: {
-              question: "How long does a fundraising take?",
-              answer: "Between 2 and 6 months on average, depending on the type of financing sought and the initial level of preparation. Debt financing is generally faster than equity fundraising."
+              question: "How long does a financing process take?",
+              answer: "2 to 6 months, depending on the type of financing and how prepared you are at the outset. Debt financing usually closes faster than equity fundraising."
             },
             q2: {
-              question: "What is the difference between debt and equity?",
-              answer: "Equity involves capital dilution in exchange for equity funds, while debt is a loan to be repaid with interest. Equity offers more flexibility but dilutes, debt preserves capital but requires regular repayments."
+              question: "What’s the difference between debt and equity?",
+              answer: "Equity financing means giving up a stake in your company in exchange for capital, while debt is a loan that must be repaid with interest. Equity offers greater flexibility but dilutes ownership; debt preserves control but involves regular repayments."
             },
             q3: {
-              question: "How to optimize my valuation?",
-              answer: "Optimal valuation results from rigorous preparation: solid business plan, demonstrated growth metrics, well-organized competitive process and market-adapted timing. Our expertise maximizes each lever."
+              question: "How can I maximize my valuation?",
+              answer: "A strong valuation comes from thorough preparation: a solid business plan, proven growth metrics, a well-managed competitive process, and strategic timing. Our expertise helps you leverage each of these factors."
             },
             q4: {
-              question: "What amounts can you raise?",
-              answer: "We support fundraising from €2M minimum to over €100M, in both equity and debt. Our network covers all ticket sizes, from business angels to major European institutional funds."
+              question: "What funding amounts can you raise?",
+              answer: "We assist with fundraisings from €2M up to over €100M, across both equity and debt. Our network includes investors of all sizes, from business angels to leading European institutional funds."
             }
           }
         },
@@ -1607,69 +1606,69 @@ export const translations = {
       hero: {
           title1: "Our",
           title2: "team",
-          subtitle: "Passionate experts dedicated to creating value and supporting companies in their strategic projects"
+          subtitle: "Dedicated M&A professionals committed to unlocking shareholder value and guiding companies through critical strategic transactions."
       },
       focus: {
           title: "Areas of expertise"
       },
       paul: {
           focus1: {
-              title: "Regional support",
-              description: "Supporting local companies in the region in their primary and secondary operations in various fields according to market trends"
+              title: "Regional advisory",
+              description: "Tailored support for local companies in both primary and secondary transactions across diverse sectors, aligned with evolving market dynamics"
           },
           focus2: {
-              title: "International expansion",
-              description: "Sale and search for partners on a global scale for French companies"
+              title: "Global strategic outreach",
+              description: "Execution of sale processes and partner searches worldwide for French corporates seeking international expansion"
           },
           focus3: {
-              title: "Buy-Side Mandates",
-              description: "Supporting French investment funds in their buy-side mandates abroad to take advantage of untapped opportunities in Italy and Germany"
+              title: "Cross-border buy-side advisory",
+              description: "Support for French investment funds in executing cross-border buy-side mandates, with a focus on proprietary opportunities in Italy and Germany"
           }
       },
       matteo: {
           focus1: {
-              title: "Multi-sector expertise",
-              description: "Support for Italian entrepreneurs in their primary and secondary operations, with recognized expertise in several sectors, particularly industrial and TMT."
+              title: "Cross-sector capabilities",
+              description: "Extensive experience supporting Italian entrepreneurs in both primary and secondary transactions, with a strong track record across multiple sectors, notably industrials and TMT"
           },
           focus2: {
-              title: "European partnerships",
-              description: "Sale and search for strategic partners or financial buyers on a European scale for Italian companies."
+              title: "Pan-European strategic reach",
+              description: "Execution of sale processes and strategic partner or financial sponsor searches across Europe on behalf of Italian corporates"
           },
           focus3: {
-              title: "Origination Italy",
-              description: "Identification of off-radar opportunities in Italy for our buy-side mandates thanks to our local presence."
+              title: "Italian deal origination",
+              description: "Proprietary access to off-market opportunities in Italy for buy-side mandates, enabled by deep local presence and network"
           }
       },
       cta: {
           title: "Ready to meet our team?",
-          subtitle: "Let's discuss your project and see how we can support your success",
+          subtitle: "Let’s explore your project together and identify how we can contribute to its success",
           button: "Schedule a call"
       }
     },
     carrieres: {
       hero: {
-        badge: "Join us",
+        badge: "Work with us",
         title1: "Join our",
-        title2: "innovative team",
-        description: "Our success is built on a talented team of professionals whose diverse experiences and wealth of ideas fuel our ambition for excellence and innovation."
+        title2: " team",
+        description: "A diverse and skilled team lies at the core of our success, fueling our ambition through experience, insight, and a drive for innovation."
       },
       workWithUs: {
         title1: "Why join",
         title2: "us",
-        subtitle: "Discover what makes Milaris Partners a unique work environment"
+        subtitle: "Explore Milaris Partners: where talent, ambition, and culture align"
       },
       values: {
         value1: {
-          title: "International exposure",
-          description: "Join a team present in several countries, and take advantage of concrete opportunities for collaboration on international projects—ideal for broadening your professional horizons."
+          title: "Global footprint",
+          description: "Join a cross-border team operating in multiple jurisdictions, with real opportunities to engage on international mandates and deepen your strategic and cultural perspective"
         },
         value2: {
           title: "Technology-driven solutions",
-          description: "At Milaris Partners, we leverage technology for efficiency. We deploy advanced tools and cutting-edge AI systems to optimize our processes."
+          description: "We leverage advanced technologies and AI to streamline processes, boost analytical rigor, and ensure efficient, high-impact execution across all areas of our work"
         },
         value3: {
-          title: "Young and dynamic environment",
-          description: "Thrive in a stimulating environment open to new ideas and initiatives. We value curiosity, continuous learning, and team spirit."
+          title: "Dynamic environment",
+          description: "Thrive in a fast-paced, idea-driven setting. We value intellectual curiosity, collaboration, and continuous learning to help you grow and contribute meaningful"
         }
       },
       benefits: {
@@ -1683,17 +1682,17 @@ export const translations = {
       opportunities: {
         title1: "Current",
         title2: "opportunities",
-        description: "We are always looking for ambitious profiles, passionate about excellence and innovation. If you aspire to make a real impact, learn every day, and grow in a supportive environment, let's talk."
+        description: "We continuously seek driven individuals who embody a commitment to excellence and a passion for innovation. If you aim to create meaningful impact, thrive on daily learning, and value a collaborative environment, let’s connect."
       },
       howToApply: {
         title1: "How to",
         title2: "apply",
-        description: "Send your CV and a cover letter presenting your background, your aspirations, and what attracts you to Milaris Partners to the following address:"
+        description: "Please send us your CV along with a cover letter outlining your background, aspirations, and motivation for joining Milaris Partners"
       },
       cta: {
         title1: "Ready to shape the future with",
         title2: "us",
-        subtitle: "Join a team where your talent will be valued and where you can contribute to major international projects.",
+        subtitle: "Join a team that values your talent and offers the opportunity to contribute to high-impact international transactions.",
         button: "Apply now"
       }
     },
