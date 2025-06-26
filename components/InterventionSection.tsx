@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { TrendingUp, Users, Wallet, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { useTranslation } from "@/hooks/useTranslation";
+import { translations } from '@/locales/translations';
 
 const InterventionSection = () => {
   const { t, language } = useTranslation();
@@ -48,6 +49,14 @@ const InterventionSection = () => {
       ],
       color: "from-[#0001ff] to-[#3E8BFF]"
     }
+  ];
+
+  const cards = translations[language].interventionSection.cards;
+
+  const iconColorList = [
+    { icon: TrendingUp, color: "from-[#0001ff] to-[#3E8BFF]" },
+    { icon: Users, color: "from-[#3E8BFF] to-[#0001ff]" },
+    { icon: Wallet, color: "from-[#0001ff] to-[#3E8BFF]" },
   ];
 
   return (
@@ -98,62 +107,58 @@ const InterventionSection = () => {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="heading-2 lg:text-6xl font-bold text-white mb-4 sm:mb-6 px-4 sm:px-0">
-              Notre périmètre{" "}
+              {t('interventionSection.title.part1')} {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
-                d'intervention
+                {t('interventionSection.title.highlight')}
               </span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-white/70 max-w-2xl mx-auto px-4 sm:px-0">
-              Des solutions sur-mesure pour les dirigeants d'entreprises de 5 à 150M€ de chiffre d'affaires
+              {t('interventionSection.subtitle')}
             </p>
           </motion.div>
 
           {/* Services Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {services.map((service, index) => {
-              const Icon = service.icon;
+            {cards.map((card: any, idx: number) => {
+              const { icon: Icon, color } = iconColorList[idx];
               return (
                 <motion.div
-                  key={index}
+                  key={idx}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  transition={{ duration: 0.6, delay: idx * 0.2 }}
                   viewport={{ once: true }}
                   className="group relative"
                 >
                   <div className="h-full bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 hover:bg-white/15 transition-all duration-300 hover:transform hover:-translate-y-2">
                     {/* Icon */}
-                    <div className={`w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br ${service.color} rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br ${color} rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                     </div>
-                    
                     {/* Title */}
                     <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">
-                      {service.title}
+                      {card.title}
                     </h3>
-                    
                     {/* Description */}
                     <p className="text-sm sm:text-base text-white/70 mb-4 sm:mb-6">
-                      {service.description}
+                      {card.description}
                     </p>
-                    
                     {/* Features */}
                     <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-                      {service.features.map((feature, i) => (
+                      {card.features.map((feature: string, i: number) => (
                         <div key={i} className="flex items-center gap-3">
                           <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#3E8BFF] flex-shrink-0" />
                           <span className="text-white/80 text-xs sm:text-sm">{feature}</span>
                         </div>
                       ))}
                     </div>
-                    
                     {/* CTA */}
-                    <Link href={service.link}>
+                    <Link href={card.link}>
                       <motion.div
                         className="inline-flex items-center gap-2 text-white font-medium hover:gap-4 transition-all duration-300"
                         whileHover={{ x: 5 }}
                       >
-                        <span>En savoir plus</span>
+                        <span>{card.cta}</span>
                         <span className="text-[#3E8BFF]">→</span>
                       </motion.div>
                     </Link>
@@ -172,7 +177,7 @@ const InterventionSection = () => {
             className="text-center mt-12 sm:mt-16"
           >
             <p className="text-sm sm:text-base text-white/60 mb-4 sm:mb-6 px-4 sm:px-0">
-              Une approche exclusive avec un nombre limité de mandats pour garantir un accompagnement premium
+              {t('interventionSection.bottomCtaText')}
             </p>
             <a 
               href={calendlyLink}
@@ -184,7 +189,7 @@ const InterventionSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Discuter de votre projet
+                {t('interventionSection.bottomCtaButton')}
                 <span className="text-xl">→</span>
               </motion.button>
             </a>

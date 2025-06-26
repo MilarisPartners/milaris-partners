@@ -21,14 +21,14 @@ const Equipe = () => {
   const teamStructuredData = [
     generateStructuredData.person(
       "Paul Poulain",
-      "Managing Director France",
+      t("equipe.managingDirectorFrance"),
       "paul@milaris.partners",
       "https://www.linkedin.com/in/paul-poulain/",
       language as 'fr' | 'it' | 'en'
     ),
     generateStructuredData.person(
       "Matteo Orlandi Mango",
-      "Managing Director Italie",
+      t("equipe.managingDirectorItalie"),
       "matteo@milaris.partners",
       "https://www.linkedin.com/in/matteoorlandimango/",
       language as 'fr' | 'it' | 'en'
@@ -38,7 +38,7 @@ const Equipe = () => {
   const team = [
     {
       name: "Paul Poulain",
-      role: "Managing Director France",
+      role: t("equipe.managingDirectorFrance"),
       email: "paul@milaris.partners",
       linkedin: "https://www.linkedin.com/in/paul-poulain/",
       image: "/team/paul-optimized.jpg",
@@ -62,7 +62,7 @@ const Equipe = () => {
     },
     {
       name: "Matteo Orlandi Mango",
-      role: "Managing Director Italie",
+      role: t("equipe.managingDirectorItalie"),
       email: "matteo@milaris.partners",
       linkedin: "https://www.linkedin.com/in/matteoorlandimango/",
       image: "/team/matteo-optimized.jpg",
@@ -182,7 +182,7 @@ const Equipe = () => {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-white/20 px-4 py-2 hover:bg-white/30 transition-colors"
+                      className="inline-flex items-center justify-center bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition-colors"
                     >
                       <span className="text-sm">LinkedIn</span>
                     </a>

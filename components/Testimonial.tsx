@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Testimonial = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 lg:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container-custom">
@@ -33,9 +35,7 @@ const Testimonial = () => {
             transition={{ duration: 1, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            "Milaris Partners nous a accompagnés dans la cession de notre entreprise avec un professionnalisme 
-            remarquable. Leur approche personnalisée et leur connaissance approfondie du marché nous ont 
-            permis de réaliser une transaction dans des conditions optimales."
+            {`"${t('testimonial.quote')}"`}
           </motion.blockquote>
           
           {/* Séparateur */}
@@ -56,8 +56,8 @@ const Testimonial = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg font-bold text-gray-800 mb-1">Franck JOHANNY</p>
-            <p className="text-sm text-gray-600 uppercase tracking-wider">Président-Directeur Général</p>
+            <p className="text-lg font-bold text-gray-800 mb-1">{t('testimonial.name')}</p>
+            <p className="text-sm text-gray-600 uppercase tracking-wider">{t('testimonial.title')}</p>
           </motion.footer>
         </motion.div>
       </div>

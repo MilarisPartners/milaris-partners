@@ -431,7 +431,7 @@ export const translations = {
         hero: {
           badge: "Expertise Acquisition",
           title: "Croître par croissance externe : méthodique, ciblé, efficace.",
-          description: "Milaris Partners conseille des dirigeants, groupes industriels et investisseurs dans leurs opérations de croissance externe : acquisition d'un concurrent, d'un fournisseur, d'un acteur complémentaire ou d'une cible de diversification.",
+          description: "Milaris Partners conseille des dirigeants, groupes industriels et investisseurs dans leurs opérations de croissance externe: acquisition d'un concurrent, d'un fournisseur, d'un acteur complémentaire ou d'une cible de diversification.",
           cta: "Explorons vos opportunités"
         },
         services: {
@@ -564,32 +564,32 @@ export const translations = {
           questions: {
             q1: {
               question: "Combien de temps prend une acquisition d'entreprise ?",
-              answer: "Entre 3 et 12 mois selon le contexte : acquisition opportuniste rapide ou processus structuré avec plusieurs cibles. Notre approche méthodique optimise les délais tout en sécurisant chaque étape."
+              answer: "Entre 3 et 12 mois selon le contexte — from opportunistic one-off deals to competitive, multi-target processes. Our structured approach ensures both efficiency and deal security."
             },
             q2: {
-              question: "Comment identifiez-vous les cibles d'acquisition ?",
-              answer: "Nous combinons trois approches : notre réseau direct dans vos secteurs cibles, nos bases de données propriétaires enrichies en continu, et notre outil IA qui identifie des opportunités off-market autrement invisibles."
+              question: "How do you identify acquisition targets?",
+              answer: "We leverage a proprietary sourcing mix: trusted sector networks, enriched internal databases, and an AI tool that reveals off-market and hard-to-access opportunities."
             },
             q3: {
-              question: "Quels types de structures proposez-vous ?",
-              answer: "Nous structurons tous types d'opérations : acquisition simple, LBO à effet de levier, prise de participation minoritaire ou majoritaire, carve-out de divisions, stratégies build-up. Chaque structure est optimisée selon vos contraintes."
+              question: "What types of deal structures do you offer?",
+              answer: "We structure a full range of transactions: full acquisitions, LBOs, minority/majority stakes, carve-outs, and buy-and-build strategies — tailored to your strategic and financial constraints."
             },
             q4: {
-              question: "Travaillez-vous sur des acquisitions internationales ?",
-              answer: "Oui, notre ADN franco-italien nous permet de gérer des acquisitions transfrontalières, notamment entre la France et l'Italie. Grâce à notre réseau européen — notamment en Allemagne — nous facilitons également les opérations dans d'autres pays."
+              question: "Do you manage international transactions?",
+              answer: "Yes. Our Franco-Italian DNA gives us strong cross-border execution capabilities, especially between France and Italy. Our broader European network also supports transactions across other key markets."
             }
           }
         },
         cta: {
-          title: "Prêt à accélérer votre croissance ?",
-          subtitle: "Que vous ayez une cible en vue ou souhaitiez explorer le marché, discutons de vos opportunités d'acquisition en toute confidentialité.",
-          button: "Explorons vos opportunités"
+          title: "Ready to accelerate your growth?",
+          subtitle: "Whether you're targeting a specific company or simply exploring strategic options, let's confidentially assess your acquisition opportunities.",
+          button: "Let's explore your opportunities"
         }
       },
       financement: {
         hero: {
           badge: "Expertise Financement",
-          title: "Donner les moyens à vos ambitions : capital, dette, structuration.",
+          title: "Donner les moyens à vos ambitions : capital, dette, strutturazione.",
           description: "Nous accompagnons les entreprises dans leur recherche de financement, que ce soit pour soutenir la croissance, refinancer une dette, investir dans un projet ou structurer un rachat.",
           cta: "Structurons votre financement"
         },
@@ -620,133 +620,133 @@ export const translations = {
           },
           steps: {
             preparation: {
-              title: "Préparation du dossier",
-              description: "Business plan, modélisation financière, préparation du pitch et documents clés",
-              duration: "2–3 semaines"
+              title: "Investment materials",
+              description: "Model, business plan & investor deck to frame the equity story",
+              duration: "2–3 weeks"
             },
             identification: {
-              title: "Identification des financeurs",
-              description: "Sélection des partenaires pertinents selon votre profil et vos besoins spécifiques",
-              duration: "1–2 semaines"
+              title: "Capital sourcing",
+              description: "Targeted outreach to relevant lenders and investors",
+              duration: "1–2 weeks"
             },
             pitch: {
-              title: "Pitch et négociation",
-              description: "Présentations investisseurs, gestion des Q&A, négociations du term sheet",
-              duration: "4–8 semaines"
+              title: "Marketing & Terms",
+              description: "Investor meetings, Q&A, and term sheet negotiations",
+              duration: "4–8 weeks"
             },
             closing: {
-              title: "Documentation & Closing",
-              description: "Due diligence, finalisation de la documentation juridique et libération des fonds",
-                              duration: "3–6 semaines"
-              }
+              title: "Due Diligence & Closing",
+              description: "DDue diligence, legal docs, and fund disbursement",
+              duration: "3–6 weeks"
             }
+          }
+        },
+        stats: {
+          stage: {
+            value: "Series A+",
+            label: "From Series A onwards"
           },
-          stats: {
-            stage: {
-              value: "Série A+",
-                            label: "À partir de la Série A"
-              },
-            investors: {
-              value: "250k+",
-                            label: "Investisseurs actifs"
-              },
-            minimum: {
-              value: "2M€+",
-              label: "Seuil d'intervention minimum"
-            }
+          investors: {
+            value: "250k+",
+            label: "Active investors in our network"
+          },
+          minimum: {
+            value: "€2M+",
+            label: "Minimum ticket size"
+          }
         },
         whyMilaris: {
-          title: "Pourquoi Milaris Partners ?",
-          subtitle: "Notre expertise au service de votre financement optimal",
+          title: "Why choose Milaris Partners?",
+          subtitle: "Our expertise to make high-impact M&A solutions",
           items: {
             access: {
-              title: "Accès direct aux décideurs",
-              description: "Réseau privilégié d'investisseurs et banquiers pour accélérer vos discussions de financement"
+              title: "Direct access to decision-makers",
+              description: "We connect you to top investors and lenders for faster access to senior decision-makers and deals"
             },
             expertise: {
-              title: "Expertise en négociation",
-              description: "Expérience dans la négociation des termes clés : dilution, effet de levier, covenants pour optimiser vos conditions"
+              title: "Negotiation expertise",
+              description: "We structure complex financing, optimizing key terms to align with strategy and preserve flexibility"
             },
             optimization: {
-              title: "Optimisation du coût du capital",
-              description: "Capacité à structurer des solutions flexibles et optimiser votre coût de financement"
+              title: "Capital structure & Cost optimization",
+              description: "We design tailored capital solutions that balance cost, flexibility, and long-term scalability"
             }
           }
         },
         types: {
-          title: "Types de financement",
-          subtitle: "Des solutions adaptées à vos besoins et contraintes spécifiques",
+          title: "Types of financing",
+          subtitle: "Solutions tailored to your needs and specific constraints",
           equity: {
-            title: "Levée de fonds en capital",
-            description: "Pour financer votre croissance tout en conservant de la flexibilité",
+            title: "Equity fundraising",
+            description: "To finance your growth while maintaining flexibility",
             items: {
               vc: {
-                title: "Fonds Venture Capital (VC)",
-                subtitle: "Pour les startups en hyper-croissance"
+                title: "Venture Capital funds",
+                subtitle: "For hyper-growth startups"
               },
               pe: {
-                title: "Fonds Private Equity (PE)",
-                subtitle: "Pour les entreprises matures"
+                title: "Private Equity funds",
+                subtitle: "For mature companies"
               },
               family: {
-                title: "Family Offices et investisseurs privés",
-                subtitle: "Pour un partenariat long-terme"
+                title: "Family Offices and private investors",
+                subtitle: "For long-term partnerships"
               },
               angels: {
-                title: "Business Angels et clubs d'investissement",
-                subtitle: "Pour les phases d'amorçage"
+                title: "Business Angels and investment clubs",
+                subtitle: "For seed/early-stage funding"
               }
             }
           },
           debt: {
-            title: "Financement par dette",
-            description: "Des solutions de dette pour préserver votre capital et optimiser votre structure",
+            title: "Debt financing",
+            description: "To preserve your capital and optimize your structure",
             items: {
               bank: {
-                title: "Dette bancaire traditionnelle",
-                subtitle: "Financement classique sécurisé"
+                title: "Traditional bank debt",
+                subtitle: "Secured classic financing"
               },
               private: {
-                title: "Dette privée (unitranche, mezzanine)",
-                subtitle: "Solutions flexibles et sur-mesure"
+                title: "Private debt (unitranche, mezzanine)",
+                subtitle: "Flexible and tailor-made solutions"
               },
               bonds: {
-                title: "Obligations et financement obligataire",
-                subtitle: "Pour des besoins significatifs"
+                title: "Bonds and bond financing",
+                subtitle: "For significant funding needs"
               },
               lease: {
-                title: "Leasing et solutions spécialisées",
-                subtitle: "Financement d'actifs spécifiques"
+                title: "Leasing and specialized solutions",
+                subtitle: "Asset-specific financing"
               }
             }
           }
         },
         faq: {
-          title: "Questions fréquentes",
-          subtitle: "Tout ce que vous devez savoir sur le financement d'entreprise",
+          title: "Frequently Asked Questions",
+          subtitle: "Everything you need to know about corporate financing",
           questions: {
             q1: {
-              question: "Combien de temps prend une levée de fonds ?",
-              answer: "Entre 2 et 6 mois en moyenne, selon le type de financement recherché et le niveau de préparation initial. Les financements par dette sont généralement plus rapides que les levées de fonds en capital."
+              question: "How long does a financing process take?",
+              answer: "2 to 6 months, depending on the type of financing and how prepared you are at the outset. Debt financing usually closes faster than equity fundraising."
             },
             q2: {
-              question: "Quelle est la différence entre dette et capital ?",
-              answer: "Le capital implique une dilution capitalistique en échange de fonds propres, tandis que la dette est un emprunt à rembourser avec intérêts. Le capital offre plus de flexibilité mais dilue, la dette préserve le capital mais nécessite des remboursements réguliers."
+              question: "What's the difference between debt and equity?",
+              answer: "Equity financing means giving up a stake in your company in exchange for capital, while debt is a loan that must be repaid with interest. Equity offers greater flexibility but dilutes ownership; debt preserves control but involves regular repayments."
             },
             q3: {
-              question: "Comment optimiser ma valorisation ?",
-              answer: "Une valorisation optimale résulte d'une préparation rigoureuse : business plan solide, métriques de croissance démontrées, processus compétitif bien organisé et timing adapté au marché. Notre expertise maximise chaque levier."
+              question: "How can I maximize my valuation?",
+              answer: "A strong valuation comes from thorough preparation: a solid business plan, proven growth metrics, a well-managed competitive process, and strategic timing. Our expertise helps you leverage each of these factors."
             },
             q4: {
-              question: "Quels montants pouvez-vous lever ?",
-              answer: "Nous accompagnons des levées de fonds de 2M€ minimum à plus de 100M€, en capital comme en dette. Notre réseau couvre toutes les tailles de tickets, des business angels aux grands fonds institutionnels européens."
+              question: "What funding amounts can you raise?",
+              answer: "We assist with fundraisings from €2M up to over €100M, across both equity and debt. Our network includes investors of all sizes, from business angels to leading European institutional funds."
             }
           }
         },
         cta: {
-          title: "Prêt à financer votre croissance ?",
-          subtitle: "Discutons de vos besoins de financement et explorons ensemble les meilleures options pour accompagner votre développement.",
-          button: "Contactez-nous"
+          title: "Ready to finance your growth?",
+          subtitle: "Let's discuss your financing needs and explore together the best options to support your development.",
+          button: "Contact us"
         }
       }
     },
@@ -791,7 +791,9 @@ export const translations = {
           title: "Prêt à rencontrer notre équipe ?",
           subtitle: "Discutons de votre projet et voyons comment nous pouvons accompagner votre succès",
           button: "Planifier un échange"
-      }
+      },
+      managingDirectorFrance: "Managing Director - France",
+      managingDirectorItalie: "Managing Director - Italie"
     },
     carrieres: {
       hero: {
@@ -845,11 +847,134 @@ export const translations = {
       }
     },
     cookies: {
-      title: "Cookies & Confidentialité",
-      description: "Nous utilisons des cookies pour améliorer votre expérience et analyser l'utilisation de notre site. En continuant, vous acceptez notre politique de cookies.",
-      accept: "Accepter",
-      reject: "Refuser",
-      privacyPolicy: "Politique de confidentialité"
+      title: "Cookies & Privacy",
+      description: "We use cookies to improve your experience and analyze our site usage. By continuing, you accept our cookie policy.",
+      accept: "Accept",
+      reject: "Decline",
+      privacyPolicy: "Privacy policy"
+    },
+    interventionSection: {
+      title: {
+        part1: "Notre périmètre",
+        highlight: "d'intervention"
+      },
+      subtitle: "Des solutions sur-mesure pour les dirigeants d'entreprises de 5 à 150M€ de chiffre d'affaires",
+      cards: [
+        {
+          title: "Conseil en cession",
+          description: "Maximisez la valeur de votre entreprise lors de sa transmission",
+          features: [
+            "Entreprises de 5 à 150M€ CA",
+            "Cession totale ou partielle",
+            "Processus structuré sur 6-9 mois"
+          ],
+          link: "/cession-entreprise",
+          cta: "En savoir plus"
+        },
+        {
+          title: "Conseil en acquisition",
+          description: "Identifiez et sécurisez les meilleures opportunités de croissance externe",
+          features: [
+            "Ciblage stratégique européen",
+            "Approche confidentielle",
+            "Négociation optimisée"
+          ],
+          link: "/acquisition-entreprise",
+          cta: "En savoir plus"
+        },
+        {
+          title: "Conseil en financement",
+          description: "Structurez le financement optimal pour accélérer votre développement",
+          features: [
+            "Levée de fonds growth",
+            "Dette & financements hybrides",
+            "Réseau d'investisseurs qualifiés"
+          ],
+          link: "/financement",
+          cta: "En savoir plus"
+        }
+      ],
+      bottomCtaText: "Une approche exclusive avec un nombre limité de mandats pour garantir un accompagnement premium",
+      bottomCtaButton: "Discuter de votre projet"
+    },
+    testimonial: {
+      quote: "Milaris Partners nous a accompagnés dans la cession de notre entreprise avec un professionnalisme remarquable. Leur approche personnalisée et leur connaissance approfondie du marché nous ont permis de réaliser une transaction dans des conditions optimales.",
+      name: "Franck JOHANNY",
+      title: "PRÉSIDENT-DIRECTEUR GÉNÉRAL"
+    },
+    legal: {
+      title: "Mentions Légales",
+      sections: [
+        {
+          heading: "Introduction",
+          content: "Ce site a pour but de fournir des informations sur Milaris Partners. Les visites sur le site sont soumises aux réglementations pertinentes et aux présentes conditions d'utilisation."
+        },
+        {
+          heading: "Avertissement concernant les produits et services présentés sur le site",
+          content: "Aucune information publiée sur ce site ne constitue ou ne doit être interprétée comme une offre de Milaris Partners de vendre des services bancaires, d'assurance ou autres, ni comme une offre ou une sollicitation pour acheter ou vendre des titres ou d'autres produits d'investissement. Le contenu du site, y compris les présentations de produits, services, recherches et analyses développées et produites par Milaris Partners, est fourni à titre informatif seulement. Les utilisateurs doivent vérifier les informations et les utiliser de manière appropriée. Milaris Partners n'assume aucune responsabilité quant à l'utilisation faite des informations présentées sur le site. Toute personne intéressée par l'achat de produits ou services présentés sur ce site doit contacter le département concerné pour confirmer la disponibilité, les prix et autres termes contractuels. La vente des produits et services présentés sur ce site peut être soumise à des restrictions pour certains acheteurs potentiels ou dans certains pays. Milaris Partners ne fournira aucun produit ou service à des acheteurs potentiels en violation des lois du pays d'origine de l'acheteur ou de toute autre loi applicable. Les visiteurs doivent s'assurer qu'ils sont autorisés à visiter ce site conformément aux lois du pays à partir duquel ils se connectent. Milaris Partners s'efforce de maintenir les informations sur le site exactes et à jour, mais le contenu peut être corrigé à tout moment sans préavis. Milaris Partners ne peut garantir que les informations fournies sont complètes ou non altérées par des pirates ou des virus. Milaris Partners n'accepte aucune responsabilité pour les erreurs ou omissions dans les informations fournies. L'accès à ce site web est basé sur les niveaux de service actuels, et Milaris Partners n'est pas responsable des problèmes de transmission ou des pannes de réseau. Milaris Partners ne fournit aucune garantie explicite ou implicite concernant le site web. Plus précisément, Milaris Partners ne garantit pas que le site web répondra aux besoins actuels ou futurs des visiteurs, maintiendra un accès ininterrompu, présentera des informations pertinentes et sans erreur, ou fournira des résultats précis et fiables de l'utilisation du site. Milaris Partners ne garantit pas la qualité ou la légalité de tout contenu non créé par Milaris Partners et n'accepte aucune responsabilité pour les réclamations, poursuites ou appels de tiers concernant les droits exclusifs sur ce contenu et son utilisation ou pour tout autre motif. Aucun conseil ou information verbale ou écrite, ni aucun conseil ou information vidéo obtenus de ce site web ne donnera lieu à des garanties ou à des responsabilités, sauf mention explicite."
+        },
+        {
+          heading: "Avertissement concernant les liens",
+          content: "Le site web peut inclure des liens vers d'autres sites web ou sources Internet, ajoutés par des tiers. Milaris Partners n'a aucun contrôle sur ces sites et sources externes et n'est pas responsable de leur disponibilité, de leur contenu, de leur équité, de leur actualité, de leur qualité, de leur complétude, de leur pertinence ou de la légalité de toute publicité, produit, service ou autre matériel disponible sur ou à partir de ces sites ou sources. Les visiteurs reconnaissent que Milaris Partners n'est pas responsable des pertes directes ou consécutives résultant de l'utilisation ou de la confiance dans le contenu de ces sites ou sources, ou de tout bien ou service disponible sur ces sites ou à partir de ces sources, consultés en ligne ou obtenus par e-mail ou tout autre moyen. La confidentialité et l'intégrité des informations sur Internet ne sont pas garanties. Tout message électronique envoyé par les utilisateurs du site peut être intercepté ou altéré. Milaris Partners n'est pas responsable des messages interceptés ou altérés. Milaris Partners croit que tous les sites mentionnés sur ce site web, directement ou via des hyperliens, appartiennent à des entreprises réputées et éthiques. Cependant, Milaris Partners n'a aucun lien avec la plupart de ces entreprises et ne les a pas vérifiées. Les informations présentées sur ce site ont été obtenues de sources jugées fiables, et tous les efforts ont été faits pour assurer leur exactitude. Malgré ces précautions, Milaris Partners ne peut être tenu responsable de l'exactitude de ces informations. Chaque utilisateur assume l'entière responsabilité de l'utilisation de tout ou partie des informations présentées sur ce site."
+        },
+        {
+          heading: "Propriété Intellectuelle et Contrefaçon",
+          content: "https://milaris.partners/ détient les droits de propriété intellectuelle et détient les droits d'usage sur tous les éléments accessibles sur le site web, notamment les textes, images, graphismes et logos. Toute reproduction, représentation, modification, publication, ou adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de https://milaris.partners/. Toute utilisation non autorisée du site ou de l'un de ses contenus sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de la Propriété Intellectuelle."
+        },
+        {
+          heading: "Coordonnées de contact",
+          content: "Si vous souhaitez nous contacter pour en savoir plus sur cette politique ou pour toute question relative aux droits individuels, vous pouvez nous contacter à l'adresse suivante : legal@milaris.partners"
+        }
+      ]
+    },
+    terms: {
+      title: "Conditions Générales",
+      sections: [
+        {
+          heading: "Bienvenue chez Milaris Partners !",
+          content: "Ces conditions générales définissent les règles et règlements pour l'utilisation du site web de Milaris Partners, situé à l'adresse https://milaris.partners/. En accédant à ce site web, nous supposons que vous acceptez ces conditions générales. Ne continuez pas à utiliser Milaris Partners si vous n'acceptez pas toutes les conditions générales énoncées sur cette page. Nous prenons soin de vos données personnelles et nous engageons à garantir leur confidentialité et leur sécurité."
+        },
+        {
+          heading: "Informations sur les visiteurs",
+          content: "Le visiteur est informé des réglementations concernant la communication marketing, la Loi du 21 juin 2014 pour la confiance dans l'économie numérique, la Loi sur la protection des données du 6 août 2004, et le Règlement général sur la protection des données (RGPD : n° 2016-679)."
+        },
+        {
+          heading: "Responsables de la collecte des données personnelles",
+          content: "Pour les données personnelles collectées dans le cadre de la création du compte utilisateur et de la navigation sur le site, le responsable du traitement des données est : Milaris Partners SAS. En tant que responsable du traitement des données, https://milaris.partners/ s'engage à respecter le cadre légal en vigueur. Chaque fois que https://milaris.partners/ traite des données personnelles, elle prend toutes les mesures raisonnables pour s'assurer de l'exactitude et de la pertinence des données personnelles au regard des finalités pour lesquelles elles sont traitées."
+        },
+        {
+          heading: "Finalité de la collecte des données",
+          content: "https://milaris.partners/ peut traiter tout ou partie des données : Pour permettre la navigation sur le Site. Pour prévenir et lutter contre la fraude informatique (spamming, hacking, etc.) : matériel utilisé pour la navigation, adresse IP, mot de passe haché. Pour améliorer la navigation sur le Site : données de connexion et d'utilisation. Pour mener des campagnes de communication (sms, email) : numéro de téléphone, adresse email. https://milaris.partners/ ne vend pas vos données personnelles, qui sont uniquement utilisées en cas de nécessité ou à des fins statistiques et d'analyses."
+        },
+        {
+          heading: "Droits d'accès, de rectification et d'opposition",
+          content: "Conformément à la réglementation européenne, les utilisateurs de https://milaris.partners/ disposent des droits suivants : Droit d'accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données des utilisateurs. Droit de verrouillage ou d'effacement des données des utilisateurs (article 17 RGPD) lorsqu'elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l'utilisation, la communication ou la conservation est interdite. Droit de retirer à tout moment un consentement (article 13-2c RGPD). Droit à la limitation du traitement des données des utilisateurs (article 18 RGPD). Droit d'opposition au traitement des données des utilisateurs (article 21 RGPD). Droit à la portabilité des données fournies par les utilisateurs lorsque ces données font l'objet de traitements automatisés fondés sur leur consentement ou sur un contrat (article 20 RGPD). Droit de définir le sort des données des utilisateurs après leur mort et de choisir à qui https://milaris.partners/ devra communiquer (ou non) ses données à un tiers qu'ils auront préalablement désigné."
+        },
+        {
+          heading: "Non-communication des données personnelles",
+          content: "https://milaris.partners/ s'abstient de traiter, héberger ou transférer les Informations collectées sur ses Visiteurs vers un pays situé en dehors de l'Union européenne ou reconnu comme 'inadéquat' par la Commission européenne sans en informer préalablement le client. Pour autant, https://milaris.partners/ reste libre du choix de ses sous-traitants techniques et commerciaux, à condition qu'ils présentent des garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679). https://milaris.partners/ s'engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu'elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l'intégrité ou la confidentialité des Informations du Client est portée à la connaissance de https://milaris.partners/, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs, https://milaris.partners/ ne collecte aucune 'donnée sensible'. Les données personnelles de l'Utilisateur peuvent être traitées par des filiales de https://milaris.partners/ et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique. Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d'avoir accès aux données des Utilisateurs de https://milaris.partners/ sont principalement les agents de notre service client."
+        },
+        {
+          heading: "Notification d'incident",
+          content: "Quelles que soient les mesures de protection que nous prenons, aucune méthode de transmission sur Internet ni aucune méthode de stockage électronique n'est complètement sécurisée. Nous ne pouvons donc pas garantir une sécurité absolue. Si nous prenons connaissance d'une faille de sécurité, nous avertirons les utilisateurs concernés afin qu'ils puissent prendre les mesures appropriées. Nos procédures de notification d'incident tiennent compte de nos obligations légales, qu'elles soient au niveau national ou européen. Nous nous engageons à informer pleinement nos Clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting."
+        },
+        {
+          heading: "Sécurité",
+          content: "Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé, https://milaris.partners/ utilise des réseaux protégés par des dispositifs standards tels que par pare-feux, la pseudonymisation, l'encryption et mot de passe. Lors du traitement des Données Personnelles, https://milaris.partners/ prend toutes les mesures raisonnables visant à les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction."
+        },
+        {
+          heading: "Liens hypertextes 'cookies' et balises ('tags') internet",
+          content: "Le site https://milaris.partners/ contient un certain nombre de liens hypertextes vers d'autres sites, mis en place avec l'autorisation de https://milaris.partners/. Cependant, https://milaris.partners/ n'a pas la possibilité de vérifier le contenu des sites ainsi visités, et n'assumera en conséquence aucune responsabilité de ce fait. Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-dessous, sachant que cela peut réduire ou empêcher l'accessibilité à tout ou partie des Services proposés par le site."
+        },
+        {
+          heading: "Balises Internet",
+          content: "https://milaris.partners/ peut occasionnellement utiliser des balises Internet et les déployer par l'intermédiaire d'un partenaire spécialisé en analyse web, qui peut être situé (et donc stocker les informations correspondantes, y compris l'adresse IP de l'Utilisateur) dans un pays étranger. Cette technologie permet à https://milaris.partners/ d'évaluer les réponses des visiteurs au Site et l'efficacité de ses actions (par exemple, le nombre de fois qu'une page est ouverte et les informations consultées) et l'utilisation de ce Site par l'Utilisateur. Le prestataire externe peut collecter des informations sur les visiteurs du Site et d'autres sites web utilisant ces balises, compiler des rapports sur l'activité du Site pour https://milaris.partners/, et fournir d'autres services liés à l'utilisation du Site et d'Internet."
+        },
+        {
+          heading: "Droit applicable et juridiction",
+          content: "Tout litige en relation avec l'utilisation du site https://milaris.partners/ est soumis au droit français. Sauf dans les cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Paris."
+        }
+      ]
     }
   },
   EN: {
@@ -868,13 +993,13 @@ export const translations = {
       title: "Mastering the art of simplifying M&A",
       description: {
         part1: "Milaris Partners",
-        part2: "supports",
-        part3: "SME and mid-cap managers",
+        part2: "advises",
+        part3: "SME",
         part4: ",",
-        part5: "shareholders",
-        part6: "and",
-        part7: "investors",
-        part8: "to sell, acquire or finance companies under the best conditions."
+        part5: "managers, shareholders and investors on ",
+        part6: "company sales, acquisitions and financing",
+        part7: "under optimal conditions.",
+        part8: " "
       },
       cta: {
         scheduleCall: "Schedule a call",
@@ -883,9 +1008,9 @@ export const translations = {
     },
     about: {
       title: {
-        part1: "A deep commitment to valuing our",
+        part1: "A strong commitment to unlocking the intrinsic value of ",
         part2: "local businesses",
-        part3: "at their fair worth"
+        part3: " "
       },
       content: {
         point1: {
@@ -1056,9 +1181,9 @@ export const translations = {
     },
     europePresence: {
       title: {
-        part1: "A strategic",
-        highlight: "European",
-        part2: "presence"
+        part1: "A strategic presence across",
+        highlight: "Europe",
+        part2: " "
       },
       description: "With native experts embedded in our teams and offices in key European hubs, we support your cross-border transactions with on-the-ground insight.",
       stats: {
@@ -1125,7 +1250,7 @@ export const translations = {
         },
         services: {
           title: "What we do for you?",
-          subtitle: "Our mission: maximizing your company’s value for smooth succession",
+          subtitle: "Our mission: maximizing your company's value for smooth succession",
           items: {
             evaluation: {
               title: "Valuation & Strategic positioning",
@@ -1220,16 +1345,16 @@ export const translations = {
             description: "Industrial players and sector companies seeking growth, diversification, or synergy",
             benefits: {
               synergies: {
-                title: "Valuation capturing synergies",
-                subtitle: "Maximizing value through integration"
+                title: "Valutazione basata sulle sinergie",
+                subtitle: "Massimizzazione del valore attraverso l'integrazione"
               },
               integration: {
-                title: "Integration into established groups",
-                subtitle: "Ensuring continuity and growth"
+                title: "Integrazione in un gruppo esistente",
+                subtitle: "Continuità e sviluppo assicurato"
               },
               continuity: {
-                title: "Operational continuity assured",
-                subtitle: "Preserving teams and expertise"
+                title: "Continuità operativa",
+                subtitle: "Preservazione dei team e del know-how"
               }
             }
           },
@@ -1254,7 +1379,7 @@ export const translations = {
         },
         faq: {
           title: "Frequently Asked Questions",
-          subtitle: "Let’s democratize the M&A process",
+          subtitle: "Let's democratize the M&A process",
           questions: {
             q1: {
               question: "How long does the sale process typically take?",
@@ -1393,19 +1518,19 @@ export const translations = {
           },
           complex: {
             title: "Complex Structures",
-            description: "LBO, carve-out, or build-up transactions tailored to your financial constraints and strategic goals",
+            description: "LBO, carve-out, build-up secondo i vostri vincoli finanziari e obiettivi di sviluppo",
             items: {
               lbo: {
-                title: "LBO and leveraged structures",
-                subtitle: "Optimize capital structure and return on equity"
+                title: "LBO e strutture con leva",
+                subtitle: "Ottimizzate la vostra struttura finanziaria"
               },
               carveout: {
-                title: "Division carve-outs",
-                subtitle: "Unlock hidden value through targeted divestitures"
+                title: "Carve-out di divisioni",
+                subtitle: "Estraete il valore nascosto"
               },
               buildup: {
-                title: "Build-up strategies",
-                subtitle: "Drive scale and leadership via successive acquisitions"
+                title: "Strategie build-up",
+                subtitle: "Create un leader attraverso acquisizioni successive"
               }
             }
           }
@@ -1434,7 +1559,7 @@ export const translations = {
         },
         cta: {
           title: "Ready to accelerate your growth?",
-          subtitle: "Whether you're targeting a specific company or simply exploring strategic options, let’s confidentially assess your acquisition opportunities.",
+          subtitle: "Whether you're targeting a specific company or simply exploring strategic options, let's confidentially assess your acquisition opportunities.",
           button: "Let's explore your opportunities"
         }
       },
@@ -1582,7 +1707,7 @@ export const translations = {
               answer: "2 to 6 months, depending on the type of financing and how prepared you are at the outset. Debt financing usually closes faster than equity fundraising."
             },
             q2: {
-              question: "What’s the difference between debt and equity?",
+              question: "What's the difference between debt and equity?",
               answer: "Equity financing means giving up a stake in your company in exchange for capital, while debt is a loan that must be repaid with interest. Equity offers greater flexibility but dilutes ownership; debt preserves control but involves regular repayments."
             },
             q3: {
@@ -1641,9 +1766,11 @@ export const translations = {
       },
       cta: {
           title: "Ready to meet our team?",
-          subtitle: "Let’s explore your project together and identify how we can contribute to its success",
+          subtitle: "Let's explore your project together and identify how we can contribute to its success",
           button: "Schedule a call"
-      }
+      },
+      managingDirectorFrance: "Managing Director - France",
+      managingDirectorItalie: "Managing Director - Italy"
     },
     carrieres: {
       hero: {
@@ -1682,7 +1809,7 @@ export const translations = {
       opportunities: {
         title1: "Current",
         title2: "opportunities",
-        description: "We continuously seek driven individuals who embody a commitment to excellence and a passion for innovation. If you aim to create meaningful impact, thrive on daily learning, and value a collaborative environment, let’s connect."
+        description: "We continuously seek driven individuals who embody a commitment to excellence and a passion for innovation. If you aim to create meaningful impact, thrive on daily learning, and value a collaborative environment, let's connect."
       },
       howToApply: {
         title1: "How to",
@@ -1702,6 +1829,129 @@ export const translations = {
       accept: "Accept",
       reject: "Decline",
       privacyPolicy: "Privacy policy"
+    },
+    interventionSection: {
+      title: {
+        part1: "Transaction advisory for",
+        highlight: "SMEs"
+      },
+      subtitle: "Tailored solutions for business owners of companies with €5M to €150M in revenue",
+      cards: [
+        {
+          title: "Sell-side Advisory",
+          description: "Maximize the value of your company at the time of sale",
+          features: [
+            "Companies with €5M to €150M in revenue",
+            "Full or partial sale",
+            "Structured process over 6-9 months"
+          ],
+          link: "/cession-entreprise",
+          cta: "Learn more"
+        },
+        {
+          title: "Buy-side Advisory",
+          description: "Identify and secure the best external growth opportunities",
+          features: [
+            "Strategic targeting across Europe",
+            "Confidential approach",
+            "Optimized negotiation"
+          ],
+          link: "/acquisition-entreprise",
+          cta: "Learn more"
+        },
+        {
+          title: "Financing Advisory",
+          description: "Structure optimal financing to accelerate your growth",
+          features: [
+            "Growth fundraising",
+            "Debt & hybrid financing",
+            "Qualified investor network"
+          ],
+          link: "/financement",
+          cta: "Learn more"
+        }
+      ],
+      bottomCtaText: "An exclusive approach with a limited number of mandates to ensure premium support",
+      bottomCtaButton: "Let's discuss your project"
+    },
+    testimonial: {
+      quote: "Milaris Partners supported us in the sale of our company with remarkable professionalism. Their personalized approach and in-depth market knowledge enabled us to complete a transaction under optimal conditions.",
+      name: "Franck JOHANNY",
+      title: "CHIEF EXECUTIVE OFFICER"
+    },
+    legal: {
+      title: "Legal Notice",
+      sections: [
+        {
+          heading: "Introduction",
+          content: "This website aims to provide information about Milaris Partners. Visits to the site are subject to relevant regulations and these terms of use."
+        },
+        {
+          heading: "Disclaimer regarding products and services presented on the site",
+          content: "No information published on this site constitutes or should be interpreted as an offer by Milaris Partners to sell banking, insurance, or other services, nor as an offer or a solicitation to buy or sell securities or other investment products. The content of the site, including product presentations, services, research, and analyses developed and produced by Milaris Partners, is provided for informational purposes only. Users must verify the information and use it appropriately. Milaris Partners assumes no responsibility for the use made of the information presented on the site. Anyone interested in purchasing products or services presented on this site should contact the relevant department to confirm availability, prices, and other contractual terms. The sale of products and services presented on this site may be subject to restrictions for certain potential buyers or in certain countries. Milaris Partners will not provide any product or service to potential buyers in violation of the laws of the buyer's country of origin or any other applicable law. Visitors must ensure that they are authorized to visit this site in accordance with the laws of the country from which they connect. Milaris Partners strives to keep the information on the site accurate and up to date, but the content may be corrected at any time without notice. Milaris Partners cannot guarantee that the information provided is complete or not altered by hackers or viruses. Milaris Partners accepts no responsibility for errors or omissions in the information provided. Access to this website is based on current service levels, and Milaris Partners is not responsible for transmission problems or network failures. Milaris Partners provides no explicit or implicit warranty regarding the website. Specifically, Milaris Partners does not guarantee that the website will meet the current or future needs of visitors, maintain uninterrupted access, present relevant and error-free information, or provide accurate and reliable results from the use of the site. Milaris Partners does not guarantee the quality or legality of any content not created by Milaris Partners and accepts no responsibility for claims, lawsuits, or appeals by third parties regarding exclusive rights to this content and its use or for any other reason. No oral or written advice or information, nor any video advice or information obtained from this website, will give rise to warranties or liabilities, unless explicitly stated."
+        },
+        {
+          heading: "Disclaimer regarding links",
+          content: "The website may include links to other websites or Internet sources, added by third parties. Milaris Partners has no control over these external sites and sources and is not responsible for their availability, content, fairness, timeliness, quality, completeness, relevance, or legality of any advertising, product, service, or other material available on or from these sites or sources. Visitors acknowledge that Milaris Partners is not responsible for direct or consequential losses resulting from the use of or reliance on the content of these sites or sources, or any goods or services available on these sites or from these sources, viewed online or obtained by email or any other means. The confidentiality and integrity of information on the Internet are not guaranteed. Any email sent by users of the site may be intercepted or altered. Milaris Partners is not responsible for intercepted or altered messages. Milaris Partners believes that all sites mentioned on this website, directly or via hyperlinks, belong to reputable and ethical companies. However, Milaris Partners has no connection with most of these companies and has not verified them. The information presented on this site has been obtained from sources deemed reliable, and every effort has been made to ensure its accuracy. Despite these precautions, Milaris Partners cannot be held responsible for the accuracy of this information. Each user assumes full responsibility for the use of all or part of the information presented on this site."
+        },
+        {
+          heading: "Intellectual Property and Counterfeiting",
+          content: "https://milaris.partners/ holds the intellectual property rights and usage rights to all elements accessible on the website, including texts, images, graphics, and logos. Any reproduction, representation, modification, publication, or adaptation of all or part of the elements of the site, regardless of the means or process used, is prohibited without the prior written authorization of https://milaris.partners/. Toute utilisation non autorisée du site ou de l'un de ses contenus sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de la Propriété Intellectuelle."
+        },
+        {
+          heading: "Contact details",
+          content: "If you wish to contact us to learn more about this policy or for any questions regarding individual rights, you can contact us at: legal@milaris.partners"
+        }
+      ]
+    },
+    terms: {
+      title: "General Terms and Conditions",
+      sections: [
+        {
+          heading: "Welcome to Milaris Partners!",
+          content: "These general terms and conditions define the rules and regulations for the use of the Milaris Partners website, located at https://milaris.partners/. By accessing this website, we assume you accept these terms and conditions. Do not continue to use Milaris Partners if you do not agree to all the terms and conditions stated on this page. We take care of your personal data and are committed to ensuring its confidentiality and security."
+        },
+        {
+          heading: "Visitor information",
+          content: "The visitor is informed of the regulations concerning marketing communication, the Law of June 21, 2014 for confidence in the digital economy, the Data Protection Act of August 6, 2004, and the General Data Protection Regulation (GDPR: No. 2016-679)."
+        },
+        {
+          heading: "Responsables de la collecte des données personnelles",
+          content: "For personal data collected as part of creating the user account and browsing the site, the data controller is: Milaris Partners SAS. As the data controller, https://milaris.partners/ undertakes to respect the legal framework in force. Whenever https://milaris.partners/ processes personal data, it takes all reasonable measures to ensure the accuracy and relevance of the personal data with regard to the purposes for which they are processed."
+        },
+        {
+          heading: "Finalité de la collecte des données",
+          content: "https://milaris.partners/ may process all or part of the data: To allow navigation on the Site. To prevent and combat computer fraud (spamming, hacking, etc.): equipment used for navigation, IP address, hashed password. To improve navigation on the Site: connection and usage data. To conduct communication campaigns (sms, email): phone number, email address. https://milaris.partners/ does not sell your personal data, which is only used when necessary or for statistical and analytical purposes."
+        },
+        {
+          heading: "Diritti d'accès, de rectification et d'opposition",
+          content: "In accordance with European regulations, users of https://milaris.partners/ have the following rights: Right of access (article 15 GDPR) and rectification (article 16 GDPR), updating, completion of user data. Right to block or delete user data (article 17 GDPR) when they are inaccurate, incomplete, equivocal, outdated, or whose collection, use, communication, or storage is prohibited. Right to withdraw consent at any time (article 13-2c GDPR). Right to limit the processing of user data (article 18 GDPR). Right to object to the processing of user data (article 21 GDPR). Right to the portability of data provided by users when these data are subject to automated processing based on their consent or on a contract (article 20 GDPR). Right to define the fate of user data after their death and to choose to whom https://milaris.partners/ should communicate (or not) their data to a third party previously designated."
+        },
+        {
+          heading: "Non-communication des données personnelles",
+          content: "https://milaris.partners/ s'abstient de traiter, héberger ou transférer les Informations collectées sur ses Visiteurs vers un pays situé en dehors de l'Union européenne ou reconnu comme 'inadéquat' par la Commission européenne sans en informer préalablement le client. Pour autant, https://milaris.partners/ reste libre du choix de ses sous-traitants techniques et commerciaux, à condition qu'ils présentent des garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679). https://milaris.partners/ s'engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu'elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l'intégrité ou la confidentialité des Informations du Client est portée à la connaissance de https://milaris.partners/, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs, https://milaris.partners/ ne collecte aucune 'donnée sensible'. Les données personnelles de l'Utilisateur peuvent être traitées par des filiales de https://milaris.partners/ et des sous-traitants (prestataires de services), exclusivement pour réaliser les finalités de la présente politique. Ne s'y présentant pas, les principales personnes susceptibles d'avoir accès aux données des Utilisateurs de https://milaris.partners/ sont principalement les agents de notre service client."
+        },
+        {
+          heading: "Notification d'incident",
+          content: "Quelles que soient les mesures de protection que nous prenons, aucune méthode de transmission sur Internet ni aucune méthode de stockage électronique n'est complètement sécurisée. Nous ne pouvons donc pas garantir une sécurité absolue. Si nous prenons connaissance d'une faille de sécurité, nous avertirons les utilisateurs concernés afin qu'ils puissent prendre les mesures appropriées. Nos procédures de notification d'incident tiennent compte de nos obligations légales, qu'elles soient au niveau national ou européen. Nous nous engageons à informer pleinement nos Clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting."
+        },
+        {
+          heading: "Sécurité",
+          content: "Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé, https://milaris.partners/ utilise des réseaux protégés par des dispositifs standards tels que par pare-feux, la pseudonymisation, l'encryption et mot de passe. Lors du traitement des Données Personnelles, https://milaris.partners/ adresse toutes les mesures raisonnables pour les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction."
+        },
+        {
+          heading: "Liens hypertextes 'cookies' et balises ('tags') internet",
+          content: "Le site https://milaris.partners/ contient une série de liens hypertextes vers d'autres sites, mis en place avec l'autorisation de https://milaris.partners/. Toutefois, https://milaris.partners/ ne peut pas vérifier le contenu des sites ainsi visités et, par conséquent, ne prend aucune responsabilité à ce sujet. Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez désactiver ces cookies gratuitement à tout moment depuis les options de désactivation disponibles et rappelées ci-dessous, sachant que cela peut réduire ou empêcher l'accès à tout ou partie des Services proposés par le site."
+        },
+        {
+          heading: "Balises Internet",
+          content: "https://milaris.partners/ peut occasionnellement utiliser des balises Internet et les déployer par l'intermédiaire d'un partenaire spécialisé en analyse web, qui peut être situé (et donc stocker les informations correspondantes, y compris l'adresse IP de l'Utilisateur) dans un pays étranger. Cette technologie permet à https://milaris.partners/ d'évaluer les réponses des visiteurs au Site et l'efficacité de ses actions (par exemple, le nombre de fois qu'une page est ouverte et les informations consultées) et l'utilisation de ce Site par l'Utilisateur. Le prestataire externe peut collecter des informations sur les visiteurs du Site et d'autres sites web qui utilisent ces balises, compiler des rapports sur l'activité du Site pour https://milaris.partners/, et fournir d'autres services liés à l'utilisation du Site et d'Internet."
+        },
+        {
+          heading: "Loi applicable et juridiction",
+          content: "Tout litige en relation avec l'utilisation du site https://milaris.partners/ est soumis à la loi française. Sauf dans les cas où la loi ne le permet pas, la juridiction exclusive est attribuée aux tribunaux compétents de Paris."
+        }
+      ]
     }
   },
   IT: {
@@ -2481,7 +2731,7 @@ export const translations = {
       matteo: {
           focus1: {
               title: "Competenza multisettoriale",
-              description: "Supporto agli imprenditori italiani nelle loro operazioni primarie e secondarie, con una riconosciuta esperienza in diversi settori, in particolare quello industriale e TMT."
+              description: "Supporto agli imprenditori italiani nelle loro operazioni primarie e secondarie, con una riconosciuta esperienza in diversi settori, in particolare quello industriale e TMT"
           },
           focus2: {
               title: "Partnership europei",
@@ -2496,7 +2746,9 @@ export const translations = {
           title: "Pronto a incontrare il nostro team?",
           subtitle: "Discutiamo del tuo progetto e vediamo come possiamo supportare il tuo successo",
           button: "Pianificare una chiamata"
-      }
+      },
+      managingDirectorFrance: "Managing Director - Francia",
+      managingDirectorItalie: "Managing Director - Italia"
     },
     carrieres: {
       hero: {
@@ -2555,6 +2807,129 @@ export const translations = {
       accept: "Accettare",
       reject: "Rifiutare",
       privacyPolicy: "Informativa sulla privacy"
+    },
+    interventionSection: {
+      title: {
+        part1: "Il nostro perimetro di",
+        highlight: "intervento"
+      },
+      subtitle: "Soluzioni su misura per i dirigenti di aziende con un fatturato da 5 a 150M€",
+      cards: [
+        {
+          title: "Consulenza per la cessione",
+          description: "Massimizza il valore della tua azienda durante la cessione",
+          features: [
+            "Aziende da 5 a 150M€ di fatturato",
+            "Cessione totale o parziale",
+            "Processo strutturato di 6-9 mesi"
+          ],
+          link: "/cession-entreprise",
+          cta: "Scopri di più"
+        },
+        {
+          title: "Consulenza per l'acquisizione",
+          description: "Individua e assicurati le migliori opportunità di crescita esterna",
+          features: [
+            "Targeting strategico europeo",
+            "Approccio confidenziale",
+            "Negoziazione ottimizzata"
+          ],
+          link: "/acquisition-entreprise",
+          cta: "Scopri di più"
+        },
+        {
+          title: "Consulenza per il finanziamento",
+          description: "Struttura il finanziamento ottimale per accelerare la tua crescita",
+          features: [
+            "Raccolta fondi growth",
+            "Debito & finanziamenti ibridi",
+            "Rete di investitori qualificati"
+          ],
+          link: "/financement",
+          cta: "Scopri di più"
+        }
+      ],
+      bottomCtaText: "Un approccio esclusivo con un numero limitato di mandati per garantire un supporto premium",
+      bottomCtaButton: "Parla del tuo progetto"
+    },
+    testimonial: {
+      quote: "Milaris Partners ci ha accompagnato nella cessione della nostra azienda con un notevole livello di professionalità. Il loro approccio personalizzato e la profonda conoscenza del mercato ci hanno permesso di realizzare una transazione in condizioni ottimali.",
+      name: "Franck JOHANNY",
+      title: "AMMINISTRATORE DELEGATO"
+    },
+    legal: {
+      title: "Note Legali",
+      sections: [
+        {
+          heading: "Introduzione",
+          content: "Questo sito ha lo scopo di fornire informazioni su Milaris Partners. Le visite al sito sono soggette alle normative pertinenti e alle presenti condizioni d'uso."
+        },
+        {
+          heading: "Avvertenza sui prodotti e servizi presentati sul sito",
+          content: "Nessuna informazione pubblicata su questo sito costituisce o deve essere interpretata come un'offerta da parte di Milaris Partners di vendere servizi bancari, assicurativi o altri, né come un'offerta o una sollecitazione ad acquistare o vendere titoli o altri prodotti di investimento. Il contenuto del sito, comprese le presentazioni di prodotti, servizi, ricerche e analisi sviluppate e prodotte da Milaris Partners, è fornito solo a scopo informativo. Gli utenti devono verificare le informazioni e utilizzarle in modo appropriato. Milaris Partners non si assume alcuna responsabilità per l'uso delle informazioni presentate sul sito. Chiunque sia interessato all'acquisto di prodotti o servizi presentati su questo sito deve contattare il dipartimento competente per confermare la disponibilità, i prezzi e altri termini contrattuali. La vendita dei prodotti e servizi presentati su questo sito può essere soggetta a restrizioni per alcuni potenziali acquirenti o in alcuni paesi. Milaris Partners non fornirà alcun prodotto o servizio a potenziali acquirenti in violazione delle leggi del paese di origine dell'acquirente o di qualsiasi altra legge applicabile. I visitatori devono assicurarsi di essere autorizzati a visitare questo sito in conformità con le leggi del paese da cui si collegano. Milaris Partners si impegna a mantenere le informazioni sul sito accurate e aggiornate, ma il contenuto può essere corretto in qualsiasi momento senza preavviso. Milaris Partners non può garantire che le informazioni fornite siano complete o non alterate da hacker o virus. Milaris Partners non si assume alcuna responsabilità per errori o omissioni nelle informazioni fornite. L'accesso a questo sito web si basa sui livelli di servizio attuali e Milaris Partners non è responsabile per problemi di trasmissione o guasti di rete. Milaris Partners non fornisce alcuna garanzia esplicita o implicita riguardo al sito web. In particolare, Milaris Partners non garantisce che il sito web soddisferà le esigenze attuali o future dei visitatori, manterrà un accesso ininterrotto, presenterà informazioni pertinenti e prive di errori o fornirà risultati accurati e affidabili dall'uso del sito. Milaris Partners non garantisce la qualità o la legalità di qualsiasi contenuto non creato da Milaris Partners e non si assume alcuna responsabilità per reclami, azioni legali o ricorsi di terzi riguardanti diritti esclusivi su questo contenuto e il suo utilizzo o per qualsiasi altro motivo. Nessun consiglio o informazione orale o scritta, né alcun consiglio o informazione video ottenuti da questo sito web daranno luogo a garanzie o responsabilità, salvo quanto espressamente indicato."
+        },
+        {
+          heading: "Avvertenza sui collegamenti",
+          content: "Il sito web può includere collegamenti ad altri siti web o fonti Internet, aggiunti da terzi. Milaris Partners non ha alcun controllo su questi siti e fonti esterne e non è responsabile della loro disponibilità, contenuto, correttezza, attualità, qualità, completezza, pertinenza o legalità di qualsiasi pubblicità, prodotto, servizio o altro materiale disponibile su o da questi siti o fonti. I visitatori riconoscono che Milaris Partners non è responsabile per perdite dirette o consequenziali derivanti dall'uso o dall'affidamento sul contenuto di questi siti o fonti, o di qualsiasi bene o servizio disponibile su questi siti o da queste fonti, visualizzati online o ottenuti tramite e-mail o qualsiasi altro mezzo. La riservatezza e l'integrità delle informazioni su Internet non sono garantite. Qualsiasi messaggio e-mail inviato dagli utenti del sito può essere intercettato o alterato. Milaris Partners non è responsabile per messaggi intercettati o alterati. Milaris Partners ritiene che tutti i siti menzionati su questo sito web, direttamente o tramite collegamenti ipertestuali, appartengano a società rispettabili ed etiche. Tuttavia, Milaris Partners non ha alcun legame con la maggior parte di queste società e non le ha verificate. Le informazioni presentate su questo sito sono state ottenute da fonti ritenute affidabili e sono stati fatti tutti gli sforzi per garantirne l'accuratezza. Nonostante queste precauzioni, Milaris Partners non può essere ritenuta responsabile per l'accuratezza di queste informazioni. Ogni utente si assume la piena responsabilità per l'uso di tutte o parte delle informazioni presentate su questo sito."
+        },
+        {
+          heading: "Proprietà intellettuale e contraffazione",
+          content: "https://milaris.partners/ detiene i diritti di proprietà intellettuale e i diritti d'uso su tutti gli elementi accessibili sul sito web, inclusi testi, immagini, grafica e loghi. Qualsiasi riproduzione, rappresentazione, modifica, pubblicazione o adattamento di tutto o parte degli elementi del sito, indipendentemente dai mezzi o processi utilizzati, è vietata senza la previa autorizzazione scritta di https://milaris.partners/. Qualsiasi utilizzo non autorizzato del sito o di uno qualsiasi dei suoi contenuti sarà considerato come contraffazione e perseguito ai sensi delle disposizioni degli articoli L.335-2 e seguenti del Codice della Proprietà Intellettuale francese."
+        },
+        {
+          heading: "Contatti",
+          content: "Se desideri contattarci per saperne di più su questa politica o per qualsiasi domanda relativa ai diritti individuali, puoi contattarci all'indirizzo: legal@milaris.partners"
+        }
+      ]
+    },
+    terms: {
+      title: "Condizioni Generali",
+      sections: [
+        {
+          heading: "Benvenuto su Milaris Partners!",
+          content: "Queste condizioni generali definiscono le regole e i regolamenti per l'utilizzo del sito web di Milaris Partners, situato all'indirizzo https://milaris.partners/. Accedendo a questo sito web, si presume che tu accetti queste condizioni generali. Non continuare a utilizzare Milaris Partners se non accetti tutte le condizioni generali indicate in questa pagina. Ci prendiamo cura dei tuoi dati personali e ci impegniamo a garantirne la riservatezza e la sicurezza."
+        },
+        {
+          heading: "Informazioni sui visitatori",
+          content: "Il visitatore è informato delle normative riguardanti la comunicazione di marketing, la Legge del 21 giugno 2014 per la fiducia nell'economia digitale, la Legge sulla protezione dei dati del 6 agosto 2004 e il Regolamento generale sulla protezione dei dati (GDPR: n. 2016-679)."
+        },
+        {
+          heading: "Responsabili della raccolta dei dati personali",
+          content: "Per i dati personali raccolti nell'ambito della creazione dell'account utente e della navigazione sul sito, il responsabile del trattamento dei dati è: Milaris Partners SAS. In qualità di responsabile del trattamento dei dati, https://milaris.partners/ si impegna a rispettare il quadro legale vigente. Ogni volta che https://milaris.partners/ tratta dati personali, adotta tutte le misure ragionevoli per garantire l'accuratezza e la pertinenza dei dati personali rispetto alle finalità per cui sono trattati."
+        },
+        {
+          heading: "Finalità della raccolta dei dati",
+          content: "https://milaris.partners/ può trattare tutti o parte dei dati: Per consentire la navigazione sul Sito. Per prevenire e combattere le frodi informatiche (spamming, hacking, ecc.): apparecchiature utilizzate per la navigazione, indirizzo IP, password crittografata. Per migliorare la navigazione sul Sito: dati di connessione e di utilizzo. Per condurre campagne di comunicazione (sms, email): numero di telefono, indirizzo email. https://milaris.partners/ non vende i tuoi dati personali, che vengono utilizzati solo se necessario o per scopi statistici e di analisi."
+        },
+        {
+          heading: "Diritti di accesso, rettifica e opposizione",
+          content: "In conformità con la normativa europea, gli utenti di https://milaris.partners/ dispongono dei seguenti diritti: Diritto di accesso (articolo 15 GDPR) e di rettifica (articolo 16 GDPR), aggiornamento, completamento dei dati degli utenti. Diritto di blocco o cancellazione dei dati degli utenti (articolo 17 GDPR) quando sono inesatti, incompleti, equivoci, obsoleti o la cui raccolta, utilizzo, comunicazione o conservazione è vietata. Diritto di revocare il consenso in qualsiasi momento (articolo 13-2c GDPR). Diritto alla limitazione del trattamento dei dati degli utenti (articolo 18 GDPR). Diritto di opposizione al trattamento dei dati degli utenti (articolo 21 GDPR). Diritto alla portabilità dei dati forniti dagli utenti quando tali dati sono oggetto di trattamenti automatizzati basati sul loro consenso o su un contratto (articolo 20 GDPR). Diritto di definire la sorte dei dati degli utenti dopo la loro morte e di scegliere a chi https://milaris.partners/ dovrà comunicare (o meno) i propri dati a un terzo precedentemente designato."
+        },
+        {
+          heading: "Non comunicazione dei dati personali",
+          content: "https://milaris.partners/ si astiene dal trattare, ospitare o trasferire le Informazioni raccolte sui suoi Visitatori in un paese situato al di fuori dell'Unione Europea o riconosciuto come 'inadeguato' dalla Commissione Europea senza informare preventivamente il cliente. Tuttavia, https://milaris.partners/ resta libera di scegliere i propri subappaltatori tecnici e commerciali, a condizione che offrano garanzie sufficienti rispetto ai requisiti del Regolamento Generale sulla Protezione dei Dati (GDPR: n. 2016-679). https://milaris.partners/ si impegna a prendere tutte le precauzioni necessarie per preservare la sicurezza delle Informazioni e in particolare che non siano comunicate a persone non autorizzate. Tuttavia, se viene a conoscenza di un incidente che incide sull'integrità o la riservatezza delle Informazioni del Cliente, dovrà informare il Cliente il prima possibile e comunicare le misure correttive adottate. Inoltre, https://milaris.partners/ non raccoglie alcun 'dato sensibile'. I dati personali dell'Utente possono essere trattati da filiali di https://milaris.partners/ e subappaltatori (fornitori di servizi), esclusivamente per realizzare le finalità della presente politica. Nei limiti delle rispettive attribuzioni e per le finalità sopra ricordate, le principali persone che possono avere accesso ai dati degli Utenti di https://milaris.partners/ sono principalmente gli operatori del nostro servizio clienti."
+        },
+        {
+          heading: "Notifica di incidente",
+          content: "Qualunque siano le misure di protezione che adottiamo, nessun metodo di trasmissione su Internet né alcun metodo di archiviazione elettronica è completamente sicuro. Non possiamo quindi garantire una sicurezza assoluta. Se veniamo a conoscenza di una violazione della sicurezza, informeremo gli utenti interessati affinché possano adottare le misure appropriate. Le nostre procedure di notifica degli incidenti tengono conto dei nostri obblighi legali, sia a livello nazionale che europeo. Ci impegniamo a informare pienamente i nostri Clienti su tutte le questioni relative alla sicurezza del loro account e a fornire loro tutte le informazioni necessarie per aiutarli a rispettare i propri obblighi normativi in materia di segnalazione."
+        },
+        {
+          heading: "Sicurezza",
+          content: "Per garantire la sicurezza e la riservatezza dei Dati Personali e dei Dati Personali Sanitari, https://milaris.partners/ utilizza reti protette da dispositivi standard come firewall, pseudonimizzazione, crittografia e password. Durante il trattamento dei Dati Personali, https://milaris.partners/ adotta tutte le misure ragionevoli per proteggerli da qualsiasi perdita, uso improprio, accesso non autorizzato, divulgazione, alterazione o distruzione."
+        },
+        {
+          heading: "Collegamenti ipertestuali 'cookie' e tag Internet",
+          content: "Il sito https://milaris.partners/ contiene una serie di collegamenti ipertestuali ad altri siti, creati con l'autorizzazione di https://milaris.partners/. Tuttavia, https://milaris.partners/ non può verificare il contenuto dei siti così visitati e, di conseguenza, non si assume alcuna responsabilità in merito. Salvo che tu decida di disabilitare i cookie, accetti che il sito possa utilizzarli. Puoi disabilitare questi cookie in qualsiasi momento gratuitamente dalle opzioni di disattivazione disponibili e ricordate di seguito, sapendo che ciò può ridurre o impedire l'accesso a tutti o parte dei Servizi offerti dal sito."
+        },
+        {
+          heading: "Tag Internet",
+          content: "https://milaris.partners/ può occasionalmente utilizzare tag Internet e distribuirli tramite un partner specializzato in analisi web, che può essere situato (e quindi archiviare le informazioni corrispondenti, incluso l'indirizzo IP dell'Utente) in un paese straniero. Questa tecnologia consente a https://milaris.partners/ di valutare le risposte dei visitatori al Sito e l'efficacia delle sue azioni (ad esempio, il numero di volte in cui una pagina viene aperta e le informazioni visualizzate) e l'utilizzo di questo Sito da parte dell'Utente. Il fornitore esterno può raccogliere informazioni sui visitatori del Sito e di altri siti web che utilizzano questi tag, compilare rapporti sull'attività del Sito per https://milaris.partners/ e fornire altri servizi relativi all'utilizzo del Sito e di Internet."
+        },
+        {
+          heading: "Legge applicabile e giurisdizione",
+          content: "Qualsiasi controversia relativa all'utilizzo del sito https://milaris.partners/ è soggetta alla legge francese. Salvo nei casi in cui la legge non lo consenta, la giurisdizione esclusiva è attribuita ai tribunali competenti di Parigi."
+        }
+      ]
     }
   }
 }; 
