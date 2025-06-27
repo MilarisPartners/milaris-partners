@@ -15,12 +15,12 @@ export const translations = {
       title: "Le M&A, simplement",
       description: {
         part1: "Milaris Partners",
-        part2: "accompagne les",
-        part3: "dirigeants de PME et ETI",
-        part4: ", les",
-        part5: "actionnaireset les investisseurs",
-        part6: " à vendre, acquérir ou financer des entreprises",
-        part7: " dans les meilleures conditions.",
+        part2: "accompagne les dirigeants, actionnaires et investisseurs de",
+        part3: "PME et ETI",
+        part4: "dans",
+        part5: " ",
+        part6: "la cession, l’acquisition ou le financement",
+        part7: "d’entreprises.",
         part8: " "
       },
       cta: {
