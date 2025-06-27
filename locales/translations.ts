@@ -18,10 +18,10 @@ export const translations = {
         part2: "accompagne les",
         part3: "dirigeants de TPE/PME et ETI",
         part4: ", les",
-        part5: "actionnaires",
-        part6: "et les",
-        part7: "investisseurs",
-        part8: "à vendre, acquérir ou financer des entreprises dans les meilleures conditions."
+        part5: "actionnaireset les investisseurs",
+        part6: " à vendre, acquérir ou financer des entreprises",
+        part7: " dans les meilleures conditions.",
+        part8: " "
       },
       cta: {
         scheduleCall: "Planifier un échange",
@@ -114,7 +114,7 @@ export const translations = {
           description: "Expertise approfondie dans le secteur des biens de consommation courante et durables"
         },
         tmt: {
-          title: "Technologies / Media / Telecom",
+          title: "Technologies",
           description: "Accompagnement des entreprises innovantes dans leur transformation digitale"
         },
         healthcare: {
@@ -141,36 +141,36 @@ export const translations = {
         highlight: "Intelligence Artificielle",
         part2: "au service de vos transactions"
       },
-      description: "Technologie IA propriétaire développée par Milaris Partners. En exploitant des millions de données de marché et d'investisseurs, notre moteur de matching interne révèle la valeur cachée dans l'espace fragmenté des fusions-acquisitions de petites et moyennes capitalisations — là où les réseaux traditionnels échouent et où la fiabilité est essentielle.",
+      description: "Technologie IA propriétaire développée par Milaris Partners. En exploitant des millions de données de marché et d'investisseurs, notre moteur de matching interne révèle la valeur cachée dans le paysage fragmenté des fusions-acquisitions de petites et moyennes capitalisations — là où les réseaux traditionnels échouent et où la fiabilité est essentielle.",
       features: {
         identifyBuyers: {
-          title: "Identifier des acquéreurs hors radar",
+          title: "Identification des acquéreurs hors radars",
         },
         qualifyTargets: {
-          title: "Qualifier rapidement des cibles pertinentes",
+          title: "Qualification rapide de cibles pertinentes",
         },
         saveSourcing: {
-          title: "Gagner des semaines sur la phase de sourcing",
+          title: "Réduction significative du temps de sourcing",
         },
         objectiveValuation: {
-          title: "Objectiver la valorisation d'une cible",
+          title: "Valorisation objective des cibles",
         },
         marketKnowledge: {
-          title: "Market knowledge puissant secteur agnostique",
+          title: "Market knowledge fort et multi-sectoriel",
         }
       },
       stats: {
         data: {
           value: "5M+",
-          label: "Données"
+          label: "Données analysées"
         },
         transactions: {
           value: "250k",
-          label: "Transactions"
+          label: "Transactions traitées"
         },
         accuracy: {
           value: "99,9%",
-          label: "Précision"
+          label: "Précision du modèle"
         }
       }
     },
@@ -265,7 +265,7 @@ export const translations = {
     expertisePages: {
       cession: {
         hero: {
-          badge: "Expertise cession",
+          badge: "Cession d'entreprise",
           title: "Vendre son entreprise est une étape majeure.",
           subtitle: "Nous en faisons une réussite.",
           description: "Chez Milaris Partners, nous accompagnons les dirigeants dans la cession totale ou partielle de leur entreprise, en structurant une démarche stratégique, confidentielle et optimisée.",
@@ -434,7 +434,7 @@ export const translations = {
       },
       acquisition: {
         hero: {
-          badge: "Expertise Acquisition",
+          badge: "Acquisition d'entreprise",
           title: "Croître par croissance externe : méthodique, ciblé, efficace.",
           description: "Milaris Partners conseille des dirigeants, groupes industriels et investisseurs dans leurs opérations de croissance externe: acquisition d'un concurrent, d'un fournisseur, d'un acteur complémentaire ou d'une cible de diversification.",
           cta: "Explorons vos opportunités"
@@ -572,28 +572,28 @@ export const translations = {
               answer: "Entre 3 et 12 mois selon le contexte — from opportunistic one-off deals to competitive, multi-target processes. Our structured approach ensures both efficiency and deal security."
             },
             q2: {
-              question: "How do you identify acquisition targets?",
-              answer: "We leverage a proprietary sourcing mix: trusted sector networks, enriched internal databases, and an AI tool that reveals off-market and hard-to-access opportunities."
+              question: "Comment identifiez-vous les cibles d'acquisition ?",
+              answer: "Nous combinons trois approches : notre réseau direct dans vos secteurs cibles, nos bases de données propriétaires enrichies en continu, et notre outil IA qui identifie des opportunités off-market autrement invisibles."
             },
             q3: {
-              question: "What types of deal structures do you offer?",
-              answer: "We structure a full range of transactions: full acquisitions, LBOs, minority/majority stakes, carve-outs, and buy-and-build strategies — tailored to your strategic and financial constraints."
+              question: "Quels types de structures proposez-vous ?",
+              answer: "Nous structurons tous types d'opérations : acquisition simple, LBO avec effet de levier, prise de participation minoritaire ou majoritaire, carve-out de divisions, stratégies build-up. Chaque structure est optimisée selon vos contraintes."
             },
             q4: {
-              question: "Do you manage international transactions?",
-              answer: "Yes. Our Franco-Italian DNA gives us strong cross-border execution capabilities, especially between France and Italy. Our broader European network also supports transactions across other key markets."
+              question: "Travaillez-vous sur des acquisitions internationales ?",
+              answer: "Oui, notre ADN franco-italien nous permet de gérer des acquisitions transfrontalières, notamment entre la France et l'Italie. Grâce à notre réseau européen — en particulier en Allemagne — nous facilitons aussi les opérations dans d'autres pays."
             }
           }
         },
         cta: {
-          title: "Ready to accelerate your growth?",
-          subtitle: "Whether you're targeting a specific company or simply exploring strategic options, let's confidentially assess your acquisition opportunities.",
-          button: "Let's explore your opportunities"
+          title: "Prêt à accélérer votre croissance ?",
+          subtitle: "Que vous ayez une cible en vue ou souhaitiez explorer le marché, discutons de vos opportunités d'acquisition en toute confidentialité.",
+          button: "Explorons vos opportunités"
         }
       },
       financement: {
         hero: {
-          badge: "Expertise Financement",
+          badge: "Financement",
           title: "Donner les moyens à vos ambitions : capital, dette, strutturazione.",
           description: "Nous accompagnons les entreprises dans leur recherche de financement, que ce soit pour soutenir la croissance, refinancer une dette, investir dans un projet ou structurer un rachat.",
           cta: "Structurons votre financement"
@@ -625,133 +625,133 @@ export const translations = {
           },
           steps: {
             preparation: {
-              title: "Investment materials",
-              description: "Model, business plan & investor deck to frame the equity story",
-              duration: "2–3 weeks"
+              title: "Préparation du dossier",
+              description: "Business plan, modélisation financière, préparation du pitch et des documents clés",
+              duration: "2–3 semaines"
             },
             identification: {
-              title: "Capital sourcing",
-              description: "Targeted outreach to relevant lenders and investors",
-              duration: "1–2 weeks"
+              title: "Identification des financeurs",
+              description: "Sélection des partenaires pertinents selon votre profil et vos besoins spécifiques",
+              duration: "1–2 semaines"
             },
             pitch: {
-              title: "Marketing & Terms",
-              description: "Investor meetings, Q&A, and term sheet negotiations",
-              duration: "4–8 weeks"
+              title: "Pitch et négociation",
+              description: "Présentation aux investisseurs, gestion des Q&A, négociation des term sheets",
+              duration: "4–8 semaines"
             },
             closing: {
-              title: "Due Diligence & Closing",
-              description: "DDue diligence, legal docs, and fund disbursement",
-              duration: "3–6 weeks"
+              title: "Due diligence & Closing",
+              description: "Due diligence, finalisation de la documentation légale et déblocage des fonds",
+              duration: "3–6 semaines"
             }
           }
         },
         stats: {
           stage: {
-            value: "Series A+",
-            label: "From Series A onwards"
+            value: "Série A+",
+            label: "À partir de la série A"
           },
           investors: {
             value: "250k+",
-            label: "Active investors in our network"
+            label: "Investisseurs actifs"
           },
           minimum: {
-            value: "€2M+",
-            label: "Minimum ticket size"
+            value: "2M€+",
+            label: "Seuil minimal d'intervention"
           }
         },
         whyMilaris: {
-          title: "Why choose Milaris Partners?",
-          subtitle: "Our expertise to make high-impact M&A solutions",
+          title: "Pourquoi Milaris Partners ?",
+          subtitle: "Notre expertise au service de votre financement optimal",
           items: {
             access: {
-              title: "Direct access to decision-makers",
-              description: "We connect you to top investors and lenders for faster access to senior decision-makers and deals"
+              title: "Accès direct aux décideurs",
+              description: "Réseau privilégié d'investisseurs et banquiers pour accélérer vos discussions de financement"
             },
             expertise: {
-              title: "Negotiation expertise",
-              description: "We structure complex financing, optimizing key terms to align with strategy and preserve flexibility"
+              title: "Expertise en négociation",
+              description: "Expérience dans la négociation des termes clés : dilution, levier, covenants pour optimiser vos conditions"
             },
             optimization: {
-              title: "Capital structure & Cost optimization",
-              description: "We design tailored capital solutions that balance cost, flexibility, and long-term scalability"
+              title: "Optimisation du coût du capital",
+              description: "Capacité à structurer des solutions flexibles et à optimiser le coût de votre financement"
             }
           }
         },
         types: {
-          title: "Types of financing",
-          subtitle: "Solutions tailored to your needs and specific constraints",
+          title: "Types de financement",
+          subtitle: "Solutions adaptées à vos besoins et contraintes spécifiques",
           equity: {
-            title: "Equity fundraising",
-            description: "To finance your growth while maintaining flexibility",
+            title: "Levée de fonds en capital",
+            description: "Pour financer votre croissance tout en conservant la flexibilité",
             items: {
               vc: {
-                title: "Venture Capital funds",
-                subtitle: "For hyper-growth startups"
+                title: "Fonds de Venture Capital (VC)",
+                subtitle: "Pour les startups en hyper-croissance"
               },
               pe: {
-                title: "Private Equity funds",
-                subtitle: "For mature companies"
+                title: "Fonds de Private Equity (PE)",
+                subtitle: "Pour les entreprises matures"
               },
               family: {
-                title: "Family Offices and private investors",
-                subtitle: "For long-term partnerships"
+                title: "Family Offices et investisseurs privés",
+                subtitle: "Pour un partenariat long terme"
               },
               angels: {
-                title: "Business Angels and investment clubs",
-                subtitle: "For seed/early-stage funding"
+                title: "Business Angels et clubs d'investisseurs",
+                subtitle: "Pour les phases d'amorçage"
               }
             }
           },
           debt: {
-            title: "Debt financing",
-            description: "To preserve your capital and optimize your structure",
+            title: "Financement par dette",
+            description: "Solutions de dette pour préserver votre capital et optimiser votre structure",
             items: {
               bank: {
-                title: "Traditional bank debt",
-                subtitle: "Secured classic financing"
+                title: "Dette bancaire traditionnelle",
+                subtitle: "Financements classiques sécurisés"
               },
               private: {
-                title: "Private debt (unitranche, mezzanine)",
-                subtitle: "Flexible and tailor-made solutions"
+                title: "Dette privée (unitranche, mezzanine)",
+                subtitle: "Solutions flexibles et sur-mesure"
               },
               bonds: {
-                title: "Bonds and bond financing",
-                subtitle: "For significant funding needs"
+                title: "Obligations et financement obligataire",
+                subtitle: "Pour les besoins importants"
               },
               lease: {
-                title: "Leasing and specialized solutions",
-                subtitle: "Asset-specific financing"
+                title: "Crédit-bail et solutions spécialisées",
+                subtitle: "Financements d'actifs spécifiques"
               }
             }
           }
         },
         faq: {
-          title: "Frequently Asked Questions",
-          subtitle: "Everything you need to know about corporate financing",
+          title: "Questions fréquentes",
+          subtitle: "Tout ce que vous devez savoir sur le financement d'entreprise",
           questions: {
             q1: {
-              question: "How long does a financing process take?",
-              answer: "2 to 6 months, depending on the type of financing and how prepared you are at the outset. Debt financing usually closes faster than equity fundraising."
+              question: "Combien de temps prend une levée de fonds ou un financement ?",
+              answer: "Entre 2 et 6 mois en moyenne, selon le type de financement recherché et le niveau de préparation initial. Les financements par dette sont généralement plus rapides que les levées de fonds en capital."
             },
             q2: {
-              question: "What's the difference between debt and equity?",
-              answer: "Equity financing means giving up a stake in your company in exchange for capital, while debt is a loan that must be repaid with interest. Equity offers greater flexibility but dilutes ownership; debt preserves control but involves regular repayments."
+              question: "Quelle est la différence entre dette et equity ?",
+              answer: "L'equity implique une dilution du capital en échange de fonds propres, tandis que la dette est un prêt à rembourser avec intérêts. L'equity offre plus de flexibilité mais dilue, la dette préserve le capital mais impose des remboursements réguliers."
             },
             q3: {
-              question: "How can I maximize my valuation?",
-              answer: "A strong valuation comes from thorough preparation: a solid business plan, proven growth metrics, a well-managed competitive process, and strategic timing. Our expertise helps you leverage each of these factors."
+              question: "Comment optimiser ma valorisation ?",
+              answer: "Une valorisation optimale résulte d'une préparation rigoureuse : business plan solide, métriques de croissance démontrées, processus concurrentiel bien organisé et timing adapté au marché. Notre expertise maximise chaque levier."
             },
             q4: {
-              question: "What funding amounts can you raise?",
-              answer: "We assist with fundraisings from €2M up to over €100M, across both equity and debt. Our network includes investors of all sizes, from business angels to leading European institutional funds."
+              question: "Quels montants pouvez-vous lever ?",
+              answer: "Nous accompagnons des levées de fonds à partir de 2M€ jusqu'à plus de 100M€, en equity comme en dette. Notre réseau couvre tous les types de tickets, des business angels aux grands fonds institutionnels européens."
             }
           }
         },
         cta: {
-          title: "Ready to finance your growth?",
-          subtitle: "Let's discuss your financing needs and explore together the best options to support your development.",
-          button: "Contact us"
+          title: "Prêt à financer votre croissance ?",
+          subtitle: "Discutons de vos besoins de financement et explorons ensemble les meilleures options pour soutenir votre développement.",
+          button: "Contactez-nous"
         }
       }
     },

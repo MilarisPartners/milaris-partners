@@ -238,8 +238,8 @@ const Financement = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">Série A+</h3>
-              <p className="text-white/80">A partir de la série A</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.financement.stats.stage.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.financement.stats.stage.label")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -248,8 +248,8 @@ const Financement = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">250k+</h3>
-              <p className="text-white/80">Investisseurs actifs</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.financement.stats.investors.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.financement.stats.investors.label")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -258,8 +258,8 @@ const Financement = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-bold text-white mb-2">2M+</h3>
-              <p className="text-white/80">Seuil minimal d'intervention</p>
+              <h3 className="text-5xl font-bold text-white mb-2">{t("expertisePages.financement.stats.minimum.value")}</h3>
+              <p className="text-white/80">{t("expertisePages.financement.stats.minimum.label")}</p>
             </motion.div>
           </div>
         </div>
@@ -284,45 +284,32 @@ const Financement = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Users,
-                title: "Accès direct aux décideurs",
-                description: "Réseau privilégié d'investisseurs et banquiers pour accélérer vos discussions de financement",
-                gradient: "from-[#0001ff] to-[#3E8BFF]"
-              },
-              {
-                icon: Handshake,
-                title: "Expertise en négociation",
-                description: "Expérience dans la négociation des termes clés : dilution, levier, covenants pour optimiser vos conditions",
-                gradient: "from-[#3E8BFF] to-[#0001ff]"
-              },
-              {
-                icon: Calculator,
-                title: "Optimisation du coût du capital",
-                description: "Capacité à structurer des solutions flexibles et à optimiser le coût de votre financement",
-                gradient: "from-[#0001ff] to-[#3E8BFF]"
-              }
-            ].map((item, index) => {
-              const Icon = item.icon;
+            {["access", "expertise", "optimization"].map((key, index) => {
+              const icons = [Users, Handshake, Calculator];
+              const gradients = [
+                "from-[#0001ff] to-[#3E8BFF]",
+                "from-[#3E8BFF] to-[#0001ff]",
+                "from-[#0001ff] to-[#3E8BFF]"
+              ];
+              const Icon = icons[index];
               return (
                 <motion.div
-                  key={index}
+                  key={key}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="bg-white border border-gray-200 p-8 rounded-lg hover:shadow-lg transition-all duration-300 h-full flex flex-col">
-                    <div className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`bg-white border border-gray-200 p-8 rounded-lg hover:shadow-lg transition-all duration-300 h-full flex flex-col`}>
+                    <div className={`w-16 h-16 bg-gradient-to-br ${gradients[index]} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-[#0b062b] mb-4">
-                      {item.title}
+                      {t(`expertisePages.financement.whyMilaris.items.${key}.title`)}
                     </h3>
                     <p className="text-gray-600 flex-grow">
-                      {item.description}
+                      {t(`expertisePages.financement.whyMilaris.items.${key}.description`)}
                     </p>
                     <motion.div 
                       className="mt-6 w-full h-1 bg-gray-200 rounded-full overflow-hidden"
@@ -331,7 +318,7 @@ const Financement = () => {
                       transition={{ duration: 1, delay: index * 0.2 }}
                       viewport={{ once: true }}
                     >
-                      <div className={`h-full bg-gradient-to-r ${item.gradient}`} />
+                      <div className={`h-full bg-gradient-to-r ${gradients[index]}`} />
                     </motion.div>
                   </div>
                 </motion.div>
@@ -352,14 +339,15 @@ const Financement = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Types de financement
+              {t("expertisePages.financement.types.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Solutions adaptées à vos besoins et contraintes spécifiques
+              {t("expertisePages.financement.types.subtitle")}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Equity Section */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -373,53 +361,28 @@ const Financement = () => {
                     <TrendingUp className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#0b062b]">
-                    Levée de fonds en capital
+                    {t("expertisePages.financement.types.equity.title")}
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Pour financer votre croissance tout en conservant la flexibilité
+                  {t("expertisePages.financement.types.equity.description")}
                 </p>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1">
-                      <CheckCircle className="w-5 h-5 text-[#0001ff]" />
+                  {["vc", "pe", "family", "angels"].map((key, idx) => (
+                    <div className="flex items-start gap-3" key={key}>
+                      <div className="mt-1">
+                        <CheckCircle className="w-5 h-5 text-[#0001ff]" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-800">{t(`expertisePages.financement.types.equity.items.${key}.title`)}</p>
+                        <p className="text-sm text-gray-600">{t(`expertisePages.financement.types.equity.items.${key}.subtitle`)}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Fonds de Venture Capital (VC)</p>
-                      <p className="text-sm text-gray-600">Pour les startups en hyper-croissance</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1">
-                      <CheckCircle className="w-5 h-5 text-[#0001ff]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Fonds de Private Equity (PE)</p>
-                      <p className="text-sm text-gray-600">Pour les entreprises matures</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1">
-                      <CheckCircle className="w-5 h-5 text-[#0001ff]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Family Offices et investisseurs privés</p>
-                      <p className="text-sm text-gray-600">Pour un partenariat long terme</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1">
-                      <CheckCircle className="w-5 h-5 text-[#0001ff]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Business Angels et clubs d'investisseurs</p>
-                      <p className="text-sm text-gray-600">Pour les phases d'amorçage</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </motion.div>
-
+            {/* Debt Section */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -427,55 +390,30 @@ const Financement = () => {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border border-[#3E8BFF]/10 hover:border-[#3E8BFF]/30">
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border border-[#0001ff]/10 hover:border-[#0001ff]/30">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3E8BFF] to-[#0001ff] rounded-full flex items-center justify-center shadow-lg">
                     <Wallet className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#0b062b]">
-                    Financement par dette
+                    {t("expertisePages.financement.types.debt.title")}
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Solutions de dette pour préserver votre capital et optimiser votre structure
+                  {t("expertisePages.financement.types.debt.description")}
                 </p>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1">
-                      <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
+                  {["bank", "private", "bonds", "lease"].map((key, idx) => (
+                    <div className="flex items-start gap-3" key={key}>
+                      <div className="mt-1">
+                        <CheckCircle className="w-5 h-5 text-[#0001ff]" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-800">{t(`expertisePages.financement.types.debt.items.${key}.title`)}</p>
+                        <p className="text-sm text-gray-600">{t(`expertisePages.financement.types.debt.items.${key}.subtitle`)}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Dette bancaire traditionnelle</p>
-                      <p className="text-sm text-gray-600">Financements classiques sécurisés</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1">
-                      <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Dette privée (unitranche, mezzanine)</p>
-                      <p className="text-sm text-gray-600">Solutions flexibles et sur-mesure</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1">
-                      <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Obligations et financement obligataire</p>
-                      <p className="text-sm text-gray-600">Pour les besoins importants</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1">
-                      <CheckCircle className="w-5 h-5 text-[#3E8BFF]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Crédit-bail et solutions spécialisées</p>
-                      <p className="text-sm text-gray-600">Financements d'actifs spécifiques</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </motion.div>
@@ -504,10 +442,10 @@ const Financement = () => {
               <span className="text-[#0001ff] font-semibold">FAQ</span>
             </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
-              Questions fréquentes
+              {t("expertisePages.financement.faq.title")}
             </h2>
             <p className="text-xl text-gray-600">
-              Tout ce que vous devez savoir sur le financement d'entreprise
+              {t("expertisePages.financement.faq.subtitle")}
             </p>
           </motion.div>
 
