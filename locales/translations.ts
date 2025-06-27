@@ -594,7 +594,7 @@ export const translations = {
       financement: {
         hero: {
           badge: "Financement",
-          title: "Donner les moyens à vos ambitions : capital, dette, strutturazione.",
+          title: "Donner les moyens à vos ambitions : capital, dette.",
           description: "Nous accompagnons les entreprises dans leur recherche de financement, que ce soit pour soutenir la croissance, refinancer une dette, investir dans un projet ou structurer un rachat.",
           cta: "Structurons votre financement"
         },
