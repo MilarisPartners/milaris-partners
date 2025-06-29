@@ -16,7 +16,7 @@ export const translations = {
       description: {
         part1: "Milaris Partners",
         part2: "accompagne les dirigeants, actionnaires et investisseurs de",
-        part3: "PME et ETI",
+        part3: "PME et ETI ",
         part4: "dans",
         part5: " ",
         part6: "la cession, l’acquisition ou le financement",
