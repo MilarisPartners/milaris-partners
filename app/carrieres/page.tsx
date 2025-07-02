@@ -23,7 +23,7 @@ const Carrieres = () => {
 
   const calendlyLink = language === 'IT' 
     ? "https://calendly.com/matteo-varennepartners/30min" 
-    : "https://calendly.com/paul-varennepartners/30min";
+    : "https://calendly.com/paul-milarispartners/30min";
 
   const values = [
     {
