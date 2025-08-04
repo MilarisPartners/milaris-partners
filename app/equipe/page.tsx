@@ -14,7 +14,7 @@ const Equipe = () => {
   const { t, language } = useTranslation();
 
   const calendlyLink = language === 'IT' 
-    ? "https://calendly.com/matteo-varennepartners/30min" 
+    ? "https://calendly.com/matteo-milarispartners" 
     : "https://calendly.com/paul-milarispartners/30min";
 
   // Données structurées pour les membres de l'équipe
