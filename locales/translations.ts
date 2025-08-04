@@ -19,8 +19,8 @@ export const translations = {
         part3: "PME et ETI ",
         part4: "dans",
         part5: " ",
-        part6: "la cession, l’acquisition ou le financement",
-        part7: "d’entreprises.",
+        part6: "la cession, l'acquisition ou le financement",
+        part7: "d'entreprises.",
         part8: " "
       },
       cta: {
@@ -792,13 +792,38 @@ export const translations = {
               description: "Identification d'opportunités hors radar en Italie pour nos mandats buy-side grâce à notre présence locale."
           }
       },
+      kevin: {
+          focus1: {
+              title: "Marchés allemand et français",
+              description: "Plus de 15 ans d'expérience sur les marchés français et allemand. Bi-national, Kevin maîtrise les environnements économiques, juridiques et culturels des deux pays. Intervention auprès de dirigeants pour des opérations de cession, acquisition ou levée de fonds."
+          },
+          focus2: {
+              title: "Transactions transfrontalières",
+              description: "Expertise reconnue dans la structuration d'opérations complexes à l'international. Parcours consolidé en Asie et Amérique du Nord au sein de groupes financiers de premier plan. Intervention sur des deals exigeants en coordination avec des parties prenantes internationales."
+          },
+          focus3: {
+              title: "Réseau international",
+              description: "Réseau actif en Europe et en Asie, notamment au Japon et en Corée, auprès d'industriels, investisseurs et conseils de premier plan. Mobilisé pour identifier des contreparties qualifiées ou faciliter des discussions sensibles. Leva différenciant dans les opérations à dimension internationale."
+          }
+      },
       cta: {
           title: "Prêt à rencontrer notre équipe ?",
           subtitle: "Discutons de votre projet et voyons comment nous pouvons accompagner votre succès",
           button: "Planifier un échange"
       },
+      sections: {
+          partners: {
+              title: "Nos Associés",
+              subtitle: "Les fondateurs de Milaris Partners, experts en M&A avec une vision européenne"
+          },
+          seniorAdvisor: {
+              title: "Senior Advisor",
+              subtitle: "Expertise internationale et conseil stratégique"
+          }
+      },
       managingDirectorFrance: "Managing Director - France",
-      managingDirectorItalie: "Managing Director - Italie"
+      managingDirectorItalie: "Managing Director - Italie",
+      seniorAdvisor: "Senior Advisor - France & Allemagne"
     },
     carrieres: {
       hero: {
@@ -1775,13 +1800,38 @@ export const translations = {
               description: "Proprietary access to off-market opportunities in Italy for buy-side mandates, enabled by deep local presence and network"
           }
       },
+      kevin: {
+          focus1: {
+              title: "German and French markets",
+              description: "Over 15 years of experience in French and German markets. Dual national, Kevin masters the economic, legal and cultural environments of both countries. Intervention with executives for divestment, acquisition or fundraising operations."
+          },
+          focus2: {
+              title: "Cross-border transactions",
+              description: "Recognized expertise in structuring complex international operations. Consolidated track record in Asia and North America within leading financial groups. Intervention on demanding deals in coordination with international stakeholders."
+          },
+          focus3: {
+              title: "International network",
+              description: "Active network in Europe and Asia, particularly in Japan and Korea, with leading industrial companies, investors and advisors. Mobilized to identify qualified counterparts or facilitate sensitive discussions. Differentiating lever in international operations."
+          }
+      },
       cta: {
           title: "Ready to meet our team?",
           subtitle: "Let's explore your project together and identify how we can contribute to its success",
           button: "Schedule a call"
       },
+      sections: {
+          partners: {
+              title: "Our Partners",
+              subtitle: "The founders of Milaris Partners, M&A experts with a European vision"
+          },
+          seniorAdvisor: {
+              title: "Senior Advisor",
+              subtitle: "International expertise and strategic advisory"
+          }
+      },
       managingDirectorFrance: "Managing Director - France",
-      managingDirectorItalie: "Managing Director - Italy"
+      managingDirectorItalie: "Managing Director - Italy",
+      seniorAdvisor: "Senior Advisor - France & Germany"
     },
     carrieres: {
       hero: {
@@ -1927,40 +1977,40 @@ export const translations = {
           content: "The visitor is informed of the regulations concerning marketing communication, the Law of June 21, 2014 for confidence in the digital economy, the Data Protection Act of August 6, 2004, and the General Data Protection Regulation (GDPR: No. 2016-679)."
         },
         {
-          heading: "Responsables de la collecte des données personnelles",
-          content: "For personal data collected as part of creating the user account and browsing the site, the data controller is: Milaris Partners SAS. As the data controller, https://milaris.partners/ undertakes to respect the legal framework in force. Whenever https://milaris.partners/ traite des données personnelles, elle prend toutes les mesures raisonnables pour s'assurer de l'exactitude et de la pertinence des données personnelles au regard des finalités pour lesquelles elles sont traitées."
+          heading: "Personal Data Collection Controllers",
+          content: "For personal data collected as part of creating the user account and browsing the site, the data controller is: Milaris Partners SAS. As the data controller, https://milaris.partners/ undertakes to respect the legal framework in force. Whenever https://milaris.partners/ processes personal data, it takes all reasonable measures to ensure the accuracy and relevance of personal data with regard to the purposes for which they are processed."
         },
         {
-          heading: "Finalité de la collecte des données",
-          content: "https://milaris.partners/ peut traiter tout ou partie des données : Pour permettre la navigation sur le Site. Pour prévenir et lutter contre la fraude informatique (spamming, hacking, etc.) : matériel utilisé pour la navigation, adresse IP, mot de passe haché. Pour améliorer la navigation sur le Site : données de connexion et d'utilisation. Pour mener des campagnes de communication (sms, email) : numéro de téléphone, adresse email. https://milaris.partners/ ne vend pas vos données personnelles, qui sont uniquement utilisées en cas de nécessité ou à des fins statistiques et d'analyses."
+          heading: "Purpose of Data Collection",
+          content: "https://milaris.partners/ may process all or part of the data: To enable navigation on the Site. To prevent and combat computer fraud (spamming, hacking, etc.): equipment used for navigation, IP address, hashed password. To improve navigation on the Site: connection and usage data. To conduct communication campaigns (sms, email): phone number, email address. https://milaris.partners/ does not sell your personal data, which is only used when necessary or for statistical and analytical purposes."
         },
         {
-          heading: "Droits d'accès, de rectification et d'opposition",
-          content: "Conformément à la réglementation européenne, les utilisateurs de https://milaris.partners/ disposent des droits suivants : Droit d'accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données des utilisateurs. Droit de verrouillage ou d'effacement des données des utilisateurs (article 17 RGPD) lorsqu'elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l'utilisation, la communication ou la conservation est interdite. Droit de retirer à tout moment un consentement (article 13-2c RGPD). Droit à la limitation du traitement des données des utilisateurs (article 18 RGPD). Droit d'opposition au traitement des données des utilisateurs (article 21 RGPD). Droit à la portabilité des données fournies par les utilisateurs lorsque ces données font l'objet de traitements automatisés fondés sur leur consentement ou sur un contrat (article 20 RGPD). Droit de définir le sort des données des utilisateurs après leur mort et de choisir à qui https://milaris.partners/ devra communiquer (ou non) ses données à un tiers qu'ils auront préalablement désigné."
+          heading: "Rights of Access, Rectification and Opposition",
+          content: "In accordance with European regulations, users of https://milaris.partners/ have the following rights: Right of access (Article 15 GDPR) and rectification (Article 16 GDPR), updating, completeness of user data. Right to block or delete user data (Article 17 GDPR) when they are inaccurate, incomplete, ambiguous, outdated, or whose collection, use, communication or retention is prohibited. Right to withdraw consent at any time (Article 13-2c GDPR). Right to limit the processing of user data (Article 18 GDPR). Right to object to the processing of user data (Article 21 GDPR). Right to portability of data provided by users when such data is subject to automated processing based on their consent or on a contract (Article 20 GDPR). Right to define the fate of user data after their death and to choose to whom https://milaris.partners/ should communicate (or not) its data to a third party they have previously designated."
         },
         {
-          heading: "Non-communication des données personnelles",
-          content: "https://milaris.partners/ s'abstient de traiter, héberger ou transférer les Informations collectées sur ses Visiteurs vers un pays situé en dehors de l'Union européenne ou reconnu comme 'inadéquat' par la Commission européenne sans en informer préalablement le client. Pour autant, https://milaris.partners/ reste libre du choix de ses sous-traitants techniques et commerciaux, à condition qu'ils présentent des garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679). https://milaris.partners/ s'engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu'elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l'intégrité ou la confidentialité des Informations du Client est portée à la connaissance de https://milaris.partners/, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs, https://milaris.partners/ ne collecte aucune 'donnée sensible'. Les données personnelles de l'Utilisateur peuvent être traitées par des filiales de https://milaris.partners/ et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique. Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d'avoir accès aux données des Utilisateurs de https://milaris.partners/ sont principalement les agents de notre service client."
+          heading: "Non-disclosure of Personal Data",
+          content: "https://milaris.partners/ refrains from processing, hosting or transferring Information collected on its Visitors to a country located outside the European Union or recognized as 'inadequate' by the European Commission without prior notification to the client. However, https://milaris.partners/ remains free to choose its technical and commercial subcontractors, provided they present sufficient guarantees with regard to the requirements of the General Data Protection Regulation (GDPR: No. 2016-679). https://milaris.partners/ undertakes to take all necessary precautions to preserve the security of the Information and in particular that it is not communicated to unauthorized persons. However, if an incident affecting the integrity or confidentiality of the Client's Information is brought to the attention of https://milaris.partners/, it must inform the Client as soon as possible and communicate the corrective measures taken. Furthermore, https://milaris.partners/ does not collect any 'sensitive data'. The User's personal data may be processed by subsidiaries of https://milaris.partners/ and subcontractors (service providers), exclusively in order to achieve the purposes of this policy. Within the limits of their respective attributions and for the purposes recalled above, the main persons likely to have access to the data of Users of https://milaris.partners/ are mainly the agents of our customer service."
         },
         {
-          heading: "Notification d'incident",
-          content: "Quelles que soient les mesures de protection que nous prenons, aucune méthode de transmission sur Internet ni aucune méthode de stockage électronique n'est complètement sécurisée. Nous ne pouvons donc pas garantir une sécurité absolue. Si nous prenons connaissance d'une faille de sécurité, nous avertirons les utilisateurs concernés afin qu'ils puissent prendre les mesures appropriées. Nos procédures de notification d'incident tiennent compte de nos obligations légales, qu'elles soient au niveau national ou européen. Nous nous engageons à informer pleinement nos Clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting."
+          heading: "Incident Notification",
+          content: "Whatever protection measures we take, no method of transmission over the Internet or electronic storage method is completely secure. We therefore cannot guarantee absolute security. If we become aware of a security breach, we will notify the users concerned so that they can take appropriate measures. Our incident notification procedures take into account our legal obligations, whether at national or European level. We undertake to fully inform our Clients of all matters relating to the security of their account and to provide them with all necessary information to help them comply with their own regulatory reporting obligations."
         },
         {
-          heading: "Sécurité",
-          content: "Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé, https://milaris.partners/ utilise des réseaux protégés par des dispositifs standards tels que par pare-feux, la pseudonymisation, l'encryption et mot de passe. Lors du traitement des Données Personnelles, https://milaris.partners/ adresse toutes les mesures raisonnables pour les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction."
+          heading: "Security",
+          content: "To ensure the security and confidentiality of Personal Data and Personal Health Data, https://milaris.partners/ uses networks protected by standard devices such as firewalls, pseudonymization, encryption and passwords. When processing Personal Data, https://milaris.partners/ addresses all reasonable measures to protect them against any loss, misuse, unauthorized access, disclosure, alteration or destruction."
         },
         {
-          heading: "Liens hypertextes 'cookies' et balises ('tags') internet",
-          content: "Le site https://milaris.partners/ contient une série de liens hypertextes vers d'autres sites, mis en place avec l'autorisation de https://milaris.partners/. Toutefois, https://milaris.partners/ ne peut pas vérifier le contenu des sites ainsi visités et, par conséquent, ne prend aucune responsabilité à ce sujet. Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez désactiver ces cookies gratuitement à tout moment depuis les options de désactivation disponibles et rappelées ci-dessous, sapant que ci cela peut réduire ou empêcher l'accès à tout ou partie des Services proposés par le site."
+          heading: "Hypertext links 'cookies' and internet tags",
+          content: "The site https://milaris.partners/ contains a series of hypertext links to other sites, set up with the authorization of https://milaris.partners/. However, https://milaris.partners/ cannot verify the content of the sites thus visited and, consequently, assumes no responsibility in this regard. Unless you decide to disable cookies, you accept that the site may use them. You can disable these cookies free of charge at any time from the deactivation options available and recalled below, knowing that this may reduce or prevent access to all or part of the Services offered by the site."
         },
         {
-          heading: "Balises Internet",
-          content: "https://milaris.partners/ peut occasionnellement utiliser des balises Internet et les déployer par l'intermédiaire d'un partenaire spécialisé en analyse web, qui peut être situé (et donc stocker les informations correspondantes, y compris l'adresse IP de l'Utilisateur) dans un pays étranger. Questa tecnologia consente a https://milaris.partners/ di valutare le risposte dei visitatori al Sito e l'efficacia delle sue azioni (ad esempio, il numero di volte in cui una pagina viene aperta e le informazioni visualizzate) e l'utilizzo di questo Sito da parte dell'Utente. Il fornitore esterno può raccogliere informazioni sui visitatori del Sito e di altri siti web che utilizzano questi tag, compilare rapporti sull'attività del Sito per https://milaris.partners/ e fornire altri servizi relativi all'utilizzo del Sito e di Internet."
+          heading: "Internet Tags",
+          content: "https://milaris.partners/ may occasionally use Internet tags and deploy them through a web analytics partner, who may be located (and therefore store the corresponding information, including the User's IP address) in a foreign country. This technology allows https://milaris.partners/ to evaluate visitor responses to the Site and the effectiveness of its actions (for example, the number of times a page is opened and the information viewed) and the use of this Site by the User. The external provider may collect information about visitors to the Site and other websites that use these tags, compile reports on Site activity for https://milaris.partners/ and provide other services relating to the use of the Site and the Internet."
         },
         {
-          heading: "Droit applicable et juridiction",
-          content: "Qualsiasi controversia relativa all'utilizzo del sito https://milaris.partners/ è soggetta alla legge francese. Salvo nei casi in cui la legge non lo consenta, la giurisdizione esclusiva è attribuita ai tribunali competenti di Parigi."
+          heading: "Applicable Law and Jurisdiction",
+          content: "Any dispute relating to the use of the site https://milaris.partners/ is subject to French law. Except in cases where the law does not allow it, exclusive jurisdiction is attributed to the competent courts of Paris."
         }
       ]
     }
@@ -2758,13 +2808,38 @@ export const translations = {
               description: "Individuazione di opportunità off-radar in Italia per i nostri mandati buy-side grazie alla nostra presenza locale."
           }
       },
+      kevin: {
+          focus1: {
+              title: "Mercati tedesco e francese",
+              description: "Oltre 15 anni di esperienza nei mercati francese e tedesco. Bi-nazionale, Kevin padroneggia gli ambienti economici, giuridici e culturali di entrambi i paesi. Intervento presso dirigenti per operazioni di cessione, acquisizione o raccolta fondi."
+          },
+          focus2: {
+              title: "Transazioni transfrontaliere",
+              description: "Competenza riconosciuta nella strutturazione di operazioni complesse a livello internazionale. Percorso consolidato in Asia e Nord America presso gruppi finanziari di primo piano. Intervento su deal impegnativi in coordinamento con stakeholder internazionali."
+          },
+          focus3: {
+              title: "Rete internazionale",
+              description: "Rete attiva in Europa e Asia, in particolare in Giappone e Corea, presso industriali, investitori e consulenti di primo piano. Mobilitato per identificare controparti qualificate o facilitare discussioni sensibili. Leva differenziante nelle operazioni a dimensione internazionale."
+          }
+      },
       cta: {
           title: "Pronto a incontrare il nostro team?",
           subtitle: "Discutiamo del tuo progetto e vediamo come possiamo supportare il tuo successo",
           button: "Pianificare una chiamata"
       },
+      sections: {
+          partners: {
+              title: "I Nostri Partner",
+              subtitle: "I fondatori di Milaris Partners, esperti M&A con una visione europea"
+          },
+          seniorAdvisor: {
+              title: "Senior Advisor",
+              subtitle: "Competenza internazionale e consulenza strategica"
+          }
+      },
       managingDirectorFrance: "Managing Director - Francia",
-      managingDirectorItalie: "Managing Director - Italia"
+      managingDirectorItalie: "Managing Director - Italia",
+      seniorAdvisor: "Senior Advisor - Francia & Germania"
     },
     carrieres: {
       hero: {
