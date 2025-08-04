@@ -10,7 +10,7 @@ const Process = () => {
   const { t, language } = useTranslation();
   
   const calendlyLink = language === 'IT' 
-    ? 'https://calendly.com/matteo-varennepartners/30min'
+    ? 'https://calendly.com/matteo-milarispartners'
     : 'https://calendly.com/paul-varennepartners/30min';
 
   const steps = [
