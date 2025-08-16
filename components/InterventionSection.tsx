@@ -11,7 +11,7 @@ const InterventionSection = () => {
   
   const calendlyLink = language === 'IT' 
     ? 'https://calendly.com/matteo-milarispartners'
-    : 'https://calendly.com/paul-varennepartners/30min';
+    : 'https://calendly.com/paul-milarispartners/30min';
   const services = [
     {
       title: "Conseil en cession",
