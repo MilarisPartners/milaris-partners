@@ -67,6 +67,14 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* DataFast Analytics */}
+        <Script
+          src="https://datafa.st/js/script.js"
+          data-website-id="68a2f6c4b99581499c0d9a2d"
+          data-domain="milaris.partners"
+          strategy="afterInteractive"
+        />
+
         <Loader />
         <LanguageProvider>
           <StructuredData data={organizationData} />
