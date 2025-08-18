@@ -67,6 +67,15 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* DataFast Analytics (Proxied) */}
+        <Script
+          defer
+          src="/js/script.js"
+          data-website-id="yourwebsiteid"
+          data-domain="yourdomain.com"
+          strategy="afterInteractive"
+        />
+
         <Loader />
         <LanguageProvider>
           <StructuredData data={organizationData} />
