@@ -71,8 +71,8 @@ export default function RootLayout({
         <Script
           defer
           src="/js/script.js"
-          data-website-id="yourwebsiteid"
-          data-domain="yourdomain.com"
+          data-website-id="68a2f6c4b99581499c0d9a2d"
+          data-domain="milaris.partners"
           strategy="afterInteractive"
         />
 
