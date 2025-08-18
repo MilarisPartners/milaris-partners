@@ -3,7 +3,10 @@ import { Work_Sans, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { generateMetadata as generateSEOMetadata, generateStructuredData } from "@/utils/seo";
+import {
+  generateMetadata as generateSEOMetadata,
+  generateStructuredData,
+} from "@/utils/seo";
 import StructuredData from "@/components/StructuredData";
 import CookieBanner from "@/components/CookieBanner";
 import Loader from "@/components/Loader";
@@ -11,20 +14,20 @@ import Loader from "@/components/Loader";
 const workSans = Work_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: '--font-work-sans',
-  display: 'swap',
+  variable: "--font-work-sans",
+  display: "swap",
 });
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal", "italic"],
-  variable: '--font-playfair',
-  display: 'swap',
+  variable: "--font-playfair",
+  display: "swap",
 });
 
 // Métadonnées SEO optimisées pour la page d'accueil
-export const metadata: Metadata = generateSEOMetadata('home', 'fr');
+export const metadata: Metadata = generateSEOMetadata("home", "fr");
 
 export default function RootLayout({
   children,
@@ -32,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   // Données structurées pour l'organisation
-  const organizationData = generateStructuredData.organization('fr');
+  const organizationData = generateStructuredData.organization("fr");
 
   return (
     <html lang="fr" className="scroll-smooth">
@@ -40,24 +43,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#0001ff" />
         <meta name="msapplication-TileColor" content="#0001ff" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <script
-          defer
-          data-website-id="68a2f6c4b99581499c0d9a2d"
-          data-domain="milaris.partners"
-          src="https://datafa.st/js/script.js">
-        </script>
-      </head>
-      <body className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}>
-        {/* Redirection www vers racine (compatibilité GitHub Pages) */}
-        <Script id="www-redirect" strategy="beforeInteractive">
-          {`
-            if (typeof window !== 'undefined' && window.location.hostname.startsWith('www.')) {
-              const newUrl = window.location.href.replace(/^https?:\\/\\/www\\./, window.location.protocol + '//');
-              window.location.replace(newUrl);
-            }
-          `}
-        </Script>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
 
         {/* Google Analytics */}
         <Script
@@ -73,14 +62,29 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* DataFast Analytics (Proxied) */}
+        {/* DataFast Analytics (unique source) */}
         <Script
-          defer
-          src="/js/script.js"
+          id="datafast"
+          src="https://datafa.st/js/script.js"
+          strategy="afterInteractive"
           data-website-id="68a2f6c4b99581499c0d9a2d"
           data-domain="milaris.partners"
-          strategy="afterInteractive"
+          defer
         />
+      </head>
+
+      <body
+        className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}
+      >
+        {/* Redirection www vers racine (compatibilité GitHub Pages) */}
+        <Script id="www-redirect" strategy="beforeInteractive">
+          {`
+            if (typeof window !== 'undefined' && window.location.hostname.startsWith('www.')) {
+              const newUrl = window.location.href.replace(/^https?:\\/\\/www\\./, window.location.protocol + '//');
+              window.location.replace(newUrl);
+            }
+          `}
+        </Script>
 
         <Loader />
         <LanguageProvider>
