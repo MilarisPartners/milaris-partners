@@ -41,6 +41,12 @@ export default function RootLayout({
         <meta name="theme-color" content="#0001ff" />
         <meta name="msapplication-TileColor" content="#0001ff" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <script
+          defer
+          data-website-id="68a2f6c4b99581499c0d9a2d"
+          data-domain="milaris.partners"
+          src="https://datafa.st/js/script.js">
+        </script>
       </head>
       <body className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}>
         {/* Redirection www vers racine (compatibilité GitHub Pages) */}
