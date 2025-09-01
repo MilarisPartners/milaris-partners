@@ -1,29 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles, X } from "lucide-react";
+import { ArrowDown, Sparkles } from "lucide-react";
 import Globe3D from "./Globe3D";
-import { useState, useEffect } from "react";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Hero = () => {
-  const [showVarennePopup, setShowVarennePopup] = useState(false);
   const { t, language } = useTranslation();
 
   const calendlyLink = language === 'IT' 
     ? 'https://calendly.com/matteo-milarispartners'
     : 'https://calendly.com/paul-milarispartners/30min';
-
-  useEffect(() => {
-    // Vérifie si c'est la première visite
-    const hasSeenPopup = localStorage.getItem('hasSeenVarennePopup');
-    if (!hasSeenPopup) {
-      setTimeout(() => {
-        setShowVarennePopup(true);
-        localStorage.setItem('hasSeenVarennePopup', 'true');
-      }, 2000); // Affiche après 2 secondes
-    }
-  }, []);
 
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
@@ -233,33 +220,6 @@ const Hero = () => {
           </div>
         </motion.div>
       </motion.div>
-
-      {/* Varenne Partners Popup */}
-      {showVarennePopup && (
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 50 }}
-          className="fixed bottom-4 left-4 z-50 bg-white rounded-lg shadow-2xl p-4 max-w-xs"
-        >
-          <div className="flex items-start justify-between">
-            <div>
-              <p className="text-sm text-gray-600 mb-1">
-                {language === 'FR' && 'Anciennement'}
-                {language === 'EN' && 'Formerly'}
-                {language === 'IT' && 'Precedentemente'}
-              </p>
-              <p className="font-bold text-[#0b062b]">Varenne Partners</p>
-            </div>
-            <button
-              onClick={() => setShowVarennePopup(false)}
-              className="ml-4 p-1 rounded-full hover:bg-gray-100 transition-colors"
-            >
-              <X className="w-4 h-4 text-gray-500" />
-            </button>
-          </div>
-        </motion.div>
-      )}
     </section>
   );
 };
