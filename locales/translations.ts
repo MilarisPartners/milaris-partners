@@ -2033,7 +2033,7 @@ export const translations = {
         part1: "Milaris Partners",
         part2: "accompagna",
         part3: "PMI, imprenditori e investitori",
-        part4: "nelle cessioni, acquisizioni e operazioni di finanziamento aziendale, con l'obiettivo di",
+        part4: " nelle cessioni, acquisizioni e operazioni di finanziamento aziendale, con l'obiettivo di",
         part5: "tutelare gli interessi",
         part6: "e",
         part7: "valorizzare ogni transazione",
