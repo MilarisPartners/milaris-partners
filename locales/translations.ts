@@ -2863,7 +2863,7 @@ export const translations = {
         },
         value2: {
           title: "Tecnologia",
-          description: "Sfruttiamo la tecnologia per l'efficienza. Implementiamo strumenti avanzati e sistemi IA all'avanguardia per ottimizzare i nostri processi."
+          description: "Sfruttiamo la tecnologia per l'efficienza. Implementiamo strumenti avanzati e sistemi di intelligenza artificiale all'avanguardia per ottimizzare i nostri processi."
         },
         value3: {
           title: "Ambiente giovane e dinamico",
@@ -2874,14 +2874,14 @@ export const translations = {
         title: "Cosa ci contraddistingue?",
         subtitle: "Investiamo nel benessere e nello sviluppo dei nostri dipendenti.",
         benefit1: "Formazione continua e mentoring",
-        benefit2: "Progetti stimolanti con clienti prestigiosi",
+        benefit2: "Responsabilità ed ownership sui progetti",
         benefit3: "Ambiente di lavoro flessibile",
         benefit4: "Accesso a strumenti tecnologici unici"
       },
       opportunities: {
         title1: "Opportunità",
         title2: "attuali",
-        description: "Siamo sempre alla ricerca di profili ambiziosi, appassionati di eccellenza e innovazione. Se aspiri ad avere un impatto reale, imparare ogni giorno e crescere in un ambiente solidale, parliamone."
+        description: "Siamo costantemente alla ricerca di talenti ambiziosi, guidati dalla passione per l'eccellenza e l'innovazione. Se desideri avere un impatto concreto, imparare ogni giorno e crescere in un ambiente collaborativo, saremo felici di conoscerti."
       },
       howToApply: {
         title1: "Come",
