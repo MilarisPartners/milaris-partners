@@ -2907,7 +2907,7 @@ export const translations = {
         part1: "Il nostro perimetro di",
         highlight: "intervento"
       },
-      subtitle: "Soluzioni su misura per i dirigenti di aziende con un fatturato da 5 a 150M€",
+      subtitle: "Accompagnamento strategico per azionisti e manager di aziende private da 5 a 150M€, nei momenti decisivi di crescita, trasformazione e passaggio generazionale.",
       cards: [
         {
           title: "Consulenza per la cessione",
