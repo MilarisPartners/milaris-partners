@@ -2947,7 +2947,7 @@ export const translations = {
       bottomCtaButton: "Parlateci del vostro progetto"
     },
     testimonial: {
-      quote: "Milaris Partners ci ha guidato nella cessione della nostra azienda con grande professionalità. Grazie al loro approccio su misura e alla profonda conoscenza del mercato, siamo riusciti a concludere la transazione nelle condizioni migliori possibili.",
+      quote: "Milaris Partners ci ha guidato nella cessione della nostra azienda con grande professionalità. Grazie al loro approccio su misura e alla profonda conoscenza del mercato, siamo riusciti a concludere la transazione nelle condizioni migliori possibili",
       name: "Franck JOHANNY",
       title: "AMMINISTRATORE DELEGATO"
     },
