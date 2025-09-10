@@ -2134,11 +2134,11 @@ export const translations = {
         },
         tmt: {
           title: "TMT",
-          description: "Accompagnamento delle aziende innovative nella loro trasformazione digitale"
+          description: "Accompagnamento delle aziende attive nella trasformazione digitale"
         },
         healthcare: {
           title: "Sanità",
-          description: "Consulenza specializzata per gli attori del settore medico e farmaceutico"
+          description: "Supporto per gli attori del settore medico e farmaceutico"
         },
         industry: {
           title: "Industria",
