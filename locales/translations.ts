@@ -2046,9 +2046,9 @@ export const translations = {
     },
     about: {
       title: {
-        part1: "Un profondo impegno nel valorizzare le nostre",
-        part2: "aziende locali",
-        part3: "al loro giusto valore"
+        part1: "Boutique di M&A indipendente",
+        part2: "al servizio delle PMI europee",
+        part3: "nei momenti chiave di crescita, trasformazione e passaggio generazionale"
       },
       content: {
         point1: {
