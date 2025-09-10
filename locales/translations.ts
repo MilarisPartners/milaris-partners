@@ -2910,7 +2910,7 @@ export const translations = {
       subtitle: "Accompagnamento strategico per azionisti e manager di aziende private da 5 a 150M€, nei momenti decisivi di crescita, trasformazione e passaggio generazionale.",
       cards: [
         {
-          title: "Consulenza per la cessione",
+          title: "Sell-side advisory",
           description: "Massimizza il valore della tua azienda durante la cessione",
           features: [
             "Aziende da 5 a 150M€ di fatturato",
@@ -2921,7 +2921,7 @@ export const translations = {
           cta: "Scopri di più"
         },
         {
-          title: "Consulenza per l'acquisizione",
+          title: "Buy-side advisory",
           description: "Individua e assicurati le migliori opportunità di crescita esterna",
           features: [
             "Targeting strategico europeo",
@@ -2932,7 +2932,7 @@ export const translations = {
           cta: "Scopri di più"
         },
         {
-          title: "Consulenza per il finanziamento",
+          title: "Fundraising advisory",
           description: "Struttura il finanziamento ottimale per accelerare la tua crescita",
           features: [
             "Raccolta fondi growth",
