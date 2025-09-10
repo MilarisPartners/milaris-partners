@@ -2922,7 +2922,7 @@ export const translations = {
         },
         {
           title: "Buy-side advisory",
-          description: "Individua e assicurati le migliori opportunità di crescita esterna",
+          description: "Individua e assicurati le migliori opportunità di crescita inorganica",
           features: [
             "Targeting strategico europeo",
             "Approccio confidenziale",
