@@ -2943,7 +2943,7 @@ export const translations = {
           cta: "Scopri di più"
         }
       ],
-      bottomCtaText: "Un approccio esclusivo con un numero limitato di mandati per garantire un supporto premium",
+      bottomCtaText: "Un approccio esclusivo con un numero selezionato di mandati per garantire un supporto su misura",
       bottomCtaButton: "Parla del tuo progetto"
     },
     testimonial: {
