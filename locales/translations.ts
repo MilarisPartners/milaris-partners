@@ -2935,7 +2935,7 @@ export const translations = {
           title: "Fundraising advisory",
           description: "Strutturate il finanziamento ottimale per accelerare la vostra crescita",
           features: [
-            "Raccolta fondi growth",
+            "Raccolta di fondi per la crescita",
             "Debito & finanziamenti ibridi",
             "Rete di investitori qualificati"
           ],
