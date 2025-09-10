@@ -2786,29 +2786,29 @@ export const translations = {
       paul: {
           focus1: {
               title: "Supporto regionale",
-              description: "Supporto alle imprese locali della regione nelle loro operazioni primarie e secondarie in vari settori in base alle tendenze del mercato"
+              description: "Assistenza alle imprese francesi nelle operazioni primarie e secondarie, con un focus sulle esigenze locali. Aiutiamo le aziende ad adattarsi alle tendenze del mercato e a cogliere nuove opportunità."
           },
           focus2: {
               title: "Espansione internazionale",
-              description: "Cessione e ricerca di partner su scala globale per le aziende francesi"
+              description: "Supporto alle aziende francesi nella ricerca di partner e opportunità oltre confine. Favoriamo la crescita globale attraverso strategie di espansione mirate."
           },
           focus3: {
               title: "Mandati Buy-Side",
-              description: "Supporto ai fondi di investimento francesi nei loro mandati di acquisto all'estero per approfittare di opportunità non sfruttate in Italia e Germania"
+              description: "Affiancamento ai fondi di investimento francesi nei processi di acquisizione all'estero. Valorizziamo opportunità non sfruttate in mercati chiave come Italia e Germania."
           }
       },
       matteo: {
           focus1: {
               title: "Competenza multisettoriale",
-              description: "Supporto agli imprenditori italiani nelle loro operazioni primarie e secondarie, con una riconosciuta esperienza in diversi settori, in particolare quello industriale e TMT"
+              description: "Supporto agli imprenditori italiani nelle operazioni primarie e secondarie, con esperienza nei settori industriale e TMT. Forniamo soluzioni su misura per strategie di crescita sostenibile."
           },
           focus2: {
               title: "Partnership europei",
-              description: "Cessione e ricerca di partner strategici o acquirenti finanziari su scala europea per le aziende italiane."
+              description: "Ricerca e gestione di partner strategici e investitori a livello europeo. Aiutiamo le aziende italiane a rafforzare la loro posizione competitiva sul mercato."
           },
           focus3: {
               title: "Origination Italia",
-              description: "Individuazione di opportunità off-radar in Italia per i nostri mandati buy-side grazie alla nostra presenza locale."
+              description: "Individuazione di opportunità di investimento "off-market" per i mandati buy-side. La presenza locale ci permette di accedere a target esclusivi e difficilmente intercettabili."
           }
       },
       kevin: {
