@@ -2046,9 +2046,9 @@ export const translations = {
     },
     about: {
       title: {
-        part1: "Boutique di M&A indipendente",
-        part2: "al servizio delle PMI europee",
-        part3: "nei momenti chiave di crescita, trasformazione e passaggio generazionale"
+        part1: "Boutique di M&A indipendente per le",
+        part2: "PMI europee",
+        part3: "nei momenti di crescita, trasformazione e passaggio generazionale"
       },
       content: {
         point1: {
