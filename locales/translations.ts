@@ -2907,7 +2907,7 @@ export const translations = {
         part1: "Il nostro perimetro di",
         highlight: "intervento"
       },
-      subtitle: "Accompagnamento strategico per azionisti e manager di aziende private con un fatturato compreso tra 5 a 150M€, nei momenti decisivi di crescita, trasformazione e passaggio generazionale.",
+      subtitle: "Accompagnamento strategico per azionisti e manager di aziende private con un fatturato compreso tra i 5 e i 150M€, nei momenti decisivi di crescita, trasformazione e passaggio generazionale.",
       cards: [
         {
           title: "Sell-side advisory",
