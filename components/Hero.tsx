@@ -191,7 +191,7 @@ const Hero = () => {
             </motion.a>
             <motion.button 
               onClick={scrollToAbout}
-              className="bg-white/80 backdrop-blur-sm text-[#0b062b] border-2 border-[#0001ff]/30 btn-responsive rounded-lg font-medium hover:border-[#0001ff] hover:bg-[#0001ff]/5 hover:shadow-lg transition-all duration-300 relative overflow-hidden w-full sm:w-auto sm:min-w-[200px]"
+              className={`bg-white/80 backdrop-blur-sm text-[#0b062b] border-2 border-[#0001ff]/30 btn-responsive rounded-lg font-medium hover:border-[#0001ff] hover:bg-[#0001ff]/5 hover:shadow-lg transition-all duration-300 relative overflow-hidden w-full sm:w-auto ${language === 'IT' ? 'sm:min-w-[280px]' : 'sm:min-w-[200px]'}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
