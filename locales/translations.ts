@@ -2130,7 +2130,7 @@ export const translations = {
       sectors: {
         consumer: {
           title: "Beni di consumo",
-          description: "Expertise approfondita nel settore dei beni di consumo corrente e durevoli"
+          description: "Expertise nel settore dei beni di consumo durevoli e non durevoli"
         },
         tmt: {
           title: "TMT",
