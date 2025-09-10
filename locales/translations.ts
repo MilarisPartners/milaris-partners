@@ -2040,7 +2040,7 @@ export const translations = {
         part8: "."
       },
       cta: {
-        scheduleCall: "Pianifica una chiamata",
+        scheduleCall: "Parla con noi!",
         whatChanges: "Perché Milaris Partners?"
       }
     },
