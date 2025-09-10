@@ -2018,9 +2018,9 @@ export const translations = {
   IT: {
     navbar: {
       about: "Home",
-      expertises: "Competenze",
+      expertises: "Expertise",
       team: "Team",
-      career: "Carriera",
+      career: "Careers",
       contact: "Contattaci",
       businessSale: "Cessione d'azienda",
       businessAcquisition: "Acquisizione d'azienda",
