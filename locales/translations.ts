@@ -2777,8 +2777,8 @@ export const translations = {
     equipe: {
       hero: {
           title1: "Il nostro",
-          title2: "team",
-          subtitle: "Esperti appassionati dedicati alla creazione di valore e al supporto delle aziende nei loro progetti strategici"
+          title2: "Team",
+          subtitle: "Un gruppo di professionisti appassionati, dedicati a creare valore e a supportare le aziende nei loro progetti strategici."
       },
       focus: {
           title: "Aree di competenza"
@@ -2832,8 +2832,8 @@ export const translations = {
       },
       sections: {
           partners: {
-              title: "I Nostri Partner",
-              subtitle: "I fondatori di Milaris Partners, esperti M&A con una visione europea"
+              title: "I nostri Partner",
+              subtitle: "I fondatori di Milaris Partners: esperti di M&A con una visione internazionale ed europea."
           },
           seniorAdvisor: {
               title: "Senior Advisor",
