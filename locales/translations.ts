@@ -2793,17 +2793,17 @@ export const translations = {
               description: "Supporto alle aziende francesi nella ricerca di partner e opportunità oltre confine. Favoriamo la crescita globale attraverso strategie di espansione mirate."
           },
           focus3: {
-              title: "Mandati Buy-Side",
+              title: "Supporto nel buy-side",
               description: "Affiancamento ai fondi di investimento francesi nei processi di acquisizione all'estero. Valorizziamo opportunità non sfruttate in mercati chiave come Italia e Germania."
           }
       },
       matteo: {
           focus1: {
-              title: "Competenza multisettoriale",
+              title: "Competenze multisettoriali",
               description: "Supporto agli imprenditori italiani nelle operazioni primarie e secondarie, con esperienza nei settori industriale e TMT. Forniamo soluzioni su misura per strategie di crescita sostenibile."
           },
           focus2: {
-              title: "Partnership europei",
+              title: "Partnership europee",
               description: "Ricerca e gestione di partner strategici e investitori a livello europeo. Aiutiamo le aziende italiane a rafforzare la loro posizione competitiva sul mercato."
           },
           focus3: {
