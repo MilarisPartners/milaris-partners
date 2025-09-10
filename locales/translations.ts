@@ -2226,7 +2226,7 @@ export const translations = {
         highlight: "europea",
         part2: "strategica"
       },
-      description: "Con esperti nativi integrati nei nostri team e presenti nelle principali capitali europee, accompagniamo i vostri progetti transfrontalieri sul campo.",
+      description: "Con team locali radicati nelle principali capitali europee, vi accompagniamo con competenza direttamente sul campo.",
       stats: {
         transactions: {
           value: "+150",
