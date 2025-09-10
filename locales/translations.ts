@@ -2053,7 +2053,10 @@ export const translations = {
       content: {
         point1: {
           title: "Milaris Partners, società parigina fondata da professionisti italiani, francesi e tedeschi, accompagna micro, piccole e medie imprese nei loro percorsi di",
-          text: "cessione, acquisizione e raccolta capitali, aprendo loro le porte a investitori e acquirenti internazionali."
+          text1: "cessione, acquisizione e raccolta capitali",
+          text2: ", aprendo loro le porte a ",
+          text3: "investitori e acquirenti internazionali",
+          text4: "."
         },
         point2: {
           text1: "Presenti in",
