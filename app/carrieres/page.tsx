@@ -133,7 +133,7 @@ const Carrieres = () => {
               {t("carrieres.workWithUs.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
                 {t("carrieres.workWithUs.title2")}
-              </span>{language === "EN" ? "?" : " ?"}
+              </span>{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               {t("carrieres.workWithUs.subtitle")}

@@ -2848,13 +2848,13 @@ export const translations = {
       hero: {
         badge: "Unisciti a noi",
         title1: "Unisciti al nostro team",
-        title2: "innovativo",
-        description: "Il nostro successo si basa su un talentuoso team di professionisti, le cui diverse esperienze e ricchezza di idee alimentano la nostra ambizione di eccellenza e innovazione."
+        title2: "visionario",
+        description: "Il nostro successo nasce da un team di professionisti talentuosi, la cui varietà di esperienze e la ricchezza di idee alimentano costantemente la nostra ambizione di eccellenza e innovazione."
       },
       workWithUs: {
         title1: "Perché unirsi a",
         title2: "noi",
-        subtitle: "Scopri cosa rende Milaris Partners un ambiente di lavoro unico"
+        subtitle: "Scopri cosa rende Milaris Partners un ambiente di lavoro unico."
       },
       values: {
         value1: {
