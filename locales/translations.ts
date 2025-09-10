@@ -2911,7 +2911,7 @@ export const translations = {
       cards: [
         {
           title: "Sell-side advisory",
-          description: "Massimizza il valore della tua azienda durante la cessione",
+          description: "Massimizzate il valore della vostra azienda durante la cessione",
           features: [
             "Aziende con un fatturato tra i 5 e i 150M€",
             "Cessione totale o parziale",
@@ -2922,7 +2922,7 @@ export const translations = {
         },
         {
           title: "Buy-side advisory",
-          description: "Individua e assicurati le migliori opportunità di crescita inorganica",
+          description: "Individuate e assicuratevi le migliori opportunità di crescita inorganica",
           features: [
             "Targeting strategico europeo",
             "Approccio confidenziale",
@@ -2933,7 +2933,7 @@ export const translations = {
         },
         {
           title: "Fundraising advisory",
-          description: "Struttura il finanziamento ottimale per accelerare la tua crescita",
+          description: "Strutturate il finanziamento ottimale per accelerare la vostra crescita",
           features: [
             "Raccolta fondi growth",
             "Debito & finanziamenti ibridi",
