@@ -86,7 +86,7 @@ const About = () => {
                 <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
               <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                {t("about.content.point2.text1")} <span className="font-semibold text-[#0b062b]">{t("about.content.point2.country1")}</span>, <span className="font-semibold text-[#0b062b]">{t("about.content.point2.country2")}</span> {t("about.content.point2.text2")} <span className="font-semibold text-[#0b062b]">{t("about.content.point2.country3")}</span>{t("about.content.point2.text3")}
+                {t("about.content.point2.text1")} {t("about.content.point2.country1")}, {t("about.content.point2.country2")} {t("about.content.point2.text2")} {t("about.content.point2.country3")}{t("about.content.point2.text3")}
               </p>
             </motion.div>
             
@@ -100,7 +100,7 @@ const About = () => {
                 <Cpu className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
               <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                {t("about.content.point3.text1")} <span className="font-bold bg-gradient-to-r from-[#0001ff] to-[#3E8BFF] bg-clip-text text-transparent">{t("about.content.point3.ai")}</span> {t("about.content.point3.text2")}
+                {t("about.content.point3.text1")} {t("about.content.point3.ai")} {t("about.content.point3.text2")}
               </p>
             </motion.div>
 
