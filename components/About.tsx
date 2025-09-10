@@ -72,7 +72,7 @@ const About = () => {
                 <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
               <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                <span className="font-bold text-[#0001ff]">{t("about.content.point1.title")}</span> <span className="font-semibold text-blue-bright">{t("about.content.point1.text1")}</span>{t("about.content.point1.text2")}<span className="font-semibold text-blue-bright">{t("about.content.point1.text3")}</span>{t("about.content.point1.text4")}
+                {t("about.content.point1.title")} {t("about.content.point1.text1")}{t("about.content.point1.text2")}{t("about.content.point1.text3")}{t("about.content.point1.text4")}
               </p>
             </motion.div>
             
