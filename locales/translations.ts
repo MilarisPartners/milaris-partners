@@ -2871,8 +2871,8 @@ export const translations = {
         }
       },
       benefits: {
-        title: "I nostri vantaggi",
-        subtitle: "Investiamo nel benessere e nello sviluppo dei nostri dipendenti",
+        title: "Cosa ci contraddistingue?",
+        subtitle: "Investiamo nel benessere e nello sviluppo dei nostri dipendenti.",
         benefit1: "Formazione continua e mentoring",
         benefit2: "Progetti stimolanti con clienti prestigiosi",
         benefit3: "Ambiente di lavoro flessibile",
