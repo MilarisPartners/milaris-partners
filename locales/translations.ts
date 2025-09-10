@@ -2032,12 +2032,12 @@ export const translations = {
       description: {
         part1: "Milaris Partners",
         part2: "accompagna",
-        part3: "dirigenti di PMI e mid-cap",
-        part4: ",",
-        part5: "azionisti",
+        part3: "PMI, imprenditori e investitori",
+        part4: "nelle cessioni, acquisizioni e operazioni di finanziamento aziendale, con l'obiettivo di",
+        part5: "tutelare gli interessi",
         part6: "e",
-        part7: "investitori",
-        part8: "a vendere, acquisire o finanziare aziende nelle migliori condizioni."
+        part7: "valorizzare ogni transazione",
+        part8: "."
       },
       cta: {
         scheduleCall: "Pianifica una chiamata",
