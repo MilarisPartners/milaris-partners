@@ -2163,19 +2163,19 @@ export const translations = {
       description: "Tecnologia IA proprietaria sviluppata da Milaris Partners. Analizzando milioni di dati su mercati e investitori, il nostro motore di matching individua opportunità nascoste nel panorama frammentato delle fusioni e acquisizioni di piccole e medie imprese, dove le reti tradizionali non arrivano e l'affidabilità diventa decisiva.",
       features: {
         identifyBuyers: {
-          title: "Identificare acquirenti fuori radar",
+          title: "Individuare acquirenti strategici nascosti",
         },
         qualifyTargets: {
-          title: "Qualificare rapidamente obiettivi rilevanti",
+          title: "Qualificare target in modo rapido",
         },
         saveSourcing: {
-          title: "Risparmiare settimane nella fase di sourcing",
+          title: "Accelerare il processo di sourcing",
         },
         objectiveValuation: {
-          title: "Oggettivare la valutazione di un target",
+          title: "Oggettivare la valutazione delle controparti",
         },
         marketKnowledge: {
-          title: "Potente conoscenza di mercato settore-agnostica",
+          title: "Accedere a insight di mercato affidabili",
         }
       },
       stats: {
