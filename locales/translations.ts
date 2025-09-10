@@ -2028,7 +2028,7 @@ export const translations = {
     },
     hero: {
       subtitle: "",
-      title: "M&A, semplice.",
+      title: "L'arte di rendere semplice ciò che è complesso: le operazioni di M&A.",
       description: {
         part1: "Milaris Partners",
         part2: "accompagna",
