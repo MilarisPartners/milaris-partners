@@ -2069,7 +2069,7 @@ export const translations = {
         point3: {
           text1: "Pionieri nell'integrazione dell'",
           ai: "intelligenza artificiale",
-          text2: "nel M&A, utilizziamo una tecnologia proprietaria che rende più efficiente ogni fase della transazione, aprendo nuove possibilità e aumentando le chance di successo."
+          text2: "nelle operazioni di M&A, utilizziamo una tecnologia proprietaria che rende più efficiente ogni fase della transazione, aprendo nuove possibilità e aumentando le chance di successo."
         }
       }
     },
