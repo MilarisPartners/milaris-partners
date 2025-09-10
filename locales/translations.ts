@@ -2913,9 +2913,9 @@ export const translations = {
           title: "Sell-side advisory",
           description: "Massimizza il valore della tua azienda durante la cessione",
           features: [
-            "Aziende da 5 a 150M€ di fatturato",
+            "Aziende con un fatturato tra i 5 e i 150M€",
             "Cessione totale o parziale",
-            "Processo strutturato di 6-9 mesi"
+            "Processo di cessione strutturato"
           ],
           link: "/cession-entreprise",
           cta: "Scopri di più"
