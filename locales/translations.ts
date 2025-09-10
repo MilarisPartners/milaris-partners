@@ -2017,7 +2017,7 @@ export const translations = {
   },
   IT: {
     navbar: {
-      about: "Chi siamo",
+      about: "Home",
       expertises: "Competenze",
       team: "Team",
       career: "Carriera",
