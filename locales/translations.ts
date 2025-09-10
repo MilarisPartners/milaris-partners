@@ -2160,7 +2160,7 @@ export const translations = {
         highlight: "Intelligenza Artificiale",
         part2: "al servizio delle vostre transazioni"
       },
-      description: "Tecnologia IA proprietaria sviluppata da Milaris Partners. Sfruttando milioni di dati di mercato e di investitori, il nostro motore di matching interno rivela il valore nascosto nello spazio frammentato delle fusioni e acquisizioni di piccole e medie capitalizzazioni — dove le reti tradizionali falliscono e l'affidabilità è essenziale.",
+      description: "Tecnologia IA proprietaria sviluppata da Milaris Partners. Analizzando milioni di dati su mercati e investitori, il nostro motore di matching individua opportunità nascoste nel panorama frammentato delle fusioni e acquisizioni di piccole e medie imprese, dove le reti tradizionali non arrivano e l'affidabilità diventa decisiva.",
       features: {
         identifyBuyers: {
           title: "Identificare acquirenti fuori radar",
