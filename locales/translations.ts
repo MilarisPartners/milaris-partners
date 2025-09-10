@@ -2133,7 +2133,7 @@ export const translations = {
           description: "Expertise approfondita nel settore dei beni di consumo corrente e durevoli"
         },
         tmt: {
-          title: "Tecnologie / Media / Telecom",
+          title: "TMT",
           description: "Accompagnamento delle aziende innovative nella loro trasformazione digitale"
         },
         healthcare: {
