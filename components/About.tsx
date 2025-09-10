@@ -100,7 +100,7 @@ const About = () => {
                 <Cpu className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
               <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                {t("about.content.point3.text1")} {t("about.content.point3.ai")} {t("about.content.point3.text2")}
+                {t("about.content.point3.text1")}{t("about.content.point3.ai")} {t("about.content.point3.text2")}
               </p>
             </motion.div>
 
