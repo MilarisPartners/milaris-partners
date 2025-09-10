@@ -2052,8 +2052,8 @@ export const translations = {
       },
       content: {
         point1: {
-          title: "Fondata da un duo franco-italiano, Milaris Partners",
-          text: "è una società parigina con uno sguardo decisamente europeo. Accompagniamo micro, PMI e mid-cap nelle loro operazioni di cessione o raccolta fondi, ampliando i loro orizzonti ben oltre gli acquirenti locali."
+          title: "Milaris Partners, società parigina fondata da professionisti italiani, francesi e tedeschi, accompagna micro, piccole e medie imprese nei loro percorsi di",
+          text: "cessione, acquisizione e raccolta capitali, aprendo loro le porte a investitori e acquirenti internazionali."
         },
         point2: {
           text1: "Presenti in",
