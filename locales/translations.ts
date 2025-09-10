@@ -2924,9 +2924,9 @@ export const translations = {
           title: "Buy-side advisory",
           description: "Individuate e assicuratevi le migliori opportunità di crescita inorganica",
           features: [
-            "Targeting strategico europeo",
-            "Approccio confidenziale",
-            "Negoziazione ottimizzata"
+            "Targeting strategico paneuropeo",
+            "Approccio riservato e discreto",
+            "Processo di negoziazione ottimizzato"
           ],
           link: "/acquisition-entreprise",
           cta: "Scopri di più"
@@ -2944,7 +2944,7 @@ export const translations = {
         }
       ],
       bottomCtaText: "Un approccio esclusivo con un numero selezionato di mandati per garantire un supporto su misura",
-      bottomCtaButton: "Parla del tuo progetto"
+      bottomCtaButton: "Parlateci del vostro progetto"
     },
     testimonial: {
       quote: "Milaris Partners ci ha accompagnato nella cessione della nostra azienda con un notevole livello di professionalità. Il loro approccio personalizzato e la profonda conoscenza del mercato ci hanno permesso di realizzare una transazione in condizioni ottimali.",
