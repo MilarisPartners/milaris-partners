@@ -2862,8 +2862,8 @@ export const translations = {
           description: "Unisciti a un team presente in diversi paesi e approfitta di opportunità concrete di collaborazione su progetti di portata internazionale, ideale per ampliare i tuoi orizzonti professionali."
         },
         value2: {
-          title: "Soluzioni basate sulla tecnologia",
-          description: "In Milaris Partners, sfruttiamo la tecnologia per l'efficienza. Implementiamo strumenti avanzati e sistemi di intelligenza artificiale all'avanguardia per ottimizzare i nostri processi."
+          title: "Tecnologia",
+          description: "Sfruttiamo la tecnologia per l'efficienza. Implementiamo strumenti avanzati e sistemi IA all'avanguardia per ottimizzare i nostri processi."
         },
         value3: {
           title: "Ambiente giovane e dinamico",
