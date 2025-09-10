@@ -279,7 +279,7 @@ const Carrieres = () => {
               {t("carrieres.howToApply.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
                 {t("carrieres.howToApply.title2")}
-              </span>{language === "EN" ? "?" : " ?"}
+              </span>{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
             </h2>
           </motion.div>
 
@@ -323,6 +323,8 @@ const Carrieres = () => {
               {t("carrieres.cta.title1")}{" "}
               {language === "EN"
                 ? <>{t("carrieres.cta.title2")}? </>
+                : language === "IT"
+                ? <><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">{t("carrieres.cta.title2")}</span>?</>
                 : <><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">{t("carrieres.cta.title2")}</span> ?</>
               }
             </h2>

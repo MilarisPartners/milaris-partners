@@ -2886,12 +2886,12 @@ export const translations = {
       howToApply: {
         title1: "Come",
         title2: "candidarsi",
-        description: "Invia il tuo CV e una lettera di presentazione che illustri il tuo percorso, le tue aspirazioni e ciò che ti attrae di Milaris Partners al seguente indirizzo:"
+        description: "Invia il tuo CV e una lettera di presentazione in cui racconti il tuo percorso, le tue aspirazioni e le ragioni per cui desideri entrare a far parte di Milaris Partners al seguente indirizzo:"
       },
       cta: {
-        title1: "Pronto a plasmare il futuro con",
+        title1: "Sei pronto a costruire il futuro insieme a",
         title2: "noi",
-        subtitle: "Unisciti a un team in cui il tuo talento sarà valorizzato e dove potrai contribuire a importanti progetti internazionali.",
+        subtitle: "Unisciti a un team che valorizza il tuo talento e ti offre l'opportunità di contribuire a progetti internazionali di grande rilevanza.",
         button: "Candidati ora"
       }
     },
