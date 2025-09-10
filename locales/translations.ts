@@ -2064,7 +2064,7 @@ export const translations = {
           country2: "Italia",
           text2: "e",
           country3: "Germania",
-          text3: ", privilegiamo un approccio esclusivo con un numero limitato di mandati. Metodo rigoroso, rete internazionale, senso del deal: apriamo il campo delle possibilità per massimizzare valore, opzioni e successo."
+          text3: ", adottiamo un approccio selettivo, seguendo solo un numero limitato di mandati. Coniughiamo rigore metodologico, una rete internazionale e un autentico senso del deal per ampliare le possibilità e garantire il massimo in termini di valore, opportunità e successo."
         },
         point3: {
           text1: "Pionieri nell'integrazione dell'",
