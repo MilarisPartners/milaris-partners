@@ -1377,15 +1377,15 @@ export const translations = {
             benefits: {
               synergies: {
                 title: "Valutazione basata sulle sinergie",
-                subtitle: "Massimizzazione del valore attraverso l'integrazione"
+                subtitle: "Massimizzazione del valore grazie all'integrazione"
               },
               integration: {
                 title: "Integrazione in un gruppo esistente",
-                subtitle: "Continuità e sviluppo assicurato"
+                subtitle: "Continuità e sviluppo assicurati"
               },
               continuity: {
                 title: "Continuità operativa",
-                subtitle: "Preservazione dei team e del know-how"
+                subtitle: "Tutela dei team e del know-how aziendale"
               }
             }
           },
@@ -2380,41 +2380,41 @@ export const translations = {
           }
         },
         acquirers: {
-          title: "Le nostre reti di acquirenti",
-          subtitle: "Accesso privilegiato a entrambi i tipi di acquirenti per ottimizzare la vostra cessione",
+          title: "La nostra rete di investitori selezionati",
+          subtitle: "Accesso privilegiato ai principali acquirenti strategici e finanziari per ottimizzare il risultato della vostra cessione.",
           strategic: {
-            title: "Acquirenti Strategici",
-            description: "Industriali e società del vostro settore che cercano di rafforzarsi, diversificarsi o realizzare sinergie",
+            title: "Acquirenti strategici",
+            description: "Industriali e società del vostro settore interessati a rafforzarsi, diversificarsi o creare sinergie.",
             benefits: {
               synergies: {
                 title: "Valutazione basata sulle sinergie",
-                subtitle: "Massimizzazione del valore attraverso l'integrazione"
+                subtitle: "Massimizzazione del valore grazie all'integrazione"
               },
               integration: {
                 title: "Integrazione in un gruppo esistente",
-                subtitle: "Continuità e sviluppo assicurato"
+                subtitle: "Continuità e sviluppo assicurati"
               },
               continuity: {
                 title: "Continuità operativa",
-                subtitle: "Preservazione dei team e del know-how"
+                subtitle: "Tutela dei team e del know-how aziendale"
               }
             }
           },
           financial: {
-            title: "Investitori Finanziari",
-            description: "Fondi di private equity e family office che investono per sviluppare l'azienda",
+            title: "Investitori finanziari",
+            description: "Fondi di private equity e family office che investono per far crescere l'azienda.",
             benefits: {
               growth: {
                 title: "Focus sulla crescita",
-                subtitle: "Risorse per accelerare lo sviluppo"
+                subtitle: "Capitali dedicati ad accelerare lo sviluppo"
               },
               management: {
                 title: "Mantenimento del management",
-                subtitle: "Continuità della direzione operativa"
+                subtitle: "Prosecuzione della guida operativa esistente"
               },
               exit: {
                 title: "Prospettiva di uscita",
-                subtitle: "Orizzonte di investimento 3-7 anni"
+                subtitle: "Orizzonte di investimento tipico 3–7 anni"
               }
             }
           }
