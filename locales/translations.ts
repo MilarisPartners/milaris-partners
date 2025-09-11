@@ -2814,21 +2814,21 @@ export const translations = {
       kevin: {
           focus1: {
               title: "Mercati tedesco e francese",
-              description: "Oltre 15 anni di esperienza nei mercati francese e tedesco. Bi-nazionale, Kevin padroneggia gli ambienti economici, giuridici e culturali di entrambi i paesi. Intervento presso dirigenti per operazioni di cessione, acquisizione o raccolta fondi."
+              description: "Con oltre 15 anni di esperienza nei mercati francese e tedesco, Kevin possiede una profonda conoscenza delle dinamiche economiche, giuridiche e culturali di entrambi i paesi. Grazie alla sua doppia nazionalità, affianca i dirigenti in operazioni di cessione, acquisizione e raccolta di capitali, garantendo un approccio mirato e strategico."
           },
           focus2: {
               title: "Transazioni transfrontaliere",
-              description: "Competenza riconosciuta nella strutturazione di operazioni complesse a livello internazionale. Percorso consolidato in Asia e Nord America presso gruppi finanziari di primo piano. Intervento su deal impegnativi in coordinamento con stakeholder internazionali."
+              description: "Specializzato nella strutturazione di operazioni complesse a livello internazionale, Kevin vanta un solido percorso in Asia e Nord America, collaborando con primari gruppi finanziari. La sua esperienza si distingue nella gestione di deal ad alta complessità e nel coordinamento di stakeholder globali."
           },
           focus3: {
               title: "Rete internazionale",
-              description: "Rete attiva in Europa e Asia, in particolare in Giappone e Corea, presso industriali, investitori e consulenti di primo piano. Mobilitato per identificare controparti qualificate o facilitare discussioni sensibili. Leva differenziante nelle operazioni a dimensione internazionale."
+              description: "Attivo in Europa e Asia – con particolare presenza in Giappone e Corea – Kevin può contare su una rete consolidata di industriali, investitori e consulenti di alto profilo. Questa rete gli consente di individuare controparti qualificate, facilitare negoziazioni delicate e apportare un vantaggio competitivo in operazioni di respiro internazionale."
           }
       },
       cta: {
           title: "Pronto a incontrare il nostro team?",
-          subtitle: "Discutiamo del tuo progetto e vediamo come possiamo supportare il tuo successo",
-          button: "Pianificare una chiamata"
+          subtitle: "Confrontiamoci sul vostro progetto e valutiamo insieme come contribuire al suo successo.",
+          button: "Pianificate un incontro con noi!"
       },
       sections: {
           partners: {
