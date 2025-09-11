@@ -208,6 +208,20 @@ export const translations = {
         part2: "stratégique"
       },
       description: "Avec des experts natifs intégrés à nos équipes et présents dans les principales capitales européennes, nous accompagnons vos projets transfrontaliers au plus près du terrain.",
+      cities: [
+        {
+          name: "Paris",
+          country: "France 🇫🇷"
+        },
+        {
+          name: "Milan", 
+          country: "Italie 🇮🇹"
+        },
+        {
+          name: "Berlin",
+          country: "Allemagne 🇩🇪"
+        }
+      ],
       stats: {
         transactions: {
           value: "+150",
@@ -1216,6 +1230,20 @@ export const translations = {
         part2: " "
       },
       description: "With native experts embedded in our teams and offices in key European hubs, we support your cross-border transactions with on-the-ground insight.",
+      cities: [
+        {
+          name: "Paris",
+          country: "France 🇫🇷"
+        },
+        {
+          name: "Milan", 
+          country: "Italy 🇮🇹"
+        },
+        {
+          name: "Berlin",
+          country: "Germany 🇩🇪"
+        }
+      ],
       stats: {
         transactions: {
           value: "+150",
@@ -2227,6 +2255,20 @@ export const translations = {
         part2: "strategica"
       },
       description: "Con team locali radicati nelle principali capitali europee, vi accompagniamo con competenza direttamente sul campo.",
+      cities: [
+        {
+          name: "Parigi",
+          country: "Francia 🇫🇷"
+        },
+        {
+          name: "Milano", 
+          country: "Italia 🇮🇹"
+        },
+        {
+          name: "Berlino",
+          country: "Germania 🇩🇪"
+        }
+      ],
       stats: {
         transactions: {
           value: "+150",

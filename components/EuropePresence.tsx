@@ -7,23 +7,10 @@ import { useTranslation } from "@/hooks/useTranslation";
 const EuropePresence = () => {
   const { t } = useTranslation();
   
-  const cities = [
-    { 
-      name: "Paris", 
-      country: "France 🇫🇷",
-      delay: 0
-    },
-    { 
-      name: "Milan", 
-      country: "Italie 🇮🇹",
-      delay: 0.1
-    },
-    { 
-      name: "Berlin", 
-      country: "Allemagne 🇩🇪",
-      delay: 0.2
-    },
-  ];
+  const cities = t("europePresence.cities").map((city: any, index: number) => ({
+    ...city,
+    delay: index * 0.1
+  }));
 
   return (
     <section className="section-padding bg-gradient-to-b from-white via-[#0001ff]/5 to-white relative overflow-hidden">
