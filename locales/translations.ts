@@ -2786,15 +2786,15 @@ export const translations = {
       paul: {
           focus1: {
               title: "Supporto regionale",
-              description: "Assistenza alle imprese francesi nelle operazioni primarie e secondarie, con un focus sulle esigenze locali. Aiutiamo le aziende ad adattarsi alle tendenze del mercato e a cogliere nuove opportunità."
+              description: "Assistenza alle imprese francesi nelle operazioni primarie e secondarie, con un focus sulle esigenze degli imprenditori. Aiutiamo le aziende ad adattarsi alle tendenze del mercato e a cogliere nuove opportunità."
           },
           focus2: {
               title: "Espansione internazionale",
-              description: "Supporto alle aziende francesi nella ricerca di partner e opportunità oltre confine. Favoriamo la crescita globale attraverso strategie di espansione mirate."
+              description: "Supporto alle aziende nella ricerca di partner e opportunità oltre confine. Favoriamo la crescita globale attraverso strategie di espansione mirate."
           },
           focus3: {
               title: "Supporto nel buy-side",
-              description: "Affiancamento ai fondi di investimento francesi nei processi di acquisizione all'estero. Valorizziamo opportunità non sfruttate in mercati chiave come Italia e Germania."
+              description: "Affiancamento ai fondi di investimento nei processi di acquisizione all'estero. Valorizziamo opportunità non sfruttate in mercati chiave come Italia e Germania."
           }
       },
       matteo: {
