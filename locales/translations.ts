@@ -2495,10 +2495,10 @@ export const translations = {
       },
       acquisition: {
         hero: {
-          badge: "Expertise Acquisizione",
-          title: "Crescere per crescita esterna: metodico, mirato, efficace.",
-          description: "Milaris Partners consiglia dirigenti, gruppi industriali e investitori nelle loro operazioni di crescita esterna: acquisizione di un concorrente, di un fornitore, di un attore complementare o di un target di diversificazione.",
-          cta: "Esploriamo le tue opportunità"
+          badge: "Buy-side advisory",
+          title: "Crescere attraverso acquisizioni è una strategia che trasforma il futuro",
+          description: "Milaris Partners affianca dirigenti, gruppi industriali e investitori nelle operazioni di crescita esterna, dall'acquisizione di concorrenti o fornitori a realtà complementari o di diversificazione, con un metodo strategico e mirato per garantire risultati concreti.",
+          cta: "Discutiamo del vostro progetto"
         },
         services: {
           title: "Cosa facciamo per voi",
