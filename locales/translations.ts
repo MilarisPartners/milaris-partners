@@ -2420,24 +2420,24 @@ export const translations = {
           }
         },
         faq: {
-          title: "Domande frequenti",
-          subtitle: "Democratizziamo insieme la cessione d'azienda",
+          title: "Domande frequenti sulla cessione d'azienda",
+          subtitle: "Accompagniamo ogni imprenditore nella cessione d'azienda in modo chiaro e trasparente.",
           questions: {
             q1: {
-              question: "Quanto tempo richiede una cessione d'azienda?",
-              answer: "Tra 6 e 9 mesi in media per un'operazione completa, a seconda della complessità dell'azienda, del profilo degli acquirenti target e di eventuali questioni normative."
+              question: "Qual è la durata media di una cessione d'azienda?",
+              answer: "In genere il processo richiede tra 6 e 9 mesi, a seconda della complessità dell'azienda, del profilo degli acquirenti e di eventuali aspetti normativi."
             },
             q2: {
-              question: "Qual è la differenza tra acquirente strategico e finanziario?",
-              answer: "Gli acquirenti strategici sono industriali che cercano sinergie, mentre gli investitori finanziari (fondi di private equity) mirano allo sviluppo e alla rivendita a termine."
+              question: "Qual è la differenza tra un acquirente strategico e uno finanziario?",
+              answer: "Gli acquirenti strategici sono imprese industriali che acquistano per creare sinergie e integrare l'attività nel proprio gruppo. Gli acquirenti finanziari, come i fondi di private equity, investono invece per far crescere l'azienda e rivenderla dopo un periodo di medio termine."
             },
             q3: {
-              question: "Come garantite la riservatezza?",
-              answer: "Ogni scambio avviene sotto accordo di riservatezza. Utilizziamo NDA, codici progetto, data room sicure e un approccio progressivo agli acquirenti per mantenere la riservatezza durante tutto il processo."
+              question: "Come viene garantita la riservatezza?",
+              answer: "Tutti gli scambi avvengono sotto accordi di riservatezza (NDA). Utilizziamo codici progetto, data room sicure e un approccio graduale verso gli acquirenti, così da proteggere le informazioni sensibili durante l'intero processo."
             },
             q4: {
-              question: "Qual è il costo del vostro supporto?",
-              answer: "Le nostre commissioni sono principalmente basate sul successo dell'operazione, con una percentuale del valore della transazione. Contattateci per una proposta personalizzata."
+              question: "Qual è il costo del vostro servizio?",
+              answer: "Le nostre commissioni sono prevalentemente legate al successo dell'operazione e calcolate come percentuale sul valore della transazione. Contattateci per ricevere una proposta personalizzata."
             }
           },
           cta: {
@@ -2446,9 +2446,9 @@ export const translations = {
           }
         },
         cta: {
-          title: "Pronto a valorizzare la tua cessione?",
-          subtitle: "Che tu abbia un progetto definito o voglia esplorare le opzioni, parliamo della tua cessione in totale riservatezza.",
-          button: "Parla del tuo progetto"
+          title: "Siete pronti a valorizzare la vostra azienda?",
+          subtitle: "Che abbiate già un progetto definito o desideriate esplorare le opzioni, possiamo parlare della vostra cessione garantendo la massima riservatezza.",
+          button: "Parlateci del vostro progetto"
         }
       },
       acquisition: {
