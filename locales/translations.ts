@@ -2022,9 +2022,9 @@ export const translations = {
       team: "Team",
       career: "Careers",
       contact: "Contattaci",
-      businessSale: "Cessione d'azienda",
-      businessAcquisition: "Acquisizione d'azienda",
-      financing: "Finanziamento",
+      businessSale: "Sell-side advisory",
+      businessAcquisition: "Buy-side advisory",
+      financing: "Fundraising advisory",
     },
     hero: {
       subtitle: "",
@@ -2284,27 +2284,27 @@ export const translations = {
     expertisePages: {
       cession: {
         hero: {
-          badge: "Expertise cessione",
-          title: "Vendere la propria azienda è un passo importante.",
+          badge: "Sell-side advisory",
+          title: "Vendere la propria azienda è un passo che definisce il domani",
           subtitle: "Noi la rendiamo un successo.",
-          description: "A Milaris Partners, accompagniamo i dirigenti nella cessione totale o parziale della loro azienda, strutturando un approccio strategico, confidenziale e ottimizzato.",
+          description: "Milaris Partners affianca gli azionisti e i dirigenti in ogni fase della cessione, totale o parziale, con un metodo strategico e accurato, progettato per garantire efficienza e il miglior risultato possibile.",
           cta: "Discutiamo del vostro progetto"
         },
         services: {
-          title: "Cosa facciamo per voi",
-          subtitle: "La nostra missione: massimizzare il valore della vostra azienda e garantire la vostra successione",
+          title: "Cosa facciamo per voi?",
+          subtitle: "La nostra missione: valorizzare al massimo la vostra azienda e garantire una transizione sicura e di successo.",
           items: {
             evaluation: {
-              title: "Valutazione e posizionamento",
-              description: "Analisi della vostra azienda, identificazione delle leve di valore e posizionamento strategico ottimale sul mercato"
+              title: "Valutazione e strategia",
+              description: "Analizziamo in profondità la vostra azienda, individuiamo i principali fattori di valore e definiamo, alla luce degli obiettivi dell'azionista, il posizionamento strategico più efficace sul mercato."
             },
             market: {
-              title: "Messa sul mercato strutturata",
-              description: "Organizzazione di un processo competitivo con la nostra rete di acquirenti strategici e finanziari"
+              title: "Processo di vendita",
+              description: "Progettiamo e gestiamo un percorso competitivo, avvalendoci della nostra rete di investitori strategici e finanziari selezionati, per massimizzare l'interesse e le opportunità."
             },
             support: {
-              title: "Accompagnamento fino al closing",
-              description: "Negoziazione, coordinamento legale e fiscale, sicurezza dell'operazione fino alla firma"
+              title: "Gestione del closing",
+              description: "Coordiniamo ogni fase della negoziazione, supervisionando aspetti legali e fiscali e garantendo la piena sicurezza dell'operazione fino alla firma definitiva."
             }
           }
         },
