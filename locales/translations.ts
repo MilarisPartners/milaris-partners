@@ -2309,36 +2309,36 @@ export const translations = {
           }
         },
         timeline: {
-          title: "Svolgimento tipico di una cessione",
-          subtitle: "Un approccio strutturato, in media da 6 a 9 mesi",
+          title: "Fasi del processo di cessione",
+          subtitle: "Un iter strutturato con tempistica media compresa tra 6 e 9 mesi.",
           legend: {
             steps: "Fasi chiave",
             duration: "Durata media per fase"
           },
           steps: {
             strategic: {
-              title: "Analisi strategica",
-              description: "Comprensione dei vostri obiettivi, valutazione della società, identificazione dei punti di valorizzazione",
+              title: "Analisi e strategia",
+              description: "Comprensione degli obiettivi, valutazione della società e identificazione dei principali driver di valorizzazione",
               duration: "2–4 settimane"
             },
             preparation: {
-              title: "Preparazione",
-              description: "Costituzione dei documenti di presentazione (teaser, info memo), creazione di una data room",
+              title: "Preparazione documentale",
+              description: "Redazione dei documenti di presentazione (teaser, information memorandum) e predisposizione della data room",
               duration: "4–6 settimane"
             },
             targeting: {
-              title: "Targeting acquirenti",
-              description: "Identificazione e approccio di acquirenti strategici e finanziari adatti al vostro profilo",
+              title: "Selezione acquirenti",
+              description: "Identificazione e approccio di potenziali acquirenti strategici e finanziari in linea con il profilo aziendale",
               duration: "6–8 settimane"
             },
             discussions: {
-              title: "Organizzazione discussioni",
-              description: "Gestione degli scambi, visite, Q&A, coordinamento delle offerte competitive",
+              title: "Gestione trattative",
+              description: "Coordinamento di incontri, visite e Q&A, gestione delle offerte e delle fasi competitive",
               duration: "8–12 settimane"
             },
             closing: {
-              title: "Negoziazione & Closing",
-              description: "Assistenza nelle negoziazioni, coordinamento con i consulenti legali fino alla firma",
+              title: "Negoziazione finale",
+              description: "Conduzione delle negoziazioni e coordinamento con i consulenti legali fino alla firma definitiva",
               duration: "4–8 settimane"
             }
           }
