@@ -2041,7 +2041,7 @@ export const translations = {
       },
       cta: {
         scheduleCall: "Pianifica un incontro con noi!",
-        whatChanges: "Perché Milaris Partners?"
+        whatChanges: "Perché scegliere Milaris Partners?"
       }
     },
     about: {
@@ -2362,20 +2362,20 @@ export const translations = {
           }
         },
         whyMilaris: {
-          title: "Perché Milaris Partners?",
-          subtitle: "La nostra esperienza al servizio del vostro successo",
+          title: "Perché scegliere Milaris Partners?",
+          subtitle: "La nostra esperienza al servizio del vostro successo.",
           items: {
             process: {
               title: "Processo competitivo strutturato",
-              description: "Organizziamo una competizione ottimale per massimizzare la valorizzazione della vostra azienda"
+              description: "Progettiamo e gestiamo un processo di vendita altamente competitivo, concepito per massimizzare la valorizzazione della vostra azienda. Coordiniamo ogni fase per generare il massimo interesse tra acquirenti qualificati e ottenere le migliori condizioni."
             },
             network: {
               title: "Rete di acquirenti potenziata dall'IA",
-              description: "La nostra tecnologia IA ci permette di identificare e approcciare una rete di acquirenti sia più ampia che più pertinente, mirando a quelli il cui razionale di acquisizione è realmente allineato — generando più offerte preservando la riservatezza."
+              description: "La nostra tecnologia IA permette di individuare e coinvolgere una rete ampia e qualificata di acquirenti strategici e finanziari. Selezioniamo solo quelli realmente in linea con il vostro profilo, aumentando le opportunità e garantendo riservatezza lungo l'intero percorso."
             },
             confidentiality: {
-              title: "Riservatezza & allineamento",
-              description: "Approccio su misura, riservato e indipendente, con il vostro successo come unico obiettivo"
+              title: "Riservatezza e obiettivi condivisi",
+              description: "Adottiamo un approccio su misura, indipendente e completamente riservato, lavorando in costante allineamento con i vostri obiettivi. Ogni attività è orientata a tutelare la confidenzialità e a garantire che il vostro successo resti la priorità assoluta."
             }
           }
         },
@@ -2680,7 +2680,7 @@ export const translations = {
           }
         },
         whyMilaris: {
-          title: "Perché Milaris Partners?",
+          title: "Perché scegliere Milaris Partners?",
           subtitle: "La nostra esperienza al servizio del vostro finanziamento ottimale",
           items: {
             access: {
