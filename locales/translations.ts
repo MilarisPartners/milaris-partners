@@ -2501,20 +2501,20 @@ export const translations = {
           cta: "Discutiamo del vostro progetto"
         },
         services: {
-          title: "Cosa facciamo per voi",
-          subtitle: "La nostra missione: identificare le migliori opportunità e garantire le vostre acquisizioni",
+          title: "Cosa facciamo per voi?",
+          subtitle: "La nostra missione: individuare le migliori opportunità e garantire il successo delle vostre acquisizioni.",
           items: {
             strategy: {
-              title: "Definizione della strategia di acquisizione",
-              description: "Settori target, geografia, dimensioni, sinergie ricercate secondo i vostri obiettivi di crescita"
+              title: "Strategia di acquisizione",
+              description: "Analizziamo settori target, geografie, dimensioni e possibili sinergie, definendo insieme un piano di crescita esterna solido e mirato, perfettamente allineato ai vostri obiettivi aziendali."
             },
             identification: {
-              title: "Identificazione e qualifica dei target",
-              description: "Tramite la nostra rete, i nostri database proprietari e il nostro strumento IA per un sourcing ottimale"
+              title: "Selezione dei target",
+              description: "Individuazione e valutazione dei potenziali target tramite la nostra rete, database proprietari e strumenti di intelligenza artificiale per un sourcing mirato e di qualità."
             },
             structuring: {
               title: "Strutturazione e negoziazione",
-              description: "Coordinamento degli audit, strutturazione dell'operazione (LBO, partecipazione), negoziazione delle condizioni"
+              description: "Coordiniamo audit e due diligence, strutturiamo l'operazione con le migliori soluzioni finanziarie e guidiamo le trattative fino alla definizione delle condizioni ottimali."
             }
           }
         },
