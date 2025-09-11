@@ -2349,16 +2349,16 @@ export const translations = {
             label: "Tasso di successo delle operazioni"
           },
           duration: {
-            value: "6-9",
-            label: "Mesi in media per cessione"
+            value: "6–9 mesi",
+            label: "Durata media di una cessione"
           },
           valuation: {
             value: "+25%",
-            label: "Valorizzazione media ottenuta"
+            label: "Incremento medio di valorizzazione"
           },
           confidentiality: {
             value: "100%",
-            label: "Riservatezza garantita"
+            label: "Riservatezza assoluta garantita"
           }
         },
         whyMilaris: {
