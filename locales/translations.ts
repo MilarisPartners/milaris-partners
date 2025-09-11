@@ -2808,7 +2808,7 @@ export const translations = {
           },
           focus3: {
               title: "Origination Italia",
-              description: "Individuazione di opportunità di investimento "off-market" per i mandati buy-side. La presenza locale ci permette di accedere a target esclusivi e difficilmente intercettabili."
+              description: "Individuazione di opportunità di investimento off-market per i mandati buy-side. La presenza locale ci permette di accedere a target esclusivi e difficilmente intercettabili."
           }
       },
       kevin: {
