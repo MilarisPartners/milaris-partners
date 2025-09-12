@@ -7,7 +7,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 const EuropePresence = () => {
   const { t } = useTranslation();
   
-  const cities = t("europePresence.cities").map((city: any, index: number) => ({
+  const cities = (t("europePresence.cities") as unknown as any[]).map((city: any, index: number) => ({
     ...city,
     delay: index * 0.1
   }));

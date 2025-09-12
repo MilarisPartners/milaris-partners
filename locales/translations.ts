@@ -2495,31 +2495,31 @@ export const translations = {
       },
       acquisition: {
         hero: {
-          badge: "Buy-side advisory",
-          title: "Crescere attraverso acquisizioni è una strategia che trasforma il futuro",
-          description: "Milaris Partners affianca dirigenti, gruppi industriali e investitori nelle operazioni di crescita esterna, dall'acquisizione di concorrenti o fornitori a realtà complementari o di diversificazione, con un metodo strategico e mirato per garantire risultati concreti.",
-          cta: "Discutiamo del vostro progetto"
+          badge: "Expertise Acquisizione",
+          title: "Crescere per crescita esterna: metodico, mirato, efficace.",
+          description: "Milaris Partners consiglia dirigenti, gruppi industriali e investitori nelle loro operazioni di crescita esterna: acquisizione di un concorrente, di un fornitore, di un attore complementare o di un target di diversificazione.",
+          cta: "Esploriamo le tue opportunità"
         },
         services: {
-          title: "Cosa facciamo per voi?",
-          subtitle: "La nostra missione: individuare le migliori opportunità e garantire il successo delle vostre acquisizioni.",
+          title: "Cosa facciamo per voi",
+          subtitle: "La nostra missione: identificare le migliori opportunità e garantire le vostre acquisizioni",
           items: {
             strategy: {
-              title: "Strategia di acquisizione",
-              description: "Analizziamo settori target, geografie, dimensioni e possibili sinergie, definendo insieme un piano di crescita esterna solido e mirato, perfettamente allineato ai vostri obiettivi aziendali."
+              title: "Definizione della strategia di acquisizione",
+              description: "Settori target, geografia, dimensioni, sinergie ricercate secondo i vostri obiettivi di crescita"
             },
             identification: {
-              title: "Selezione dei target",
-              description: "Individuazione e valutazione dei potenziali target tramite la nostra rete, database proprietari e strumenti di intelligenza artificiale per un sourcing mirato e di qualità."
+              title: "Identificazione e qualifica dei target",
+              description: "Tramite la nostra rete, i nostri database proprietari e il nostro strumento IA per un sourcing ottimale"
             },
             structuring: {
               title: "Strutturazione e negoziazione",
-              description: "Coordiniamo audit e due diligence, strutturiamo l'operazione con le migliori soluzioni finanziarie e guidiamo le trattative fino alla definizione delle condizioni ottimali."
+              description: "Coordinamento degli audit, strutturazione dell'operazione (LBO, partecipazione), negoziazione delle condizioni"
             }
           }
         },
         timeline: {
-          title: "Fasi del processo di acquisizione",
+          title: "Svolgimento tipico di un'acquisizione",
           subtitle: "Un approccio strutturato, da 3 a 12 mesi a seconda del contesto",
           legend: {
             steps: "Fasi chiave",
