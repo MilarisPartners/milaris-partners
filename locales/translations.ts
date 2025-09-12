@@ -2519,7 +2519,7 @@ export const translations = {
           }
         },
         timeline: {
-          title: "Svolgimento tipico di un'acquisizione",
+          title: "Fasi del processo di acquisizione",
           subtitle: "Un approccio strutturato, da 3 a 12 mesi a seconda del contesto",
           legend: {
             steps: "Fasi chiave",
