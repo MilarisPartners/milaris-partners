@@ -2678,8 +2678,8 @@ export const translations = {
           }
         },
         timeline: {
-          title: "Svolgimento tipico di un finanziamento",
-          subtitle: "Un approccio strutturato, da 2 a 6 mesi a seconda del tipo di finanziamento",
+          title: "Fasi del processo di finanziamento",
+          subtitle: "Un percorso strutturato di 2–6 mesi, adattato al tipo di operazione e alle vostre esigenze.",
           legend: {
             steps: "Fasi chiave",
             duration: "Durata media per fase"
@@ -2687,38 +2687,38 @@ export const translations = {
           steps: {
             preparation: {
               title: "Preparazione del dossier",
-              description: "Business plan, modellazione finanziaria, preparazione del pitch e dei documenti chiave",
+              description: "Business plan, modelli finanziari e documenti chiave per presentare il progetto in modo convincente",
               duration: "2–3 settimane"
             },
             identification: {
-              title: "Identificazione dei finanziatori",
-              description: "Selezione dei partner rilevanti secondo il vostro profilo e le vostre esigenze specifiche",
+              title: "Scouting finanziatori",
+              description: "Selezione mirata di banche, fondi e investitori coerenti con obiettivi e profilo",
               duration: "1–2 settimane"
             },
             pitch: {
               title: "Pitch e negoziazione",
-              description: "Presentazione agli investitori, gestione delle Q&A, negoziazione dei term sheet",
+              description: "Presentazione agli investitori, gestione Q&A e negoziazione dei term sheet più vantaggiosi",
               duration: "4–8 settimane"
             },
             closing: {
-              title: "Documentazione & Closing",
-              description: "Due diligence, finalizzazione della documentazione legale e sblocco dei fondi",
+              title: "Documentazione e closing",
+              description: "Due diligence, definizione contrattuale e sblocco fondi per chiudere l'operazione con sicurezza",
               duration: "3–6 settimane"
             }
           }
         },
         stats: {
           stage: {
-            value: "Serie A+",
-            label: "A partire dalla Serie A"
+            value: "Serie A",
+            label: "Operazioni a partire dalla Serie A"
           },
           investors: {
             value: "250k+",
-            label: "Investitori attivi"
+            label: "Investitori attivi nel nostro network"
           },
           minimum: {
             value: "2M€+",
-            label: "Soglia minima di intervento"
+            label: "Soglia minima per ogni intervento"
           }
         },
         whyMilaris: {
