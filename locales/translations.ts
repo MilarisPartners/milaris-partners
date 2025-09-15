@@ -2740,49 +2740,49 @@ export const translations = {
           }
         },
         types: {
-          title: "Tipi di finanziamento",
-          subtitle: "Soluzioni adatte alle vostre esigenze e vincoli specifici",
+          title: "Tipologie di finanziamento",
+          subtitle: "Soluzioni su misura per le vostre esigenze e vincoli finanziari.",
           equity: {
-            title: "Raccolta fondi in capitale",
-            description: "Per finanziare la vostra crescita mantenendo la flessibilità",
+            title: "Raccolta di capitale",
+            description: "Per sostenere la crescita dell'azienda mantenendo flessibilità e forza patrimoniale.",
             items: {
               vc: {
-                title: "Fondi di Venture Capital (VC)",
-                subtitle: "Per startup in iper-crescita"
+                title: "Fondi di Venture Capital",
+                subtitle: "Per startup ad alta crescita e sviluppo rapido"
               },
               pe: {
-                title: "Fondi di Private Equity (PE)",
-                subtitle: "Per aziende mature"
+                title: "Fondi di Private Equity",
+                subtitle: "Per aziende mature con piani di espansione"
               },
               family: {
                 title: "Family Office e investitori privati",
-                subtitle: "Per una partnership a lungo termine"
+                subtitle: "Per partnership strategiche di lungo periodo"
               },
               angels: {
                 title: "Business Angels e club di investitori",
-                subtitle: "Per le fasi di seed"
+                subtitle: "Per finanziare le fasi iniziali e seed"
               }
             }
           },
           debt: {
-            title: "Finanziamento tramite debito",
-            description: "Soluzioni di debito per preservare il vostro capitale e ottimizzare la vostra struttura",
+            title: "Finanziamento a debito",
+            description: "Per preservare il capitale e ottimizzare la struttura finanziaria.",
             items: {
               bank: {
                 title: "Debito bancario tradizionale",
-                subtitle: "Finanziamenti classici sicuri"
+                subtitle: "Finanziamenti classici, stabili e sicuri"
               },
               private: {
                 title: "Debito privato (unitranche, mezzanino)",
-                subtitle: "Soluzioni flessibili e su misura"
+                subtitle: "Soluzioni flessibili, personalizzate e ad alto rendimento"
               },
               bonds: {
                 title: "Obbligazioni e finanziamento obbligazionario",
-                subtitle: "Per esigenze importanti"
+                subtitle: "Per reperire risorse importanti e diversificate"
               },
               lease: {
                 title: "Leasing e soluzioni specializzate",
-                subtitle: "Finanziamenti di asset specifici"
+                subtitle: "Per finanziare investimenti su asset specifici"
               }
             }
           }
