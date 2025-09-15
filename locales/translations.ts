@@ -36,7 +36,7 @@ export const translations = {
       },
       content: {
         point1: {
-          title: "Fondé par un duo franco-italien, Milaris Partners",
+          title: "Milaris Partners, société parisienne fondée par des professionnels italiens et français, accompagne les micro, petites et moyennes entreprises dans leurs processus de cession, d'acquisition et de levée de capitaux, en leur ouvrant l'accès à des investisseurs et acquéreurs internationaux.",
           text: "est un cabinet parisien au regard résolument européen. Nous accompagnons les TPE, PME et ETI dans leurs opérations de cession ou de levée de fonds, en élargissant leur horizon bien au-delà des acquéreurs locaux."
         },
         point2: {
