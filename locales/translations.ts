@@ -2654,26 +2654,26 @@ export const translations = {
       },
       financement: {
         hero: {
-          badge: "Expertise Finanziamento",
-          title: "Dare i mezzi alle vostre ambizioni: capitale, debito, strutturazione.",
-          description: "Accompagniamo le aziende nella loro ricerca di finanziamento, sia per sostenere la crescita, rifinanziare un debito, investire in un progetto o strutturare un buyout.",
+          badge: "Fundraising advisory",
+          title: "Dare forza ai vostri progetti: capitale, debito e soluzioni finanziarie",
+          description: "Accompagniamo le aziende nella ricerca di capitali per crescere, rifinanziare debiti, sostenere nuovi investimenti o realizzare operazioni di buyout, offrendo soluzioni finanziarie su misura per garantire equilibrio e solidità nel tempo.",
           cta: "Strutturiamo il vostro finanziamento"
         },
         services: {
-          title: "Le nostre competenze",
-          subtitle: "Soluzioni complete di finanziamento adatte a ogni fase del vostro sviluppo",
+          title: "Cosa facciamo per voi?",
+          subtitle: "Soluzioni complete di finanziamento, su misura per ogni fase del vostro sviluppo.",
           items: {
             planning: {
-              title: "Preparazione e strutturazione",
-              description: "Business plan, modellazione finanziaria, strutturazione del bisogno e ottimizzazione della domanda"
+              title: "Preparazione e pianificazione",
+              description: "Sviluppiamo business plan dettagliati e modelli finanziari solidi, definiamo con precisione il fabbisogno, strutturiamo e ottimizziamo la domanda per garantire basi robuste, migliorare la credibilità verso gli investitori e favorire il successo della raccolta di capitale."
             },
             search: {
               title: "Ricerca di finanziatori",
-              description: "Accesso alla nostra rete di banche, fondi di debito, investitori in capitale secondo le vostre esigenze"
+              description: "Mettiamo a disposizione un'ampia rete di banche, fondi di debito e investitori in capitale, selezionando partner coerenti con le vostre esigenze per costruire la migliore combinazione di risorse e garantire tempistiche rapide e condizioni vantaggiose."
             },
             negotiation: {
               title: "Negoziazione delle condizioni",
-              description: "Ottimizzazione dei termini: tassi, covenant, garanzie, diluizione per preservare i vostri interessi"
+              description: "Guidiamo la definizione di tassi, covenant, garanzie e diluizione, negoziando condizioni ottimali per preservare il valore e proteggere i vostri interessi, assicurando la sostenibilità del finanziamento e il successo delle operazioni a lungo termine."
             }
           }
         },
