@@ -2647,9 +2647,9 @@ export const translations = {
           }
         },
         cta: {
-          title: "Pronti ad accelerare la vostra crescita?",
-          subtitle: "Che abbiate un target in vista o vogliate esplorare il mercato, discutiamo delle vostre opportunità di acquisizione in totale riservatezza.",
-          button: "Esploriamo le vostre opportunità"
+          title: "Pronti a far crescere la vostra azienda?",
+          subtitle: "Che abbiate già un target o vogliate esplorare nuove opportunità, valutiamo insieme progetti di acquisizione su misura, con un approccio rapido e totalmente riservato.",
+          button: "Scopriamo le vostre opportunità"
         }
       },
       financement: {
