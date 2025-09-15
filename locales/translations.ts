@@ -2625,24 +2625,24 @@ export const translations = {
           }
         },
         faq: {
-          title: "Domande frequenti",
-          subtitle: "Tutto quello che dovete sapere sulle acquisizioni aziendali",
+          title: "Domande frequenti sulle acquisizioni",
+          subtitle: "Vi guidiamo in ogni fase dell'acquisizione con chiarezza, metodo e assoluta riservatezza.",
           questions: {
             q1: {
-              question: "Quanto tempo richiede un'acquisizione aziendale?",
-              answer: "Tra 3 e 12 mesi a seconda del contesto: acquisizione opportunistica rapida o processo strutturato con più target. Il nostro approccio metodico ottimizza i tempi garantendo ogni fase."
+              question: "Quali sono i tempi di un'acquisizione aziendale?",
+              answer: "Generalmente tra 3 e 12 mesi, a seconda della complessità: da un'acquisizione opportunistica veloce a un processo strutturato con più target. Il nostro metodo riduce i tempi, garantendo ogni fase con precisione."
             },
             q2: {
-              question: "Come identificate i target di acquisizione?",
-              answer: "Combiniamo tre approcci: la nostra rete diretta nei vostri settori target, i nostri database proprietari arricchiti continuamente, e il nostro strumento IA che identifica opportunità off-market altrimenti invisibili."
+              question: "Come individuate e valutate i target di acquisizione?",
+              answer: "Un approccio integrato: rete diretta nei settori di interesse, database proprietari costantemente aggiornati e tecnologia IA capace di individuare opportunità off-market altrimenti invisibili, assicurando una selezione mirata e completa."
             },
             q3: {
-              question: "Quali tipi di strutture proponete?",
-              answer: "Strutturiamo tutti i tipi di operazioni: acquisizione semplice, LBO con leva, partecipazione di minoranza o maggioranza, carve-out di divisioni, strategie build-up. Ogni struttura è ottimizzata secondo i vostri vincoli."
+              question: "Che strutture e soluzioni operative proponete?",
+              answer: "Progettiamo qualsiasi configurazione: acquisizioni semplici, LBO con leva, partecipazioni di minoranza o maggioranza, carve-out di divisioni e strategie build-up. Ogni struttura è modellata sui vostri obiettivi e vincoli finanziari."
             },
             q4: {
-              question: "Lavorate su acquisizioni internazionali?",
-              answer: "Sì, il nostro DNA franco-italiano ci permette di gestire acquisizioni transfrontaliere, in particolare tra Francia e Italia. Grazie alla nostra rete europea — in particolare in Germania — facilitiamo anche le operazioni in altri paesi."
+              question: "Offrite supporto anche per acquisizioni internazionali?",
+              answer: "Sì. Il nostro approccio paneuropeo e la presenza diretta in Francia, Italia e Germania ci consentono di gestire acquisizioni transfrontaliere, facilitando operazioni complesse e garantendo un coordinamento efficace in tutta Europa."
             }
           }
         },
