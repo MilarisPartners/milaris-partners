@@ -2580,7 +2580,7 @@ export const translations = {
             },
             exclusive: {
               title: "Opportunità esclusive e riservate",
-              description: "Grazie alla nostra rete qualificata e a un approccio diretto, generiamo opportunità riservate non visibili sul mercato, offrendo percorsi di acquisizione unici che massimizzano sinergie strategiche e ritorno sull'investimento per ogni cliente, in totale riservatezza operativa."
+              description: "Grazie alla nostra rete qualificata e a un approccio diretto, generiamo opportunità riservate non visibili sul mercato, offrendo percorsi di acquisizione unici che massimizzano sinergie strategiche e ritorno sull'investimento per ogni cliente."
             }
           }
         },
