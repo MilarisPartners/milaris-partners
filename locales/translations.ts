@@ -2726,16 +2726,16 @@ export const translations = {
           subtitle: "La nostra esperienza al servizio del vostro finanziamento ottimale",
           items: {
             access: {
-              title: "Accesso diretto ai decisori",
-              description: "Rete privilegiata di investitori e banchieri per accelerare le vostre discussioni di finanziamento"
+              title: "Accesso privilegiato ai decisori",
+              description: "Mettiamo a disposizione una rete esclusiva di investitori e banche, facilitando contatti diretti con chi prende le decisioni cruciali. Questo consente di accelerare le trattative, ridurre i tempi e aumentare concretamente le probabilità di successo nel processo di finanziamento."
             },
             expertise: {
               title: "Expertise nella negoziazione",
-              description: "Esperienza nella negoziazione dei termini chiave: diluizione, leva, covenant per ottimizzare le vostre condizioni"
+              description: "Grazie a un'esperienza consolidata, gestiamo in modo efficace la negoziazione di diluizione, leva e covenant. Il nostro obiettivo è assicurarvi condizioni finanziarie ottimali, tutelando i vostri interessi e rafforzando la struttura complessiva dell'operazione."
             },
             optimization: {
-              title: "Ottimizzazione del costo del capitale",
-              description: "Capacità di strutturare soluzioni flessibili e ottimizzare il costo del vostro finanziamento"
+              title: "Ottimizzazione del capitale",
+              description: "Progettiamo soluzioni finanziarie flessibili e competitive per ridurre il costo complessivo del capitale. Dall'analisi iniziale alla chiusura, lavoriamo per garantire equilibrio, sostenibilità e condizioni vantaggiose, massimizzando l'efficienza del vostro finanziamento."
             }
           }
         },
