@@ -2567,20 +2567,20 @@ export const translations = {
           }
         },
         expertise: {
-          title: "Il nostro know-how",
-          subtitle: "Vantaggi competitivi unici al servizio delle vostre acquisizioni",
+          title: "Perché scegliere Milaris Partners?",
+          subtitle: "La nostra esperienza al servizio delle vostre acquisizioni.",
           items: {
             ai: {
               title: "Strumento IA di sourcing avanzato",
-              description: "La nostra tecnologia proprietaria identifica opportunità off-market in tutti i settori, invisibili sul mercato tradizionale"
+              description: "La nostra tecnologia proprietaria di intelligenza artificiale individua opportunità off-market in tutti i settori, scoprendo target invisibili al mercato tradizionale e offrendo un vantaggio competitivo decisivo lungo ogni fase del processo di acquisizione e investimento."
             },
             franco: {
-              title: "Expertise franco-italiana",
-              description: "Il nostro team binazionale offre un accesso privilegiato a due mercati chiave — arricchito da una presenza tedesca per coprire il triangolo economico chiave del continente."
+              title: "Competenza paneuropea integrata",
+              description: "Il nostro team internazionale garantisce accesso privilegiato ai principali mercati europei, rafforzato da una presenza strategica in Germania, fornendo competenze culturali, legali e industriali per operazioni cross-border efficaci e di alto valore strategico in diversi paesi."
             },
             exclusive: {
-              title: "Opportunità esclusive",
-              description: "Capacità di generare opportunità non visibili, grazie alla nostra rete e al nostro approccio diretto"
+              title: "Opportunità esclusive e riservate",
+              description: "Grazie alla nostra rete qualificata e a un approccio diretto, generiamo opportunità riservate non visibili sul mercato, offrendo percorsi di acquisizione unici che massimizzano sinergie strategiche e ritorno sull'investimento per ogni cliente, in totale riservatezza operativa."
             }
           }
         },
