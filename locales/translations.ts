@@ -1058,7 +1058,7 @@ export const translations = {
       },
       content: {
         point1: {
-          title: "Milaris Partners, a Paris-based advisory firm founded by a Franco-Italian team",
+          title: "Milaris Partners, a Paris-based firm founded by Italian and French professionals, supports micro, small, and medium-sized enterprises in their processes of divestment, acquisition, and capital raising, opening doors to international investors and buyers.",
           text: "with a distinctly European outlook, advises SMEs on sell-side, buy-side, and fundraising transactions, enabling clients to access wider strategic opportunities."
         },
         point2: {
