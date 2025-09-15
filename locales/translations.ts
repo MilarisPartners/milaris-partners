@@ -2585,41 +2585,41 @@ export const translations = {
           }
         },
         types: {
-          title: "Tipi di acquisizioni",
-          subtitle: "Expertise in tutte le strutture e settori di attività",
+          title: "Percorsi di acquisizione",
+          subtitle: "Soluzioni su misura per ogni strategia e struttura operativa.",
           strategic: {
-            title: "Acquisizioni Strategiche",
-            description: "Acquisizione di concorrenti, fornitori o attori complementari per rafforzare il vostro posizionamento",
+            title: "Acquisizioni strategiche",
+            description: "Acquisto di concorrenti, fornitori o attori complementari per rafforzare il posizionamento.",
             items: {
               consolidation: {
                 title: "Consolidamento settoriale",
-                subtitle: "Rafforzate la vostra posizione di leader"
+                subtitle: "Rafforzare la leadership nel proprio settore"
               },
               vertical: {
                 title: "Integrazione verticale",
-                subtitle: "Mettete in sicurezza la vostra catena del valore"
+                subtitle: "Mettere in sicurezza la catena del valore"
               },
               geographic: {
                 title: "Estensione geografica",
-                subtitle: "Conquistate nuovi mercati"
+                subtitle: "Accedere rapidamente a nuovi mercati"
               }
             }
           },
           complex: {
-            title: "Strutture Complesse",
-            description: "LBO, carve-out, build-up secondo i vostri vincoli finanziari e obiettivi di sviluppo",
+            title: "Strutture complesse",
+            description: "Operazioni LBO, carve-out e build-up modellate su vincoli finanziari e obiettivi di crescita.",
             items: {
               lbo: {
                 title: "LBO e strutture con leva",
-                subtitle: "Ottimizzate la vostra struttura finanziaria"
+                subtitle: "Ottimizzare la struttura finanziaria"
               },
               carveout: {
                 title: "Carve-out di divisioni",
-                subtitle: "Estraete il valore nascosto"
+                subtitle: "Estrarre e valorizzare asset nascosti"
               },
               buildup: {
                 title: "Strategie build-up",
-                subtitle: "Create un leader attraverso acquisizioni successive"
+                subtitle: "Creare un leader tramite acquisizioni successive"
               }
             }
           }
