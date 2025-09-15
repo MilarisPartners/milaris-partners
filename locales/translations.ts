@@ -2788,24 +2788,24 @@ export const translations = {
           }
         },
         faq: {
-          title: "Domande frequenti",
-          subtitle: "Tutto quello che dovete sapere sul finanziamento aziendale",
+          title: "Domande frequenti sul finanziamento",
+          subtitle: "Tutto ciò che occorre sapere per pianificare con successo una raccolta fondi.",
           questions: {
             q1: {
-              question: "Quanto tempo richiede una raccolta fondi?",
-              answer: "Tra 2 e 6 mesi in media, a seconda del tipo di finanziamento ricercato e del livello di preparazione iniziale. I finanziamenti tramite debito sono generalmente più rapidi delle raccolte fondi in equity."
+              question: "Quali sono i tempi per una raccolta fondi?",
+              answer: "In media tra 2 e 6 mesi, a seconda del tipo di finanziamento e della preparazione iniziale. I finanziamenti a debito risultano generalmente più rapidi rispetto alle raccolte di capitale in equity."
             },
             q2: {
-              question: "Qual è la differenza tra debito ed equity?",
-              answer: "L'equity implica una diluizione del capitale in cambio di fondi propri, mentre il debito è un prestito da rimborsare con interessi. L'equity offre più flessibilità ma diluisce, il debito preserva il capitale ma impone rimborsi regolari."
+              question: "In cosa differiscono debito ed equity?",
+              answer: "L'equity comporta la cessione di una quota del capitale in cambio di fondi propri, offrendo maggiore flessibilità ma diluendo la proprietà. Il debito preserva la partecipazione societaria, richiedendo però rimborsi periodici con interessi."
             },
             q3: {
-              question: "Come ottimizzare la mia valutazione?",
-              answer: "Una valutazione ottimale risulta da una preparazione rigorosa: business plan solido, metriche di crescita dimostrate, processo competitivo ben organizzato e timing adatto al mercato. La nostra expertise massimizza ogni leva."
+              question: "Come valorizzare al meglio la mia azienda?",
+              answer: "Una valutazione ottimale nasce da un business plan solido, metriche di crescita comprovate, un processo competitivo ben organizzato e un timing favorevole al mercato. La nostra esperienza aiuta a massimizzare ognuno di questi fattori."
             },
             q4: {
-              question: "Quali importi potete raccogliere?",
-              answer: "Accompagniamo raccolte da 2M€ minimo a oltre 100M€, sia in equity che in debito. La nostra rete copre tutti i tipi di ticket, dai business angels ai grandi fondi istituzionali europei."
+              question: "Quali importi di capitale potete raccogliere?",
+              answer: "Gestiamo operazioni da un minimo di 2M€ fino a oltre 100M€, sia in equity che in debito, grazie a una rete che spazia da business angels a grandi fondi istituzionali europei."
             }
           }
         },
