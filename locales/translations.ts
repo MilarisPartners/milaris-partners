@@ -2810,9 +2810,9 @@ export const translations = {
           }
         },
         cta: {
-          title: "Pronto a finanziare la tua crescita?",
-          subtitle: "Discutiamo delle tue esigenze di finanziamento ed esploriamo insieme le migliori opzioni per sostenere il tuo sviluppo.",
-          button: "Contattaci"
+          title: "Pronti a finanziare la vostra crescita?",
+          subtitle: "Condividete con noi i vostri obiettivi di sviluppo: individueremo insieme le soluzioni di finanziamento più adatte per sostenere e accelerare i vostri progetti.",
+          button: "Parlateci del vostro progetto"
         }
       }
     },
