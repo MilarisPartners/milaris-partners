@@ -2519,8 +2519,8 @@ export const translations = {
           }
         },
         timeline: {
-          title: "Svolgimento tipico di un'acquisizione",
-          subtitle: "Un approccio strutturato, da 3 a 12 mesi a seconda del contesto",
+          title: "Fasi del processo di acquisizione",
+          subtitle: "Un iter strutturato con tempistica media compresa tra 3 e 12 mesi.",
           legend: {
             steps: "Fasi chiave",
             duration: "Durata media per fase"
@@ -2528,22 +2528,22 @@ export const translations = {
           steps: {
             setup: {
               title: "Definizione della strategia",
-              description: "Criteri dettagliati, zone geografiche, budget e struttura dell'operazione prevista",
+              description: "Si fissano obiettivi d'investimento, settori, aree geografiche, budget e struttura dell'operazione prevista",
               duration: "1–2 settimane"
             },
             identification: {
-              title: "Identificazione dei target",
-              description: "Sourcing tramite il nostro strumento IA, qualifica e approccio anonimo dei target prioritari",
+              title: "Identificazione delle target",
+              description: "Con strumenti d'intelligenza artificiale individuiamo e qualifichiamo in modo riservato i potenziali target idonei",
               duration: "4–8 settimane"
             },
             analysis: {
               title: "Analisi e valutazione",
-              description: "Valutazione approfondita, business plan di integrazione e determinazione del prezzo ottimale",
+              description: "Approfondita due diligence finanziaria e industriale, valutazione sinergie e determinazione del prezzo ottimale finale",
               duration: "3–6 settimane"
             },
             nego: {
-              title: "Negoziazione & Closing",
-              description: "Gestione degli audit, coordinamento legale delle strutture e supporto alle negoziazioni fino alla firma.",
+              title: "Negoziazione e Closing",
+              description: "Gestione audit, coordinamento legale e supporto completo fino alla firma del contratto definitivo",
               duration: "4–8 settimane"
             }
           }
@@ -2551,15 +2551,15 @@ export const translations = {
         stats: {
           targets: {
             value: "500+",
-            label: "Target analizzati all'anno"
+            label: "Target valutati ogni anno"
           },
           speed: {
             value: "2x",
-            label: "Più veloce grazie all'IA"
+            label: "Processo due volte più rapido"
           },
           offmarket: {
             value: "85%",
-            label: "Opportunità off-market"
+            label: "Opportunità off-market individuate"
           },
           confidentiality: {
             value: "100%",
