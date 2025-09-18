@@ -1024,14 +1024,14 @@ export const translations = {
   },
   EN: {
     navbar: {
-      about: "About",
+      about: "Home",
       expertises: "Expertise",
       team: "Team",
       career: "Careers",
       contact: "Contact us",
-      businessSale: "Sell-side Advisory",
-      businessAcquisition: "Buy-side Advisory",
-      financing: "Fundraising Advisory",
+      businessSale: "Sell-side advisory",
+      businessAcquisition: "Buy-side advisory",
+      financing: "Fundraising advisory",
     },
     hero: {
       subtitle: "",
@@ -1302,7 +1302,7 @@ export const translations = {
     expertisePages: {
       cession: {
         hero: {
-          badge: "Sell-side Advisory",
+          badge: "Sell-side advisory",
           title: "Selling your company is a defining milestone",
           subtitle: "We help you make the right decisions at every step of your sale process.",
           description: "Milaris Partners supports business owners throughout partial or total sales, ensuring strategic, confidential, value-driven outcomes aligned to long-term goals.",
@@ -1471,7 +1471,7 @@ export const translations = {
       },
       acquisition: {
         hero: {
-          badge: "Buy-side Advisory",
+          badge: "Buy-side advisory",
           title: "Unlocking sustainable business growth through targeted acquisitions",
           description: "Milaris Partners advises companies, entrepreneurs, and investors to develop and execute tailored acquisition strategies aligned with their growth objectives.",
           cta: "Let's explore your opportunities"
@@ -1630,7 +1630,7 @@ export const translations = {
       },
       financement: {
         hero: {
-          badge: "Financing Advisory",
+          badge: "Financing advisory",
           title: "Empowering your strategic vision through tailored capital solutions",
           description: "We advise on growth capital, debt, and M&A financing—structuring optimal solutions for acquisitions, buyouts, or refinancing to meet your objectives.",
           cta: "Let's structure your financing"
@@ -1929,7 +1929,7 @@ export const translations = {
       subtitle: "Tailored solutions for business owners of companies with €5M to €150M in revenue.",
       cards: [
         {
-          title: "Sell-side Advisory",
+          title: "Sell-side advisory",
           description: "Maximize the value of your company at the time of sale",
           features: [
             "Companies with €5M to €150M in revenue",
@@ -1940,7 +1940,7 @@ export const translations = {
           cta: "Learn more"
         },
         {
-          title: "Buy-side Advisory",
+          title: "Buy-side advisory",
           description: "Identify and secure the best external growth opportunities",
           features: [
             "Strategic targeting across Europe",
@@ -1951,7 +1951,7 @@ export const translations = {
           cta: "Learn more"
         },
         {
-          title: "Financing Advisory",
+          title: "Financing advisory",
           description: "Structure optimal financing to accelerate your growth",
           features: [
             "Growth fundraising",
