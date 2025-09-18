@@ -2076,7 +2076,7 @@ export const translations = {
     },
     about: {
       title: {
-        part1: "Boutique di M&A indipendente per",
+        part1: "Boutique di M&A indipendente per ",
         part2: "PMI europee",
         part3: "in crescita, trasformazione o successione"
       },
