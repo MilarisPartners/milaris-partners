@@ -2723,7 +2723,7 @@ export const translations = {
         },
         whyMilaris: {
           title: "Perché scegliere Milaris Partners?",
-          subtitle: "La nostra esperienza al servizio del vostro finanziamento ottimale",
+          subtitle: "La nostra esperienza al servizio del vostro finanziamento ottimale.",
           items: {
             access: {
               title: "Accesso privilegiato ai decisori",
@@ -2818,8 +2818,9 @@ export const translations = {
     },
     equipe: {
       hero: {
-          title1: "Il nostro",
-          title2: "Team",
+          title1: "Le ",
+          title2: "persone",
+          title3: " dietro al nostro successo",
           subtitle: "Un gruppo di professionisti appassionati, dedicati a creare valore e a supportare le aziende nei loro progetti strategici."
       },
       focus: {
@@ -2868,18 +2869,18 @@ export const translations = {
           }
       },
       cta: {
-          title: "Pronto a incontrare il nostro team?",
+          title: "Siete pronti a incontrare il nostro team?",
           subtitle: "Confrontiamoci sul vostro progetto e valutiamo insieme come contribuire al suo successo.",
           button: "Pianificate un incontro con noi!"
       },
       sections: {
           partners: {
-              title: "I nostri Partner",
+              title: "La nostra leadership",
               subtitle: "I fondatori di Milaris Partners: esperti di M&A con una visione internazionale ed europea."
           },
           seniorAdvisor: {
-              title: "Senior Advisor",
-              subtitle: "Competenza internazionale e consulenza strategica"
+              title: "Il team dei Senior Advisors",
+              subtitle: "Esperti di livello internazionale che affiancano il team con visione strategica e profonda conoscenza dei mercati."
           }
       },
       managingDirectorFrance: "Managing Director - Francia",

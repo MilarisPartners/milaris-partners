@@ -133,7 +133,9 @@ const AcquisitionEntreprise = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              {t("expertisePages.acquisition.hero.title")}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-primary to-gray-900 animate-gradient-x">
+                {t("expertisePages.acquisition.hero.title")}
+              </span>
             </motion.h1>
             <motion.p 
               className="text-lg mb-12 text-gray-600 max-w-3xl mx-auto"

@@ -133,7 +133,9 @@ const Financement = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              {t("expertisePages.financement.hero.title")}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-primary to-gray-900 animate-gradient-x">
+                {t("expertisePages.financement.hero.title")}
+              </span>
             </motion.h1>
             <motion.p 
               className="text-lg mb-12 text-gray-600 max-w-3xl mx-auto"
@@ -275,7 +277,7 @@ const Financement = () => {
             viewport={{ once: true }}
             className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.whyMilaris.title")}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
