@@ -112,7 +112,7 @@ const InterventionSection = () => {
                 {t('interventionSection.title.highlight')}
               </span>
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-white/70 max-w-2xl mx-auto px-4 sm:px-0">
+            <p className="text-base sm:text-lg text-white/70 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
               {t('interventionSection.subtitle')}
             </p>
           </motion.div>

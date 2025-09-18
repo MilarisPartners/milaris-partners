@@ -2074,9 +2074,9 @@ export const translations = {
     },
     about: {
       title: {
-        part1: "Boutique di M&A indipendente per le",
+        part1: "Boutique di M&A indipendente per",
         part2: "PMI europee",
-        part3: "nei momenti di crescita, trasformazione e passaggio generazionale"
+        part3: "in crescita, trasformazione o successione"
       },
       content: {
         point1: {
@@ -2154,7 +2154,7 @@ export const translations = {
     expertise: {
       title: "La nostra expertise",
       titleHighlight: "settoriale",
-      subtitle: "Una conoscenza approfondita delle dinamiche di mercato in sei settori chiave",
+      subtitle: "Una conoscenza approfondita delle dinamiche di mercato in sei settori chiave.",
       sectors: {
         consumer: {
           title: "Beni di consumo",
@@ -2184,9 +2184,9 @@ export const translations = {
     },
     aiSection: {
       title: {
-        part1: "La nostra",
-        highlight: "Intelligenza Artificiale",
-        part2: "al servizio delle vostre transazioni"
+        part1: "La ",
+        highlight: "nostra IA",
+        part2: " al servizio delle vostre transazioni per massimizzarne i risultati"
       },
       description: "Tecnologia IA proprietaria sviluppata da Milaris Partners. Analizzando milioni di dati su mercati e investitori, il nostro motore di matching individua opportunità nascoste nel panorama frammentato delle fusioni e acquisizioni di piccole e medie imprese, dove le reti tradizionali non arrivano e l'affidabilità diventa decisiva.",
       features: {
