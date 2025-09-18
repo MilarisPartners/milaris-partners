@@ -106,7 +106,7 @@ const InterventionSection = () => {
             viewport={{ once: true }}
             className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="heading-2 lg:text-6xl font-bold text-white mb-4 sm:mb-6 px-4 sm:px-0">
+            <h2 className="heading-2 font-bold text-white mb-4 sm:mb-6 px-4 sm:px-6 lg:px-0">
               {t('interventionSection.title.part1')} {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
                 {t('interventionSection.title.highlight')}

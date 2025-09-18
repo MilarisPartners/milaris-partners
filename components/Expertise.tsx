@@ -117,7 +117,7 @@ const Expertise = () => {
             <motion.div className="flex justify-center mb-4">
               <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-[#0001ff] animate-pulse" />
             </motion.div>
-            <h2 className="heading-2 lg:text-5xl font-bold text-[#0b062b] mb-4 px-4 sm:px-0">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4 px-4 sm:px-6 lg:px-0">
               {t("expertise.title")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                 {t("expertise.titleHighlight")}

@@ -47,7 +47,7 @@ const EuropePresence = () => {
             <motion.div className="flex justify-center mb-4">
               <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-[#0001ff]" />
             </motion.div>
-            <h2 className="heading-2 lg:text-5xl font-bold text-[#0b062b] mb-4 px-4 sm:px-0">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4 px-4 sm:px-6 lg:px-0">
               {t("europePresence.title.part1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
                 {t("europePresence.title.highlight")}

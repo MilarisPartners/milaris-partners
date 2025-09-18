@@ -98,7 +98,7 @@ const AISection = () => {
 
               {/* Titre */}
               <motion.h2 
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mb-8 sm:mb-12 lg:mb-16 text-[#0b062b] leading-tight px-4 sm:px-0"
+                className="heading-2 font-bold text-center mb-8 sm:mb-10 lg:mb-12 text-[#0b062b] leading-tight px-4 sm:px-6 lg:px-0"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
