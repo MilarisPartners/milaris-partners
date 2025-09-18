@@ -1130,7 +1130,7 @@ export const translations = {
     expertise: {
       title: "Our sector",
       titleHighlight: "expertise",
-      subtitle: "In-depth knowledge of market dynamics in six key sectors",
+      subtitle: "In-depth knowledge of market dynamics in six key sectors.",
       sectors: {
         consumer: {
           title: "Consumer Goods",
@@ -1160,7 +1160,7 @@ export const translations = {
     },
     aiSection: {
       title: {
-        part1: "Our proprietary",
+        part1: "Our proprietary ",
         highlight: "AI-enhanced advisory",
         part2: "for complex transactions"
       },
@@ -1310,7 +1310,7 @@ export const translations = {
         },
         services: {
           title: "What we do for you?",
-          subtitle: "Our mission: maximizing your company's value for smooth succession",
+          subtitle: "Our mission: maximizing your company's value for smooth succession.",
           items: {
             evaluation: {
               title: "Valuation & Strategic positioning",
@@ -1328,7 +1328,7 @@ export const translations = {
         },
         timeline: {
           title: "Transaction timeline",
-          subtitle: "Our engagements typically span 6 to 9 months",
+          subtitle: "Our engagements typically span 6 to 9 months.",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
@@ -1381,7 +1381,7 @@ export const translations = {
         },
         whyMilaris: {
           title: "Why choose Milaris Partners?",
-          subtitle: "Our expertise to make high-impact M&A solutions",
+          subtitle: "Our expertise to make high-impact M&A solutions.",
           items: {
             process: {
               title: "Structured and competitive sale process",
@@ -1399,7 +1399,7 @@ export const translations = {
         },
         acquirers: {
           title: "Our buyer networks",
-          subtitle: "We maintain close relationships with both strategic acquirers and financial investors",
+          subtitle: "We maintain close relationships with both strategic acquirers and financial investors.",
           strategic: {
             title: "Strategic Buyers",
             description: "Industrial players and sector companies seeking growth, diversification, or synergy",
@@ -1439,7 +1439,7 @@ export const translations = {
         },
         faq: {
           title: "Frequently Asked Questions",
-          subtitle: "Let's democratize the M&A process",
+          subtitle: "Let's democratize the M&A process.",
           questions: {
             q1: {
               question: "How long does the sale process typically take?",
@@ -1478,7 +1478,7 @@ export const translations = {
         },
         services: {
           title: "What we do for you?",
-          subtitle: "Our mission: identify strategic opportunities, deliver precise deals",
+          subtitle: "Our mission: identify strategic opportunities, deliver precise deals.",
           items: {
             strategy: {
               title: "Acquisition strategy development",
@@ -1496,7 +1496,7 @@ export const translations = {
         },
         timeline: {
           title: "Transaction timeline",
-          subtitle: "Our engagements typically span 3 to 12 months",
+          subtitle: "Our engagements typically span 3 to 12 months.",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
@@ -1544,7 +1544,7 @@ export const translations = {
         },
         expertise: {
           title: "Our expertise",
-          subtitle: "Our expertise to make high-impact M&A solutions",
+          subtitle: "Our expertise to make high-impact M&A solutions.",
           items: {
             ai: {
               title: "AI-powered sourcing",
@@ -1562,7 +1562,7 @@ export const translations = {
         },
         types: {
           title: "Types of acquisitions",
-          subtitle: "Expertise across all transaction structures and industry sectors",
+          subtitle: "Expertise across all transaction structures and industry sectors.",
           strategic: {
             title: "Strategic Acquisitions",
             description: "Acquisition of competitors, suppliers, or complementary businesses to enhance your strategic positioning",
@@ -1602,7 +1602,7 @@ export const translations = {
         },
         faq: {
           title: "Frequently Asked Questions",
-          subtitle: "Everything you need to know about the buy-side M&A process",
+          subtitle: "Everything you need to know about the buy-side M&A process.",
           questions: {
             q1: {
               question: "How long does a business acquisition take?",
@@ -1637,7 +1637,7 @@ export const translations = {
         },
         services: {
           title: "What we do for you?",
-          subtitle: "End-to-end execution capabilities across all financing stages, from preparation to closing",
+          subtitle: "End-to-end execution capabilities across all financing stages, from preparation to closing.",
           items: {
             planning: {
               title: "Preparation & Structuring",
@@ -1655,7 +1655,7 @@ export const translations = {
         },
         timeline: {
           title: "Transaction timeline",
-          subtitle: "Our engagements typically span 2 to 6 months",
+          subtitle: "Our engagements typically span 2 to 6 months.",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
@@ -1699,7 +1699,7 @@ export const translations = {
         },
         whyMilaris: {
           title: "Why choose Milaris Partners?",
-          subtitle: "Our expertise to make high-impact M&A solutions",
+          subtitle: "Our expertise to make high-impact M&A solutions.",
           items: {
             access: {
               title: "Direct access to decision-makers",
@@ -1717,7 +1717,7 @@ export const translations = {
         },
         types: {
           title: "Types of financing",
-          subtitle: "Solutions tailored to your needs and specific constraints",
+          subtitle: "Solutions tailored to your needs and specific constraints.",
           equity: {
             title: "Equity fundraising",
             description: "To finance your growth while maintaining flexibility",
@@ -1765,7 +1765,7 @@ export const translations = {
         },
         faq: {
           title: "Frequently Asked Questions",
-          subtitle: "Everything you need to know about corporate financing",
+          subtitle: "Everything you need to know about corporate financing.",
           questions: {
             q1: {
               question: "How long does a financing process take?",
@@ -1846,17 +1846,17 @@ export const translations = {
       },
       cta: {
           title: "Ready to meet our team?",
-          subtitle: "Let's explore your project together and identify how we can contribute to its success",
+          subtitle: "Let's explore your project together and identify how we can contribute to its success.",
           button: "Schedule a call"
       },
       sections: {
           partners: {
               title: "Our Partners",
-              subtitle: "The founders of Milaris Partners, M&A experts with a European vision"
+              subtitle: "The founders of Milaris Partners, M&A experts with a European vision."
           },
           seniorAdvisor: {
               title: "Senior Advisor",
-              subtitle: "International expertise and strategic advisory"
+              subtitle: "International expertise and strategic advisory."
           }
       },
       managingDirectorFrance: "Managing Director - France",
@@ -1873,7 +1873,7 @@ export const translations = {
       workWithUs: {
         title1: "Why join",
         title2: "us",
-        subtitle: "Explore Milaris Partners: where talent, ambition, and culture align"
+        subtitle: "Explore Milaris Partners: where talent, ambition, and culture align."
       },
       values: {
         value1: {
@@ -1891,7 +1891,7 @@ export const translations = {
       },
       benefits: {
         title: "Our benefits",
-        subtitle: "We invest in the well-being and development of our employees",
+        subtitle: "We invest in the well-being and development of our employees.",
         benefit1: "Continuous training and mentoring",
         benefit2: "Stimulating projects with prestigious clients",
         benefit3: "Flexible work environment",
@@ -1926,7 +1926,7 @@ export const translations = {
         part1: "Transaction advisory for",
         highlight: "SMEs"
       },
-      subtitle: "Tailored solutions for business owners of companies with €5M to €150M in revenue",
+      subtitle: "Tailored solutions for business owners of companies with €5M to €150M in revenue.",
       cards: [
         {
           title: "Sell-side Advisory",
