@@ -2986,7 +2986,7 @@ export const translations = {
           cta: "Scopri di più"
         }
       ],
-      bottomCtaText: "Un approccio esclusivo con un numero selezionato di mandati per garantire un supporto su misura",
+      bottomCtaText: "Un approccio esclusivo con un numero selezionato di mandati per garantire un supporto su misura!",
       bottomCtaButton: "Parlateci del vostro progetto"
     },
     testimonial: {
