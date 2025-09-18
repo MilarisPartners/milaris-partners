@@ -161,7 +161,7 @@ const Equipe = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
                 {t("equipe.hero.title2")}
               </span>
-              {t("equipe.hero.title3")}
+              {t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3")}
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               {t("equipe.hero.subtitle")}

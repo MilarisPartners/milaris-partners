@@ -771,8 +771,9 @@ export const translations = {
     },
     equipe: {
       hero: {
-          title1: "Notre",
+          title1: "Notre ",
           title2: "équipe",
+          title3: "",
           subtitle: "Des experts passionnés dédiés à la création de valeur et à l'accompagnement des entreprises dans leurs projets stratégiques"
       },
       focus: {
@@ -1793,8 +1794,9 @@ export const translations = {
     },
     equipe: {
       hero: {
-          title1: "Our",
+          title1: "Our ",
           title2: "team",
+          title3: "",
           subtitle: "Dedicated M&A professionals committed to unlocking shareholder value and guiding companies through critical strategic transactions."
       },
       focus: {
