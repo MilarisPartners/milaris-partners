@@ -138,7 +138,7 @@ const Financement = () => {
               </span>
             </motion.h1>
             <motion.p 
-              className="text-sm sm:text-base md:text-lg mb-12 text-gray-600 max-w-3xl mx-auto"
+              className="text-sm sm:text-base md:text-lg lg:text-xl mb-12 text-gray-600 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -178,7 +178,7 @@ const Financement = () => {
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.services.title")}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600">
               {t("expertisePages.financement.services.subtitle")}
             </p>
           </motion.div>
@@ -280,7 +280,7 @@ const Financement = () => {
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.whyMilaris.title")}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
               {t("expertisePages.financement.whyMilaris.subtitle")}
             </p>
           </motion.div>
@@ -343,7 +343,7 @@ const Financement = () => {
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.types.title")}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600">
               {t("expertisePages.financement.types.subtitle")}
             </p>
           </motion.div>
@@ -446,7 +446,7 @@ const Financement = () => {
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.faq.title")}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600">
               {t("expertisePages.financement.faq.subtitle")}
             </p>
           </motion.div>

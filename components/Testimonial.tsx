@@ -29,7 +29,7 @@ const Testimonial = () => {
           
           {/* Citation */}
           <motion.blockquote 
-            className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed mb-8"
+            className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-700 leading-relaxed mb-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -56,7 +56,7 @@ const Testimonial = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <p className="text-base sm:text-lg font-bold text-gray-800 mb-1">{t('testimonial.name')}</p>
+            <p className="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-1">{t('testimonial.name')}</p>
             <p className="text-sm text-gray-600 uppercase tracking-wider">{t('testimonial.title')}</p>
           </motion.footer>
         </motion.div>

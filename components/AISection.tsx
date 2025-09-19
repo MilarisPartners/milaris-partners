@@ -109,6 +109,10 @@ const AISection = () => {
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                     {t("aiSection.title.highlight")}
                   </span>
+                ) : language === 'EN' ? (
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    {t("aiSection.title.highlight")}
+                  </span>
                 ) : (
                   <span className="text-[#0001ff]">
                     {t("aiSection.title.highlight")}

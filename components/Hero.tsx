@@ -160,10 +160,23 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-sm sm:text-base md:text-lg text-gray-700 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
           >
-            <span className="font-semibold text-blue-bright">{t("hero.description.part1")}</span> {t("hero.description.part2")}{" "}
-            <span className="font-semibold text-blue-bright">{t("hero.description.part3")}</span>{t("hero.description.part4")} <span className="font-semibold text-blue-bright">{t("hero.description.part5")}</span> {t("hero.description.part6")} <span className="font-semibold text-blue-bright">{t("hero.description.part7")}</span>{t("hero.description.part8")}
+            {t("hero.description.part1")} {t("hero.description.part2")}{" "}
+            {t("hero.description.part3")}{t("hero.description.part4")} {t("hero.description.part5")}{t("hero.description.part6")} 
+            {language === 'EN' ? (
+              <>
+                {t("hero.description.part7")} {t("hero.description.part8")}{t("hero.description.part9")} {t("hero.description.part10")}{t("hero.description.part11")}
+              </>
+            ) : language === 'IT' ? (
+              <>
+                {t("hero.description.part7")}{t("hero.description.part8")}
+              </>
+            ) : (
+              <>
+                {t("hero.description.part7")}
+              </>
+            )}
           </motion.p>
 
           {/* CTA Buttons */}

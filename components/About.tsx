@@ -48,7 +48,11 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             {t("about.title.part1")}{" "}
-            {language === 'IT' ? (
+            {language === 'EN' ? (
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                {t("about.title.part2")}
+              </span>
+            ) : language === 'IT' ? (
               <span className="relative">
                 <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("about.title.part2")}

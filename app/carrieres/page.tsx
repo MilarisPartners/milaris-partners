@@ -114,7 +114,7 @@ const Carrieres = () => {
               )}
             </motion.h1>
             <motion.p 
-              className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto px-4 sm:px-0"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -147,7 +147,7 @@ const Carrieres = () => {
                 </span>
               )}{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
               {t("carrieres.workWithUs.subtitle")}
             </p>
           </motion.div>
@@ -204,7 +204,7 @@ const Carrieres = () => {
                 t("carrieres.benefits.title")
               )}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
               {t("carrieres.benefits.subtitle")}
             </p>
           </motion.div>
@@ -334,7 +334,7 @@ const Carrieres = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-lg flex items-center justify-center mx-auto mb-8">
                 <Send className="w-10 h-10 text-white" />
               </div>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mb-8">
                 {t("carrieres.howToApply.description")}
               </p>
               <a 
@@ -368,7 +368,7 @@ const Carrieres = () => {
                 : <><span className="text-[#0001ff]">{t("carrieres.cta.title2")}</span> ?</>
               }
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-10">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-10">
               {t("carrieres.cta.subtitle")}
             </p>
             <motion.a 

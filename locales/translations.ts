@@ -1038,24 +1038,27 @@ export const translations = {
       title: "Mastering the art of simplifying M&A",
       description: {
         part1: "Milaris Partners",
-        part2: "advises",
-        part3: "SME",
-        part4: ",",
-        part5: "managers, shareholders and investors on ",
-        part6: "company sales, acquisitions and financing",
-        part7: "under optimal conditions.",
-        part8: " "
+        part2: "supports",
+        part3: "SMEs, entrepreneurs, and investors",
+        part4: " through ",
+        part5: "business sales, acquisitions, and corporate financing operations",
+        part6: ". ",
+        part7: "Our goal is to ",
+        part8: "safeguard your interests",
+        part9: " and ",
+        part10: "maximize the value of every transaction",
+        part11: "."
       },
       cta: {
-        scheduleCall: "Schedule a call",
-        whatChanges: "Our approach"
+        scheduleCall: "Plan a meeting with our team!",
+        whatChanges: "Why choose Milaris Partners?"
       }
     },
     about: {
       title: {
-        part1: "A strong commitment to unlocking the intrinsic value of ",
-        part2: "local businesses",
-        part3: " "
+        part1: "M&A boutique for ",
+        part2: "European SMEs",
+        part3: " undergoing growth, transformation, or succession"
       },
       content: {
         point1: {
@@ -1068,10 +1071,10 @@ export const translations = {
           country2: "Italy",
           text2: "and",
           country3: "Germany",
-          text3: ", we approach each mandate selectively, leveraging rigorous methods, our extensive international network, and keen deal intuition—opening strategic pathways to maximize value and secure successful outcomes."
+          text3: ", we approach each mandate with selectivity, applying rigorous methods and drawing on our extensive international network as well as sharp deal intuition to open strategic pathways that maximize value and ensure successful outcomes."
         },
         point3: {
-          text1: "As pioneers in applying",
+          text1: "As pioneers in applying ",
           ai: "artificial intelligence",
           text2: "to mergers and acquisitions, we've created proprietary technology that elevates every phase of the transaction, providing our clients with an unmatched strategic advantage to succeed."
         }
@@ -1160,11 +1163,11 @@ export const translations = {
     },
     aiSection: {
       title: {
-        part1: "Our proprietary ",
-        highlight: "AI-enhanced advisory",
-        part2: "for complex transactions"
+        part1: "Our ",
+        highlight: "AI empowers",
+        part2: " your transactions to achieve the best possible outcomes"
       },
-      description: "Proprietary AI technology developed by Milaris Partners. We leverage millions of market and investor data points to uncover hidden value in the fragmented small and mid-cap M&A landscape — where traditional networks fall short and reliability is key. Our internal matching engine enables unparalleled precision and speed in deal sourcing and evaluation.",
+      description: "Proprietary AI technology developed by Milaris Partners harnesses millions of market and investor data points to uncover hidden value in the fragmented small and mid-cap M&A landscape, where traditional networks fall short and reliability is paramount. Our internal matching engine delivers exceptional precision and speed in deal sourcing and evaluation.",
       features: {
         identifyBuyers: {
           title: "Identify off-radar buyers",
@@ -1930,7 +1933,7 @@ export const translations = {
       cards: [
         {
           title: "Sell-side advisory",
-          description: "Maximize the value of your company at the time of sale",
+          description: "Maximize the value of your company at the time of sale.",
           features: [
             "Companies with €5M to €150M in revenue",
             "Full or partial sale",
@@ -1941,7 +1944,7 @@ export const translations = {
         },
         {
           title: "Buy-side advisory",
-          description: "Identify and secure the best external growth opportunities",
+          description: "Identify and secure the best external growth opportunities.",
           features: [
             "Strategic targeting across Europe",
             "Confidential approach",
@@ -1952,7 +1955,7 @@ export const translations = {
         },
         {
           title: "Financing advisory",
-          description: "Structure optimal financing to accelerate your growth",
+          description: "Structure optimal financing to accelerate your growth.",
           features: [
             "Growth fundraising",
             "Debt & hybrid financing",
@@ -1962,7 +1965,7 @@ export const translations = {
           cta: "Learn more"
         }
       ],
-      bottomCtaText: "An exclusive approach with a limited number of mandates to ensure premium support",
+      bottomCtaText: "An exclusive approach with a limited number of mandates to ensure premium support!",
       bottomCtaButton: "Let's discuss your project"
     },
     testimonial: {
@@ -2065,7 +2068,7 @@ export const translations = {
         part3: "PMI, imprenditori e investitori",
         part4: " nelle cessioni, acquisizioni e operazioni di finanziamento aziendale, con l'obiettivo di",
         part5: "tutelare gli interessi",
-        part6: "e",
+        part6: " e ",
         part7: "valorizzare ogni transazione",
         part8: "."
       },
