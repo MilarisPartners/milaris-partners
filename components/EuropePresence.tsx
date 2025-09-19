@@ -5,7 +5,7 @@ import { MapPin, Building2 } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const EuropePresence = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   
   const cities = (t("europePresence.cities") as unknown as any[]).map((city: any, index: number) => ({
     ...city,
@@ -49,9 +49,15 @@ const EuropePresence = () => {
             </motion.div>
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4 px-4 sm:px-6 lg:px-0">
               {t("europePresence.title.part1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                {t("europePresence.title.highlight")}
-              </span>
+              {language === 'IT' ? (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("europePresence.title.highlight")}
+                </span>
+              ) : (
+                <span className="text-[#0001ff]">
+                  {t("europePresence.title.highlight")}
+                </span>
+              )}
               {t("europePresence.title.part2") && ` ${t("europePresence.title.part2")}`}
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">

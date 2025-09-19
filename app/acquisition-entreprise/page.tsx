@@ -175,7 +175,7 @@ const AcquisitionEntreprise = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.acquisition.services.title")}
             </h2>
             <p className="text-xl text-gray-600">
@@ -294,7 +294,7 @@ const AcquisitionEntreprise = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="heading-2 font-bold text-white mb-4">
               {t("expertisePages.acquisition.expertise.title")}
             </h2>
             <p className="text-xl text-white/70">
@@ -370,7 +370,7 @@ const AcquisitionEntreprise = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.acquisition.types.title")}
             </h2>
             <p className="text-xl text-gray-600">
@@ -504,7 +504,7 @@ const AcquisitionEntreprise = () => {
               <MessageSquare className="w-5 h-5 text-[#0001ff]" />
               <span className="text-[#0001ff] font-semibold">FAQ</span>
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.acquisition.faq.title")}
             </h2>
             <p className="text-xl text-gray-600">
@@ -594,7 +594,7 @@ const AcquisitionEntreprise = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="heading-2 font-bold text-white mb-4">
               {t("expertisePages.acquisition.cta.title")}
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">

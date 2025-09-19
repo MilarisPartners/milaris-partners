@@ -103,9 +103,15 @@ const Carrieres = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               {t("carrieres.hero.title1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                {t("carrieres.hero.title2")}
-              </span>
+              {language === 'IT' ? (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("carrieres.hero.title2")}
+                </span>
+              ) : (
+                <span className="text-[#0001ff]">
+                  {t("carrieres.hero.title2")}
+                </span>
+              )}
             </motion.h1>
             <motion.p 
               className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto px-4 sm:px-0"
@@ -131,9 +137,15 @@ const Carrieres = () => {
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("carrieres.workWithUs.title1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                {t("carrieres.workWithUs.title2")}
-              </span>{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
+              {language === 'IT' ? (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("carrieres.workWithUs.title2")}
+                </span>
+              ) : (
+                <span className="text-[#0001ff]">
+                  {t("carrieres.workWithUs.title2")}
+                </span>
+              )}{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               {t("carrieres.workWithUs.subtitle")}
@@ -181,7 +193,16 @@ const Carrieres = () => {
             className="text-center mb-12"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
-              {t("carrieres.benefits.title")}
+              {language === 'IT' ? (
+                <>
+                  Cosa ci{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x mr-1">
+                    contraddistingue
+                  </span>?
+                </>
+              ) : (
+                t("carrieres.benefits.title")
+              )}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               {t("carrieres.benefits.subtitle")}
@@ -233,9 +254,22 @@ const Carrieres = () => {
           >
             <h2 className="heading-2 font-bold text-white mb-12">
               {t("carrieres.opportunities.title1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
-                {t("carrieres.opportunities.title2")}
-              </span>
+              {language === 'IT' ? (
+                <span className="relative">
+                  <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#60A5FA] via-[#93C5FD] to-[#60A5FA] animate-gradient-x">
+                    {t("carrieres.opportunities.title2")}
+                  </span>
+                  <motion.span
+                    className="absolute inset-0 bg-[#60A5FA]/20 blur-xl"
+                    animate={{ opacity: [0.5, 0.8, 0.5] }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                  />
+                </span>
+              ) : (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
+                  {t("carrieres.opportunities.title2")}
+                </span>
+              )}
             </h2>
 
             <motion.div
@@ -277,9 +311,15 @@ const Carrieres = () => {
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("carrieres.howToApply.title1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                {t("carrieres.howToApply.title2")}
-              </span>{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
+              {language === 'IT' ? (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("carrieres.howToApply.title2")}
+                </span>
+              ) : (
+                <span className="text-[#0001ff]">
+                  {t("carrieres.howToApply.title2")}
+                </span>
+              )}{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
             </h2>
           </motion.div>
 
@@ -322,10 +362,10 @@ const Carrieres = () => {
             <h2 className="heading-2 font-bold text-[#0b062b] mb-6">
               {t("carrieres.cta.title1")}{" "}
               {language === "EN"
-                ? <>{t("carrieres.cta.title2")}? </>
+                ? <><span className="text-[#0001ff]">{t("carrieres.cta.title2")}</span>? </>
                 : language === "IT"
-                ? <><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">{t("carrieres.cta.title2")}</span>?</>
-                : <><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">{t("carrieres.cta.title2")}</span> ?</>
+                ? <><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">{t("carrieres.cta.title2")}</span>?</>
+                : <><span className="text-[#0001ff]">{t("carrieres.cta.title2")}</span> ?</>
               }
             </h2>
             <p className="text-xl text-gray-600 mb-10">

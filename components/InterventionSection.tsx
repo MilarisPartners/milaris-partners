@@ -108,9 +108,22 @@ const InterventionSection = () => {
           >
             <h2 className="heading-2 font-bold text-white mb-4 sm:mb-6 px-4 sm:px-6 lg:px-0">
               {t('interventionSection.title.part1')} {" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
-                {t('interventionSection.title.highlight')}
-              </span>
+              {language === 'IT' ? (
+                <span className="relative">
+                  <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#60A5FA] via-[#93C5FD] to-[#60A5FA] animate-gradient-x">
+                    {t('interventionSection.title.highlight')}
+                  </span>
+                  <motion.span
+                    className="absolute inset-0 bg-[#60A5FA]/20 blur-xl"
+                    animate={{ opacity: [0.5, 0.8, 0.5] }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                  />
+                </span>
+              ) : (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
+                  {t('interventionSection.title.highlight')}
+                </span>
+              )}
             </h2>
             <p className="text-base sm:text-lg text-white/70 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
               {t('interventionSection.subtitle')}

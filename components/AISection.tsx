@@ -6,7 +6,7 @@ import { Brain, Target, Clock, TrendingUp, Globe } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const AISection = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const sectionRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isMobile, setIsMobile] = useState(false);
@@ -105,9 +105,15 @@ const AISection = () => {
                 viewport={{ once: true }}
               >
                 {t("aiSection.title.part1")}{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
-                  {t("aiSection.title.highlight")}
-                </span>{" "}
+                {language === 'IT' ? (
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    {t("aiSection.title.highlight")}
+                  </span>
+                ) : (
+                  <span className="text-[#0001ff]">
+                    {t("aiSection.title.highlight")}
+                  </span>
+                )}{" "}
                 {t("aiSection.title.part2")}
               </motion.h2>
 

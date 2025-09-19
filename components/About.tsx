@@ -9,7 +9,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   return (
     <section id="about" className="section-padding bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5 relative overflow-hidden">
@@ -48,16 +48,22 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             {t("about.title.part1")}{" "}
-            <span className="relative">
-              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]">
+            {language === 'IT' ? (
+              <span className="relative">
+                <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("about.title.part2")}
+                </span>
+                <motion.span
+                  className="absolute inset-0 bg-[#0001ff]/20 blur-xl"
+                  animate={{ opacity: [0.5, 0.8, 0.5] }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                />
+              </span>
+            ) : (
+              <span className="text-[#0001ff]">
                 {t("about.title.part2")}
               </span>
-              <motion.span
-                className="absolute inset-0 bg-[#0001ff]/20 blur-xl"
-                animate={{ opacity: [0.5, 0.8, 0.5] }}
-                transition={{ duration: 3, repeat: Infinity }}
-              />
-            </span>{" "}
+            )}{" "}
             {t("about.title.part3")}
           </motion.h2>
           

@@ -175,7 +175,7 @@ const Financement = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.services.title")}
             </h2>
             <p className="text-xl text-gray-600">
@@ -277,7 +277,7 @@ const Financement = () => {
             viewport={{ once: true }}
             className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.whyMilaris.title")}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -340,7 +340,7 @@ const Financement = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.types.title")}
             </h2>
             <p className="text-xl text-gray-600">
@@ -443,7 +443,7 @@ const Financement = () => {
               <MessageSquare className="w-5 h-5 text-[#0001ff]" />
               <span className="text-[#0001ff] font-semibold">FAQ</span>
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b062b] mb-4">
+            <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
               {t("expertisePages.financement.faq.title")}
             </h2>
             <p className="text-xl text-gray-600">
@@ -533,7 +533,7 @@ const Financement = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="heading-2 font-bold text-white mb-4">
               {t("expertisePages.financement.cta.title")}
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
