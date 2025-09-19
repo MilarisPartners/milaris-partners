@@ -1308,12 +1308,12 @@ export const translations = {
           badge: "Sell-side advisory",
           title: "Selling your company is a defining moment that sets tomorrow's course",
           subtitle: "We help you make the right decisions at every step of your sale process.",
-          description: "Milaris Partners supports business owners throughout partial or total sales, ensuring strategic, confidential, value-driven outcomes aligned to long-term goals.",
+          description: "Milaris Partners supports shareholders and executives at every stage of a full or partial sale, with a strategic and meticulous approach designed to ensure efficiency and achieve the best possible outcome.",
           cta: "Let's discuss your project"
         },
         services: {
           title: "What we do for you?",
-          subtitle: "Our mission: maximizing your company's value for smooth succession.",
+          subtitle: "Our mission: to maximize the value of your company and ensure a safe and successful transition.",
           items: {
             evaluation: {
               title: "Valuation and strategy",
@@ -1331,7 +1331,7 @@ export const translations = {
         },
         timeline: {
           title: "Transaction timeline",
-          subtitle: "Our engagements typically span 6 to 9 months.",
+          subtitle: "A structured process with an average timeline of 6 to 9 months.",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
@@ -1405,25 +1405,25 @@ export const translations = {
           subtitle: "We maintain close relationships with both strategic acquirers and financial investors.",
           strategic: {
             title: "Strategic buyers",
-            description: "Industrial players and sector companies seeking growth, diversification, or synergy",
+            description: "Industrial players and sector companies seeking growth, diversification, or synergy.",
             benefits: {
               synergies: {
-                title: "Valutazione basata sulle sinergie",
-                subtitle: "Massimizzazione del valore grazie all'integrazione"
+                title: "Synergy-based valuation",
+                subtitle: "Value maximization through integration"
               },
               integration: {
-                title: "Integrazione in un gruppo esistente",
-                subtitle: "Continuità e sviluppo assicurati"
+                title: "Integration into existing group",
+                subtitle: "Continuity and development ensured"
               },
               continuity: {
-                title: "Continuità operativa",
-                subtitle: "Tutela dei team e del know-how aziendale"
+                title: "Operational continuity",
+                subtitle: "Protection of teams and corporate know-how"
               }
             }
           },
           financial: {
             title: "Financial investors",
-            description: "Private equity funds and family offices seeking investments for business growth",
+            description: "Private equity funds and family offices seeking investments for business growth.",
             benefits: {
               growth: {
                 title: "Growth-oriented strategy",
@@ -1442,23 +1442,23 @@ export const translations = {
         },
         faq: {
           title: "Frequently Asked Questions",
-          subtitle: "Let's democratize the M&A process.",
+          subtitle: "We support every entrepreneur throughout the sale of their business with clarity and transparency.",
           questions: {
             q1: {
-              question: "How long does the sale process typically take?",
-              answer: "6 to 9 months, depending on company size, complexity, and market conditions."
+              question: "What is the average duration of a business sale?",
+              answer: "The process typically takes between 6 and 9 months, depending on the company's complexity, buyer profile, and any regulatory aspects."
             },
             q2: {
-              question: "How is confidentiality managed throughout the process?",
-              answer: "All outreach is anonymous until NDAs are signed. Only pre-qualified buyers are granted access to sensitive materials."
+              question: "What is the difference between a strategic and financial buyer?",
+              answer: "Strategic buyers are industrial companies that acquire to create synergies and integrate the business into their group. Financial buyers, such as private equity funds, invest instead to grow the company and sell it after a medium-term period."
             },
             q3: {
-              question: "What are your fees?",
-              answer: "Our compensation is primarily success-based and aligned with transaction completion. Details are discussed during the initial consultation."
+              question: "How is confidentiality guaranteed?",
+              answer: "All exchanges take place under confidentiality agreements (NDAs). We use project codes, secure data rooms, and a gradual approach to buyers, thus protecting sensitive information throughout the entire process."
             },
             q4: {
-              question: "What is the difference between a strategic and financial buyer?",
-              answer: "Strategic buyers seek operational synergies; financial buyers aim to generate a return on investment. Each brings different advantages."
+              question: "What is the cost of your service?",
+              answer: "Our fees are primarily linked to the success of the operation and calculated as a percentage of the transaction value. Contact us to receive a personalized proposal."
             }
           },
           cta: {
@@ -1969,7 +1969,7 @@ export const translations = {
       bottomCtaButton: "Let's discuss your project"
     },
     testimonial: {
-      quote: "Milaris Partners supported us in the sale of our company with remarkable professionalism. Their personalized approach and in-depth market knowledge enabled us to complete a transaction under optimal conditions.",
+      quote: "Milaris Partners supported us in the sale of our company with remarkable professionalism. Their personalized approach and in-depth market knowledge enabled us to complete a transaction under optimal conditions",
       name: "Franck JOHANNY",
       title: "CHIEF EXECUTIVE OFFICER"
     },
