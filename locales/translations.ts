@@ -1317,15 +1317,15 @@ export const translations = {
           items: {
             evaluation: {
               title: "Valuation and strategy",
-              description: "We analyze your business, pinpoint key value drivers, and position it clearly to attract real buyers"
+              description: "We analyze your business, pinpoint key value drivers, and position it clearly to attract real buyers."
             },
             market: {
               title: "Market engagement",
-              description: "We run targeted competitive processes using our own database and network of strategic and financial investors"
+              description: "We run targeted competitive processes using our own database and network of strategic and financial investors."
             },
             support: {
               title: "Transaction execution",
-              description: "We lead negotiations, due diligence, and deal documentation, aligning legal, financial, and tax terms"
+              description: "We lead negotiations, due diligence, and deal documentation, aligning legal, financial, and tax terms."
             }
           }
         },
@@ -1395,8 +1395,8 @@ export const translations = {
               description: "Our proprietary AI-driven sourcing platform identifies and prioritizes qualified strategic and financial buyers beyond conventional networks, ensuring confidentiality and precise targeting to enhance transaction value and strategic fit."
             },
             confidentiality: {
-              title: "Independent advisory model",
-              description: "As an independent firm, we offer tailored, conflict-free advisory. Combining deep M&A expertise with analytical rigor, we provide hands-on guidance and remain directly involved throughout your transaction."
+              title: "Confidentiality and aligned objectives",
+              description: "We adopt a tailored, independent, and fully confidential approach, working in constant and close alignment with your objectives. Every action is carefully designed to safeguard confidentiality and ensure that your success remains the utmost priority."
             }
           }
         },
@@ -1404,7 +1404,7 @@ export const translations = {
           title: "Our buyer networks",
           subtitle: "We maintain close relationships with both strategic acquirers and financial investors.",
           strategic: {
-            title: "Strategic Buyers",
+            title: "Strategic buyers",
             description: "Industrial players and sector companies seeking growth, diversification, or synergy",
             benefits: {
               synergies: {
@@ -1422,7 +1422,7 @@ export const translations = {
             }
           },
           financial: {
-            title: "Financial Investors",
+            title: "Financial investors",
             description: "Private equity funds and family offices seeking investments for business growth",
             benefits: {
               growth: {
