@@ -133,7 +133,7 @@ const Financement = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-primary to-gray-900 animate-gradient-x">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                 {t("expertisePages.financement.hero.title")}
               </span>
             </motion.h1>
