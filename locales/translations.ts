@@ -1306,7 +1306,7 @@ export const translations = {
       cession: {
         hero: {
           badge: "Sell-side advisory",
-          title: "Selling your company is a defining milestone",
+          title: "Selling your company is a defining moment that sets tomorrow's course",
           subtitle: "We help you make the right decisions at every step of your sale process.",
           description: "Milaris Partners supports business owners throughout partial or total sales, ensuring strategic, confidential, value-driven outcomes aligned to long-term goals.",
           cta: "Let's discuss your project"
@@ -1316,7 +1316,7 @@ export const translations = {
           subtitle: "Our mission: maximizing your company's value for smooth succession.",
           items: {
             evaluation: {
-              title: "Valuation & Strategic positioning",
+              title: "Valuation and strategy",
               description: "We analyze your business, pinpoint key value drivers, and position it clearly to attract real buyers"
             },
             market: {
