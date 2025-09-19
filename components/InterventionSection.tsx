@@ -125,7 +125,7 @@ const InterventionSection = () => {
                 </span>
               )}
             </h2>
-            <p className="text-base sm:text-lg text-white/70 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
+            <p className="text-sm sm:text-base text-white/70 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
               {t('interventionSection.subtitle')}
             </p>
           </motion.div>

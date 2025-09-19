@@ -60,7 +60,7 @@ const EuropePresence = () => {
               )}
               {t("europePresence.title.part2") && ` ${t("europePresence.title.part2")}`}
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
+            <p className="text-sm sm:text-base text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
               {t("europePresence.description")}
             </p>
           </motion.div>

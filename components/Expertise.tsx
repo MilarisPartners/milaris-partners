@@ -123,7 +123,7 @@ const Expertise = () => {
                 {t("expertise.titleHighlight")}
               </span>
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
               {t("expertise.subtitle")}
             </p>
           </motion.div>
@@ -194,7 +194,7 @@ const Expertise = () => {
                   </h3>
                   
                   {/* Description */}
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                     {t(`expertise.sectors.${sector.key}.description`)}
                   </p>
 

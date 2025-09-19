@@ -34,7 +34,7 @@ export default function Timeline({ steps, title, subtitle, legend }: TimelinePro
           <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
             {title}
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8">
             {subtitle}
           </p>
           <div className="flex items-center justify-center gap-8 text-sm">

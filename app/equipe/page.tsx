@@ -169,7 +169,7 @@ const Equipe = () => {
               )}
               {t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3")}
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
               {t("equipe.hero.subtitle")}
             </p>
           </motion.div>
@@ -198,7 +198,7 @@ const Equipe = () => {
                 t("equipe.sections.partners.title")
               )}
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               {t("equipe.sections.partners.subtitle")}
             </p>
           </motion.div>
@@ -307,7 +307,7 @@ const Equipe = () => {
                 t("equipe.sections.seniorAdvisor.title")
               )}
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               {t("equipe.sections.seniorAdvisor.subtitle")}
             </p>
           </motion.div>
@@ -414,7 +414,7 @@ const Equipe = () => {
                 t("equipe.cta.title")
               )}
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8">
               {t("equipe.cta.subtitle")}
             </p>
             <a href={calendlyLink} target="_blank" rel="noopener noreferrer">

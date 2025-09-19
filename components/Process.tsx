@@ -79,7 +79,7 @@ const Process = () => {
                 {t("process.titleHighlight")}
               </span>
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
               {t("process.subtitle")}
             </p>
           </motion.div>
@@ -128,7 +128,7 @@ const Process = () => {
                         <h3 className="text-lg sm:text-xl font-bold text-[#0b062b]">{t(`process.steps.${step.key}.title`)}</h3>
                       </div>
                     </div>
-                    <p className="text-sm sm:text-base text-gray-600">{t(`process.steps.${step.key}.description`)}</p>
+                    <p className="text-xs sm:text-sm text-gray-600">{t(`process.steps.${step.key}.description`)}</p>
                   </motion.div>
                 </div>
 
@@ -167,7 +167,7 @@ const Process = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-center mt-12 sm:mt-16"
           >
-            <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 px-4 sm:px-0">
+            <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 px-4 sm:px-0">
               {t("hero.cta.whatChanges")}
             </p>
             <a 

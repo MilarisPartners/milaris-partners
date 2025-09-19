@@ -53,7 +53,7 @@ const Services = () => {
                   <Sparkles className="absolute -top-2 -right-2 w-6 h-6 text-primary animate-pulse" />
                 </span>
               </motion.h2>
-              <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8">
                 {t("services.ma.description")}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -200,7 +200,7 @@ const Services = () => {
                   <Sparkles className="absolute -bottom-2 -left-2 w-6 h-6 text-blue-sky animate-pulse" />
                 </span>
               </motion.h2>
-              <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8">
                 {t("services.fundraising.description")}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
