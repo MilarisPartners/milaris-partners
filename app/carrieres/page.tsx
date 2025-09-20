@@ -11,7 +11,8 @@ import {
   Heart,
   ArrowRight,
   CheckCircle,
-  Mail
+  Mail,
+  ArrowDown
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -25,6 +26,10 @@ const Carrieres = () => {
   const calendlyLink = language === 'IT' 
     ? "https://calendly.com/matteo-milarispartners" 
     : "https://calendly.com/paul-milarispartners/30min";
+
+  const scrollToWorkWithUs = () => {
+    document.getElementById('work-with-us')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const values = [
     {
@@ -63,7 +68,7 @@ const Carrieres = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5 pt-20 overflow-hidden">
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5 overflow-hidden">
         {/* Animated decorative elements */}
         <div className="absolute inset-0">
           <motion.div
@@ -126,10 +131,29 @@ const Carrieres = () => {
             </motion.p>
           </motion.div>
         </div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+        >
+          <motion.div 
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="flex flex-col items-center gap-1 sm:gap-2 cursor-pointer group"
+            onClick={scrollToWorkWithUs}
+          >
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-white to-[#0001ff]/10 border-2 border-[#0001ff]/30 flex items-center justify-center group-hover:border-[#0001ff] group-hover:shadow-lg transition-all duration-300">
+              <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-[#0001ff] group-hover:text-[#0b062b] transition-colors" />
+            </div>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* Travaillez avec nous */}
-      <section className="section-padding bg-white">
+      <section id="work-with-us" className="section-padding bg-white">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

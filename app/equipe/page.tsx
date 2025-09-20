@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import { MapPin, Mail, Linkedin, Target, Globe, Factory, Cpu, Users, Building2, Briefcase, Globe2, Network } from "lucide-react";
+import { MapPin, Mail, Linkedin, Target, Globe, Factory, Cpu, Users, Building2, Briefcase, Globe2, Network, ArrowDown } from "lucide-react";
 import Link from "next/link";
 import OptimizedImage from "@/components/OptimizedImage";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -16,6 +16,10 @@ const Equipe = () => {
   const calendlyLink = language === 'IT' 
     ? "https://calendly.com/matteo-milarispartners" 
     : "https://calendly.com/paul-milarispartners/30min";
+
+  const scrollToPartners = () => {
+    document.getElementById('partners')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   // Données structurées pour les membres de l'équipe
   const teamStructuredData = [
@@ -128,7 +132,7 @@ const Equipe = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-32 bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5 overflow-hidden">
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5 overflow-hidden">
         {/* Animated decorative elements */}
         <div className="absolute inset-0">
           <motion.div
@@ -149,7 +153,7 @@ const Equipe = () => {
           />
         </div>
 
-        <div className="container-custom relative z-10 py-16 sm:py-20 lg:py-0">
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -183,10 +187,29 @@ const Equipe = () => {
             </p>
           </motion.div>
         </div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+        >
+          <motion.div 
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="flex flex-col items-center gap-1 sm:gap-2 cursor-pointer group"
+            onClick={scrollToPartners}
+          >
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-white to-[#0001ff]/10 border-2 border-[#0001ff]/30 flex items-center justify-center group-hover:border-[#0001ff] group-hover:shadow-lg transition-all duration-300">
+              <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-[#0001ff] group-hover:text-[#0b062b] transition-colors" />
+            </div>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 bg-white">
+      <section id="partners" className="py-20 bg-white">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
