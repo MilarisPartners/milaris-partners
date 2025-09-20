@@ -47,21 +47,21 @@ export const seoConfig: PageSEO = {
   },
   equipe: {
     fr: {
-      title: "Notre Équipe | Milaris Partners",
+      title: "Notre équipe | Milaris Partners",
       description: "Rencontrez Paul Poulain et Matteo Orlandi Mango, nos experts M&A basés en France et Italie. Une équipe franco-italienne au service de vos projets de croissance.",
       keywords: ["équipe M&A", "experts fusions acquisitions", "Paul Poulain", "Matteo Orlandi Mango", "conseil M&A France", "conseil M&A Italie"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "profile"
     },
     it: {
-      title: "Il Nostro Team | Milaris Partners",
+      title: "Il nostro team | Milaris Partners",
       description: "Incontrate Paul Poulain e Matteo Orlandi Mango, i nostri esperti M&A basati in Francia e Italia. Un team franco-italiano al servizio dei vostri progetti di crescita.",
       keywords: ["team M&A", "esperti fusioni acquisizioni", "Paul Poulain", "Matteo Orlandi Mango", "consulenza M&A Francia", "consulenza M&A Italia"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "profile"
     },
     en: {
-      title: "Our Team | Milaris Partners",
+      title: "Our team | Milaris Partners",
       description: "Meet Paul Poulain and Matteo Orlandi Mango, our M&A experts based in France and Italy. A Franco-Italian team serving your growth projects.",
       keywords: ["M&A team", "mergers acquisitions experts", "Paul Poulain", "Matteo Orlandi Mango", "M&A advisory France", "M&A advisory Italy"],
       ogImage: "/og-images/home-fr.svg",
@@ -208,7 +208,7 @@ export const seoConfig: PageSEO = {
   },
   "mentions-legales": {
     fr: {
-      title: "Mentions Légales | Milaris Partners",
+      title: "Mentions légales | Milaris Partners",
       description: "Mentions légales du site Milaris Partners. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
       keywords: ["mentions légales", "éditeur", "hébergeur", "conditions utilisation"],
       ogImage: "/og-images/home-fr.svg",
@@ -216,7 +216,7 @@ export const seoConfig: PageSEO = {
       noIndex: true
     },
     it: {
-      title: "Note Legali | Milaris Partners",
+      title: "Note legali | Milaris Partners",
       description: "Note legali del sito Milaris Partners. Informazioni sull'editore, sull'hosting e sulle condizioni d'uso.",
       keywords: ["note legali", "editore", "hosting", "condizioni uso"],
       ogImage: "/og-images/home-fr.svg",
@@ -234,7 +234,7 @@ export const seoConfig: PageSEO = {
   },
   "conditions-generales": {
     fr: {
-      title: "Conditions Générales | Milaris Partners",
+      title: "Conditions générales | Milaris Partners",
       description: "Conditions générales d'utilisation du site Milaris Partners. Termes et conditions de nos services de conseil M&A.",
       keywords: ["conditions générales", "termes conditions", "services conseil", "M&A"],
       ogImage: "/og-images/home-fr.svg",
@@ -242,7 +242,7 @@ export const seoConfig: PageSEO = {
       noIndex: true
     },
     it: {
-      title: "Condizioni Generali | Milaris Partners",
+      title: "Condizioni generali | Milaris Partners",
       description: "Condizioni generali d'uso del sito Milaris Partners. Termini e condizioni dei nostri servizi di consulenza M&A.",
       keywords: ["condizioni generali", "termini condizioni", "servizi consulenza", "M&A"],
       ogImage: "/og-images/home-fr.svg",
