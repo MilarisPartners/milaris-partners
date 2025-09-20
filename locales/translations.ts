@@ -771,6 +771,7 @@ export const translations = {
     },
     equipe: {
       hero: {
+          badge: "Notre équipe",
           title1: "Notre ",
           title2: "équipe",
           title3: "",
@@ -1806,6 +1807,7 @@ export const translations = {
     },
     equipe: {
       hero: {
+          badge: "Our Team",
           title1: "The ",
           title2: "people",
           title3: " behind our ",
@@ -2845,6 +2847,7 @@ export const translations = {
     },
     equipe: {
       hero: {
+          badge: "Il nostro team",
           title1: "Le ",
           title2: "persone",
           title3: " dietro al nostro ",

@@ -156,6 +156,16 @@ const Equipe = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
+            <motion.div 
+              className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#0001ff]/10 rounded-full"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Users className="w-5 h-5 text-[#0001ff]" />
+              <span className="text-[#0001ff] font-semibold">{t("equipe.hero.badge")}</span>
+            </motion.div>
+            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b062b] mb-6">
               {t("equipe.hero.title1")}
               {language === 'IT' ? (
