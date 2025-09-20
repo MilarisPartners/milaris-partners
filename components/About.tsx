@@ -86,6 +86,10 @@ const About = () => {
                   <>
                     Milaris Partners, società parigina fondata da <span className="font-semibold">professionisti italiani e francesi</span>, accompagna <span className="font-semibold">micro, piccole e medie imprese</span> nei loro percorsi di <span className="font-semibold">cessione, acquisizione e raccolta capitali</span>, aprendo loro le porte a investitori e acquirenti internazionali.
                   </>
+                ) : t("about.content.point1.title").includes("Paris-based firm founded by") ? (
+                  <>
+                    Milaris Partners, a Paris-based firm founded by <span className="font-semibold">Italian and French professionals</span>, <span className="font-semibold">supports micro, small, and medium-sized enterprises</span> in their processes of <span className="font-semibold">divestment, acquisition, and capital raising</span>, opening doors to international investors and buyers.
+                  </>
                 ) : (
                   t("about.content.point1.title")
                 )}
@@ -105,6 +109,10 @@ const About = () => {
                 {t("about.content.point2.text1").includes("Presenti in") ? (
                   <>
                     Presenti in <span className="font-semibold">Francia, Italia e Germania</span>, adottiamo un approccio selettivo, seguendo solo un numero limitato di mandati. Coniughiamo <span className="font-semibold">rigore metodologico, una rete internazionale e un autentico senso del deal</span> per ampliare le possibilità e <span className="font-semibold">garantire il massimo in termini di valore, opportunità e successo</span>.
+                  </>
+                ) : t("about.content.point2.text1").includes("Present in") ? (
+                  <>
+                    Present in <span className="font-semibold">France, Italy and Germany</span>, we approach each mandate with selectivity, applying rigorous methods and drawing on our <span className="font-semibold">extensive international network</span> as well as sharp deal intuition to open strategic pathways that maximize value and ensure <span className="font-semibold">successful outcomes</span>.
                   </>
                 ) : (
                   <>
@@ -127,6 +135,10 @@ const About = () => {
                 {t("about.content.point3.text1").includes("Pionieri nell'integrazione") ? (
                   <>
                     Pionieri <span className="font-semibold">nell'integrazione dell'intelligenza artificiale</span> nelle operazioni di M&A, utilizziamo una <span className="font-semibold">tecnologia proprietaria</span> che rende più efficiente ogni fase della transazione, aprendo nuove possibilità e <span className="font-semibold">aumentando le chance di successo</span>.
+                  </>
+                ) : t("about.content.point3.text1").includes("As pioneers in applying") ? (
+                  <>
+                    As pioneers in <span className="font-semibold">applying artificial intelligence</span> to mergers and acquisitions, we've created <span className="font-semibold">proprietary technology</span> that elevates every phase of the transaction, providing our clients with an <span className="font-semibold">unmatched strategic advantage</span> to succeed.
                   </>
                 ) : (
                   <>

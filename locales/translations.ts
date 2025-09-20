@@ -1929,13 +1929,13 @@ export const translations = {
         part1: "Transaction advisory for",
         highlight: "SMEs"
       },
-      subtitle: "Tailored solutions for business owners of companies with €5M to €150M in revenue.",
+      subtitle: "Strategic support for shareholders and executives of privately held companies with revenues between €5M and €150M, during key moments of growth, transformation, and generational transition.",
       cards: [
         {
           title: "Sell-side advisory",
           description: "Maximize the value of your company at the time of sale.",
           features: [
-            "Companies with €5M to €150M in revenue",
+            "Companies with up to €150M in revenue",
             "Full or partial sale",
             "Structured process over 6-9 months"
           ],
