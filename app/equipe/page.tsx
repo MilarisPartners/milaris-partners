@@ -182,9 +182,28 @@ const Equipe = () => {
                 }${t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3") !== "" ? t("equipe.hero.title3") : ""}${t("equipe.hero.title4") && t("equipe.hero.title4") !== "equipe.hero.title4" && t("equipe.hero.title4") !== "" ? t("equipe.hero.title4") : ""}`
               }}
             />
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
               {t("equipe.hero.subtitle")}
             </p>
+            
+            {/* CTA Banner */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  className="bg-[#0001ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 shadow-lg hover:shadow-xl"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {language === 'IT' ? 'Pianificate un incontro con il nostro team!' : 
+                   language === 'EN' ? 'Plan a meeting with our team!' : 
+                   'Planifiez une réunion avec notre équipe !'}
+                </motion.button>
+              </a>
+            </motion.div>
           </motion.div>
         </div>
 

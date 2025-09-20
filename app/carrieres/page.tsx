@@ -122,13 +122,33 @@ const Carrieres = () => {
               }}
             />
             <motion.p 
-              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4 sm:px-0"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4 sm:px-0 mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               {t("carrieres.hero.description")}
             </motion.p>
+            
+            {/* Career Opportunities Banner */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <a href="https://join.com/companies/milarispartners" target="_blank" rel="noopener noreferrer">
+                <motion.button
+                  className="bg-[#0001ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#3E8BFF] transition-all duration-300 inline-flex items-center gap-3 shadow-lg hover:shadow-xl"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {language === 'IT' ? 'Consulta le nostre offerte di lavoro' : 
+                   language === 'EN' ? 'Explore our career opportunities' : 
+                   'Découvrez nos offres d\'emploi'}
+                  <ArrowRight className="w-5 h-5" />
+                </motion.button>
+              </a>
+            </motion.div>
           </motion.div>
         </div>
 
