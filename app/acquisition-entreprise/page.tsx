@@ -89,7 +89,7 @@ const AcquisitionEntreprise = () => {
     <main className="min-h-screen">
       <SEOHead 
         pageName="acquisition-entreprise" 
-        language={language as 'fr' | 'it' | 'en'} 
+        language={language} 
       />
       <Navbar />
 

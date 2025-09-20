@@ -89,7 +89,7 @@ const Financement = () => {
     <main className="min-h-screen">
       <SEOHead 
         pageName="financement" 
-        language={language as 'fr' | 'it' | 'en'} 
+        language={language} 
       />
       <Navbar />
 

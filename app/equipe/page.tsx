@@ -122,7 +122,7 @@ const Equipe = () => {
     <main className="min-h-screen">
       <SEOHead 
         pageName="equipe" 
-        language={language as 'fr' | 'it' | 'en'} 
+        language={language} 
         customStructuredData={teamStructuredData}
       />
       <Navbar />

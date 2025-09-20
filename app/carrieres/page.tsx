@@ -58,7 +58,7 @@ const Carrieres = () => {
     <main className="min-h-screen">
       <SEOHead 
         pageName="carrieres" 
-        language={language as 'fr' | 'it' | 'en'} 
+        language={language} 
       />
       <Navbar />
       

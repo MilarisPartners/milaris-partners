@@ -95,7 +95,7 @@ const CessionEntreprise = () => {
     <main className="min-h-screen">
       <SEOHead 
         pageName="cession-entreprise" 
-        language={language as 'fr' | 'it' | 'en'} 
+        language={language} 
       />
       <Navbar />
 
