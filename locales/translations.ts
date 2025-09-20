@@ -1306,7 +1306,7 @@ export const translations = {
       cession: {
         hero: {
           badge: "Sell-side advisory",
-          title: "Selling your company is a defining moment that sets tomorrow's course",
+          title: "Selling your company is a pivotal moment that shapes the future",
           subtitle: "We help you make the right decisions at every step of your sale process.",
           description: "Milaris Partners supports shareholders and executives at every stage of a full or partial sale, with a strategic and meticulous approach designed to ensure efficiency and achieve the best possible outcome.",
           cta: "Let's discuss your project"
@@ -1317,15 +1317,15 @@ export const translations = {
           items: {
             evaluation: {
               title: "Valuation and strategy",
-              description: "We analyze your business, pinpoint key value drivers, and position it clearly to attract real buyers."
+              description: "We analyze your company in depth, identify key value drivers and define the best strategic market positioning in line with shareholder goals."
             },
             market: {
               title: "Market engagement",
-              description: "We run targeted competitive processes using our own database and network of strategic and financial investors."
+              description: "We design and manage a competitive process, using our network of selected strategic and financial investors to maximize interest and opportunities."
             },
             support: {
               title: "Transaction execution",
-              description: "We lead negotiations, due diligence, and deal documentation, aligning legal, financial, and tax terms."
+              description: "We coordinate every stage of the negotiation, supervising legal and tax matters and ensuring the full security of the transaction through to final signing."
             }
           }
         },
@@ -1339,27 +1339,27 @@ export const translations = {
           steps: {
             strategic: {
               title: "Strategic review",
-              description: "Set clear objectives, analyze your business, identify value-boosting strategies",
+              description: "Understanding of objectives, company valuation and identification of key value drivers",
               duration: "2–4 weeks"
             },
             preparation: {
               title: "Preparation",
-              description: "Craft marketing materials, financial review, and efficiently prepare data room",
+              description: "Preparation of presentation materials (teaser, information memorandum) and set-up of the data room",
               duration: "4–6 weeks"
             },
             targeting: {
               title: "Buyer outreach",
-              description: "Identify and initiate contact with qualified strategic and financial investors",
+              description: "Identification and approach of potential strategic and financial buyers consistent with the company profile",
               duration: "6–8 weeks"
             },
             discussions: {
               title: "Due Diligence & Offers",
-              description: "Coordinate due diligence, management meetings, Q&A sessions, and deal negotiation",
+              description: "Coordination of meetings, site visits and Q&A, management of offers and competitive phases",
               duration: "8–12 weeks"
             },
             closing: {
               title: "Negotiations & Closing",
-              description: "Finalize deal terms, structure legal documentation, and execute the transaction",
+              description: "Lead of negotiations and coordination with legal advisors through to final signing",
               duration: "4–8 weeks"
             }
           }
@@ -1392,7 +1392,7 @@ export const translations = {
             },
             network: {
               title: "AI-enhanced sourcing technology",
-              description: "Our proprietary AI-driven sourcing platform identifies and prioritizes qualified strategic and financial buyers beyond conventional networks, ensuring confidentiality and precise targeting to enhance transaction value and strategic fit."
+              description: "Our proprietary AI-driven sourcing platform identifies and carefully prioritizes qualified strategic and financial buyers well beyond conventional networks, ensuring strict confidentiality and precise targeting to enhance transaction value."
             },
             confidentiality: {
               title: "Confidentiality and aligned objectives",
