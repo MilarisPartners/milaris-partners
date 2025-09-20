@@ -1644,7 +1644,7 @@ export const translations = {
         hero: {
           badge: "Financing advisory",
           title: "Empowering your strategic vision through tailored capital solutions",
-          description: "We advise on growth capital, debt, and M&A financing—structuring optimal solutions for acquisitions, buyouts, or refinancing to meet your objectives.",
+          description: "We support companies in raising capital to drive growth, refinance debt, fund new investments or execute buyout transactions, providing tailored financing solutions to ensure long-term balance and financial strength.",
           cta: "Let's structure your financing"
         },
         services: {
@@ -1652,22 +1652,22 @@ export const translations = {
           subtitle: "End-to-end execution capabilities across all financing stages, from preparation to closing.",
           items: {
             planning: {
-              title: "Preparation & Structuring",
-              description: "We craft investor-ready materials: plans, models, forecasts, and capital structures for your deal"
+              title: "Preparation and structuring",
+              description: "We develop detailed business plans and solid financial models, precisely define capital requirements, structure and optimize the request to ensure robust foundations, enhance credibility with investors and support successful capital raising."
             },
             search: {
               title: "Targeted funder origination",
-              description: "We engage select lenders and investors, matching your deal with the right capital providers"
+              description: "We provide access to an extensive and trusted international network of banks, debt funds and equity investors, carefully selecting partners aligned with your needs to secure the best mix of resources and ensure swift timing and advantageous conditions."
             },
             negotiation: {
               title: "Negotiation",
-              description: "We negotiate pricing, terms, and covenants to secure flexible financing aligned with your strategy"
+              description: "We guide the definition of rates, covenants, guarantees and dilution, negotiating optimal conditions to preserve value and protect your interests, ensuring financing sustainability and the long-term success of the transaction."
             }
           }
         },
         timeline: {
           title: "Transaction timeline",
-          subtitle: "Our engagements typically span 2 to 6 months.",
+          subtitle: "A structured 2–6 month process tailored to the type of transaction and your specific needs.",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
@@ -1675,22 +1675,22 @@ export const translations = {
           steps: {
             preparation: {
               title: "Investment materials",
-              description: "Model, business plan & investor deck to frame the equity story",
+              description: "Business plan, financial models and key documents to present the project convincingly",
               duration: "2–3 weeks"
             },
             identification: {
               title: "Capital sourcing",
-              description: "Targeted outreach to relevant lenders and investors",
+              description: "Targeted selection of banks, funds and investors aligned with objectives and profile",
               duration: "1–2 weeks"
             },
             pitch: {
               title: "Marketing & Terms",
-              description: "Investor meetings, Q&A, and term sheet negotiations",
+              description: "Investor presentations, Q&A management and negotiation of the most favorable term sheets",
               duration: "4–8 weeks"
             },
             closing: {
               title: "Due Diligence & Closing",
-              description: "DDue diligence, legal docs, and fund disbursement",
+              description: "Due diligence, contract finalization and fund release to close the transaction securely",
               duration: "3–6 weeks"
             }
           }
@@ -1711,19 +1711,19 @@ export const translations = {
         },
         whyMilaris: {
           title: "Why choose Milaris Partners?",
-          subtitle: "Our expertise to make high-impact M&A solutions.",
+          subtitle: "Our experience at the service of your optimal financing.",
           items: {
             access: {
-              title: "Direct access to decision-makers",
-              description: "We connect you to top investors and lenders for faster access to senior decision-makers and deals"
+              title: "Access to decision-makers",
+              description: "We provide an exclusive network of investors and banks, enabling direct contact with key decision-makers. This accelerates negotiations, shortens timelines and significantly increases the chances of success in the financing process."
             },
             expertise: {
               title: "Negotiation expertise",
-              description: "We structure complex financing, optimizing key terms to align with strategy and preserve flexibility"
+              description: "With extensive experience, we efficiently manage the negotiation of dilution, leverage and covenants. Our goal is to secure optimal financial terms, protect your interests and strengthen the overall structure of the transaction."
             },
             optimization: {
-              title: "Capital structure & Cost optimization",
-              description: "We design tailored capital solutions that balance cost, flexibility, and long-term scalability"
+              title: "Cost optimization",
+              description: "We design flexible and competitive financial solutions to reduce the overall cost of capital. From initial analysis to closing, we work to ensure balance, sustainability and advantageous terms, maximizing the efficiency of your financing."
             }
           }
         },
@@ -1732,45 +1732,45 @@ export const translations = {
           subtitle: "Solutions tailored to your needs and specific constraints.",
           equity: {
             title: "Equity fundraising",
-            description: "To finance your growth while maintaining flexibility",
+            description: "To support company growth while maintaining flexibility and balance sheet strength.",
             items: {
               vc: {
                 title: "Venture Capital funds",
-                subtitle: "For hyper-growth startups"
+                subtitle: "For high-growth, fast-scaling startups"
               },
               pe: {
                 title: "Private Equity funds",
-                subtitle: "For mature companies"
+                subtitle: "For mature companies with expansion plans"
               },
               family: {
                 title: "Family Offices and private investors",
-                subtitle: "For long-term partnerships"
+                subtitle: "For long-term strategic partnerships"
               },
               angels: {
-                title: "Business Angels and investment clubs",
-                subtitle: "For seed/early-stage funding"
+                title: "Business Angels and investor clubs",
+                subtitle: "To finance early-stage and seed phases"
               }
             }
           },
           debt: {
             title: "Debt financing",
-            description: "To preserve your capital and optimize your structure",
+            description: "To preserve capital and further optimize the company's financial structure.",
             items: {
               bank: {
                 title: "Traditional bank debt",
-                subtitle: "Secured classic financing"
+                subtitle: "Classic, stable and secure financing"
               },
               private: {
                 title: "Private debt (unitranche, mezzanine)",
-                subtitle: "Flexible and tailor-made solutions"
+                subtitle: "Flexible, tailored and high-yield solutions"
               },
               bonds: {
                 title: "Bonds and bond financing",
-                subtitle: "For significant funding needs"
+                subtitle: "To raise significant and diversified resources"
               },
               lease: {
                 title: "Leasing and specialized solutions",
-                subtitle: "Asset-specific financing"
+                subtitle: "To finance investments in specific assets"
               }
             }
           }
@@ -1780,20 +1780,20 @@ export const translations = {
           subtitle: "Everything you need to know about corporate financing.",
           questions: {
             q1: {
-              question: "How long does a financing process take?",
-              answer: "2 to 6 months, depending on the type of financing and how prepared you are at the outset. Debt financing usually closes faster than equity fundraising."
+              question: "What is the typical timeline for fundraising?",
+              answer: "On average between 2 and 6 months, depending on the type of financing and initial preparation. Debt financing is generally faster than equity capital raising."
             },
             q2: {
-              question: "What's the difference between debt and equity?",
-              answer: "Equity financing means giving up a stake in your company in exchange for capital, while debt is a loan that must be repaid with interest. Equity offers greater flexibility but dilutes ownership; debt preserves control but involves regular repayments."
+              question: "How do debt and equity differ?",
+              answer: "Equity involves giving up a share of capital in exchange for equity funds, offering greater flexibility but diluting ownership. Debt preserves corporate participation, but requires periodic repayments with interest."
             },
             q3: {
-              question: "How can I maximize my valuation?",
-              answer: "A strong valuation comes from thorough preparation: a solid business plan, proven growth metrics, a well-managed competitive process, and strategic timing. Our expertise helps you leverage each of these factors."
+              question: "How can I best value my company?",
+              answer: "An optimal valuation comes from a solid business plan, proven growth metrics, a well-organized competitive process, and market-favorable timing. Our experience helps maximize each of these factors."
             },
             q4: {
-              question: "What funding amounts can you raise?",
-              answer: "We assist with fundraisings from €2M up to over €100M, across both equity and debt. Our network includes investors of all sizes, from business angels to leading European institutional funds."
+              question: "How much capital can you raise?",
+              answer: "We manage operations from a minimum of €2M to over €100M, both in equity and debt, thanks to a network ranging from business angels to major European institutional funds."
             }
           }
         },
@@ -2683,7 +2683,7 @@ export const translations = {
         hero: {
           badge: "Fundraising advisory",
           title: "Dare forza ai vostri progetti: capitale, debito e soluzioni finanziarie",
-          description: "Accompagniamo le aziende nella ricerca di capitali per crescere, rifinanziare debiti, sostenere nuovi investimenti o realizzare operazioni di buyout, offrendo soluzioni finanziarie su misura per garantire equilibrio e solidità nel tempo.",
+          description: "Accompagniamo le aziende nella ricerca di capitali per crescere, rifinanziare debiti, sostenere nuovi investimenti o realizzare operazioni di buyout, offrendo soluzioni finanziarie su misura per garantire solidità nel tempo.",
           cta: "Strutturiamo il vostro finanziamento"
         },
         services: {
@@ -2744,7 +2744,7 @@ export const translations = {
             label: "Investitori attivi nel nostro network"
           },
           minimum: {
-            value: "2M€+",
+            value: "€2M+",
             label: "Soglia minima per ogni intervento"
           }
         },
@@ -2832,7 +2832,7 @@ export const translations = {
             },
             q4: {
               question: "Quali importi di capitale potete raccogliere?",
-              answer: "Gestiamo operazioni da un minimo di 2M€ fino a oltre 100M€, sia in equity che in debito, grazie a una rete che spazia da business angels a grandi fondi istituzionali europei."
+              answer: "Gestiamo operazioni da un minimo di €2M fino a oltre €100M, sia in equity che in debito, grazie a una rete che spazia da business angels a grandi fondi istituzionali europei."
             }
           }
         },
