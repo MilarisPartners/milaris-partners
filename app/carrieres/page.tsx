@@ -107,11 +107,16 @@ const Carrieres = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("carrieres.hero.title2")}
                 </span>
+              ) : language === 'EN' ? (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("carrieres.hero.title2")}
+                </span>
               ) : (
                 <span className="text-[#0001ff]">
                   {t("carrieres.hero.title2")}
                 </span>
-              )}
+              )}{" "}
+              {t("carrieres.hero.title3") && t("carrieres.hero.title3") !== "carrieres.hero.title3" && t("carrieres.hero.title3")}
             </motion.h1>
             <motion.p 
               className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4 sm:px-0"
@@ -141,6 +146,15 @@ const Carrieres = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("carrieres.workWithUs.title2")}
                 </span>
+              ) : language === 'EN' ? (
+                <>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    {t("carrieres.workWithUs.title2")}
+                  </span>{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    {t("carrieres.workWithUs.title3")}
+                  </span>
+                </>
               ) : (
                 <span className="text-[#0001ff]">
                   {t("carrieres.workWithUs.title2")}
@@ -193,16 +207,21 @@ const Carrieres = () => {
             className="text-center mb-12"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
+              {t("carrieres.benefits.title1")}{" "}
               {language === 'IT' ? (
-                <>
-                  Cosa ci{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x mr-1">
-                    contraddistingue
-                  </span>?
-                </>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("carrieres.benefits.title2")}
+                </span>
+              ) : language === 'EN' ? (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("carrieres.benefits.title2")}
+                </span>
               ) : (
-                t("carrieres.benefits.title")
+                <span className="text-[#0001ff]">
+                  {t("carrieres.benefits.title2")}
+                </span>
               )}
+              {t("carrieres.benefits.title3") && t("carrieres.benefits.title3") !== "carrieres.benefits.title3" && t("carrieres.benefits.title3") !== "" && t("carrieres.benefits.title3")}
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
               {t("carrieres.benefits.subtitle")}
@@ -265,6 +284,17 @@ const Carrieres = () => {
                     transition={{ duration: 3, repeat: Infinity }}
                   />
                 </span>
+              ) : language === 'EN' ? (
+                <span className="relative">
+                  <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#60A5FA] via-[#93C5FD] to-[#60A5FA] animate-gradient-x">
+                    {t("carrieres.opportunities.title2")}
+                  </span>
+                  <motion.span
+                    className="absolute inset-0 bg-[#60A5FA]/20 blur-xl"
+                    animate={{ opacity: [0.5, 0.8, 0.5] }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                  />
+                </span>
               ) : (
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
                   {t("carrieres.opportunities.title2")}
@@ -315,6 +345,10 @@ const Carrieres = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("carrieres.howToApply.title2")}
                 </span>
+              ) : language === 'EN' ? (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                  {t("carrieres.howToApply.title2")}
+                </span>
               ) : (
                 <span className="text-[#0001ff]">
                   {t("carrieres.howToApply.title2")}
@@ -361,12 +395,29 @@ const Carrieres = () => {
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-6">
               {t("carrieres.cta.title1")}{" "}
-              {language === "EN"
-                ? <><span className="text-[#0001ff]">{t("carrieres.cta.title2")}</span>? </>
-                : language === "IT"
-                ? <><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">{t("carrieres.cta.title2")}</span>?</>
-                : <><span className="text-[#0001ff]">{t("carrieres.cta.title2")}</span> ?</>
-              }
+              {language === "EN" ? (
+                <>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    {t("carrieres.cta.title2")}
+                  </span>{" "}
+                  {t("carrieres.cta.title3")}{" "}
+                  <span className="text-[#0b062b]">{t("carrieres.cta.title4")}</span>?
+                </>
+              ) : language === "IT" ? (
+                <>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    {t("carrieres.cta.title2")}
+                  </span>{" "}
+                  {t("carrieres.cta.title3")}{" "}
+                  <span className="text-[#0b062b]">{t("carrieres.cta.title4")}</span>?
+                </>
+              ) : (
+                <>
+                  <span className="text-[#0001ff]">{t("carrieres.cta.title2")}</span>{" "}
+                  {t("carrieres.cta.title3")}{" "}
+                  <span className="text-[#0001ff]">{t("carrieres.cta.title4")}</span> ?
+                </>
+              )}
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-10">
               {t("carrieres.cta.subtitle")}

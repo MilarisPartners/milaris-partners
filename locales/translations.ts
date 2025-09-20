@@ -845,11 +845,13 @@ export const translations = {
         badge: "Rejoignez-nous",
         title1: "Rejoignez notre équipe",
         title2: "innovante",
+        title3: "",
         description: "Notre réussite repose sur une équipe talentueuse de professionnels, dont la diversité d'expériences et la richesse des idées nourrissent notre ambition d'excellence et d'innovation."
       },
       workWithUs: {
         title1: "Pourquoi nous",
         title2: "rejoindre",
+        title3: "",
         subtitle: "Découvrez ce qui fait de Milaris Partners un environnement de travail unique"
       },
       values: {
@@ -867,7 +869,9 @@ export const translations = {
         }
       },
       benefits: {
-        title: "Nos avantages",
+        title1: "Nos",
+        title2: "avantages",
+        title3: "",
         subtitle: "Nous investissons dans le bien-être et le développement de nos collaborateurs",
         benefit1: "Formation continue et mentorat",
         benefit2: "Projets stimulants avec des clients prestigieux",
@@ -885,8 +889,10 @@ export const translations = {
         description: "Envoyez votre CV et une lettre de motivation présentant votre parcours, vos aspirations et ce qui vous attire chez Milaris Partners, à l'adresse suivante :"
       },
       cta: {
-        title1: "Prêt à façonner l'avenir avec",
-        title2: "nous",
+        title1: "Prêt à",
+        title2: "façonner l'avenir",
+        title3: "avec",
+        title4: "nous",
         subtitle: "Rejoignez une équipe où votre talent sera valorisé et où vous pourrez contribuer à des projets d'envergure internationale.",
         button: "Postulez maintenant"
       }
@@ -1870,30 +1876,34 @@ export const translations = {
       hero: {
         badge: "Work with us",
         title1: "Join our",
-        title2: " team",
-        description: "A diverse and skilled team lies at the core of our success, fueling our ambition through experience, insight, and a drive for innovation."
+        title2: "visionary",
+        title3: " team",
+        description: "Our success stems from a talented group of professionals whose diverse experiences and wealth of ideas continually fuel our drive for excellence and innovation."
       },
       workWithUs: {
-        title1: "Why join",
-        title2: "us",
-        subtitle: "Explore Milaris Partners: where talent, ambition, and culture align."
+        title1: "Why",
+        title2: "join",
+        title3: "us",
+        subtitle: "Discover what makes Milaris Partners a unique place to work."
       },
       values: {
         value1: {
           title: "Global footprint",
-          description: "Join a cross-border team operating in multiple jurisdictions, with real opportunities to engage on international mandates and deepen your strategic and cultural perspective"
+          description: "Join a cross-border team operating in multiple jurisdictions, with real opportunities to engage on international mandates and deepen your strategic and cultural perspective."
         },
         value2: {
           title: "Technology-driven solutions",
-          description: "We leverage advanced technologies and AI to streamline processes, boost analytical rigor, and ensure efficient, high-impact execution across all areas of our work"
+          description: "We leverage advanced technologies and AI to streamline processes, boost analytical rigor, and ensure efficient, high-impact execution across all areas of our work."
         },
         value3: {
           title: "Dynamic environment",
-          description: "Thrive in a fast-paced, idea-driven setting. We value intellectual curiosity, collaboration, and continuous learning to help you grow and contribute meaningful"
+          description: "Thrive in a fast-paced, idea-driven setting. We value intellectual curiosity, collaboration, and continuous learning to help you grow and contribute meaningful."
         }
       },
       benefits: {
-        title: "Our benefits",
+        title1: "What",
+        title2: "sets us apart",
+        title3: "?",
         subtitle: "We invest in the well-being and development of our employees.",
         benefit1: "Continuous training and mentoring",
         benefit2: "Stimulating projects with prestigious clients",
@@ -1908,11 +1918,13 @@ export const translations = {
       howToApply: {
         title1: "How to",
         title2: "apply",
-        description: "Please send us your CV along with a cover letter outlining your background, aspirations, and motivation for joining Milaris Partners"
+        description: "Send your CV and a cover letter outlining your background, aspirations, and reasons for wanting to join Milaris Partners to the following address:"
       },
       cta: {
-        title1: "Ready to shape the future with",
-        title2: "us",
+        title1: "Ready to",
+        title2: "shape the future",
+        title3: "with",
+        title4: "us",
         subtitle: "Join a team that values your talent and offers the opportunity to contribute to high-impact international transactions.",
         button: "Apply now"
       }
@@ -2897,11 +2909,13 @@ export const translations = {
         badge: "Unisciti a noi",
         title1: "Unisciti al nostro team",
         title2: "visionario",
+        title3: "",
         description: "Il nostro successo nasce da un team di professionisti talentuosi, la cui varietà di esperienze e la ricchezza di idee alimentano costantemente la nostra ambizione di eccellenza e innovazione."
       },
       workWithUs: {
         title1: "Perché unirsi a",
         title2: "noi",
+        title3: "",
         subtitle: "Scopri cosa rende Milaris Partners un ambiente di lavoro unico."
       },
       values: {
@@ -2919,7 +2933,9 @@ export const translations = {
         }
       },
       benefits: {
-        title: "Cosa ci contraddistingue?",
+        title1: "Cosa ci",
+        title2: "contraddistingue",
+        title3: "?",
         subtitle: "Investiamo nel benessere e nello sviluppo dei nostri dipendenti.",
         benefit1: "Formazione continua e mentoring",
         benefit2: "Responsabilità ed ownership sui progetti",
@@ -2937,8 +2953,10 @@ export const translations = {
         description: "Invia il tuo CV e una lettera di presentazione in cui racconti il tuo percorso, le tue aspirazioni e le ragioni per cui desideri entrare a far parte di Milaris Partners al seguente indirizzo:"
       },
       cta: {
-        title1: "Sei pronto a costruire il futuro insieme a",
-        title2: "noi",
+        title1: "Sei pronto a",
+        title2: "costruire il futuro",
+        title3: "insieme a",
+        title4: "noi",
         subtitle: "Unisciti a un team che valorizza il tuo talento e ti offre l'opportunità di contribuire a progetti internazionali di grande rilevanza.",
         button: "Candidati ora"
       }
@@ -2955,13 +2973,13 @@ export const translations = {
         part1: "Il nostro perimetro di",
         highlight: "intervento"
       },
-      subtitle: "Accompagnamento strategico per azionisti e manager di aziende private con un fatturato compreso tra i 5 e i 150M€, nei momenti decisivi di crescita, trasformazione e passaggio generazionale.",
+      subtitle: "Accompagnamento strategico per azionisti e manager di aziende private con un fatturato compreso tra i €5M e i €150M, nei momenti decisivi di crescita, trasformazione e passaggio generazionale.",
       cards: [
         {
           title: "Sell-side advisory",
           description: "Massimizzate il valore della vostra azienda durante la cessione.",
           features: [
-            "Aziende con un fatturato tra i 5 e i 150M€",
+            "Aziende con un fatturato fino a €150M",
             "Cessione totale o parziale",
             "Processo di cessione strutturato"
           ],
