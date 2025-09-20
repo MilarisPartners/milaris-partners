@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import Timeline from "@/components/Timeline";
 import { ArrowRight, CheckCircle, DollarSign, FileText, Search, Handshake, MessageSquare, Clock, TrendingUp, Briefcase, ChevronDown, Users, Shield, Calculator, Wallet, LineChart } from "lucide-react";
 import { useState } from "react";
@@ -86,6 +87,10 @@ const Financement = () => {
 
   return (
     <main className="min-h-screen">
+      <SEOHead 
+        pageName="financement" 
+        language={language as 'fr' | 'it' | 'en'} 
+      />
       <Navbar />
 
       {/* Hero Section */}

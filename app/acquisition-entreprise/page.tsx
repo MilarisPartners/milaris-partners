@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import Timeline from "@/components/Timeline";
 import { ArrowRight, CheckCircle, Target, Search, Handshake, FileText, MessageSquare, DollarSign, Clock, Building2, Briefcase, ChevronDown, Cpu, Shield, TrendingUp, Brain, Globe } from "lucide-react";
 import { useState } from "react";
@@ -86,6 +87,10 @@ const AcquisitionEntreprise = () => {
 
   return (
     <main className="min-h-screen">
+      <SEOHead 
+        pageName="acquisition-entreprise" 
+        language={language as 'fr' | 'it' | 'en'} 
+      />
       <Navbar />
 
       {/* Hero Section */}

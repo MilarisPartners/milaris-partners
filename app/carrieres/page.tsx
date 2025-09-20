@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import Link from "next/link";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -55,6 +56,10 @@ const Carrieres = () => {
 
   return (
     <main className="min-h-screen">
+      <SEOHead 
+        pageName="carrieres" 
+        language={language as 'fr' | 'it' | 'en'} 
+      />
       <Navbar />
       
       {/* Hero Section */}

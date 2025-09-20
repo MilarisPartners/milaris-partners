@@ -1,8 +1,9 @@
 "use client";
 
 import Head from 'next/head';
-import { generateStructuredData } from '@/utils/seo';
+import { generateStructuredData, seoConfig } from '@/utils/seo';
 import StructuredData from './StructuredData';
+import { useEffect } from 'react';
 
 interface SEOHeadProps {
   pageName: string;
@@ -22,8 +23,24 @@ export default function SEOHead({
   // Combiner toutes les données structurées
   const allStructuredData = [organizationData, ...customStructuredData];
 
+  // Get the page title based on language
+  const pageConfig = seoConfig[pageName]?.[language];
+  const pageTitle = pageConfig?.title || "Milaris Partners";
+
+  // Update document title dynamically
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.title = pageTitle;
+    }
+  }, [pageTitle]);
+
   return (
     <>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageConfig?.description || ""} />
+        <meta name="keywords" content={pageConfig?.keywords?.join(', ') || ""} />
+      </Head>
       {allStructuredData.map((data, index) => (
         <StructuredData key={index} data={data} />
       ))}
