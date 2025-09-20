@@ -149,7 +149,7 @@ const Equipe = () => {
           />
         </div>
 
-        <div className="container-custom relative z-10">
+        <div className="container-custom relative z-10 py-16 sm:py-20 lg:py-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -166,24 +166,18 @@ const Equipe = () => {
               <span className="text-[#0001ff] font-semibold">{t("equipe.hero.badge")}</span>
             </motion.div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b062b] mb-6">
-              {t("equipe.hero.title1")}
-              {language === 'IT' ? (
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                  {t("equipe.hero.title2")}
-                </span>
-              ) : language === 'EN' ? (
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                  {t("equipe.hero.title2")}
-                </span>
-              ) : (
-                <span className="text-[#0001ff]">
-                  {t("equipe.hero.title2")}
-                </span>
-              )}
-              {t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3") !== "" && t("equipe.hero.title3")}
-              {t("equipe.hero.title4") && t("equipe.hero.title4") !== "equipe.hero.title4" && t("equipe.hero.title4") !== "" && t("equipe.hero.title4")}
-            </h1>
+            <h1 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b062b] mb-6"
+              dangerouslySetInnerHTML={{
+                __html: `${t("equipe.hero.title1")}${
+                  language === 'IT' ? 
+                    `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
+                  language === 'EN' ? 
+                    `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
+                    `<span class="text-[#0001ff]">${t("equipe.hero.title2")}</span>`
+                }${t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3") !== "" ? t("equipe.hero.title3") : ""}${t("equipe.hero.title4") && t("equipe.hero.title4") !== "equipe.hero.title4" && t("equipe.hero.title4") !== "" ? t("equipe.hero.title4") : ""}`
+              }}
+            />
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto">
               {t("equipe.hero.subtitle")}
             </p>

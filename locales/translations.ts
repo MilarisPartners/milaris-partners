@@ -1810,7 +1810,7 @@ export const translations = {
           badge: "Our team",
           title1: "The ",
           title2: "people",
-          title3: " behind our ",
+          title3: " behind our<br/>",
           title4: "success",
           subtitle: "Dedicated M&A professionals committed to unlocking shareholder value and guiding companies through critical strategic transactions."
       },
@@ -1889,7 +1889,7 @@ export const translations = {
         badge: "Work with us",
         title1: "Join our",
         title2: "visionary",
-        title3: " team",
+        title3: "<br/>team",
         description: "Our success stems from a talented group of professionals whose diverse experiences and wealth of ideas continually fuel our drive for excellence and innovation."
       },
       workWithUs: {
@@ -2850,7 +2850,7 @@ export const translations = {
           badge: "Il nostro team",
           title1: "Le ",
           title2: "persone",
-          title3: " dietro al nostro ",
+          title3: " dietro al nostro<br/>",
           title4: "successo",
           subtitle: "Un gruppo di professionisti appassionati, dedicati a creare valore e a supportare le aziende nei loro progetti strategici."
       },

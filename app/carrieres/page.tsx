@@ -106,23 +106,16 @@ const Carrieres = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              {t("carrieres.hero.title1")}{" "}
-              {language === 'IT' ? (
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                  {t("carrieres.hero.title2")}
-                </span>
-              ) : language === 'EN' ? (
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                  {t("carrieres.hero.title2")}
-                </span>
-              ) : (
-                <span className="text-[#0001ff]">
-                  {t("carrieres.hero.title2")}
-                </span>
-              )}{" "}
-              {t("carrieres.hero.title3") && t("carrieres.hero.title3") !== "carrieres.hero.title3" && t("carrieres.hero.title3")}
-            </motion.h1>
+              dangerouslySetInnerHTML={{
+                __html: `${t("carrieres.hero.title1")} ${
+                  language === 'IT' ? 
+                    `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("carrieres.hero.title2")}</span>` :
+                  language === 'EN' ? 
+                    `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("carrieres.hero.title2")}</span>` :
+                    `<span class="text-[#0001ff]">${t("carrieres.hero.title2")}</span>`
+                } ${t("carrieres.hero.title3") && t("carrieres.hero.title3") !== "carrieres.hero.title3" ? t("carrieres.hero.title3") : ""}`
+              }}
+            />
             <motion.p 
               className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
