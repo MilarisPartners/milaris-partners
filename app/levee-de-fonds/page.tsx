@@ -14,8 +14,12 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const LeveeDeFonds = () => {
+  const { language } = useTranslation();
+  
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -24,6 +28,10 @@ const LeveeDeFonds = () => {
 
   return (
     <>
+      <SEOHead 
+        pageName="levee-de-fonds" 
+        language={language} 
+      />
       <Navbar />
       
       {/* Hero Section */}

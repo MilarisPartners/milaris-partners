@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/useTranslation";
 import { translations } from "@/locales/translations";
@@ -11,6 +12,10 @@ const ConditionsGenerales = () => {
   const terms = translations[language].terms;
   return (
     <main className="min-h-screen">
+      <SEOHead 
+        pageName="conditions-generales" 
+        language={language} 
+      />
       <Navbar />
 
       <section className="pt-40 pb-20 bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5">
