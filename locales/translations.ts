@@ -1309,7 +1309,7 @@ export const translations = {
     },
     footer: {
       rights: "All rights reserved.",
-      legal: "Legal notices",
+      legal: "Legal Notice",
       privacy: "Terms and Conditions"
     },
     expertisePages: {
@@ -1807,7 +1807,7 @@ export const translations = {
     },
     equipe: {
       hero: {
-          badge: "Our Team",
+          badge: "Our team",
           title1: "The ",
           title2: "people",
           title3: " behind our ",
