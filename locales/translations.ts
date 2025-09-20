@@ -774,6 +774,7 @@ export const translations = {
           title1: "Notre ",
           title2: "équipe",
           title3: "",
+          title4: "",
           subtitle: "Des experts passionnés dédiés à la création de valeur et à l'accompagnement des entreprises dans leurs projets stratégiques"
       },
       focus: {
@@ -822,7 +823,9 @@ export const translations = {
           }
       },
       cta: {
-          title: "Prêt à rencontrer notre équipe ?",
+          title1: "Prêt à rencontrer notre équipe ?",
+          title2: "",
+          title3: "",
           subtitle: "Discutons de votre projet et voyons comment nous pouvons accompagner votre succès",
           button: "Planifier un échange"
       },
@@ -1482,7 +1485,7 @@ export const translations = {
         hero: {
           badge: "Buy-side advisory",
           title: "Unlocking sustainable business growth through targeted acquisitions",
-          description: "Milaris Partners advises companies, entrepreneurs, and investors to develop and execute tailored acquisition strategies aligned with their growth objectives.",
+          description: "Milaris Partners supports industrial groups and investors in external growth transactions, from acquiring competitors or suppliers to complementary or diversified businesses, with a strategic method to ensure results.",
           cta: "Let's explore your opportunities"
         },
         services: {
@@ -1490,22 +1493,22 @@ export const translations = {
           subtitle: "Our mission: identify strategic opportunities, deliver precise deals.",
           items: {
             strategy: {
-              title: "Acquisition strategy development",
-              description: "Target sectors, geographies, company size, and synergies aligned with your growth objectives"
+              title: "Acquisition strategy",
+              description: "We analyze target sectors, geographies, sizes and possible synergies, defining together a solid and focused external growth plan perfectly aligned with your business objectives."
             },
             identification: {
-              title: "Target sourcing & Qualification",
-              description: "VWe use proprietary data, trusted networks, and AI tools to source qualified, strategic targets"
+              title: "Target selection",
+              description: "Identification and evaluation of potential targets through our network, proprietary databases and AI-driven tools to ensure targeted and high-quality sourcing."
             },
             structuring: {
-              title: "Deal execution & Negotiation",
-              description: "We manage due diligence, deal structuring, and negotiations — securing optimal terms with minimal risk."
+              title: "Structuring and negotiation",
+              description: "We coordinate audits and due diligence, structure the transaction with the best financial solutions, and guide the negotiations through to the definition of optimal terms."
             }
           }
         },
         timeline: {
           title: "Transaction timeline",
-          subtitle: "Our engagements typically span 3 to 12 months.",
+          subtitle: "A structured process with an average timeframe of 3 to 12 months.",
           legend: {
             steps: "Key steps",
             duration: "Average duration per step"
@@ -1513,22 +1516,22 @@ export const translations = {
           steps: {
             setup: {
               title: "Strategy definition",
-              description: "Define clear acquisition criteria—sector, geography, size, and structure",
+              description: "Define investment objectives, target sectors, geographies, budget, and the structure of the planned transaction",
               duration: "1–2 weeks"
             },
             identification: {
               title: "Target identification",
-              description: "Source targets via proprietary AI, sector insights, and discreet outreach",
+              description: "Use AI tools to identify and qualify suitable targets confidentially",
               duration: "4–8 weeks"
             },
             analysis: {
-              title: "Analysis and valuation",
-              description: "Assess targets with diligence, integration planning, and strategic valuation",
+              title: "Analysis & Valuation",
+              description: "Conduct thorough financial and operational due diligence, assess synergies, and determine the final optimal price",
               duration: "3–6 weeks"
             },
             nego: {
               title: "Negotiation & Closing",
-              description: "Audit oversight, legal structuring, and negotiation support through signing",
+              description: "Manage audits, coordinate legal matters, and provide full support through to final contract signing",
               duration: "4–8 weeks"
             }
           }
@@ -1552,20 +1555,20 @@ export const translations = {
           }
         },
         expertise: {
-          title: "Our expertise",
+          title: "Why choose Milaris Partners?",
           subtitle: "Our expertise to make high-impact M&A solutions.",
           items: {
             ai: {
               title: "AI-powered sourcing",
-              description: "Our AI-driven platform uncovers off-market targets with speed and precision, blending algorithmic sourcing with expert validation for smarter deal origination"
+              description: "Our AI-driven platform uncovers off-market targets with speed and precision, blending algorithmic sourcing with expert validation for smarter deal origination."
             },
             franco: {
               title: "Franco-Italian expertise",
-              description: "Our Franco-Italian team, with German reach, bridges mid-cap firms and investors—enhancing cross-border alignment, deal flow, and successful outcomes"
+              description: "Our Franco-Italian team with German reach brings together mid-cap firms and investors to enhance cross-border alignment, deal flow and successful outcomes."
             },
             exclusive: {
               title: "Exclusive opportunities",
-              description: "We unlock proprietary deal flow through networks, relationships, and direct outreach—delivering exclusive, high-conviction opportunities with less competition"
+              description: "By leveraging networks, relationships and direct outreach, we unlock proprietary deal flow and deliver exclusive, high-conviction opportunities with less competition."
             }
           }
         },
@@ -1573,8 +1576,8 @@ export const translations = {
           title: "Types of acquisitions",
           subtitle: "Expertise across all transaction structures and industry sectors.",
           strategic: {
-            title: "Strategic Acquisitions",
-            description: "Acquisition of competitors, suppliers, or complementary businesses to enhance your strategic positioning",
+            title: "Strategic acquisitions",
+            description: "Acquire competitors, suppliers or complementary businesses to strengthen market position.",
             items: {
               consolidation: {
                 title: "Sector consolidation",
@@ -1591,43 +1594,43 @@ export const translations = {
             }
           },
           complex: {
-            title: "Complex Structures",
-            description: "LBO, carve-out, build-up secondo i vostri vincoli finanziari e obiettivi di sviluppo",
+            title: "Complex structures",
+            description: "LBO, carve-out and build-up transactions tailored to financial constraints and growth objectives.",
             items: {
               lbo: {
-                title: "LBO e strutture con leva",
-                subtitle: "Ottimizzate la vostra struttura finanziaria"
+                title: "LBO and leveraged structures",
+                subtitle: "Optimize the financial structure"
               },
               carveout: {
-                title: "Carve-out di divisioni",
-                subtitle: "Estraete il valore nascosto"
+                title: "Division carve-outs",
+                subtitle: "Extract and unlock hidden assets"
               },
               buildup: {
-                title: "Strategie build-up",
-                subtitle: "Create un leader attraverso acquisizioni successive"
+                title: "Build-up strategies",
+                subtitle: "Create a market leader through successive acquisitions"
               }
             }
           }
         },
         faq: {
           title: "Frequently Asked Questions",
-          subtitle: "Everything you need to know about the buy-side M&A process.",
+          subtitle: "We guide you through every phase of the acquisition with clarity, method and absolute confidentiality.",
           questions: {
             q1: {
-              question: "How long does a business acquisition take?",
-              answer: "3 to 12 months, depending on the context — from opportunistic one-off deals to competitive, multi-target processes. Our structured approach ensures both efficiency and deal security."
+              question: "What are the timelines for a business acquisition?",
+              answer: "Generally between 3 and 12 months, depending on complexity: from a fast opportunistic acquisition to a structured process with multiple targets. Our method reduces timelines, ensuring each phase with precision."
             },
             q2: {
-              question: "How do you identify acquisition targets?",
-              answer: "We leverage a proprietary sourcing mix: trusted sector networks, enriched internal databases, and an AI tool that reveals off-market and hard-to-access opportunities."
+              question: "How do you identify and evaluate acquisition targets?",
+              answer: "An integrated approach: direct network in sectors of interest, constantly updated proprietary databases and AI technology capable of identifying off-market opportunities otherwise invisible, ensuring targeted and comprehensive selection."
             },
             q3: {
-              question: "What types of deal structures do you offer?",
-              answer: "We structure a full range of transactions: full acquisitions, LBOs, minority/majority stakes, carve-outs, and buy-and-build strategies — tailored to your strategic and financial constraints."
+              question: "What structures and operational solutions do you offer?",
+              answer: "We design any configuration: simple acquisitions, leveraged LBOs, minority or majority stakes, division carve-outs and build-up strategies. Each structure is modeled on your objectives and financial constraints."
             },
             q4: {
-              question: "Do you manage international transactions?",
-              answer: "Yes. Our Franco-Italian DNA gives us strong cross-border execution capabilities, especially between France and Italy. Our broader European network also supports transactions across other key markets."
+              question: "Do you also offer support for international acquisitions?",
+              answer: "Yes. Our pan-European approach and direct presence in France, Italy and Germany allow us to manage cross-border acquisitions, facilitating complex operations and ensuring effective coordination throughout Europe."
             }
           }
         },
@@ -1803,9 +1806,10 @@ export const translations = {
     },
     equipe: {
       hero: {
-          title1: "Our ",
-          title2: "team",
-          title3: "",
+          title1: "The ",
+          title2: "people",
+          title3: " behind our ",
+          title4: "success",
           subtitle: "Dedicated M&A professionals committed to unlocking shareholder value and guiding companies through critical strategic transactions."
       },
       focus: {
@@ -1814,29 +1818,29 @@ export const translations = {
       paul: {
           focus1: {
               title: "Regional advisory",
-              description: "Tailored support for local companies in both primary and secondary transactions across diverse sectors, aligned with evolving market dynamics"
+              description: "Tailored support for local companies in both primary and secondary transactions across diverse sectors, aligned with evolving market dynamics."
           },
           focus2: {
               title: "Global strategic outreach",
-              description: "Execution of sale processes and partner searches worldwide for French corporates seeking international expansion"
+              description: "Execution of sale processes and partner searches worldwide for French corporates seeking international expansion."
           },
           focus3: {
               title: "Cross-border buy-side advisory",
-              description: "Support for French investment funds in executing cross-border buy-side mandates, with a focus on proprietary opportunities in Italy and Germany"
+              description: "Support for French investment funds in executing cross-border buy-side mandates, with a focus on proprietary opportunities in Italy and Germany."
           }
       },
       matteo: {
           focus1: {
               title: "Cross-sector capabilities",
-              description: "Extensive experience supporting Italian entrepreneurs in both primary and secondary transactions, with a strong track record across multiple sectors, notably industrials and TMT"
+              description: "Extensive experience supporting Italian entrepreneurs in both primary and secondary transactions, with a strong track record across multiple sectors, notably industrials and TMT."
           },
           focus2: {
               title: "Pan-European strategic reach",
-              description: "Execution of sale processes and strategic partner or financial sponsor searches across Europe on behalf of Italian corporates"
+              description: "Execution of sale processes and strategic partner or financial sponsor searches across Europe on behalf of Italian corporates."
           },
           focus3: {
               title: "Italian deal origination",
-              description: "Proprietary access to off-market opportunities in Italy for buy-side mandates, enabled by deep local presence and network"
+              description: "Proprietary access to off-market opportunities in Italy for buy-side mandates, enabled by deep local presence and network."
           }
       },
       kevin: {
@@ -1854,18 +1858,24 @@ export const translations = {
           }
       },
       cta: {
-          title: "Ready to meet our team?",
+          title1: "Ready to ",
+          title2: "meet our team",
+          title3: "?",
           subtitle: "Let's explore your project together and identify how we can contribute to its success.",
-          button: "Schedule a call"
+          button: "Schedule a call with us!"
       },
       sections: {
           partners: {
-              title: "Our Partners",
+              title1: "Our ",
+              title2: "leadership",
+              title3: " team",
               subtitle: "The founders of Milaris Partners, M&A experts with a European vision."
           },
           seniorAdvisor: {
-              title: "Senior Advisor",
-              subtitle: "International expertise and strategic advisory."
+              title1: "The ",
+              title2: "Senior Advisors",
+              title3: " team",
+              subtitle: "Internationally recognized experts who support the team with strategic vision and deep market knowledge."
           }
       },
       managingDirectorFrance: "Managing Director - France",
@@ -2514,7 +2524,7 @@ export const translations = {
         hero: {
           badge: "Buy-side advisory",
           title: "Crescere attraverso acquisizioni è una strategia che trasforma il futuro",
-          description: "Milaris Partners affianca dirigenti, gruppi industriali e investitori nelle operazioni di crescita esterna, dall'acquisizione di concorrenti o fornitori a realtà complementari o di diversificazione, con un metodo strategico e mirato per garantire risultati concreti.",
+          description: "Milaris Partners affianca gruppi industriali e investitori nelle operazioni di crescita esterna,\ndall'acquisizione di concorrenti o fornitori a realtà complementari o diversificate,\ncon metodo strategico per garantire risultati.",
           cta: "Discutiamo del vostro progetto"
         },
         services: {
@@ -2559,7 +2569,7 @@ export const translations = {
               duration: "3–6 settimane"
             },
             nego: {
-              title: "Negoziazione e Closing",
+              title: "Negoziazione e closing",
               description: "Gestione audit, coordinamento legale e supporto completo fino alla firma del contratto definitivo",
               duration: "4–8 settimane"
             }
@@ -2837,7 +2847,8 @@ export const translations = {
       hero: {
           title1: "Le ",
           title2: "persone",
-          title3: " dietro al nostro successo",
+          title3: " dietro al nostro ",
+          title4: "successo",
           subtitle: "Un gruppo di professionisti appassionati, dedicati a creare valore e a supportare le aziende nei loro progetti strategici."
       },
       focus: {
