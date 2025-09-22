@@ -117,7 +117,7 @@ const Carrieres = () => {
                     `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("carrieres.hero.title2")}</span>` :
                   language === 'EN' ? 
                     `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("carrieres.hero.title2")}</span>` :
-                    `<span class="text-[#0001ff]">${t("carrieres.hero.title2")}</span>`
+                    `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("carrieres.hero.title2")}</span>`
                 } ${t("carrieres.hero.title3") && t("carrieres.hero.title3") !== "carrieres.hero.title3" ? t("carrieres.hero.title3") : ""}`
               }}
             />
@@ -198,7 +198,7 @@ const Carrieres = () => {
                   </span>
                 </>
               ) : (
-                <span className="text-[#0001ff]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("carrieres.workWithUs.title2")}
                 </span>
               )}{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
@@ -259,7 +259,7 @@ const Carrieres = () => {
                   {t("carrieres.benefits.title2")}
                 </span>
               ) : (
-                <span className="text-[#0001ff]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("carrieres.benefits.title2")}
                 </span>
               )}
@@ -392,7 +392,7 @@ const Carrieres = () => {
                   {t("carrieres.howToApply.title2")}
                 </span>
               ) : (
-                <span className="text-[#0001ff]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("carrieres.howToApply.title2")}
                 </span>
               )}{language === "EN" ? "?" : language === "IT" ? "?" : " ?"}
@@ -455,9 +455,9 @@ const Carrieres = () => {
                 </>
               ) : (
                 <>
-                  <span className="text-[#0001ff]">{t("carrieres.cta.title2")}</span>{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">{t("carrieres.cta.title2")}</span>{" "}
                   {t("carrieres.cta.title3")}{" "}
-                  <span className="text-[#0001ff]">{t("carrieres.cta.title4")}</span> ?
+                  <span className="text-[#0b062b]">{t("carrieres.cta.title4")}</span> ?
                 </>
               )}
             </h2>

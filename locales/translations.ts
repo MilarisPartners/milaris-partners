@@ -775,11 +775,11 @@ export const translations = {
     equipe: {
       hero: {
           badge: "Notre équipe",
-          title1: "Notre ",
-          title2: "équipe",
+          title1: "Les personnes derrière",
+          title2: "notre succès",
           title3: "",
           title4: "",
-          subtitle: "Des experts passionnés dédiés à la création de valeur et à l'accompagnement des entreprises dans leurs projets stratégiques"
+          subtitle: "Des experts passionnés dédiés à la création de valeur et à l'accompagnement des entreprises dans leurs projets stratégiques."
       },
       focus: {
           title: "Domaines d'expertise"
@@ -787,21 +787,21 @@ export const translations = {
       paul: {
           focus1: {
               title: "Accompagnement régional",
-              description: "Accompagner les entreprises locales de la région dans leurs opérations primaires et secondaires dans divers domaines en fonction des tendances du marché"
+              description: "Accompagner les entreprises locales de la région dans leurs opérations primaires et secondaires dans divers domaines en fonction des tendances du marché."
           },
           focus2: {
               title: "Expansion internationale",
-              description: "Vente et recherche de partenaires à l'échelle mondiale pour les entreprises françaises"
+              description: "Vente et recherche de partenaires à l'échelle mondiale pour les entreprises françaises."
           },
           focus3: {
-              title: "Mandats Buy-Side",
-              description: "Accompagner les fonds d'investissement français dans leurs mandats buy-side à l'étranger pour profiter d'opportunités inexploitées en Italie et en Allemagne"
+              title: "Mandats buy-side",
+              description: "Accompagner les fonds d'investissement français dans leurs mandats buy-side à l'étranger pour profiter d'opportunités inexploitées en Italie et en Allemagne."
           }
       },
       matteo: {
           focus1: {
               title: "Expertise multi-sectorielle",
-              description: "Accompagnement des entrepreneurs italiens dans leurs opérations primaires et secondaires, avec une expertise reconnue dans plusieurs secteurs, notamment l'industrie et les TMT."
+              description: "Accompagnement des entrepreneurs dans leurs opérations primaires et secondaires, avec une expertise reconnue dans plusieurs secteurs, notamment l'industrie et les TMT."
           },
           focus2: {
               title: "Partenariats européens",
@@ -809,7 +809,7 @@ export const translations = {
           },
           focus3: {
               title: "Origination Italie",
-              description: "Identification d'opportunités hors radar en Italie pour nos mandats buy-side grâce à notre présence locale."
+              description: "Identification d'opportunités d'investissement off-market pour les mandats buy-side. Notre présence locale permet d'accéder à des cibles exclusives et difficilement identifiables."
           }
       },
       kevin: {
@@ -830,17 +830,17 @@ export const translations = {
           title1: "Prêt à rencontrer notre équipe ?",
           title2: "",
           title3: "",
-          subtitle: "Discutons de votre projet et voyons comment nous pouvons accompagner votre succès",
+          subtitle: "Discutons de votre projet et voyons comment nous pouvons accompagner votre succès.",
           button: "Planifier un échange avec nous !"
       },
       sections: {
           partners: {
-              title: "Nos Associés",
-              subtitle: "Les fondateurs de Milaris Partners, experts en M&A avec une vision européenne"
+              title: "L'équipe de leadership",
+              subtitle: "Les fondateurs de Milaris Partners, experts en M&A avec une vision européenne."
           },
           seniorAdvisor: {
-              title: "Senior Advisor",
-              subtitle: "Expertise internationale et conseil stratégique"
+              title: "L'équipe des Senior Advisors",
+              subtitle: "Des experts de renommée internationale apportant à l'équipe une vision stratégique et une connaissance approfondie des marchés."
           }
       },
       managingDirectorFrance: "Managing Director - France",
@@ -859,27 +859,27 @@ export const translations = {
         title1: "Pourquoi nous",
         title2: "rejoindre",
         title3: "",
-        subtitle: "Découvrez ce qui fait de Milaris Partners un environnement de travail unique"
+        subtitle: "Découvrez ce qui fait de Milaris un environnement de travail unique."
       },
       values: {
         value1: {
           title: "Exposition internationale",
-          description: "Intégrez une équipe présente dans plusieurs pays, et profitez d'opportunités concrètes de collaboration sur des projets à portée internationale — l'idéal pour élargir vos horizons professionnels."
+          description: "Intégrez une équipe internationale opérant dans plusieurs juridictions, avec de réelles opportunités de participer à des mandats internationaux et d'élargir vos perspectives stratégiques et culturelles."
         },
         value2: {
-          title: "Solutions axées sur la technologie",
-          description: "Chez Milaris Partners, nous mettons la technologie au service de l'efficacité. Nous déployons des outils avancés et des systèmes d'IA de pointe pour optimiser nos processus."
+          title: "Technologie",
+          description: "Nous exploitons des technologies de pointe et l'IA pour rationaliser les processus, renforcer la rigueur analytique et garantir une exécution efficace et à fort impact dans toutes nos activités."
         },
         value3: {
-          title: "Environnement jeune et dynamique",
-          description: "Évoluez dans un cadre stimulant, ouvert aux idées neuves et aux initiatives. Nous valorisons la curiosité, l'apprentissage continu et l'esprit d'équipe."
+          title: "Environnement dynamique",
+          description: "Évoluez dans un cadre dynamique et orienté idées, valorisant la curiosité intellectuelle, la collaboration et l'apprentissage continu pour vous aider à progresser et à contribuer de manière significative."
         }
       },
       benefits: {
-        title1: "Nos",
-        title2: "avantages",
+        title1: "Ce qui nous",
+        title2: "rend uniques",
         title3: "",
-        subtitle: "Nous investissons dans le bien-être et le développement de nos collaborateurs",
+        subtitle: "Nous investissons dans le bien-être et le développement de nos collaborateurs.",
         benefit1: "Formation continue et mentorat",
         benefit2: "Projets stimulants avec des clients prestigieux",
         benefit3: "Environnement de travail flexible",
@@ -2950,9 +2950,9 @@ export const translations = {
         }
       },
       benefits: {
-        title1: "Cosa ci",
-        title2: "contraddistingue",
-        title3: "?",
+        title1: "I nostri",
+        title2: "punti di forza",
+        title3: "",
         subtitle: "Investiamo nel benessere e nello sviluppo dei nostri dipendenti.",
         benefit1: "Formazione continua e mentoring",
         benefit2: "Responsabilità ed ownership sui progetti",

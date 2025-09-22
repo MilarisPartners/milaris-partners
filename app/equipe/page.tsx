@@ -173,13 +173,15 @@ const Equipe = () => {
             <h1 
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b062b] mb-6"
               dangerouslySetInnerHTML={{
-                __html: `${t("equipe.hero.title1")}${
-                  language === 'IT' ? 
-                    `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
-                  language === 'EN' ? 
-                    `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
-                    `<span class="text-[#0001ff]">${t("equipe.hero.title2")}</span>`
-                }${t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3") !== "" ? t("equipe.hero.title3") : ""}${t("equipe.hero.title4") && t("equipe.hero.title4") !== "equipe.hero.title4" && t("equipe.hero.title4") !== "" ? t("equipe.hero.title4") : ""}`
+                __html: language === 'FR' ? 
+                  `Les <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">personnes</span> derrière<br><span class="text-[#0b062b]">notre succès</span>` :
+                  `${t("equipe.hero.title1")}${
+                    language === 'IT' ? 
+                      `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
+                    language === 'EN' ? 
+                      `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
+                      `<br><span class="text-[#0b062b]">${t("equipe.hero.title2")}</span>`
+                  }${t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3") !== "" ? t("equipe.hero.title3") : ""}${t("equipe.hero.title4") && t("equipe.hero.title4") !== "equipe.hero.title4" && t("equipe.hero.title4") !== "" ? t("equipe.hero.title4") : ""}`
               }}
             />
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
@@ -254,7 +256,12 @@ const Equipe = () => {
                   {t("equipe.sections.partners.title3")}
                 </>
               ) : (
-                t("equipe.sections.partners.title")
+                <>
+                  L'équipe de{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    leadership
+                  </span>
+                </>
               )}
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
@@ -371,7 +378,12 @@ const Equipe = () => {
                   {t("equipe.sections.seniorAdvisor.title3")}
                 </>
               ) : (
-                t("equipe.sections.seniorAdvisor.title")
+                <>
+                  L'équipe des{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    Senior Advisors
+                  </span>
+                </>
               )}
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
@@ -486,7 +498,13 @@ const Equipe = () => {
                   {t("equipe.cta.title3")}
                 </>
               ) : (
-                t("equipe.cta.title1")
+                <>
+                  Prêt à rencontrer{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                    notre équipe
+                  </span>
+                  {" "}?
+                </>
               )}
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-8">
