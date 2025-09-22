@@ -64,7 +64,7 @@ const About = () => {
                 />
               </span>
             ) : (
-              <span className="text-[#0001ff]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                 {t("about.title.part2")}
               </span>
             )}{" "}
@@ -90,6 +90,10 @@ const About = () => {
                   <>
                     Milaris Partners, a Paris-based firm founded by <span className="font-semibold">Italian and French professionals</span>, <span className="font-semibold">supports micro, small, and medium-sized enterprises</span> in their processes of <span className="font-semibold">divestment, acquisition, and capital raising</span>, opening doors to international investors and buyers.
                   </>
+                ) : t("about.content.point1.title").includes("société parisienne fondée par des") ? (
+                  <>
+                    Milaris Partners, société parisienne fondée par des <span className="font-semibold">professionnels italiens et français</span>, accompagne les <span className="font-semibold">micro, petites et moyennes entreprises</span> dans leurs processus de <span className="font-semibold">cession, d'acquisition et de levée de capitaux</span>, en leur ouvrant l'accès à des investisseurs et acquéreurs internationaux.
+                  </>
                 ) : (
                   t("about.content.point1.title")
                 )}
@@ -113,6 +117,10 @@ const About = () => {
                 ) : t("about.content.point2.text1").includes("Present in") ? (
                   <>
                     Present in <span className="font-semibold">France, Italy and Germany</span>, we approach each mandate with selectivity, applying rigorous methods and drawing on our <span className="font-semibold">extensive international network</span> as well as sharp deal intuition to open strategic pathways that maximize value and ensure <span className="font-semibold">successful outcomes</span>.
+                  </>
+                ) : t("about.content.point2.text1").includes("Présents en") ? (
+                  <>
+                    Présents en <span className="font-semibold">France, Italie et en Allemagne</span>, nous privilégions une approche exclusive avec un nombre limité de mandats. Méthode rigoureuse, <span className="font-semibold">réseau international</span>, sens du deal : nous ouvrons le champ des possibles pour <span className="font-semibold">maximiser valeur, options et réussite</span>.
                   </>
                 ) : (
                   <>
@@ -139,6 +147,10 @@ const About = () => {
                 ) : t("about.content.point3.text1").includes("As pioneers in applying") ? (
                   <>
                     As pioneers in <span className="font-semibold">applying artificial intelligence</span> to mergers and acquisitions, we've created <span className="font-semibold">proprietary technology</span> that elevates every phase of the transaction, providing our clients with an <span className="font-semibold">unmatched strategic advantage</span> to succeed.
+                  </>
+                ) : t("about.content.point3.text1").includes("Pionniers de l'intégration") ? (
+                  <>
+                    Pionniers de <span className="font-semibold">l'intégration de l'intelligence artificielle</span> en M&A, notre <span className="font-semibold">technologie propriétaire</span> optimise chaque étape de la transaction pour <span className="font-semibold">maximiser vos chances de succès</span>.
                   </>
                 ) : (
                   <>

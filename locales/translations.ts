@@ -12,27 +12,30 @@ export const translations = {
     },
     hero: {
       subtitle: "",
-      title: "Le M&A, simplement",
+      title: "L'art de simplifier les opérations de M&A",
       description: {
-        part1: "Milaris Partners",
-        part2: "accompagne les dirigeants, actionnaires et investisseurs de",
-        part3: "PME et ETI ",
-        part4: "dans",
+        part1: "Milaris Partners accompagne les dirigeants, actionnaires et investisseurs",
+        part2: "de PME et ETI dans la cession, l'acquisition ou le financement d'entreprises,",
+        part3: "en veillant à préserver leurs intérêts et optimiser la valeur de chaque opération.",
+        part4: " ",
         part5: " ",
-        part6: "la cession, l'acquisition ou le financement",
-        part7: "d'entreprises.",
-        part8: " "
+        part6: " ",
+        part7: " ",
+        part8: " ",
+        part9: " ",
+        part10: " ",
+        part11: " "
       },
       cta: {
-        scheduleCall: "Planifier un échange",
+        scheduleCall: "Planifier un échange avec nous !",
         whatChanges: "Pourquoi Milaris Partners ?"
       }
     },
     about: {
       title: {
-        part1: "Une volonté profonde de valoriser nos",
-        part2: "entreprises locales",
-        part3: "à leur juste valeur"
+        part1: "Cabinet de M&A ",
+        part2: "pour les PME",
+        part3: " en croissance, en transformation ou en transmission"
       },
       content: {
         point1: {
@@ -107,15 +110,15 @@ export const translations = {
     expertise: {
       title: "Notre expertise",
       titleHighlight: "sectorielle",
-      subtitle: "Une connaissance approfondie des dynamiques de marché dans six secteurs clés",
+      subtitle: "Une connaissance approfondie des dynamiques de marché dans six secteurs clés.",
       sectors: {
         consumer: {
           title: "Biens de consommation",
-          description: "Expertise approfondie dans le secteur des biens de consommation courante et durables"
+          description: "Expertise approfondie dans le secteur des biens de consommation"
         },
         tmt: {
           title: "Technologies",
-          description: "Accompagnement des entreprises innovantes dans leur transformation digitale"
+          description: "Accompagnement des entreprises dans leur transformation digitale"
         },
         healthcare: {
           title: "Santé",
@@ -130,7 +133,7 @@ export const translations = {
           description: "Expertise dans l'optimisation et la valorisation des services B2B"
         },
         energy: {
-          title: "Énergie & Environnement",
+          title: "Environnement",
           description: "Accompagnement dans la transition énergétique et les projets durables"
         }
       }
@@ -141,7 +144,7 @@ export const translations = {
         highlight: "Intelligence Artificielle",
         part2: "au service de vos transactions"
       },
-      description: "Technologie IA propriétaire développée par Milaris Partners. En exploitant des millions de données de marché et d'investisseurs, notre moteur de matching interne révèle la valeur cachée dans le paysage fragmenté des fusions-acquisitions de petites et moyennes capitalisations — là où les réseaux traditionnels échouent et où la fiabilité est essentielle.",
+      description: "Technologie IA propriétaire développée par Milaris Partners. En exploitant des millions de données de marché et d'investisseurs, notre moteur de matching interne révèle la valeur cachée dans le paysage fragmenté des fusions-acquisitions de petites et moyennes capitalisations, là où les réseaux traditionnels échouent et où la fiabilité est essentielle.",
       features: {
         identifyBuyers: {
           title: "Identification des acquéreurs hors radars",
@@ -280,32 +283,32 @@ export const translations = {
       cession: {
         hero: {
           badge: "Cession d'entreprise",
-          title: "Vendre son entreprise est une étape majeure.",
+          title: "La cession de votre entreprise est une décision qui façonne votre avenir",
           subtitle: "Nous en faisons une réussite.",
           description: "Chez Milaris Partners, nous accompagnons les dirigeants dans la cession totale ou partielle de leur entreprise, en structurant une démarche stratégique, confidentielle et optimisée.",
           cta: "Discutons de votre projet"
         },
         services: {
           title: "Ce que nous faisons pour vous",
-          subtitle: "Notre mission : maximiser la valeur de votre entreprise et sécuriser votre transmission",
+          subtitle: "Notre mission : maximiser la valeur de votre entreprise et sécuriser votre transmission.",
           items: {
             evaluation: {
-              title: "Évaluation et positionnement",
-              description: "Analyse de votre entreprise, identification des leviers de valeur et positionnement stratégique optimal sur le marché"
+              title: "Évaluation et stratégie",
+              description: "Nous analysons votre entreprise, identifions les leviers de valeur clés et définissons le positionnement stratégique le plus adapté aux objectifs des actionnaires."
             },
             market: {
-              title: "Mise en marché structurée",
-              description: "Organisation d'un processus concurrentiel avec notre réseau d'acquéreurs stratégiques et financiers"
+              title: "Mise en marché",
+              description: "Nous concevons et pilotons un processus compétitif, mobilisant notre réseau ciblé d'investisseurs stratégiques et financiers pour maximiser l'intérêt et les opportunités."
             },
             support: {
-              title: "Accompagnement jusqu'au closing",
-              description: "Négociation, coordination juridique et fiscale, sécurisation de l'opération jusqu'à la signature"
+              title: "Exécution de la transaction",
+              description: "Nous coordonnons chaque étape de la négociation, supervisons les aspects juridiques et fiscaux et garantissons la sécurité complète de l'opération jusqu'à la signature finale."
             }
           }
         },
         timeline: {
           title: "Déroulé typique d'une cession",
-          subtitle: "Une approche structurée, en moyenne sur 6 à 9 mois",
+          subtitle: "Une approche structurée, en moyenne sur 6 à 9 mois.",
           legend: {
             steps: "Étapes clés",
             duration: "Durée moyenne par étape"
@@ -332,7 +335,7 @@ export const translations = {
               duration: "8–12 semaines"
             },
             closing: {
-              title: "Négociation & Closing",
+              title: "Négociation et Closing",
               description: "Assistance dans les négociations, coordination avec les conseils juridiques jusqu'à la signature",
               duration: "4–8 semaines"
             }
@@ -358,28 +361,28 @@ export const translations = {
         },
         whyMilaris: {
           title: "Pourquoi Milaris Partners ?",
-          subtitle: "Notre expertise au service de votre réussite",
+          subtitle: "Notre expertise au service de votre réussite.",
           items: {
             process: {
               title: "Processus concurrentiel structuré",
-              description: "Nous organisons une mise en concurrence optimale pour maximiser la valorisation de votre entreprise"
+              description: "Nous menons des processus de cession structurés et rigoureux afin de créer une concurrence soutenue entre plusieurs acquéreurs qualifiés. Des étapes claires et une exécution disciplinée garantissent une valorisation élevée et des conditions optimales."
             },
             network: {
               title: "Réseau d'acquéreurs augmenté par l'IA",
-              description: "Notre technologie IA nous permet d'identifier et d'approcher un réseau d'acquéreurs à la fois plus large et plus pertinent, en ciblant ceux dont le rationnel d'acquisition est réellement aligné — générant plus d'offres tout en préservant la confidentialité."
+              description: "Notre technologie IA nous permet d'identifier et d'approcher un réseau d'acquéreurs à la fois plus large et plus pertinent, en ciblant ceux dont le rationnel d'acquisition est réellement aligné, générant plus d'offres tout en préservant la confidentialité."
             },
             confidentiality: {
-              title: "Confidentialité & alignement",
-              description: "Approche sur-mesure, confidentielle et indépendante, avec votre succès comme seul objectif"
+              title: "Confidentialité et objectifs partagés",
+              description: "Nous adoptons une approche sur mesure, indépendante et entièrement confidentielle, en étroite et constante adéquation avec vos objectifs. Chaque action est soigneusement pensée pour préserver la confidentialité et faire de votre réussite la priorité absolue."
             }
           }
         },
         acquirers: {
           title: "Nos réseaux d'acquéreurs",
-          subtitle: "Accès privilégié aux deux types d'acquéreurs pour optimiser votre cession",
+          subtitle: "Accès privilégié aux deux types d'acquéreurs pour optimiser votre cession.",
           strategic: {
-            title: "Acquéreurs Stratégiques",
-            description: "Industriels et sociétés de votre secteur cherchant à se renforcer, se diversifier ou réaliser des synergies",
+            title: "Acquéreurs stratégiques",
+            description: "Industriels et sociétés de votre secteur cherchant à se renforcer, se diversifier ou réaliser des synergies.",
             benefits: {
               synergies: {
                 title: "Valorisation basée sur les synergies",
@@ -396,8 +399,8 @@ export const translations = {
             }
           },
           financial: {
-            title: "Investisseurs Financiers",
-            description: "Fonds de private equity et family offices investissant pour développer l'entreprise",
+            title: "Investisseurs financiers",
+            description: "Fonds de private equity et family offices investissant pour développer l'entreprise.",
             benefits: {
               growth: {
                 title: "Focus sur la croissance",
@@ -416,7 +419,7 @@ export const translations = {
         },
         faq: {
           title: "Questions fréquentes",
-          subtitle: "Démocratisons ensemble la cession d'entreprise",
+          subtitle: "Démocratisons ensemble la cession d'entreprise.",
           questions: {
             q1: {
               question: "Combien de temps prend une cession d'entreprise ?",
@@ -449,31 +452,31 @@ export const translations = {
       acquisition: {
         hero: {
           badge: "Acquisition d'entreprise",
-          title: "Croître par croissance externe : méthodique, ciblé, efficace.",
-          description: "Milaris Partners conseille des dirigeants, groupes industriels et investisseurs dans leurs opérations de croissance externe: acquisition d'un concurrent, d'un fournisseur, d'un acteur complémentaire ou d'une cible de diversification.",
+          title: "Stimuler une croissance durable grâce à des acquisitions ciblées",
+          description: "Milaris Partners conseille dirigeants, groupes industriels et investisseurs dans leurs opérations de croissance externe : acquisition de concurrent, fournisseur, acteur complémentaire ou cible de diversification.",
           cta: "Explorons vos opportunités"
         },
         services: {
           title: "Ce que nous faisons pour vous",
-          subtitle: "Notre mission : identifier les meilleures opportunités et sécuriser vos acquisitions",
+          subtitle: "Notre mission : identifier les meilleures opportunités et sécuriser vos acquisitions.",
           items: {
             strategy: {
-              title: "Définition de la stratégie d'acquisition",
-              description: "Secteurs cibles, géographie, taille, synergies recherchées selon vos objectifs de croissance"
+              title: "Stratégie d'acquisition",
+              description: "Nous analysons les secteurs cibles, zones géographiques, tailles et synergies possibles afin d'élaborer un plan de croissance externe solide et ciblé, parfaitement aligné sur vos objectifs d'entreprise."
             },
             identification: {
-              title: "Identification et qualification de cibles",
-              description: "Via notre réseau, nos bases propriétaires et notre outil IA pour un sourcing optimal"
+              title: "Sélection des cibles",
+              description: "Nous identifions et évaluons les cibles potentielles grâce à notre réseau, à des bases de données exclusives et à des outils d'IA, garantissant un sourcing précis, qualifié et adapté à votre stratégie de développement."
             },
             structuring: {
               title: "Structuration et négociation",
-              description: "Coordination des audits, structuration du montage (LBO, prise de participation), négociation des conditions"
+              description: "Nous coordonnons les audits et la due diligence, structurons la transaction avec les meilleures solutions financières et menons les négociations jusqu'à la conclusion des conditions les plus avantageuses."
             }
           }
         },
         timeline: {
           title: "Déroulé typique d'une acquisition",
-          subtitle: "Une approche structurée, de 3 à 12 mois selon le contexte",
+          subtitle: "Une approche structurée, de 3 à 12 mois selon le contexte.",
           legend: {
             steps: "Étapes clés",
             duration: "Durée moyenne par étape"
@@ -495,7 +498,7 @@ export const translations = {
               duration: "3–6 semaines"
             },
             nego: {
-              title: "Négociation & Closing",
+              title: "Négociation et Closing",
               description: "Gestion des audits, coordination juridique des structures et accompagnement aux négociations jusqu'à la signature",
               duration: "4–8 semaines"
             }
@@ -521,28 +524,28 @@ export const translations = {
         },
         expertise: {
           title: "Notre expertise",
-          subtitle: "Des avantages concurrentiels uniques au service de vos acquisitions",
+          subtitle: "Des avantages concurrentiels uniques au service de vos acquisitions.",
           items: {
             ai: {
-              title: "Outil IA de sourcing avancé",
-              description: "Notre technologie propriétaire identifie des opportunités off-market dans tous les secteurs, invisibles sur le marché traditionnel"
+              title: "Sourcing propulsé par l'IA",
+              description: "Notre plateforme alimentée par l'IA identifie rapidement et avec précision des cibles hors marché, en combinant recherche algorithmique et validation d'experts pour un sourcing plus intelligent et une génération d'opérations optimisée."
             },
             franco: {
               title: "Expertise franco-italienne",
-              description: "Notre équipe binationale offre un accès privilégié à deux marchés clés — enrichi d'une présence allemande pour couvrir le triangle économique clé du continent."
+              description: "Notre équipe franco-italienne, enrichie d'une présence allemande, rapproche entreprises mid-cap et investisseurs afin de renforcer l'alignement transfrontalier, dynamiser le flux d'opérations et assurer des résultats durables et réussis."
             },
             exclusive: {
               title: "Opportunités exclusives",
-              description: "Capacité à générer des opportunités invisibles, grâce à notre réseau et notre approche directe"
+              description: "En mobilisant nos réseaux, nos relations et une prospection directe, nous développons un flux d'opérations propriétaire et offrons des opportunités exclusives, à forte conviction, caractérisées par une concurrence limitée."
             }
           }
         },
         types: {
           title: "Types d'acquisitions",
-          subtitle: "Expertise dans toutes les structures et secteurs d'activité",
+          subtitle: "Expertise dans toutes les structures et secteurs d'activité.",
           strategic: {
-            title: "Acquisitions Stratégiques",
-            description: "Acquisition de concurrents, fournisseurs ou acteurs complémentaires pour renforcer votre positionnement",
+            title: "Acquisitions stratégiques",
+            description: "Acquisition de concurrents, fournisseurs ou partenaires pour renforcer votre position.",
             items: {
               consolidation: {
                 title: "Consolidation sectorielle",
@@ -559,8 +562,8 @@ export const translations = {
             }
           },
           complex: {
-            title: "Structures Complexes",
-            description: "LBO, carve-out, build-up selon vos contraintes financières et objectifs de développement",
+            title: "Structures complexes",
+            description: "LBO, carve-out, build-up selon vos contraintes financières et objectifs de développement.",
             items: {
               lbo: {
                 title: "LBO et structures à effet de levier",
@@ -579,11 +582,11 @@ export const translations = {
         },
         faq: {
           title: "Questions fréquentes",
-          subtitle: "Tout ce que vous devez savoir sur les acquisitions d'entreprises",
+          subtitle: "Tout ce que vous devez savoir sur les acquisitions d'entreprises.",
           questions: {
             q1: {
               question: "Combien de temps prend une acquisition d'entreprise ?",
-              answer: "Entre 3 et 12 mois selon le contexte — from opportunistic one-off deals to competitive, multi-target processes. Our structured approach ensures both efficiency and deal security."
+              answer: "Généralement entre 3 et 12 mois, selon la complexité : d'une acquisition opportuniste rapide à un processus structuré avec plusieurs cibles. Notre méthode réduit les délais tout en garantissant chaque étape avec précision."
             },
             q2: {
               question: "Comment identifiez-vous les cibles d'acquisition ?",
@@ -595,7 +598,7 @@ export const translations = {
             },
             q4: {
               question: "Travaillez-vous sur des acquisitions internationales ?",
-              answer: "Oui, notre ADN franco-italien nous permet de gérer des acquisitions transfrontalières, notamment entre la France et l'Italie. Grâce à notre réseau européen — en particulier en Allemagne — nous facilitons aussi les opérations dans d'autres pays."
+              answer: "Oui, notre ADN franco-italien nous permet de gérer des acquisitions transfrontalières, notamment entre la France et l'Italie. Grâce à notre réseau européen, en particulier en Allemagne, nous facilitons aussi les opérations dans d'autres pays."
             }
           }
         },
@@ -608,31 +611,31 @@ export const translations = {
       financement: {
         hero: {
           badge: "Financement",
-          title: "Donner les moyens à vos ambitions : capital, dette.",
+          title: "Renforcer votre stratégie avec des solutions de capital sur mesure",
           description: "Nous accompagnons les entreprises dans leur recherche de financement, que ce soit pour soutenir la croissance, refinancer une dette, investir dans un projet ou structurer un rachat.",
           cta: "Structurons votre financement"
         },
         services: {
           title: "Notre expertise",
-          subtitle: "Des solutions complètes de financement adaptées à chaque étape de votre développement",
+          subtitle: "Des solutions complètes de financement adaptées à chaque étape de votre développement.",
           items: {
             planning: {
               title: "Préparation et structuration",
-              description: "Business plan, modélisation financière, structuration du besoin et optimisation de la demande"
+              description: "Nous élaborons des business plans détaillés et des modèles financiers solides, définissons précisément les besoins en capital, structurons et optimisons la demande pour établir des bases robustes, renforcer la crédibilité auprès des investisseurs et sécuriser une levée de fonds réussie."
             },
             search: {
-              title: "Recherche de financeurs",
-              description: "Accès à notre réseau de banques, fonds de dette, investisseurs en capital selon vos besoins"
+              title: "Origination ciblée",
+              description: "Nous offrons l'accès à un large réseau international de banques, fonds de dette et investisseurs en capital, sélectionnant avec soin les partenaires adaptés afin d'obtenir le meilleur mix de ressources, garantir un calendrier rapide et conclure dans des conditions avantageuses."
             },
             negotiation: {
-              title: "Négociation des conditions",
-              description: "Optimisation des termes : taux, covenants, garanties, dilution pour préserver vos intérêts"
+              title: "Négociation",
+              description: "Nous encadrons la définition des taux, clauses, garanties et dilution, négociant des conditions optimales pour préserver la valeur et protéger vos intérêts, tout en assurant la pérennité du financement et le succès durable de l'opération du début à la signature finale."
             }
           }
         },
         timeline: {
           title: "Déroulé typique d'un financement",
-          subtitle: "Une approche structurée, de 2 à 6 mois selon le type de financement",
+          subtitle: "Une approche structurée, de 2 à 6 mois selon le type de financement.",
           legend: {
             steps: "Étapes clés",
             duration: "Durée moyenne par étape"
@@ -654,7 +657,7 @@ export const translations = {
               duration: "4–8 semaines"
             },
             closing: {
-              title: "Due diligence & Closing",
+              title: "Due diligence et Closing",
               description: "Due diligence, finalisation de la documentation légale et déblocage des fonds",
               duration: "3–6 semaines"
             }
@@ -676,35 +679,35 @@ export const translations = {
         },
         whyMilaris: {
           title: "Pourquoi Milaris Partners ?",
-          subtitle: "Notre expertise au service de votre financement optimal",
+          subtitle: "Notre expertise au service de votre financement optimal.",
           items: {
             access: {
               title: "Accès direct aux décideurs",
-              description: "Réseau privilégié d'investisseurs et banquiers pour accélérer vos discussions de financement"
+              description: "Réseau privilégié d'investisseurs et banquiers pour accélérer vos discussions de financement."
             },
             expertise: {
               title: "Expertise en négociation",
-              description: "Expérience dans la négociation des termes clés : dilution, levier, covenants pour optimiser vos conditions"
+              description: "Expérience dans la négociation des termes clés : dilution, levier, covenants pour optimiser vos conditions."
             },
             optimization: {
               title: "Optimisation du coût du capital",
-              description: "Capacité à structurer des solutions flexibles et à optimiser le coût de votre financement"
+              description: "Capacité à structurer des solutions flexibles et à optimiser le coût de votre financement."
             }
           }
         },
         types: {
           title: "Types de financement",
-          subtitle: "Solutions adaptées à vos besoins et contraintes spécifiques",
+          subtitle: "Solutions adaptées à vos besoins et contraintes spécifiques.",
           equity: {
             title: "Levée de fonds en capital",
-            description: "Pour financer votre croissance tout en conservant la flexibilité",
+            description: "Pour financer votre croissance tout en conservant la flexibilité.",
             items: {
               vc: {
-                title: "Fonds de Venture Capital (VC)",
+                title: "Fonds de Venture Capital",
                 subtitle: "Pour les startups en hyper-croissance"
               },
               pe: {
-                title: "Fonds de Private Equity (PE)",
+                title: "Fonds de Private Equity",
                 subtitle: "Pour les entreprises matures"
               },
               family: {
@@ -719,7 +722,7 @@ export const translations = {
           },
           debt: {
             title: "Financement par dette",
-            description: "Solutions de dette pour préserver votre capital et optimiser votre structure",
+            description: "Solutions de dette pour préserver votre capital et optimiser votre structure.",
             items: {
               bank: {
                 title: "Dette bancaire traditionnelle",
@@ -742,7 +745,7 @@ export const translations = {
         },
         faq: {
           title: "Questions fréquentes",
-          subtitle: "Tout ce que vous devez savoir sur le financement d'entreprise",
+          subtitle: "Tout ce que vous devez savoir sur le financement d'entreprise.",
           questions: {
             q1: {
               question: "Combien de temps prend une levée de fonds ou un financement ?",
@@ -828,7 +831,7 @@ export const translations = {
           title2: "",
           title3: "",
           subtitle: "Discutons de votre projet et voyons comment nous pouvons accompagner votre succès",
-          button: "Planifier un échange"
+          button: "Planifier un échange avec nous !"
       },
       sections: {
           partners: {
@@ -913,11 +916,11 @@ export const translations = {
         part1: "Notre périmètre",
         highlight: "d'intervention"
       },
-      subtitle: "Des solutions sur-mesure pour les dirigeants d'entreprises de 5 à 150M€ de chiffre d'affaires",
+      subtitle: "Des solutions sur-mesure pour les dirigeants d'entreprises de 5 à 150M€ de chiffre d'affaires.",
       cards: [
         {
           title: "Conseil en cession",
-          description: "Maximisez la valeur de votre entreprise lors de sa transmission",
+          description: "Maximisez la valeur de votre entreprise lors de sa transmission.",
           features: [
             "Entreprises de 5 à 150M€ CA",
             "Cession totale ou partielle",
@@ -928,7 +931,7 @@ export const translations = {
         },
         {
           title: "Conseil en acquisition",
-          description: "Identifiez et sécurisez les meilleures opportunités de croissance externe",
+          description: "Identifiez et sécurisez les meilleures opportunités de croissance externe.",
           features: [
             "Ciblage stratégique européen",
             "Approche confidentielle",
@@ -939,7 +942,7 @@ export const translations = {
         },
         {
           title: "Conseil en financement",
-          description: "Structurez le financement optimal pour accélérer votre développement",
+          description: "Structurez le financement optimal pour accélérer votre développement.",
           features: [
             "Levée de fonds growth",
             "Dette & financements hybrides",
@@ -949,11 +952,11 @@ export const translations = {
           cta: "En savoir plus"
         }
       ],
-      bottomCtaText: "Une approche exclusive avec un nombre limité de mandats pour garantir un accompagnement premium",
+      bottomCtaText: "Une approche exclusive avec un nombre limité de mandats pour garantir un accompagnement premium!",
       bottomCtaButton: "Discuter de votre projet"
     },
     testimonial: {
-      quote: "Milaris Partners nous a accompagnés dans la cession de notre entreprise avec un professionnalisme remarquable. Leur approche personnalisée et leur connaissance approfondie du marché nous ont permis de réaliser une transaction dans des conditions optimales.",
+      quote: "Milaris Partners nous a accompagnés dans la cession de notre entreprise avec un professionnalisme remarquable. Leur approche personnalisée et leur connaissance approfondie du marché nous ont permis de réaliser une transaction dans des conditions optimales",
       name: "Franck JOHANNY",
       title: "PRÉSIDENT-DIRECTEUR GÉNÉRAL"
     },
