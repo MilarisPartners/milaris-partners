@@ -174,7 +174,7 @@ const Equipe = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b062b] mb-6"
               dangerouslySetInnerHTML={{
                 __html: language === 'FR' ? 
-                  `Les <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">personnes</span> derrière<br><span class="text-[#0b062b]">notre succès</span>` :
+                  `Les <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">collaborateurs</span> derrière<br><span class="text-[#0b062b]">notre succès</span>` :
                   `${t("equipe.hero.title1")}${
                     language === 'IT' ? 
                       `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
@@ -257,9 +257,9 @@ const Equipe = () => {
                 </>
               ) : (
                 <>
-                  L'équipe de{" "}
+                  Les{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    leadership
+                    associés fondateurs
                   </span>
                 </>
               )}
@@ -379,7 +379,7 @@ const Equipe = () => {
                 </>
               ) : (
                 <>
-                  L'équipe des{" "}
+                  L'équipe de{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                     Senior Advisors
                   </span>

@@ -775,7 +775,7 @@ export const translations = {
     equipe: {
       hero: {
           badge: "Notre équipe",
-          title1: "Les personnes derrière",
+          title1: "Les collaborateurs derrière",
           title2: "notre succès",
           title3: "",
           title4: "",
@@ -835,11 +835,11 @@ export const translations = {
       },
       sections: {
           partners: {
-              title: "L'équipe de leadership",
+              title: "Les associés fondateurs",
               subtitle: "Les fondateurs de Milaris Partners, experts en M&A avec une vision européenne."
           },
           seniorAdvisor: {
-              title: "L'équipe des Senior Advisors",
+              title: "L'équipe de Senior Advisors",
               subtitle: "Des experts de renommée internationale apportant à l'équipe une vision stratégique et une connaissance approfondie des marchés."
           }
       },
