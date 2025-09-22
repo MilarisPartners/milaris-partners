@@ -114,10 +114,10 @@ const AISection = () => {
                     {t("aiSection.title.highlight")}
                   </span>
                 ) : (
-                  <span className="text-[#0001ff]">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                     {t("aiSection.title.highlight")}
                   </span>
-                )}{" "}
+                )}
                 {t("aiSection.title.part2")}
               </motion.h2>
 

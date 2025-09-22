@@ -131,7 +131,7 @@ const InterventionSection = () => {
                   />
                 </span>
               ) : (
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3E8BFF] to-white">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#60A5FA] via-[#93C5FD] to-[#60A5FA] animate-gradient-x">
                   {t('interventionSection.title.highlight')}
                 </span>
               )}

@@ -110,7 +110,7 @@ export const translations = {
     expertise: {
       title: "Notre expertise",
       titleHighlight: "sectorielle",
-      subtitle: "Une connaissance approfondie des dynamiques de marché dans six secteurs clés.",
+      subtitle: "Connaissance approfondie des dynamiques de marché dans six secteurs clés.",
       sectors: {
         consumer: {
           title: "Biens de consommation",
@@ -140,9 +140,9 @@ export const translations = {
     },
     aiSection: {
       title: {
-        part1: "Notre",
-        highlight: "Intelligence Artificielle",
-        part2: "au service de vos transactions"
+        part1: "Grâce à ",
+        highlight: "notre IA",
+        part2: ", vos transactions atteignent les meilleurs résultats possibles"
       },
       description: "Technologie IA propriétaire développée par Milaris Partners. En exploitant des millions de données de marché et d'investisseurs, notre moteur de matching interne révèle la valeur cachée dans le paysage fragmenté des fusions-acquisitions de petites et moyennes capitalisations, là où les réseaux traditionnels échouent et où la fiabilité est essentielle.",
       features: {
@@ -210,7 +210,7 @@ export const translations = {
         highlight: "européenne",
         part2: "stratégique"
       },
-      description: "Avec des experts natifs intégrés à nos équipes et présents dans les principales capitales européennes, nous accompagnons vos projets transfrontaliers au plus près du terrain.",
+      description: "Experts locaux et présence dans les grands pôles européens pour accompagner vos opérations transfrontalières avec une connaissance du terrain.",
       cities: [
         {
           name: "Paris",
@@ -916,7 +916,7 @@ export const translations = {
         part1: "Notre périmètre",
         highlight: "d'intervention"
       },
-      subtitle: "Des solutions sur-mesure pour les dirigeants d'entreprises de 5 à 150M€ de chiffre d'affaires.",
+      subtitle: "Accompagnement stratégique des actionnaires et dirigeants d'entreprises privées réalisant entre 5 M€ et 150 M€ de chiffre d'affaires, lors de phases clés de croissance, de transformation ou de transmission générationnelle.",
       cards: [
         {
           title: "Conseil en cession",
@@ -2186,7 +2186,7 @@ export const translations = {
     expertise: {
       title: "La nostra expertise",
       titleHighlight: "settoriale",
-      subtitle: "Una conoscenza approfondita delle dinamiche di mercato in sei settori chiave.",
+      subtitle: "Conoscenza approfondita delle dinamiche di mercato in sei settori chiave.",
       sectors: {
         consumer: {
           title: "Beni di consumo",
