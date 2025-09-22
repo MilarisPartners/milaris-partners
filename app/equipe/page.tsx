@@ -171,7 +171,7 @@ const Equipe = () => {
             </motion.div>
             
             <h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b062b] mb-6"
+              className="heading-1 font-bold text-[#0b062b] mb-6"
               dangerouslySetInnerHTML={{
                 __html: language === 'FR' ? 
                   `Les <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">collaborateurs</span> derrière<br><span class="text-[#0b062b]">notre succès</span>` :
