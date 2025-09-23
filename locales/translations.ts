@@ -2853,7 +2853,7 @@ export const translations = {
           badge: "Il nostro team",
           title1: "Le ",
           title2: "persone",
-          title3: " dietro al nostro<br/>",
+          title3: " dietro al nostro ",
           title4: "successo",
           subtitle: "Un gruppo di professionisti appassionati, dedicati a creare valore e a supportare le aziende nei loro progetti strategici."
       },
