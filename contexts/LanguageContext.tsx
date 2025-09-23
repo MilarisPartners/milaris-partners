@@ -14,7 +14,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('FR');
+  const [language, setLanguage] = useState<Language>('EN');
 
   useEffect(() => {
     // Check if there's a saved language preference
