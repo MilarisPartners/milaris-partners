@@ -262,16 +262,16 @@ export const seoConfig: PageSEO = {
 
 export function generateMetadata(
   pageName: string,
-  language: 'fr' | 'it' | 'en' = 'fr',
+  language: 'fr' | 'it' | 'en' = 'en',
   baseUrl: string = 'https://milaris.partners'
 ): Metadata {
   const pageConfig = seoConfig[pageName]?.[language];
   
   if (!pageConfig) {
-    // Fallback pour les pages non configurées
+    // Fallback for unconfigured pages
     return {
-      title: "Milaris Partners - Cabinet M&A spécialisé TPE/PME",
-      description: "Cabinet de conseil en fusions-acquisitions et levée de fonds spécialisé dans l'accompagnement des TPE/PME en France et Italie.",
+      title: "Milaris Partners - Specialized M&A for SMEs",
+      description: "Specialized M&A and fundraising advisory for SMEs in France and Italy. Sector expertise and proprietary AI technology.",
       metadataBase: new URL(baseUrl),
     };
   }

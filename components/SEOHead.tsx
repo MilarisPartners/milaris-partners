@@ -12,7 +12,7 @@ interface SEOHeadProps {
 
 export default function SEOHead({ 
   pageName, 
-  language = 'fr', 
+  language = 'en', 
   customStructuredData = [] 
 }: SEOHeadProps) {
   
