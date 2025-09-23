@@ -81,7 +81,7 @@ const About = () => {
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
                 <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl">
+              <p className="text-gray-600 leading-relaxed text-base sm:text-lg font-normal">
                 {t("about.content.point1.title").includes("società parigina") ? (
                   <>
                     Milaris Partners, società parigina fondata da <span className="font-semibold">professionisti italiani e francesi</span>, accompagna <span className="font-semibold">micro, piccole e medie imprese</span> nei loro percorsi di <span className="font-semibold">cessione, acquisizione e raccolta capitali</span>, aprendo loro le porte a investitori e acquirenti internazionali.
@@ -109,7 +109,7 @@ const About = () => {
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#3E8BFF] to-[#0001ff] rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
                 <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
+              <p className="text-gray-600 leading-relaxed text-base sm:text-lg font-normal">
                 {t("about.content.point2.text1").includes("Presenti in") ? (
                   <>
                     Presenti in <span className="font-semibold">Francia, Italia e Germania</span>, adottiamo un approccio selettivo, seguendo solo un numero limitato di mandati. Coniughiamo <span className="font-semibold">rigore metodologico, una rete internazionale e un autentico senso del deal</span> per ampliare le possibilità e <span className="font-semibold">garantire il massimo in termini di valore, opportunità e successo</span>.
@@ -139,7 +139,7 @@ const About = () => {
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
                 <Cpu className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
+              <p className="text-gray-600 leading-relaxed text-base sm:text-lg font-normal">
                 {t("about.content.point3.text1").includes("Pionieri nell'integrazione") ? (
                   <>
                     Pionieri <span className="font-semibold">nell'integrazione dell'intelligenza artificiale</span> nelle operazioni di M&A, utilizziamo una <span className="font-semibold">tecnologia proprietaria</span> che rende più efficiente ogni fase della transazione, aprendo nuove possibilità e <span className="font-semibold">aumentando le chance di successo</span>.

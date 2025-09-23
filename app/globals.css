@@ -88,6 +88,22 @@
     @apply text-sm sm:text-base;
   }
   
+  .about-text-block {
+    @apply text-gray-600 leading-relaxed text-base sm:text-lg font-normal;
+  }
+  
+  /* Force consistent text sizing for About section */
+  #about p {
+    font-size: 1rem !important;
+    line-height: 1.625 !important;
+  }
+  
+  @media (min-width: 640px) {
+    #about p {
+      font-size: 1.125rem !important;
+    }
+  }
+  
   /* Grid responsive utilities */
   .grid-responsive {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8;
