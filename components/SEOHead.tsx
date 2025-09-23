@@ -3,6 +3,7 @@
 import { generateStructuredData, seoConfig } from '@/utils/seo';
 import StructuredData from './StructuredData';
 import { useEffect } from 'react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface SEOHeadProps {
   pageName: string;
@@ -12,12 +13,14 @@ interface SEOHeadProps {
 
 export default function SEOHead({ 
   pageName, 
-  language = 'en', 
+  language, 
   customStructuredData = [] 
 }: SEOHeadProps) {
+  const { language: contextLanguage } = useTranslation();
+  const currentLanguage = language || contextLanguage;
   
   // Normalize language format (convert uppercase to lowercase)
-  const normalizedLanguage = language.toLowerCase() as 'fr' | 'it' | 'en';
+  const normalizedLanguage = currentLanguage.toLowerCase() as 'fr' | 'it' | 'en';
   
   // Données structurées de base pour l'organisation
   const organizationData = generateStructuredData.organization(normalizedLanguage);
@@ -57,7 +60,7 @@ export default function SEOHead({
         document.head.appendChild(meta);
       }
     }
-  }, [pageTitle, pageConfig]);
+  }, [pageTitle, pageConfig, normalizedLanguage]);
 
   return (
     <>
