@@ -81,7 +81,7 @@ const About = () => {
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
                 <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
+              <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl">
                 {t("about.content.point1.title").includes("società parigina") ? (
                   <>
                     Milaris Partners, società parigina fondata da <span className="font-semibold">professionisti italiani e francesi</span>, accompagna <span className="font-semibold">micro, piccole e medie imprese</span> nei loro percorsi di <span className="font-semibold">cessione, acquisizione e raccolta capitali</span>, aprendo loro le porte a investitori e acquirenti internazionali.

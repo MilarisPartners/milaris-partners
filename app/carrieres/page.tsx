@@ -415,7 +415,7 @@ const Carrieres = () => {
               </p>
               <a 
                 href="mailto:careers@milaris.partners"
-                className="inline-flex items-center gap-3 text-2xl text-[#0001ff] hover:text-[#3E8BFF] transition-colors duration-300"
+                className="inline-flex items-center gap-3 text-sm sm:text-base md:text-lg lg:text-xl text-[#0001ff] hover:text-[#3E8BFF] transition-colors duration-300"
               >
                 <Mail className="w-6 h-6" />
                 <span className="font-semibold">careers@milaris.partners</span>

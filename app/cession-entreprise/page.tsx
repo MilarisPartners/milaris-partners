@@ -631,7 +631,7 @@ const CessionEntreprise = () => {
             <h2 className="heading-2 font-bold text-white mb-4">
               {t("expertisePages.cession.cta.title")}
             </h2>
-            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
               {t("expertisePages.cession.cta.subtitle")}
             </p>
             <div className="flex justify-center">

@@ -325,7 +325,7 @@ const AcquisitionEntreprise = () => {
             <h2 className="heading-2 font-bold text-white mb-4">
               {t("expertisePages.acquisition.expertise.title")}
             </h2>
-            <p className="text-xl text-white/70">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/70">
               {t("expertisePages.acquisition.expertise.subtitle")}
             </p>
           </motion.div>
@@ -625,7 +625,7 @@ const AcquisitionEntreprise = () => {
             <h2 className="heading-2 font-bold text-white mb-4">
               {t("expertisePages.acquisition.cta.title")}
             </h2>
-            <p className="text-sm sm:text-base lg:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
               {t("expertisePages.acquisition.cta.subtitle")}
             </p>
             <div className="flex justify-center">
