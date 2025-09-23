@@ -26,19 +26,19 @@ const playfairDisplay = Playfair_Display({
   display: "swap",
 });
 
-// Métadonnées SEO optimisées pour la page d'accueil
-export const metadata: Metadata = generateSEOMetadata("home", "fr");
+// SEO metadata optimized for the homepage
+export const metadata: Metadata = generateSEOMetadata("home", "en");
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Données structurées pour l'organisation
-  const organizationData = generateStructuredData.organization("fr");
+  // Structured data for the organization
+  const organizationData = generateStructuredData.organization("en");
 
   return (
-    <html lang="fr" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#0001ff" />
