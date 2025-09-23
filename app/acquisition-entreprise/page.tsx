@@ -419,7 +419,7 @@ const AcquisitionEntreprise = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-[#0001ff] to-[#3E8BFF] rounded-full flex items-center justify-center shadow-lg">
                     <Building2 className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0b062b]">
+                  <h3 className="text-xl sm:text-xl md:text-2xl font-bold text-[#0b062b]">
                     {t("expertisePages.acquisition.types.strategic.title")}
                   </h3>
                 </div>
@@ -470,7 +470,7 @@ const AcquisitionEntreprise = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3E8BFF] to-[#0001ff] rounded-full flex items-center justify-center shadow-lg">
                     <Briefcase className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0b062b]">
+                  <h3 className="text-xl sm:text-xl md:text-2xl font-bold text-[#0b062b]">
                     {t("expertisePages.acquisition.types.complex.title")}
                   </h3>
                 </div>
