@@ -331,7 +331,7 @@ const CessionEntreprise = () => {
             <h2 className="heading-2 font-bold text-white mb-4">
               {t("expertisePages.cession.whyMilaris.title")}
             </h2>
-            <p className="text-xl text-white/70">
+            <p className="text-sm sm:text-base lg:text-xl text-white/70">
               {t("expertisePages.cession.whyMilaris.subtitle")}
             </p>
           </motion.div>

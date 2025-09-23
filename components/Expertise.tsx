@@ -123,7 +123,7 @@ const Expertise = () => {
                 {t("expertise.titleHighlight")}
               </span>
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
+            <p className="text-sm sm:text-base lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
               {t("expertise.subtitle")}
             </p>
           </motion.div>
