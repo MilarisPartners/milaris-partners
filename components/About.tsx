@@ -92,7 +92,7 @@ const About = () => {
                   </>
                 ) : t("about.content.point1.title").includes("société parisienne fondée par des") ? (
                   <>
-                    Milaris Partners, société parisienne fondée par des <span className="font-semibold">professionnels italiens et français</span>, accompagne les <span className="font-semibold">micro, petites et moyennes entreprises</span> dans leurs processus de <span className="font-semibold">cession, d'acquisition et de levée de capitaux</span>, en leur ouvrant l'accès à des investisseurs et acquéreurs internationaux.
+                    Milaris Partners, société parisienne fondée par des <span className="font-semibold">professionnels français et italiens</span>, accompagne les <span className="font-semibold">petites et moyennes entreprises</span> dans leurs processus de <span className="font-semibold">cession, d'acquisition et de levée de fonds</span>, en leur ouvrant l'accès à des investisseurs et acquéreurs internationaux.
                   </>
                 ) : (
                   t("about.content.point1.title")
