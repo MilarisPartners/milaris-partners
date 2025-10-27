@@ -284,7 +284,7 @@ export const translations = {
       cession: {
         hero: {
           badge: "Cession d'entreprise",
-          title: "La cession de votre entreprise est une décision qui façonne votre avenir",
+          title: "Identifier les acquéreurs les plus pertinents, en France comme à l'international, pour réussir votre cession",
           subtitle: "Nous en faisons une réussite.",
           description: "Chez Milaris Partners, nous accompagnons les dirigeants dans la cession totale ou partielle de leur entreprise, en structurant une démarche stratégique, confidentielle et optimisée.",
           cta: "Discutons de votre projet"
@@ -3530,7 +3530,7 @@ export const translations = {
       cession: {
         hero: {
           badge: "Unternehmensverkauf",
-          title: "Der Verkauf Ihres Unternehmens ist eine Entscheidung, die Ihre Zukunft prägt",
+          title: "Die relevantesten Käufer identifizieren, in Deutschland wie international, für einen erfolgreichen Verkauf",
           subtitle: "Wir machen es zu einem Erfolg.",
           description: "Milaris Partners begleitet Führungskräfte beim vollständigen oder teilweisen Verkauf ihres Unternehmens mit einem strukturierten, strategischen, vertraulichen und optimierten Ansatz.",
           cta: "Lassen Sie uns über Ihr Projekt sprechen"
@@ -3700,7 +3700,7 @@ export const translations = {
       acquisition: {
         hero: {
           badge: "Unternehmenskauf",
-          title: "Der Kauf eines Unternehmens ist eine strategische Entscheidung für Ihr Wachstum",
+          title: "Nachhaltiges Wachstum durch gezielte Akquisitionen ermöglichen",
           subtitle: "Wir helfen Ihnen, die richtige Wahl zu treffen.",
           description: "Milaris Partners begleitet Sie bei der Identifikation, Bewertung und dem Erwerb von Zielunternehmen, die zu Ihrer strategischen Vision passen.",
           cta: "Lassen Sie uns über Ihr Projekt sprechen"
