@@ -7,7 +7,7 @@ import { useTranslation } from '@/hooks/useTranslation';
 
 interface SEOHeadProps {
   pageName: string;
-  language?: 'FR' | 'IT' | 'EN' | 'fr' | 'it' | 'en';
+  language?: 'FR' | 'IT' | 'EN' | 'DE' | 'fr' | 'it' | 'en' | 'de';
   customStructuredData?: any[];
 }
 
@@ -20,7 +20,8 @@ export default function SEOHead({
   const currentLanguage = language || contextLanguage;
   
   // Normalize language format (convert uppercase to lowercase)
-  const normalizedLanguage = currentLanguage.toLowerCase() as 'fr' | 'it' | 'en';
+  // For German, default to English since SEO config doesn't have DE yet
+  const normalizedLanguage = currentLanguage.toLowerCase() === 'de' ? 'en' : currentLanguage.toLowerCase() as 'fr' | 'it' | 'en';
   
   // Données structurées de base pour l'organisation
   const organizationData = generateStructuredData.organization(normalizedLanguage);

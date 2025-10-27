@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { translations } from '@/locales/translations';
 
-type Language = 'FR' | 'EN' | 'IT';
+type Language = 'FR' | 'EN' | 'IT' | 'DE';
 
 interface LanguageContextType {
   language: Language;
@@ -14,13 +14,13 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('EN');
+  const [language, setLanguage] = useState<Language>('FR');
 
   useEffect(() => {
     // Check if there's a saved language preference
     if (typeof window !== 'undefined') {
       const savedLanguage = localStorage.getItem('language') as Language;
-      if (savedLanguage && ['FR', 'EN', 'IT'].includes(savedLanguage)) {
+      if (savedLanguage && ['FR', 'EN', 'IT', 'DE'].includes(savedLanguage)) {
         setLanguage(savedLanguage);
       }
     }

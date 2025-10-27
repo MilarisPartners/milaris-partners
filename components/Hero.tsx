@@ -1,14 +1,16 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
 import Globe3D from "./Globe3D";
 import { useTranslation } from "@/hooks/useTranslation";
+import Image from "next/image";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 const Hero = () => {
   const { t, language } = useTranslation();
 
-  const calendlyLink = language === 'IT' 
+  const calendlyLink = language === 'it' 
     ? 'https://calendly.com/matteo-milarispartners'
     : 'https://calendly.com/paul-milarispartners/30min';
 
@@ -16,118 +18,80 @@ const Hero = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Parallax effect
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 500], [0, 150]);
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#3E8BFF]/20 via-white to-[#0001ff]/10">
-        <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent" />
-      </div>
-
-      {/* Animated grid pattern */}
-      <div className="absolute inset-0 overflow-hidden">
-        <svg
-          className="absolute inset-0 w-full h-full"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <pattern
-              id="grid-pattern"
-              x="0"
-              y="0"
-              width="60"
-              height="60"
-              patternUnits="userSpaceOnUse"
-            >
-              <motion.path
-                d="M 60 0 L 0 0 0 60"
-                fill="none"
-                stroke="rgba(0, 1, 255, 0.05)"
-                strokeWidth="1"
-                animate={{
-                  d: [
-                    "M 60 0 L 0 0 0 60",
-                    "M 60 5 L 0 0 5 60",
-                    "M 60 0 L 0 0 0 60",
-                  ],
-                }}
-                transition={{
-                  duration: 8,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-              <motion.rect
-                width="60"
-                height="60"
-                fill="none"
-                stroke="rgba(62, 139, 255, 0.03)"
-                strokeWidth="1"
-                animate={{
-                  width: [60, 58, 60],
-                  height: [60, 58, 60],
-                  x: [0, 1, 0],
-                  y: [0, 1, 0],
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-            </pattern>
-          </defs>
-          <motion.rect
-            width="100%"
-            height="100%"
-            fill="url(#grid-pattern)"
-            animate={{
-              opacity: [0.5, 0.8, 0.5],
-            }}
-            transition={{
-              duration: 10,
-              repeat: Infinity,
-              ease: "easeInOut",
+      {/* Image de Paris en arrière-plan avec parallaxe */}
+      <motion.div 
+        className="absolute inset-0"
+        style={{ y }}
+      >
+        {/* Image avec flou léger global - Paris pour FR, Milan pour IT, Berlin pour DE, London pour EN */}
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src={getAssetPath(
+              language === 'IT' ? "/milan-aerial.jpg" : 
+              language === 'DE' ? "/berlin-aerial.jpg" : 
+              language === 'EN' ? "/london-aerial.jpg" :
+              "/paris-aerial.jpg"
+            )}
+            alt={
+              language === 'IT' ? "Milan aerial view" : 
+              language === 'DE' ? "Berlin aerial view" : 
+              language === 'EN' ? "London aerial view" :
+              "Paris aerial view"
+            }
+            fill
+            className="object-cover"
+            style={{ filter: 'blur(4px)' }}
+            priority
+            quality={90}
+            key={`hero-bg-${language}`}
+          />
+        </div>
+        
+        {/* Overlay gradient pour lisibilité du texte */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0001ff]/20 via-transparent to-[#0001ff]/20" />
+        
+        {/* Rectangle avec flou progressif au centre - flou augmente vers le centre */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          {/* Couche externe - flou léger */}
+          <div 
+            className="absolute w-full max-w-5xl h-[50%]"
+            style={{
+              backdropFilter: 'blur(3px)',
+              WebkitBackdropFilter: 'blur(3px)',
+              maskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.3) 60%, transparent 100%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.3) 60%, transparent 100%)'
             }}
           />
-        </svg>
-        
-        {/* Distortion overlay */}
-        <motion.div
-          className="absolute inset-0"
-          style={{
-            background: `radial-gradient(circle at 50% 50%, transparent 0%, rgba(0, 1, 255, 0.02) 50%, transparent 100%)`,
-          }}
-          animate={{
-            scale: [1, 1.5, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        
-        {/* Moving gradient waves */}
-        <motion.div
-          className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%]"
-          style={{
-            background: `conic-gradient(from 0deg at 50% 50%, transparent, rgba(0, 1, 255, 0.03), transparent, rgba(62, 139, 255, 0.03), transparent)`,
-          }}
-          animate={{
-            rotate: 360,
-          }}
-          transition={{
-            duration: 30,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-      </div>
-
-      {/* Globe terrestre en arrière-plan */}
-      <div className="absolute inset-0 opacity-30 lg:opacity-50">
-        <Globe3D />
-      </div>
+          {/* Couche intermédiaire - flou moyen */}
+          <div 
+            className="absolute w-full max-w-4xl h-[45%]"
+            style={{
+              backdropFilter: 'blur(6px)',
+              WebkitBackdropFilter: 'blur(6px)',
+              maskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.4) 50%, transparent 100%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.4) 50%, transparent 100%)'
+            }}
+          />
+          {/* Couche centrale - flou fort */}
+          <div 
+            className="absolute w-full max-w-3xl h-[40%]"
+            style={{
+              backdropFilter: 'blur(9px)',
+              WebkitBackdropFilter: 'blur(9px)',
+              maskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.5) 40%, transparent 100%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.5) 40%, transparent 100%)'
+            }}
+          />
+        </div>
+      </motion.div>
       
       {/* Content */}
       <div className="container-custom relative z-10 py-16 sm:py-20 lg:py-0">
@@ -144,53 +108,36 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="heading-1 font-bold mb-6 sm:mb-8 relative"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+            <span className="text-white drop-shadow-2xl [text-shadow:_0_2px_10px_rgb(0_0_0_/_80%),_0_4px_20px_rgb(0_0_0_/_50%)]">
               {t("hero.title")}
             </span>
-            {/* Glow effect */}
-            <motion.div
-              className="absolute inset-0 bg-primary/20 blur-3xl -z-10"
-              animate={{ opacity: [0.3, 0.6, 0.3] }}
-              transition={{ duration: 3, repeat: Infinity }}
-            />
           </motion.h1>
           
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
-          >
-            {t("hero.description.part1")} {t("hero.description.part2")}{" "}
-            {t("hero.description.part3")}{t("hero.description.part4")} {t("hero.description.part5")}{t("hero.description.part6")} 
-            {language === 'EN' ? (
-              <>
-                {t("hero.description.part7")} {t("hero.description.part8")}{t("hero.description.part9")} {t("hero.description.part10")}{t("hero.description.part11")}
-              </>
-            ) : language === 'IT' ? (
-              <>
-                {t("hero.description.part7")}{t("hero.description.part8")}
-              </>
-            ) : (
-              <>
-                {t("hero.description.part7")}
-              </>
-            )}
-          </motion.p>
+          {/* Sous-titre */}
+          {t("hero.subtitle") && t("hero.subtitle") !== "hero.subtitle" && (
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="text-base sm:text-lg md:text-xl text-white drop-shadow-lg [text-shadow:_0_2px_8px_rgb(0_0_0_/_70%)] mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0"
+            >
+              {t("hero.subtitle")}
+            </motion.p>
+          )}
+          
 
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0"
           >
             <motion.a 
               href={calendlyLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#0001ff] text-white btn-responsive rounded-lg font-medium transition-all duration-300 hover:shadow-2xl hover:scale-105 relative overflow-hidden group w-full sm:w-auto sm:min-w-[200px]"
+              className="bg-[#0001ff] text-white btn-responsive rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 relative overflow-hidden group w-full sm:w-auto sm:min-w-[200px] shadow-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -204,7 +151,7 @@ const Hero = () => {
             </motion.a>
             <motion.button 
               onClick={scrollToAbout}
-              className={`bg-white/80 backdrop-blur-sm text-[#0b062b] border-2 border-[#0001ff]/30 btn-responsive rounded-lg font-medium hover:border-[#0001ff] hover:bg-[#0001ff]/5 hover:shadow-lg transition-all duration-300 relative overflow-hidden w-full sm:w-auto ${language === 'IT' ? 'sm:min-w-[280px]' : 'sm:min-w-[200px]'}`}
+              className={`bg-white/95 backdrop-blur-md text-[#0b062b] border-2 border-white/50 btn-responsive rounded-lg hover:border-white hover:bg-white hover:shadow-2xl transition-all duration-300 relative overflow-hidden w-full sm:w-auto shadow-xl ${language === 'it' ? 'sm:min-w-[280px]' : 'sm:min-w-[200px]'}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -220,6 +167,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.2 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+        style={{ opacity }}
       >
         <motion.div 
           animate={{ y: [0, 10, 0] }}
@@ -227,7 +175,7 @@ const Hero = () => {
           className="flex flex-col items-center gap-1 sm:gap-2 cursor-pointer group"
           onClick={scrollToAbout}
         >
-          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-white to-[#0001ff]/10 border-2 border-[#0001ff]/30 flex items-center justify-center group-hover:border-[#0001ff] group-hover:shadow-lg transition-all duration-300">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/90 backdrop-blur-md border-2 border-white/50 flex items-center justify-center group-hover:bg-white group-hover:border-white group-hover:shadow-2xl transition-all duration-300 shadow-xl">
             <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-[#0001ff] group-hover:text-[#0b062b] transition-colors" />
           </div>
         </motion.div>

@@ -47,6 +47,20 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
+      </head>
+
+      <body
+        className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}
+      >
+        {/* Redirection www vers racine (compatibilité GitHub Pages) */}
+        <Script id="www-redirect" strategy="beforeInteractive">
+          {`
+            if (typeof window !== 'undefined' && window.location.hostname.startsWith('www.')) {
+              const newUrl = window.location.href.replace(/^https?:\\/\\/www\\./, window.location.protocol + '//');
+              window.location.replace(newUrl);
+            }
+          `}
+        </Script>
 
         {/* Google Analytics */}
         <Script
@@ -71,20 +85,6 @@ export default function RootLayout({
           data-domain="milaris.partners"
           defer
         />
-      </head>
-
-      <body
-        className={`${workSans.variable} ${playfairDisplay.variable} font-sans antialiased`}
-      >
-        {/* Redirection www vers racine (compatibilité GitHub Pages) */}
-        <Script id="www-redirect" strategy="beforeInteractive">
-          {`
-            if (typeof window !== 'undefined' && window.location.hostname.startsWith('www.')) {
-              const newUrl = window.location.href.replace(/^https?:\\/\\/www\\./, window.location.protocol + '//');
-              window.location.replace(newUrl);
-            }
-          `}
-        </Script>
 
         <Loader />
         <LanguageProvider>

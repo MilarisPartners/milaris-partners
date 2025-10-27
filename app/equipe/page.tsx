@@ -200,9 +200,7 @@ const Equipe = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  {language === 'IT' ? 'Pianificate un incontro con il nostro team!' : 
-                   language === 'EN' ? 'Plan a meeting with our team!' : 
-                   'Planifiez une réunion avec notre équipe !'}
+                  {t("equipe.cta.button")}
                 </motion.button>
               </a>
             </motion.div>
@@ -240,29 +238,10 @@ const Equipe = () => {
             className="text-center mb-16"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
-              {language === 'IT' ? (
-                <>
-                  La nostra{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    leadership
-                  </span>
-                </>
-              ) : language === 'EN' ? (
-                <>
-                  {t("equipe.sections.partners.title1")}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    {t("equipe.sections.partners.title2")}
-                  </span>
-                  {t("equipe.sections.partners.title3")}
-                </>
-              ) : (
-                <>
-                  Les{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    associés fondateurs
-                  </span>
-                </>
-              )}
+              {t("equipe.sections.partners.title1")}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                {t("equipe.sections.partners.title2")}
+              </span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
               {t("equipe.sections.partners.subtitle")}
@@ -362,29 +341,10 @@ const Equipe = () => {
             className="text-center mb-16"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-4">
-              {language === 'IT' ? (
-                <>
-                  Il team dei{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    Senior Advisors
-                  </span>
-                </>
-              ) : language === 'EN' ? (
-                <>
-                  {t("equipe.sections.seniorAdvisor.title1")}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    {t("equipe.sections.seniorAdvisor.title2")}
-                  </span>
-                  {t("equipe.sections.seniorAdvisor.title3")}
-                </>
-              ) : (
-                <>
-                  L'équipe de{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    Senior Advisors
-                  </span>
-                </>
-              )}
+              {t("equipe.sections.seniorAdvisor.title1")}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                {t("equipe.sections.seniorAdvisor.title2")}
+              </span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
               {t("equipe.sections.seniorAdvisor.subtitle")}
@@ -481,31 +441,11 @@ const Equipe = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="heading-2 font-bold text-[#0b062b] mb-6">
-              {language === 'IT' ? (
-                <>
-                  Siete pronti a incontrare{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    il nostro team
-                  </span>
-                  ?
-                </>
-              ) : language === 'EN' ? (
-                <>
-                  {t("equipe.cta.title1")}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    {t("equipe.cta.title2")}
-                  </span>
-                  {t("equipe.cta.title3")}
-                </>
-              ) : (
-                <>
-                  Prêt à rencontrer{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
-                    notre équipe
-                  </span>
-                  {" "}?
-                </>
-              )}
+              {t("equipe.cta.title1")}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                {t("equipe.cta.title2")}
+              </span>
+              {t("equipe.cta.title3")}
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-8">
               {t("equipe.cta.subtitle")}

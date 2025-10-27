@@ -142,9 +142,7 @@ const Carrieres = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  {language === 'IT' ? 'Consulta le nostre offerte di lavoro' : 
-                   language === 'EN' ? 'Explore our career opportunities' : 
-                   'Découvrez nos offres d\'emploi'}
+                  {t("carrieres.hero.button")}
                   <ArrowRight className="w-5 h-5" />
                 </motion.button>
               </a>

@@ -34,20 +34,13 @@ const Footer = ({ variant = 'dark' }: FooterProps) => {
   return (
     <footer className="py-12 px-4">
       <motion.div 
-        className={`max-w-6xl mx-auto rounded-full px-6 sm:px-8 py-4 sm:py-5 flex items-center justify-between shadow-2xl ${footerClasses}`}
+        className={`max-w-6xl mx-auto rounded-full px-6 sm:px-8 py-4 sm:py-5 flex items-center justify-center shadow-2xl ${footerClasses}`}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
         viewport={{ once: true }}
       >
-        <button
-          onClick={scrollToTop}
-          className="font-bold text-sm sm:text-base hover:opacity-80 transition-opacity cursor-pointer"
-        >
-          Milaris Partners
-        </button>
-
-        <div className={`flex items-center flex-wrap justify-end gap-x-3 sm:gap-x-4 text-xs sm:text-sm ${linkClasses}`}>
+        <div className={`flex items-center flex-wrap justify-center gap-x-3 sm:gap-x-4 text-xs sm:text-sm ${linkClasses}`}>
           <span className="hidden sm:inline">© {currentYear} Milaris Partners. {t("footer.rights")}</span>
           <span className="sm:hidden">© {currentYear}</span>
           <span className={`${dividerClasses} hidden sm:inline`}>|</span>

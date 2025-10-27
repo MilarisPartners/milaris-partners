@@ -20,7 +20,7 @@
   }
   
   body {
-    @apply font-sans bg-offwhite text-gray-800 antialiased;
+    @apply font-sans bg-white text-gray-800 antialiased;
     font-family: 'Work Sans', system-ui, sans-serif;
   }
 
@@ -313,6 +313,32 @@
     transform: translateY(-100vh) rotate(360deg);
     opacity: 0;
   }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 40s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 40s linear infinite;
 }
 
 /* Transitions douces pour tous les éléments interactifs */
