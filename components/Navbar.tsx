@@ -115,7 +115,7 @@ const Navbar = () => {
             >
               <Link
                 href="/"
-                className={`transition-all duration-300 font-bold text-base ${
+                className={`transition-all duration-300 font-medium text-base ${
                   isHomePage 
                     ? "text-white hover:text-white/80 drop-shadow-lg" 
                     : "text-gray-700 hover:text-[#0001ff]"
@@ -127,7 +127,7 @@ const Navbar = () => {
               {/* Expertises Dropdown */}
               <div className="relative group">
                 <button 
-                  className={`flex items-center space-x-1 transition-all duration-300 font-bold text-base ${
+                  className={`flex items-center space-x-1 transition-all duration-300 font-medium text-base ${
                     isHomePage 
                       ? "text-white hover:text-white/80 drop-shadow-lg" 
                       : "text-gray-700 hover:text-[#0001ff]"
@@ -159,7 +159,7 @@ const Navbar = () => {
               
               <Link
                 href="/equipe"
-                className={`transition-all duration-300 font-bold text-base ${
+                className={`transition-all duration-300 font-medium text-base ${
                   isHomePage 
                     ? "text-white hover:text-white/80 drop-shadow-lg" 
                     : "text-gray-700 hover:text-[#0001ff]"
@@ -170,7 +170,7 @@ const Navbar = () => {
               
               <Link
                 href="/transactions"
-                className={`transition-all duration-300 font-bold text-base ${
+                className={`transition-all duration-300 font-medium text-base ${
                   isHomePage 
                     ? "text-white hover:text-white/80 drop-shadow-lg" 
                     : "text-gray-700 hover:text-[#0001ff]"
@@ -181,7 +181,7 @@ const Navbar = () => {
               
               <Link
                 href="/carrieres"
-                className={`transition-all duration-300 font-bold text-base ${
+                className={`transition-all duration-300 font-medium text-base ${
                   isHomePage 
                     ? "text-white hover:text-white/80 drop-shadow-lg" 
                     : "text-gray-700 hover:text-[#0001ff]"
@@ -192,7 +192,7 @@ const Navbar = () => {
               
               {/* Language Selector */}
               <div className="relative group">
-                <button className={`flex items-center space-x-1 transition-all duration-300 font-bold text-base ${
+                <button className={`flex items-center space-x-1 transition-all duration-300 font-medium text-base ${
                   isHomePage 
                     ? "text-white hover:text-white/80 drop-shadow-lg" 
                     : "text-gray-700 hover:text-[#0001ff]"
@@ -220,7 +220,7 @@ const Navbar = () => {
                 href={calendlyLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#0001ff] text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-[#0b062b] transition-all duration-300 mr-12 shadow-xl"
+                className="bg-[#0001ff] text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-[#0b062b] transition-all duration-300 mr-12 shadow-xl"
               >
                 {t("navbar.contact")}
               </a>
@@ -254,7 +254,7 @@ const Navbar = () => {
             >
               <Link
                 href="/"
-                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-base font-bold"
+                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-base font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("navbar.about")}
@@ -262,7 +262,7 @@ const Navbar = () => {
               
               {/* Mobile Expertises */}
               <div className="px-6 py-3">
-                <p className="text-base font-bold text-gray-700 mb-2">{t("navbar.expertises")}</p>
+                <p className="text-base font-medium text-gray-700 mb-2">{t("navbar.expertises")}</p>
                 {expertises.map((expertise) => (
                   <Link
                     key={expertise.label}
@@ -277,7 +277,7 @@ const Navbar = () => {
               
               <Link
                 href="/equipe"
-                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-base font-bold"
+                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-base font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("navbar.team")}
@@ -285,7 +285,7 @@ const Navbar = () => {
               
               <Link
                 href="/transactions"
-                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-base font-bold"
+                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-base font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("navbar.transactions")}
@@ -293,7 +293,7 @@ const Navbar = () => {
               
               <Link
                 href="/carrieres"
-                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-base font-bold"
+                className="block px-6 py-3 text-gray-700 hover:bg-[#0001ff]/10 hover:text-[#0001ff] transition-colors duration-300 text-base font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("navbar.career")}
@@ -322,7 +322,7 @@ const Navbar = () => {
                   href={calendlyLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full block text-center bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-base font-bold hover:bg-[#0b062b] transition-all duration-300"
+                  className="w-full block text-center bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-base font-medium hover:bg-[#0b062b] transition-all duration-300"
                 >
                   {t("navbar.contact")}
                 </a>
@@ -341,7 +341,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -20, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="bg-white/70 backdrop-blur-md rounded-full px-8 py-2.5 shadow-lg border border-gray-100 flex items-center justify-between max-w-6xl w-full hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
+              className="bg-white/70 backdrop-blur-md rounded-full px-6 py-2.5 shadow-lg border border-gray-100 flex items-center justify-between max-w-4xl w-full hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
               {/* Logo cliquable pour retourner en haut */}
               <button
@@ -364,10 +364,10 @@ const Navbar = () => {
               </button>
 
               {/* Menu items */}
-              <div className="hidden md:flex items-center space-x-6">
+              <div className="hidden md:flex items-center space-x-4">
                 <Link
                   href="/"
-                  className="text-base font-bold text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
+                  className="text-sm font-medium text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
                 >
                   {t("navbar.about")}
                 </Link>
@@ -375,7 +375,7 @@ const Navbar = () => {
                 {/* Expertises Dropdown */}
                 <div className="relative group">
                   <button 
-                    className="flex items-center space-x-1 text-base font-bold text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
+                    className="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
                     onMouseEnter={() => setIsExpertisesOpen(true)}
                     onMouseLeave={() => setIsExpertisesOpen(false)}
                   >
@@ -403,28 +403,28 @@ const Navbar = () => {
                 
                 <Link
                   href="/equipe"
-                  className="text-base font-bold text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
+                  className="text-sm font-medium text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
                 >
                   {t("navbar.team")}
                 </Link>
                 
                 <Link
                   href="/transactions"
-                  className="text-base font-bold text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
+                  className="text-sm font-medium text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
                 >
                   {t("navbar.transactions")}
                 </Link>
                 
                 <Link
                   href="/carrieres"
-                  className="text-base font-bold text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
+                  className="text-sm font-medium text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
                 >
                   {t("navbar.career")}
                 </Link>
                 
                 {/* Language Selector */}
                 <div className="relative group">
-                  <button className="flex items-center space-x-1 text-base font-bold text-gray-700 hover:text-[#0001ff] transition-colors duration-300">
+                  <button className="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-[#0001ff] transition-colors duration-300">
                     <span>{language}</span>
                     <ChevronDown className="w-3 h-3" />
                   </button>
@@ -484,7 +484,7 @@ const Navbar = () => {
                 </Link>
                 
                 <div className="px-4 py-2">
-                  <p className="text-base font-bold text-gray-700 mb-1">{t("navbar.expertises")}</p>
+                  <p className="text-base font-medium text-gray-700 mb-1">{t("navbar.expertises")}</p>
                   {expertises.map((expertise) => (
                     <Link
                       key={expertise.label}
@@ -544,7 +544,7 @@ const Navbar = () => {
                     href={calendlyLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full block text-center bg-[#0001ff] text-white px-4 py-2 rounded-lg text-base font-bold hover:bg-[#0b062b] transition-all duration-300"
+                    className="w-full block text-center bg-[#0001ff] text-white px-4 py-2 rounded-lg text-base font-medium hover:bg-[#0b062b] transition-all duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {t("navbar.contact")}
