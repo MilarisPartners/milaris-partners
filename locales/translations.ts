@@ -3277,27 +3277,6 @@ export const translations = {
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },
-    legal: {
-      title: "Rechtliche Hinweise",
-      sections: [
-        {
-          heading: "Einführung",
-          content: "Diese Website dient der Bereitstellung von Informationen über Milaris Partners. Besuche der Website unterliegen den relevanten Vorschriften und diesen Nutzungsbedingungen."
-        },
-        {
-          heading: "Datenschutz",
-          content: "Milaris Partners respektiert Ihre Privatsphäre und verpflichtet sich, Ihre persönlichen Daten gemäß der geltenden Gesetzgebung zu schützen."
-        },
-        {
-          heading: "Cookies",
-          content: "Diese Website verwendet Cookies, um Ihre Erfahrung zu verbessern. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von Cookies zu."
-        },
-        {
-          heading: "Anwendbares Recht",
-          content: "Diese Website unterliegt französischem Recht. Bei Streitigkeiten sind die französischen Gerichte zuständig."
-        }
-      ]
-    },
     europePresence: {
       title: {
         part1: "Eine strategische",
@@ -3497,27 +3476,6 @@ export const translations = {
         linkedin: "LinkedIn",
         twitter: "Twitter"
       }
-    },
-    legal: {
-      title: "Rechtliche Hinweise",
-      content: [
-        {
-          heading: "Rechtliche Hinweise",
-          content: "Die Website https://milaris.partners/ wird von Milaris Partners betrieben. Der Hauptsitz befindet sich in Paris, Frankreich."
-        },
-        {
-          heading: "Datenschutz",
-          content: "Milaris Partners respektiert Ihre Privatsphäre und verpflichtet sich, Ihre persönlichen Daten gemäß der geltenden Gesetzgebung zu schützen."
-        },
-        {
-          heading: "Cookies",
-          content: "Diese Website verwendet Cookies, um Ihre Erfahrung zu verbessern. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von Cookies zu."
-        },
-        {
-          heading: "Anwendbares Recht",
-          content: "Diese Website unterliegt französischem Recht. Bei Streitigkeiten sind die französischen Gerichte zuständig."
-        }
-      ]
     },
     cookies: {
       title: "Cookies",

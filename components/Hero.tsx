@@ -10,7 +10,7 @@ import { getAssetPath } from "@/utils/getAssetPath";
 const Hero = () => {
   const { t, language } = useTranslation();
 
-  const calendlyLink = language === 'it' 
+  const calendlyLink = language === 'IT' 
     ? 'https://calendly.com/matteo-milarispartners'
     : 'https://calendly.com/paul-milarispartners/30min';
 
@@ -151,7 +151,7 @@ const Hero = () => {
             </motion.a>
             <motion.button 
               onClick={scrollToAbout}
-              className={`bg-white/95 backdrop-blur-md text-[#0b062b] border-2 border-white/50 btn-responsive rounded-lg hover:border-white hover:bg-white hover:shadow-2xl transition-all duration-300 relative overflow-hidden w-full sm:w-auto shadow-xl ${language === 'it' ? 'sm:min-w-[280px]' : 'sm:min-w-[200px]'}`}
+              className={`bg-white/95 backdrop-blur-md text-[#0b062b] border-2 border-white/50 btn-responsive rounded-lg hover:border-white hover:bg-white hover:shadow-2xl transition-all duration-300 relative overflow-hidden w-full sm:w-auto shadow-xl ${language === 'IT' ? 'sm:min-w-[280px]' : 'sm:min-w-[200px]'}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
