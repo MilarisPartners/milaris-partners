@@ -47,157 +47,95 @@ const TransactionsPage = () => {
   // Mandats en cours
   const currentMandates: Mandate[] = [
     {
-      id: "mandate-1",
-      title: language === "FR" ? "Acteur du prêt-à-porter premium" : language === "IT" ? "Attore del prêt-à-porter premium" : language === "DE" ? "Premium Ready-to-Wear Player" : "Premium ready-to-wear player",
-      description: language === "FR" 
-        ? "Conseille un acteur emblématique du prêt-à-porter masculin premium dans le cadre de sa cession stratégique" 
-        : language === "IT" 
-        ? "Consulenza a un attore emblematico del prêt-à-porter maschile premium per la sua cessione strategica"
-        : language === "DE"
-        ? "Beratung eines Premium-Herrenbekleidungsakteurs bei seinem strategischen Verkauf"
-        : "Advising an iconic premium men's ready-to-wear player in its strategic sale",
-      mandateType: "Sell-side",
-      country: language === "FR" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
-      countryFlag: "🇫🇷",
-      transactionType: "Majoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : 20-30M€" : language === "IT" ? "Fatturato : 20-30M€" : language === "DE" ? "Umsatz: 20-30M€" : "Revenue: 20-30M€",
-      partner: "Paul",
-    },
-    {
       id: "mandate-2",
-      title: language === "FR" ? "Mobilité électrique" : language === "IT" ? "Mobilità elettrica" : language === "DE" ? "Elektromobilität" : "Electric mobility",
+      title: language === "FR" ? "Mobilité Tech" : "Mobility Tech",
       description: language === "FR"
         ? "Conseille à la vente un acteur de la gestion de la mobilité électrique en discussion avancée. Cession à un stratégique ou investisseur financier possible"
-        : language === "IT"
-        ? "Consulenza alla vendita di un attore della gestione della mobilità elettrica in discussione avanzata. Cessione a uno strategico o investitore finanziario possibile"
-        : language === "DE"
-        ? "Beratung beim Verkauf eines Akteurs im Elektromobilitätsmanagement in fortgeschrittenen Gesprächen. Verkauf an einen strategischen Käufer oder Finanzinvestor möglich"
         : "Advising on the sale of an electric mobility management player in advanced discussions. Sale to a strategic buyer or financial investor possible",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : language === "DE" ? "Italien" : "Italy",
+      country: language === "FR" ? "Italie" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Majoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : 10-15M€" : language === "IT" ? "Fatturato : 10-15M€" : language === "DE" ? "Umsatz: 10-15M€" : "Revenue: 10-15M€",
+      amount: language === "FR" ? "Chiffre d'affaires : 10-15M€" : "Revenue: 10-15M€",
       partner: "Matteo",
     },
     {
       id: "mandate-3",
-      title: language === "FR" ? "Fonds industriel français" : language === "IT" ? "Fondo industriale francese" : language === "DE" ? "Französischer Industriefonds" : "French industrial fund",
+      title: language === "FR" ? "Industrie" : "Industry",
       description: language === "FR"
         ? "Conseil auprès d'un fonds industriel français dans un processus de build-up en Italie et en Allemagne"
-        : language === "IT"
-        ? "Consulenza a un fondo industriale francese in un processo di build-up in Italia e Germania"
-        : language === "DE"
-        ? "Beratung eines französischen Industriefonds in einem Build-up-Prozess in Italien und Deutschland"
         : "Advising a French industrial fund in a build-up process in Italy and Germany",
       mandateType: "Buy-side",
-      country: language === "FR" ? "France / Allemagne / Italie" : language === "IT" ? "Francia / Germania / Italia" : language === "DE" ? "Frankreich / Deutschland / Italien" : "France / Germany / Italy",
+      country: language === "FR" ? "France / Allemagne / Italie" : "France / Germany / Italy",
       countryFlag: "🇫🇷 / 🇩🇪 / 🇮🇹",
       transactionType: "Build-up",
-      amount: language === "FR" ? "EBITDA : > 2M€" : language === "IT" ? "EBITDA : > 2M€" : language === "DE" ? "EBITDA: > 2M€" : "EBITDA: > 2M€",
-      partner: "Matteo",
+      amount: language === "FR" ? "EBITDA : > 2M€" : "EBITDA: > 2M€",
+      partner: "Paul",
     },
     {
       id: "mandate-4",
-      title: language === "FR" ? "Acteur italien de la chimie" : language === "IT" ? "Attore italiano della chimica" : language === "DE" ? "Italienischer Akteur der Chemie" : "Italian chemical actor",
+      title: language === "FR" ? "Produits chimiques" : "Chemicals",
       description: language === "FR"
         ? "Conseil pour la cession d'un acteur italien de la chimie"
-        : language === "IT"
-        ? "Consulenza per la cessione di un attore italiano della chimica"
-        : language === "DE"
-        ? "Beratung beim Verkauf eines italienischen Chemie-Akteurs"
         : "Advising on the sale of an Italian chemical player",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : language === "DE" ? "Italien" : "Italy",
+      country: language === "FR" ? "Italie" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Majoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : >15M€" : language === "IT" ? "Fatturato : >15M€" : language === "DE" ? "Umsatz: >15M€" : "Revenue: >15M€",
+      amount: language === "FR" ? "Chiffre d'affaires : >15M€" : "Revenue: >15M€",
       partner: "Matteo",
     },
     {
       id: "mandate-5",
-      title: language === "FR" ? "Build-up détection incendie" : language === "IT" ? "Build-up rilevamento incendi" : language === "DE" ? "Build-up Branderkennung" : "Build-up fire detection",
+      title: language === "FR" ? "Industrie" : "Industry",
       description: language === "FR"
-        ? "Conseil d'un fonds d'investissement dans une stratégie de build-up en France, dans la détection incendie"
-        : language === "IT"
-        ? "Consulenza di un fondo di investimento in una strategia di build-up in Francia, nel rilevamento incendi"
-        : language === "DE"
-        ? "Beratung eines Investmentfonds in einer Build-up-Strategie in Frankreich im Bereich Branderkennung"
-        : "Advising an investment fund in a build-up strategy in France, in fire detection",
+        ? "Conseil d'un fonds d'investissement italien dans une stratégie de build-up en France"
+        : "Advising an Italian investment fund in a build-up strategy in France",
       mandateType: "Buy-side",
-      country: language === "FR" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
+      country: language === "FR" ? "France" : "France",
       countryFlag: "🇫🇷",
       transactionType: "Build-up",
-      amount: language === "FR" ? "EBITDA : 2-8 M€" : language === "IT" ? "EBITDA : 2-8 M€" : language === "DE" ? "EBITDA: 2-8 M€" : "EBITDA: 2-8 M€",
+      amount: language === "FR" ? "EBITDA : 2-8 M€" : "EBITDA: 2-8 M€",
       partner: "Matteo",
     },
     {
       id: "mandate-6",
-      title: language === "FR" ? "Studio d'architecture" : language === "IT" ? "Studio di architettura" : language === "DE" ? "Architekturstudio" : "Architecture studio",
+      title: language === "FR" ? "Engineering & Architecture" : "Engineering & Architecture",
       description: language === "FR"
         ? "Conseil pour la cession minoritaire d'un studio d'architecture en Italie"
-        : language === "IT"
-        ? "Consulenza per la cessione minoritaria di uno studio di architettura in Italia"
-        : language === "DE"
-        ? "Beratung beim Minderheitsverkauf eines Architekturstudios in Italien"
         : "Advising on the minority sale of an architecture studio in Italy",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : language === "DE" ? "Italien" : "Italy",
+      country: language === "FR" ? "Italie" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Minoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : > 10 M€" : language === "IT" ? "Fatturato : > 10 M€" : language === "DE" ? "Umsatz: > 10 M€" : "Revenue: > 10 M€",
+      amount: language === "FR" ? "Chiffre d'affaires : > 10 M€" : "Revenue: > 10 M€",
       partner: "Matteo",
     },
     {
       id: "mandate-7",
-      title: language === "FR" ? "Barrières routières éco-durables" : language === "IT" ? "Barriere stradali eco-sostenibili" : language === "DE" ? "Öko-nachhaltige Straßensperren" : "Eco-sustainable road barriers",
+      title: language === "FR" ? "Sécurité routière" : "Road Safety",
       description: language === "FR"
         ? "Conseil pour la cession minoritaire d'une société industrielle de barrières routières éco-durables"
-        : language === "IT"
-        ? "Consulenza per la cessione minoritaria di una società industriale di barriere stradali eco-sostenibili"
-        : language === "DE"
-        ? "Beratung beim Minderheitsverkauf eines Industrieunternehmens für öko-nachhaltige Straßensperren"
         : "Advising on the minority sale of an industrial eco-sustainable road barriers company",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : language === "DE" ? "Italien" : "Italy",
+      country: language === "FR" ? "Italie" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Minoritaire",
-      amount: language === "FR" ? "Ticket d'investissement : 1,5-3 M€" : language === "IT" ? "Ticket di investimento : 1,5-3 M€" : language === "DE" ? "Investitionsticket: 1,5-3 M€" : "Investment ticket: 1.5-3 M€",
+      amount: language === "FR" ? "Ticket d'investissement : 1,5-3 M€" : "Investment ticket: 1.5-3 M€",
       partner: "Paul",
     },
     {
       id: "mandate-8",
-      title: language === "FR" ? "Tannerie italienne" : language === "IT" ? "Conceria italiana" : language === "DE" ? "Italienische Gerberei" : "Italian tannery",
+      title: language === "FR" ? "Produits de luxe" : "Luxury Products",
       description: language === "FR"
-        ? "Conseil pour la cession majoritaire d'une tannerie en Italie"
-        : language === "IT"
-        ? "Consulenza per la cessione maggioritaria di una conceria in Italia"
-        : language === "DE"
-        ? "Beratung beim Mehrheitsverkauf einer Gerberei in Italien"
-        : "Advising on the majority sale of a tannery in Italy",
+        ? "Conseil à la vente d'un acteur intégré dans la chaine de valeur de la production de produits de luxe"
+        : "Advising on the sale of a player integrated in the luxury products production value chain",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : language === "DE" ? "Italien" : "Italy",
+      country: language === "FR" ? "Italie" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Majoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : > 10M€" : language === "IT" ? "Fatturato : > 10M€" : language === "DE" ? "Umsatz: > 10M€" : "Revenue: > 10M€",
+      amount: language === "FR" ? "Chiffre d'affaires : > 10M€" : "Revenue: > 10M€",
       partner: "Matteo",
-    },
-    {
-      id: "mandate-9",
-      title: language === "FR" ? "Distributeur de vins & spiritueux" : language === "IT" ? "Distributore di vini e spiriti" : language === "DE" ? "Vertreiber von Weinen und Spirituosen" : "Wine & spirits distributor",
-      description: language === "FR"
-        ? "Conseil pour la cession d'un distributeur de vins & spiritueux"
-        : language === "IT"
-        ? "Consulenza per la cessione di un distributore di vini e spiriti"
-        : language === "DE"
-        ? "Beratung beim Verkauf eines Vertreibers von Weinen und Spirituosen"
-        : "Advising on the sale of a wine & spirits distributor",
-      mandateType: "Sell-side",
-      country: language === "FR" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
-      countryFlag: "🇫🇷",
-      transactionType: "Majoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : > 40M€" : language === "IT" ? "Fatturato : > 40M€" : language === "DE" ? "Umsatz: > 40M€" : "Revenue: > 40M€",
-      partner: "Paul",
     },
   ];
 
@@ -280,7 +218,7 @@ const TransactionsPage = () => {
           ? "Njuko wird von ASICS Corporation übernommen"
           : "Njuko est acquise par ASICS Corporation",
       value: "Confidentiel",
-      country: language === "EN" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
+      country: "France & DOM/TOM",
       partner: "Kevin",
     },
     {
@@ -420,7 +358,7 @@ const TransactionsPage = () => {
           ? "Reydel Automotive France S.A. (globaler Umsatz > 1 Mrd. €) an Motherson Sumi Systems Limited (MSSL) verkauft"
           : "Reydel Automotive France S.A. (CA mondial > 1 Md €) vendue à Motherson Sumi Systems Limited (MSSL)",
       value: "Confidentiel",
-      country: "France",
+      country: "France & DOM/TOM",
       partner: "Kevin",
     },
     {
@@ -520,7 +458,7 @@ const TransactionsPage = () => {
           ? "Canson SA an Groupe Hamelin verkauft (FDD/ODD-Beratung für Hamelin)"
           : "Canson SA cédée au Groupe Hamelin (conseil FDD/ODD pour Hamelin)",
       value: "Confidentiel",
-      country: "France",
+      country: "France & DOM/TOM",
       partner: "Kevin",
     },
     {
@@ -540,7 +478,7 @@ const TransactionsPage = () => {
           ? "Histoire d'Or von Silverfleet Capital erworben (FDD-Beratung für Silverfleet)"
           : "Histoire d'Or acquise par Silverfleet Capital (conseil FDD pour Silverfleet)",
       value: "Confidentiel",
-      country: "France",
+      country: "France & DOM/TOM",
       partner: "Kevin",
     },
     {
@@ -560,7 +498,7 @@ const TransactionsPage = () => {
           ? "Orange IT von Orange S.A. erworben"
           : "Orange IT acquise par Orange S.A.",
       value: "Confidentiel",
-      country: "France",
+      country: "France & DOM/TOM",
       partner: "Kevin",
     },
   ];
@@ -569,6 +507,665 @@ const TransactionsPage = () => {
   const uniqueCountries = Array.from(
     new Set(transactions.filter((t) => t.country).map((t) => t.country as string))
   );
+
+  // Fonction pour traduire les noms de pays
+  const translateCountry = (country: string) => {
+    if (language === "IT") {
+      switch (country) {
+        case "France & DOM/TOM":
+          return "Francia";
+        case "Italy":
+          return "Italia";
+        case "Germany":
+          return "Germania";
+        case "Japan":
+          return "Giappone";
+        case "United Kingdom":
+          return "Regno Unito";
+        case "Spain":
+          return "Spagna";
+        case "Netherlands":
+          return "Paesi Bassi";
+        case "Belgium":
+          return "Belgio";
+        case "Switzerland":
+          return "Svizzera";
+        case "Austria":
+          return "Austria";
+        case "Luxembourg":
+          return "Lussemburgo";
+        case "Portugal":
+          return "Portogallo";
+        case "Ireland":
+          return "Irlanda";
+        case "Denmark":
+          return "Danimarca";
+        case "Sweden":
+          return "Svezia";
+        case "Norway":
+          return "Norvegia";
+        case "Finland":
+          return "Finlandia";
+        case "Poland":
+          return "Polonia";
+        case "Czech Republic":
+          return "Repubblica Ceca";
+        case "Hungary":
+          return "Ungheria";
+        case "Slovakia":
+          return "Slovacchia";
+        case "Slovenia":
+          return "Slovenia";
+        case "Croatia":
+          return "Croazia";
+        case "Romania":
+          return "Romania";
+        case "Bulgaria":
+          return "Bulgaria";
+        case "Greece":
+          return "Grecia";
+        case "Cyprus":
+          return "Cipro";
+        case "Malta":
+          return "Malta";
+        case "Estonia":
+          return "Estonia";
+        case "Latvia":
+          return "Lettonia";
+        case "Lithuania":
+          return "Lituania";
+        case "United States":
+          return "Stati Uniti";
+        case "Canada":
+          return "Canada";
+        case "Australia":
+          return "Australia";
+        case "New Zealand":
+          return "Nuova Zelanda";
+        case "Brazil":
+          return "Brasile";
+        case "Argentina":
+          return "Argentina";
+        case "Chile":
+          return "Cile";
+        case "Mexico":
+          return "Messico";
+        case "South Africa":
+          return "Sudafrica";
+        case "India":
+          return "India";
+        case "China":
+          return "Cina";
+        case "South Korea":
+          return "Corea del Sud";
+        case "Singapore":
+          return "Singapore";
+        case "Hong Kong":
+          return "Hong Kong";
+        case "Taiwan":
+          return "Taiwan";
+        case "Thailand":
+          return "Thailandia";
+        case "Malaysia":
+          return "Malesia";
+        case "Indonesia":
+          return "Indonesia";
+        case "Philippines":
+          return "Filippine";
+        case "Vietnam":
+          return "Vietnam";
+        case "Turkey":
+          return "Turchia";
+        case "Israel":
+          return "Israele";
+        case "United Arab Emirates":
+          return "Emirati Arabi Uniti";
+        case "Saudi Arabia":
+          return "Arabia Saudita";
+        case "Egypt":
+          return "Egitto";
+        case "Morocco":
+          return "Marocco";
+        case "Tunisia":
+          return "Tunisia";
+        case "Algeria":
+          return "Algeria";
+        case "Nigeria":
+          return "Nigeria";
+        case "Kenya":
+          return "Kenya";
+        case "Ghana":
+          return "Ghana";
+        case "Senegal":
+          return "Senegal";
+        case "Ivory Coast":
+          return "Costa d'Avorio";
+        case "Cameroon":
+          return "Camerun";
+        case "Ethiopia":
+          return "Etiopia";
+        case "Tanzania":
+          return "Tanzania";
+        case "Uganda":
+          return "Uganda";
+        case "Rwanda":
+          return "Ruanda";
+        case "Botswana":
+          return "Botswana";
+        case "Namibia":
+          return "Namibia";
+        case "Zambia":
+          return "Zambia";
+        case "Zimbabwe":
+          return "Zimbabwe";
+        case "Mozambique":
+          return "Mozambico";
+        case "Angola":
+          return "Angola";
+        case "Madagascar":
+          return "Madagascar";
+        case "Mauritius":
+          return "Mauritius";
+        case "Seychelles":
+          return "Seychelles";
+        case "Reunion":
+          return "Riunione";
+        case "Mayotte":
+          return "Mayotte";
+        case "Comoros":
+          return "Comore";
+        case "Djibouti":
+          return "Gibuti";
+        case "Somalia":
+          return "Somalia";
+        case "Eritrea":
+          return "Eritrea";
+        case "Sudan":
+          return "Sudan";
+        case "South Sudan":
+          return "Sudan del Sud";
+        case "Central African Republic":
+          return "Repubblica Centrafricana";
+        case "Chad":
+          return "Ciad";
+        case "Niger":
+          return "Niger";
+        case "Mali":
+          return "Mali";
+        case "Burkina Faso":
+          return "Burkina Faso";
+        case "Guinea":
+          return "Guinea";
+        case "Sierra Leone":
+          return "Sierra Leone";
+        case "Liberia":
+          return "Liberia";
+        case "Gambia":
+          return "Gambia";
+        case "Guinea-Bissau":
+          return "Guinea-Bissau";
+        case "Cape Verde":
+          return "Capo Verde";
+        case "São Tomé and Príncipe":
+          return "São Tomé e Príncipe";
+        case "Equatorial Guinea":
+          return "Guinea Equatoriale";
+        case "Gabon":
+          return "Gabon";
+        case "Republic of the Congo":
+          return "Repubblica del Congo";
+        case "Democratic Republic of the Congo":
+          return "Repubblica Democratica del Congo";
+        case "Burundi":
+          return "Burundi";
+        case "Malawi":
+          return "Malawi";
+        case "Lesotho":
+          return "Lesotho";
+        case "Swaziland":
+          return "Swaziland";
+        case "South Africa":
+          return "Sudafrica";
+        default:
+          return country;
+      }
+    } else if (language === "DE") {
+      switch (country) {
+        case "France & DOM/TOM":
+          return "Frankreich";
+        case "Italy":
+          return "Italien";
+        case "Germany":
+          return "Deutschland";
+        case "Japan":
+          return "Japan";
+        case "United Kingdom":
+          return "Vereinigtes Königreich";
+        case "Spain":
+          return "Spanien";
+        case "Netherlands":
+          return "Niederlande";
+        case "Belgium":
+          return "Belgien";
+        case "Switzerland":
+          return "Schweiz";
+        case "Austria":
+          return "Österreich";
+        case "Luxembourg":
+          return "Luxemburg";
+        case "Portugal":
+          return "Portugal";
+        case "Ireland":
+          return "Irland";
+        case "Denmark":
+          return "Dänemark";
+        case "Sweden":
+          return "Schweden";
+        case "Norway":
+          return "Norwegen";
+        case "Finland":
+          return "Finnland";
+        case "Poland":
+          return "Polen";
+        case "Czech Republic":
+          return "Tschechische Republik";
+        case "Hungary":
+          return "Ungarn";
+        case "Slovakia":
+          return "Slowakei";
+        case "Slovenia":
+          return "Slowenien";
+        case "Croatia":
+          return "Kroatien";
+        case "Romania":
+          return "Rumänien";
+        case "Bulgaria":
+          return "Bulgarien";
+        case "Greece":
+          return "Griechenland";
+        case "Cyprus":
+          return "Zypern";
+        case "Malta":
+          return "Malta";
+        case "Estonia":
+          return "Estland";
+        case "Latvia":
+          return "Lettland";
+        case "Lithuania":
+          return "Litauen";
+        case "United States":
+          return "Vereinigte Staaten";
+        case "Canada":
+          return "Kanada";
+        case "Australia":
+          return "Australien";
+        case "New Zealand":
+          return "Neuseeland";
+        case "Brazil":
+          return "Brasilien";
+        case "Argentina":
+          return "Argentinien";
+        case "Chile":
+          return "Chile";
+        case "Mexico":
+          return "Mexiko";
+        case "South Africa":
+          return "Südafrika";
+        case "India":
+          return "Indien";
+        case "China":
+          return "China";
+        case "South Korea":
+          return "Südkorea";
+        case "Singapore":
+          return "Singapur";
+        case "Hong Kong":
+          return "Hongkong";
+        case "Taiwan":
+          return "Taiwan";
+        case "Thailand":
+          return "Thailand";
+        case "Malaysia":
+          return "Malaysia";
+        case "Indonesia":
+          return "Indonesien";
+        case "Philippines":
+          return "Philippinen";
+        case "Vietnam":
+          return "Vietnam";
+        case "Turkey":
+          return "Türkei";
+        case "Israel":
+          return "Israel";
+        case "United Arab Emirates":
+          return "Vereinigte Arabische Emirate";
+        case "Saudi Arabia":
+          return "Saudi-Arabien";
+        case "Egypt":
+          return "Ägypten";
+        case "Morocco":
+          return "Marokko";
+        case "Tunisia":
+          return "Tunesien";
+        case "Algeria":
+          return "Algerien";
+        case "Nigeria":
+          return "Nigeria";
+        case "Kenya":
+          return "Kenia";
+        case "Ghana":
+          return "Ghana";
+        case "Senegal":
+          return "Senegal";
+        case "Ivory Coast":
+          return "Elfenbeinküste";
+        case "Cameroon":
+          return "Kamerun";
+        case "Ethiopia":
+          return "Äthiopien";
+        case "Tanzania":
+          return "Tansania";
+        case "Uganda":
+          return "Uganda";
+        case "Rwanda":
+          return "Ruanda";
+        case "Botswana":
+          return "Botswana";
+        case "Namibia":
+          return "Namibia";
+        case "Zambia":
+          return "Sambia";
+        case "Zimbabwe":
+          return "Simbabwe";
+        case "Mozambique":
+          return "Mosambik";
+        case "Angola":
+          return "Angola";
+        case "Madagascar":
+          return "Madagaskar";
+        case "Mauritius":
+          return "Mauritius";
+        case "Seychelles":
+          return "Seychellen";
+        case "Reunion":
+          return "Réunion";
+        case "Mayotte":
+          return "Mayotte";
+        case "Comoros":
+          return "Komoren";
+        case "Djibouti":
+          return "Dschibuti";
+        case "Somalia":
+          return "Somalia";
+        case "Eritrea":
+          return "Eritrea";
+        case "Sudan":
+          return "Sudan";
+        case "South Sudan":
+          return "Südsudan";
+        case "Central African Republic":
+          return "Zentralafrikanische Republik";
+        case "Chad":
+          return "Tschad";
+        case "Niger":
+          return "Niger";
+        case "Mali":
+          return "Mali";
+        case "Burkina Faso":
+          return "Burkina Faso";
+        case "Guinea":
+          return "Guinea";
+        case "Sierra Leone":
+          return "Sierra Leone";
+        case "Liberia":
+          return "Liberia";
+        case "Gambia":
+          return "Gambia";
+        case "Guinea-Bissau":
+          return "Guinea-Bissau";
+        case "Cape Verde":
+          return "Kap Verde";
+        case "São Tomé and Príncipe":
+          return "São Tomé und Príncipe";
+        case "Equatorial Guinea":
+          return "Äquatorialguinea";
+        case "Gabon":
+          return "Gabun";
+        case "Republic of the Congo":
+          return "Republik Kongo";
+        case "Democratic Republic of the Congo":
+          return "Demokratische Republik Kongo";
+        case "Burundi":
+          return "Burundi";
+        case "Malawi":
+          return "Malawi";
+        case "Lesotho":
+          return "Lesotho";
+        case "Swaziland":
+          return "Swasiland";
+        default:
+          return country;
+      }
+    } else if (language === "FR") {
+      switch (country) {
+        case "France & DOM/TOM":
+          return "France";
+        case "Italy":
+          return "Italie";
+        case "Germany":
+          return "Allemagne";
+        case "Japan":
+          return "Japon";
+        case "United Kingdom":
+          return "Royaume-Uni";
+        case "Spain":
+          return "Espagne";
+        case "Netherlands":
+          return "Pays-Bas";
+        case "Belgium":
+          return "Belgique";
+        case "Switzerland":
+          return "Suisse";
+        case "Austria":
+          return "Autriche";
+        case "Luxembourg":
+          return "Luxembourg";
+        case "Portugal":
+          return "Portugal";
+        case "Ireland":
+          return "Irlande";
+        case "Denmark":
+          return "Danemark";
+        case "Sweden":
+          return "Suède";
+        case "Norway":
+          return "Norvège";
+        case "Finland":
+          return "Finlande";
+        case "Poland":
+          return "Pologne";
+        case "Czech Republic":
+          return "République tchèque";
+        case "Hungary":
+          return "Hongrie";
+        case "Slovakia":
+          return "Slovaquie";
+        case "Slovenia":
+          return "Slovénie";
+        case "Croatia":
+          return "Croatie";
+        case "Romania":
+          return "Roumanie";
+        case "Bulgaria":
+          return "Bulgarie";
+        case "Greece":
+          return "Grèce";
+        case "Cyprus":
+          return "Chypre";
+        case "Malta":
+          return "Malte";
+        case "Estonia":
+          return "Estonie";
+        case "Latvia":
+          return "Lettonie";
+        case "Lithuania":
+          return "Lituanie";
+        case "United States":
+          return "États-Unis";
+        case "Canada":
+          return "Canada";
+        case "Australia":
+          return "Australie";
+        case "New Zealand":
+          return "Nouvelle-Zélande";
+        case "Brazil":
+          return "Brésil";
+        case "Argentina":
+          return "Argentine";
+        case "Chile":
+          return "Chili";
+        case "Mexico":
+          return "Mexique";
+        case "South Africa":
+          return "Afrique du Sud";
+        case "India":
+          return "Inde";
+        case "China":
+          return "Chine";
+        case "South Korea":
+          return "Corée du Sud";
+        case "Singapore":
+          return "Singapour";
+        case "Hong Kong":
+          return "Hong Kong";
+        case "Taiwan":
+          return "Taïwan";
+        case "Thailand":
+          return "Thaïlande";
+        case "Malaysia":
+          return "Malaisie";
+        case "Indonesia":
+          return "Indonésie";
+        case "Philippines":
+          return "Philippines";
+        case "Vietnam":
+          return "Vietnam";
+        case "Turkey":
+          return "Turquie";
+        case "Israel":
+          return "Israël";
+        case "United Arab Emirates":
+          return "Émirats arabes unis";
+        case "Saudi Arabia":
+          return "Arabie saoudite";
+        case "Egypt":
+          return "Égypte";
+        case "Morocco":
+          return "Maroc";
+        case "Tunisia":
+          return "Tunisie";
+        case "Algeria":
+          return "Algérie";
+        case "Nigeria":
+          return "Nigeria";
+        case "Kenya":
+          return "Kenya";
+        case "Ghana":
+          return "Ghana";
+        case "Senegal":
+          return "Sénégal";
+        case "Ivory Coast":
+          return "Côte d'Ivoire";
+        case "Cameroon":
+          return "Cameroun";
+        case "Ethiopia":
+          return "Éthiopie";
+        case "Tanzania":
+          return "Tanzanie";
+        case "Uganda":
+          return "Ouganda";
+        case "Rwanda":
+          return "Rwanda";
+        case "Botswana":
+          return "Botswana";
+        case "Namibia":
+          return "Namibie";
+        case "Zambia":
+          return "Zambie";
+        case "Zimbabwe":
+          return "Zimbabwe";
+        case "Mozambique":
+          return "Mozambique";
+        case "Angola":
+          return "Angola";
+        case "Madagascar":
+          return "Madagascar";
+        case "Mauritius":
+          return "Maurice";
+        case "Seychelles":
+          return "Seychelles";
+        case "Reunion":
+          return "Réunion";
+        case "Mayotte":
+          return "Mayotte";
+        case "Comoros":
+          return "Comores";
+        case "Djibouti":
+          return "Djibouti";
+        case "Somalia":
+          return "Somalie";
+        case "Eritrea":
+          return "Érythrée";
+        case "Sudan":
+          return "Soudan";
+        case "South Sudan":
+          return "Soudan du Sud";
+        case "Central African Republic":
+          return "République centrafricaine";
+        case "Chad":
+          return "Tchad";
+        case "Niger":
+          return "Niger";
+        case "Mali":
+          return "Mali";
+        case "Burkina Faso":
+          return "Burkina Faso";
+        case "Guinea":
+          return "Guinée";
+        case "Sierra Leone":
+          return "Sierra Leone";
+        case "Liberia":
+          return "Liberia";
+        case "Gambia":
+          return "Gambie";
+        case "Guinea-Bissau":
+          return "Guinée-Bissau";
+        case "Cape Verde":
+          return "Cap-Vert";
+        case "São Tomé and Príncipe":
+          return "São Tomé-et-Príncipe";
+        case "Equatorial Guinea":
+          return "Guinée équatoriale";
+        case "Gabon":
+          return "Gabon";
+        case "Republic of the Congo":
+          return "République du Congo";
+        case "Democratic Republic of the Congo":
+          return "République démocratique du Congo";
+        case "Burundi":
+          return "Burundi";
+        case "Malawi":
+          return "Malawi";
+        case "Lesotho":
+          return "Lesotho";
+        case "Swaziland":
+          return "Swaziland";
+        default:
+          return country;
+      }
+    }
+    return country;
+  };
 
   // Transactions filtrées
   const filteredTransactions = selectedCountry === "all" 
@@ -619,19 +1216,39 @@ const TransactionsPage = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-12 text-[#0b062b]">
               {language === "EN" ? (
                 <>
-                  Our operations and <span className="text-[#0001ff]">mandates in progress</span>
+                  Our operations and <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
+                  >mandates in progress</motion.span>
                 </>
               ) : language === "IT" ? (
                 <>
-                  Le nostre <span className="text-[#0001ff]">operazioni</span> e mandati in corso
+                  Le nostre <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
+                  >operazioni</motion.span> e mandati in corso
                 </>
               ) : language === "DE" ? (
                 <>
-                  Unsere <span className="text-[#0001ff]">Transaktionen</span> und laufende Mandate
+                  Unsere <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
+                  >Transaktionen</motion.span> und laufende Mandate
                 </>
               ) : (
                 <>
-                  Nos opérations et <span className="text-[#0001ff]">mandats en cours</span>
+                  Nos opérations et <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
+                  >mandats en cours</motion.span>
                 </>
               )}
             </h1>
@@ -691,30 +1308,50 @@ const TransactionsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0b062b]">
               {language === "EN" ? (
                 <>
-                  Our current <span className="text-[#0001ff]">mandates</span>
+                  Our current <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 1.0, ease: "easeOut" }}
+                  >mandates</motion.span>
                 </>
               ) : language === "IT" ? (
                 <>
-                  I nostri <span className="text-[#0001ff]">mandati</span> in corso
+                  I nostri <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 1.0, ease: "easeOut" }}
+                  >mandati</motion.span> in corso
                 </>
               ) : language === "DE" ? (
                 <>
-                  Unsere aktuellen <span className="text-[#0001ff]">Mandate</span>
+                  Unsere aktuellen <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 1.0, ease: "easeOut" }}
+                  >Mandate</motion.span>
                 </>
               ) : (
                 <>
-                  Nos <span className="text-[#0001ff]">mandats</span> en cours
+                  Nos <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 1.0, ease: "easeOut" }}
+                  >mandats</motion.span> en cours
                 </>
               )}
             </h2>
             <p className="text-gray-600 text-lg">
               {language === "EN"
-                ? "Operations currently being carried out by our teams"
+                ? "Some operations currently being carried out by our teams"
                 : language === "IT"
-                ? "Operazioni attualmente in corso di realizzazione dai nostri team"
+                ? "Alcune operazioni attualmente in corso di realizzazione dai nostri team"
                 : language === "DE"
-                ? "Aktuell von unseren Teams durchgeführte Operationen"
-                : "Opérations actuellement en cours de réalisation par nos équipes"}
+                ? "Einige aktuell von unseren Teams durchgeführte Operationen"
+                : "Quelques opérations actuellement en cours de réalisation par nos équipes"}
             </p>
           </div>
 
@@ -833,19 +1470,39 @@ const TransactionsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0b062b]">
               {language === "EN" ? (
                 <>
-                  Operations <span className="text-[#0001ff]">accompanied</span> by our collaborators
+                  Operations <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
+                  >accompanied</motion.span> by our collaborators
                 </>
               ) : language === "IT" ? (
                 <>
-                  Le operazioni <span className="text-[#0001ff]">accompagnate</span> dai nostri collaboratori
+                  Le operazioni <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
+                  >accompagnate</motion.span> dai nostri collaboratori
                 </>
               ) : language === "DE" ? (
                 <>
-                  Von unseren <span className="text-[#0001ff]">Mitarbeitern begleitete</span> Transaktionen
+                  Von unseren <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
+                  >Mitarbeitern begleitete</motion.span> Transaktionen
                 </>
               ) : (
                 <>
-                  Les opérations <span className="text-[#0001ff]">accompagnées</span> par nos collaborateurs
+                  Les opérations <motion.span 
+                    className="text-[#0001ff]"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
+                  >accompagnées</motion.span> par nos collaborateurs
                 </>
               )}
             </h2>
@@ -894,7 +1551,7 @@ const TransactionsPage = () => {
                     : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                 }`}
               >
-                {country}
+                {translateCountry(country)}
               </button>
             ))}
           </div>

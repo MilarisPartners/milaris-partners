@@ -848,8 +848,8 @@ export const translations = {
               subtitle: "Des experts de renommée internationale apportant à l'équipe une vision stratégique et une connaissance approfondie des marchés."
           }
       },
-      managingDirectorFrance: "Managing Director - France",
-      managingDirectorItalie: "Managing Director - Italie",
+      managingDirectorFrance: "Managing Partner - France",
+      managingDirectorItalie: "Managing Partner - Italie",
       seniorAdvisor: "Senior Advisor - France & Allemagne"
     },
     carrieres: {
@@ -1890,8 +1890,8 @@ export const translations = {
               subtitle: "Internationally recognized experts who support the team with strategic vision and deep market knowledge."
           }
       },
-      managingDirectorFrance: "Managing Director - France",
-      managingDirectorItalie: "Managing Director - Italy",
+      managingDirectorFrance: "Managing Partner - France",
+      managingDirectorItalie: "Managing Partner - Italy",
       seniorAdvisor: "Senior Advisor - France & Germany"
     },
     carrieres: {
@@ -2912,22 +2912,28 @@ export const translations = {
           }
       },
       cta: {
-          title: "Siete pronti a incontrare il nostro team?",
+          title1: "Siete pronti a incontrare il nostro ",
+          title2: "team",
+          title3: "?",
           subtitle: "Confrontiamoci sul vostro progetto e valutiamo insieme come contribuire al suo successo.",
           button: "Pianificate un incontro con noi!"
       },
       sections: {
           partners: {
-              title: "La nostra leadership",
+              title1: "La nostra ",
+              title2: "leadership",
+              title3: "",
               subtitle: "I fondatori di Milaris Partners: esperti di M&A con una visione internazionale ed europea."
           },
           seniorAdvisor: {
-              title: "Il team dei Senior Advisors",
+              title1: "Il team dei ",
+              title2: "Senior Advisors",
+              title3: "",
               subtitle: "Esperti di livello internazionale che affiancano il team con visione strategica e profonda conoscenza dei mercati."
           }
       },
-      managingDirectorFrance: "Managing Director - Francia",
-      managingDirectorItalie: "Managing Director - Italia",
+      managingDirectorFrance: "Managing Partner - Francia",
+      managingDirectorItalie: "Managing Partner - Italia",
       seniorAdvisor: "Senior Advisor - Francia & Germania"
     },
     carrieres: {
@@ -3354,6 +3360,7 @@ export const translations = {
     },
     expertise: {
       title: "Unsere Expertise",
+      titleHighlight: "spezialisierte",
       subtitle: "Spezialisierte Beratung für Ihre Erfolge",
       sectors: {
         consumer: {
