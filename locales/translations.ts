@@ -284,7 +284,7 @@ export const translations = {
       cession: {
         hero: {
           badge: "Cession d'entreprise",
-          title: "Identifier les acquéreurs les plus pertinents, en France comme à l'international, pour réussir votre cession",
+          title: "Identifier les acquéreurs les plus pertinents pour réussir votre cession",
           subtitle: "Nous en faisons une réussite.",
           description: "Chez Milaris Partners, nous accompagnons les dirigeants dans la cession totale ou partielle de leur entreprise, en structurant une démarche stratégique, confidentielle et optimisée.",
           cta: "Discutons de votre projet"
@@ -336,7 +336,7 @@ export const translations = {
               duration: "8–12 semaines"
             },
             closing: {
-              title: "Négociation et Closing",
+              title: "Négociation et closing",
               description: "Assistance dans les négociations, coordination avec les conseils juridiques jusqu'à la signature",
               duration: "4–8 semaines"
             }
@@ -499,7 +499,7 @@ export const translations = {
               duration: "3–6 semaines"
             },
             nego: {
-              title: "Négociation et Closing",
+              title: "Négociation et closing",
               description: "Gestion des audits, coordination juridique des structures et accompagnement aux négociations jusqu'à la signature",
               duration: "4–8 semaines"
             }
@@ -658,7 +658,7 @@ export const translations = {
               duration: "4–8 semaines"
             },
             closing: {
-              title: "Due diligence et Closing",
+              title: "Due diligence et closing",
               description: "Due diligence, finalisation de la documentation légale et déblocage des fonds",
               duration: "3–6 semaines"
             }
@@ -962,7 +962,7 @@ export const translations = {
       bottomCtaButton: "Discuter de votre projet"
     },
     testimonial: {
-      quote: "Milaris Partners puise sa force dans son ancrage européen. En France, en Italie ou en Allemagne, on parle la langue de nos clients et on comprend intimement leurs marchés, une approche qui suscite un réel engouement sur le segment small et mid cap et qui nous permet d'accélérer cette année encore notre développement.",
+      quote: "Milaris Partners puise sa force dans son ancrage européen. En France, en Italie ou en Allemagne, on parle la langue de nos clients et on comprend intimement leurs marchés, une approche qui suscite un réel engouement sur le segment small et mid cap et qui nous permet d'accélérer cette année encore notre développement",
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },
@@ -2004,7 +2004,7 @@ export const translations = {
       bottomCtaButton: "Let's discuss your project"
     },
     testimonial: {
-      quote: "Milaris Partners draws its strength from its European roots. In France, Italy, or Germany, we speak our clients' language and intimately understand their markets, an approach that is generating real enthusiasm in the small and mid-cap segment and enabling us to accelerate our development this year.",
+      quote: "Milaris Partners draws its strength from its European roots. In France, Italy, and Germany, we speak our clients' language and possess a deep understanding of their markets. This approach inspires genuine enthusiasm within the small and mid-cap segment and continues to drive our growth and expansion this year",
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },
@@ -3046,7 +3046,7 @@ export const translations = {
       bottomCtaButton: "Parlateci del vostro progetto"
     },
     testimonial: {
-      quote: "Milaris Partners trae la sua forza dalle radici europee. In Francia, in Italia o in Germania, parliamo la lingua dei nostri clienti e comprendiamo intimamente i loro mercati, un approccio che suscita un vero entusiasmo nel segmento small e mid cap e che ci permette di accelerare anche quest'anno il nostro sviluppo.",
+      quote: "Milaris Partners fonda la propria forza sulle sue radici europee. In Francia, in Italia e in Germania parliamo la stessa lingua dei nostri clienti e conosciamo a fondo le dinamiche dei loro mercati. Questo approccio, che genera un autentico entusiasmo nel segmento delle small e mid cap, ci consente di proseguire anche quest'anno con slancio nel nostro percorso di crescita e sviluppo",
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },

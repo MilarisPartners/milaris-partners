@@ -1216,50 +1216,38 @@ const TransactionsPage = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-12 text-[#0b062b]">
               {language === "EN" ? (
                 <>
-                  Our operations and <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
-                  >mandates in progress</motion.span>
+                  Our operations and <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >mandates in progress</span>
                 </>
               ) : language === "IT" ? (
                 <>
-                  Le nostre <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
-                  >operazioni</motion.span> e mandati in corso
+                  Le nostre <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >operazioni</span> e mandati in corso
                 </>
               ) : language === "DE" ? (
                 <>
-                  Unsere <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
-                  >Transaktionen</motion.span> und laufende Mandate
+                  Unsere <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >Transaktionen</span> und laufende Mandate
                 </>
               ) : (
                 <>
-                  Nos opérations et <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
-                  >mandats en cours</motion.span>
+                  Nos opérations et <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >mandats en cours</span>
                 </>
               )}
             </h1>
             <p className="text-xl text-gray-600 mb-12">
               {language === "EN"
-                ? "Our team has supported"
+                ? "Our team has extensive international M&A experience, with numerous transactions completed across multiple countries."
                 : language === "IT"
-                ? "Il nostro team ha supportato"
+                ? "Il nostro team vanta una forte esperienza in M&A a livello internazionale, con numerose operazioni concluse in diversi Paesi."
                 : language === "DE"
-                ? "Unser Team hat unterstützt"
-                : "Notre équipe a accompagné"}
+                ? "Unser Team verfügt über umfangreiche M&A-Erfahrung weltweit und hat zahlreiche Transaktionen in verschiedenen Ländern erfolgreich begleitet."
+                : "Notre équipe dispose d'une solide expérience en M&A à l'international, avec de nombreuses transactions réalisées dans plusieurs pays."}
             </p>
           </div>
         </div>
@@ -1308,50 +1296,38 @@ const TransactionsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0b062b]">
               {language === "EN" ? (
                 <>
-                  Our current <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 1.0, ease: "easeOut" }}
-                  >mandates</motion.span>
+                  Our current <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >mandates</span>
                 </>
               ) : language === "IT" ? (
                 <>
-                  I nostri <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 1.0, ease: "easeOut" }}
-                  >mandati</motion.span> in corso
+                  I nostri <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >mandati</span> in corso
                 </>
               ) : language === "DE" ? (
                 <>
-                  Unsere aktuellen <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 1.0, ease: "easeOut" }}
-                  >Mandate</motion.span>
+                  Unsere aktuellen <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >Mandate</span>
                 </>
               ) : (
                 <>
-                  Nos <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 1.0, ease: "easeOut" }}
-                  >mandats</motion.span> en cours
+                  Nos <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >mandats</span> en cours
                 </>
               )}
             </h2>
             <p className="text-gray-600 text-lg">
               {language === "EN"
-                ? "Some operations currently being carried out by our teams"
+                ? "Some operations currently being carried out by our teams."
                 : language === "IT"
-                ? "Alcune operazioni attualmente in corso di realizzazione dai nostri team"
+                ? "Alcune operazioni attualmente in corso di realizzazione dai nostri team."
                 : language === "DE"
-                ? "Einige aktuell von unseren Teams durchgeführte Operationen"
-                : "Quelques opérations actuellement en cours de réalisation par nos équipes"}
+                ? "Einige aktuell von unseren Teams durchgeführte Operationen."
+                : "Quelques opérations actuellement en cours de réalisation par nos équipes."}
             </p>
           </div>
 
@@ -1436,12 +1412,12 @@ const TransactionsPage = () => {
             </h3>
             <p className="text-xl mb-8 opacity-90">
               {language === "EN"
-                ? "Contact our partners to discuss your project"
+                ? "Contact our partners to discuss your project."
                 : language === "IT"
-                ? "Contattate i nostri partner per discutere del vostro progetto"
+                ? "Contattate i nostri partner per discutere del vostro progetto."
                 : language === "DE"
-                ? "Kontaktieren Sie unsere Partner, um Ihr Projekt zu besprechen"
-                : "Contactez nos associés pour discuter de votre projet"}
+                ? "Kontaktieren Sie unsere Partner, um Ihr Projekt zu besprechen."
+                : "Contactez nos associés pour discuter de votre projet."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -1470,39 +1446,27 @@ const TransactionsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0b062b]">
               {language === "EN" ? (
                 <>
-                  Operations <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
-                  >accompanied</motion.span> by our collaborators
+                  Operations <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >accompanied</span> by our collaborators
                 </>
               ) : language === "IT" ? (
                 <>
-                  Le operazioni <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
-                  >accompagnate</motion.span> dai nostri collaboratori
+                  Le operazioni <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >accompagnate</span> dai nostri collaboratori
                 </>
               ) : language === "DE" ? (
                 <>
-                  Von unseren <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
-                  >Mitarbeitern begleitete</motion.span> Transaktionen
+                  Von unseren <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >Mitarbeitern begleitete</span> Transaktionen
                 </>
               ) : (
                 <>
-                  Les opérations <motion.span 
-                    className="text-[#0001ff]"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, delay: 1.2, ease: "easeOut" }}
-                  >accompagnées</motion.span> par nos collaborateurs
+                  Les opérations <span 
+                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                  >accompagnées</span> par nos collaborateurs
                 </>
               )}
             </h2>
