@@ -141,7 +141,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="relative z-10">{t("hero.cta.scheduleCall")}</span>
+              <span className="relative z-10 font-semibold">{t("hero.cta.scheduleCall")}</span>
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-[#0001ff] to-[#3E8BFF]"
                 initial={{ x: "100%" }}
@@ -151,7 +151,7 @@ const Hero = () => {
             </motion.a>
             <motion.button 
               onClick={scrollToAbout}
-              className={`bg-white/95 backdrop-blur-md text-[#0b062b] border-2 border-white/50 btn-responsive rounded-lg hover:border-white hover:bg-white hover:shadow-2xl transition-all duration-300 relative overflow-hidden w-full sm:w-auto shadow-xl ${language === 'IT' ? 'sm:min-w-[280px]' : 'sm:min-w-[200px]'}`}
+              className={`bg-white/95 backdrop-blur-md text-[#0b062b] border-2 border-white/50 btn-responsive rounded-lg hover:border-white hover:bg-white hover:shadow-2xl transition-all duration-300 relative overflow-hidden w-full sm:w-auto shadow-xl font-semibold ${language === 'IT' ? 'sm:min-w-[280px]' : 'sm:min-w-[200px]'}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

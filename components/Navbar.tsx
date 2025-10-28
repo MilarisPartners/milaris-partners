@@ -84,7 +84,7 @@ const Navbar = () => {
         }`}
       >
         <div className="w-full px-4">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-16">
             {/* Logo agrandi et positionné à gauche */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -97,9 +97,9 @@ const Navbar = () => {
                 <Image 
                   src={getAssetPath(isHomePage ? "/logo-white.png" : "/logo-dark.png")}
                   alt="Milaris Partners"
-                  width={220}
-                  height={44}
-                  className="h-11 w-auto overflow-visible rounded-none"
+                  width={180}
+                  height={36}
+                  className="h-9 w-auto overflow-visible rounded-none"
                   style={{ objectFit: 'contain', borderRadius: 0 }}
                   priority
                 />
@@ -108,7 +108,7 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <motion.div 
-              className="hidden lg:flex items-center space-x-10"
+              className="hidden lg:flex items-center space-x-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
@@ -220,7 +220,7 @@ const Navbar = () => {
                 href={calendlyLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#0001ff] text-white px-6 py-2.5 rounded-lg text-base font-bold hover:bg-[#0b062b] transition-all duration-300 mr-12 shadow-xl"
+                className="bg-[#0001ff] text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-[#0b062b] transition-all duration-300 mr-12 shadow-xl"
               >
                 {t("navbar.contact")}
               </a>
@@ -341,7 +341,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -20, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="bg-white/70 backdrop-blur-md rounded-full px-10 py-3 shadow-lg border border-gray-100 flex items-center justify-between max-w-6xl w-full hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
+              className="bg-white/70 backdrop-blur-md rounded-full px-8 py-2.5 shadow-lg border border-gray-100 flex items-center justify-between max-w-6xl w-full hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
               {/* Logo cliquable pour retourner en haut */}
               <button
@@ -356,15 +356,15 @@ const Navbar = () => {
                 <Image 
                   src={getAssetPath("/logo-dark.png")}
                   alt="Milaris Partners"
-                  width={180}
-                  height={36}
-                  className="h-9 w-auto"
+                  width={150}
+                  height={30}
+                  className="h-7 w-auto"
                   style={{ objectFit: 'contain' }}
                 />
               </button>
 
               {/* Menu items */}
-              <div className="hidden md:flex items-center space-x-8">
+              <div className="hidden md:flex items-center space-x-6">
                 <Link
                   href="/"
                   className="text-base font-bold text-gray-700 hover:text-[#0001ff] transition-colors duration-300"
@@ -448,7 +448,7 @@ const Navbar = () => {
                   href={calendlyLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#0001ff] text-white px-4 py-2 rounded-full text-base font-bold hover:bg-[#0b062b] transition-all duration-300"
+                  className="bg-[#0001ff] text-white px-4 py-1.5 rounded-full text-sm font-bold hover:bg-[#0b062b] transition-all duration-300"
                 >
                   {t("navbar.contact")}
                 </a>
