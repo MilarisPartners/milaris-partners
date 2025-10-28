@@ -27,7 +27,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 // SEO metadata optimized for the homepage
-export const metadata: Metadata = generateSEOMetadata("home", "en");
+export const metadata: Metadata = generateSEOMetadata("home", "EN");
 
 export default function RootLayout({
   children,
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   // Structured data for the organization
-  const organizationData = generateStructuredData.organization("en");
+  const organizationData = generateStructuredData.organization("EN");
 
   return (
     <html lang="en" className="scroll-smooth">

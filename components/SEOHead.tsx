@@ -19,9 +19,9 @@ export default function SEOHead({
   const { language: contextLanguage } = useTranslation();
   const currentLanguage = language || contextLanguage;
   
-  // Normalize language format (convert uppercase to lowercase)
+  // Normalize language format (convert to uppercase)
   // For German, default to English since SEO config doesn't have DE yet
-  const normalizedLanguage = currentLanguage.toLowerCase() === 'de' ? 'en' : currentLanguage.toLowerCase() as 'fr' | 'it' | 'en';
+  const normalizedLanguage = currentLanguage.toUpperCase() === 'DE' ? 'EN' : currentLanguage.toUpperCase() as 'FR' | 'EN' | 'IT' | 'DE';
   
   // Données structurées de base pour l'organisation
   const organizationData = generateStructuredData.organization(normalizedLanguage);

@@ -15,29 +15,29 @@ export interface SEOConfig {
 
 export interface PageSEO {
   [key: string]: {
-    fr: SEOConfig;
-    it: SEOConfig;
-    en: SEOConfig;
+    FR: SEOConfig;
+    IT: SEOConfig;
+    EN: SEOConfig;
   }
 }
 
 export const seoConfig: PageSEO = {
   home: {
-    fr: {
+    FR: {
       title: "Milaris Partners | M&A Advisory",
       description: "Cabinet de conseil en fusions-acquisitions et levée de fonds spécialisé dans l'accompagnement des TPE/PME en France et Italie. Expertise sectorielle et technologie IA propriétaire.",
       keywords: ["M&A", "fusions acquisitions", "levée de fonds", "TPE", "PME", "ETI", "cession entreprise", "acquisition entreprise", "conseil financier", "France", "Italie"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "website"
     },
-    it: {
+    IT: {
       title: "Milaris Partners | M&A Advisory",
       description: "Consulenza specializzata in fusioni e acquisizioni e raccolta fondi per PMI in Francia e Italia. Competenza settoriale e tecnologia IA proprietaria.",
       keywords: ["M&A", "fusioni acquisizioni", "raccolta fondi", "PMI", "cessione impresa", "acquisizione impresa", "consulenza finanziaria", "Francia", "Italia"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "website"
     },
-    en: {
+    EN: {
       title: "Milaris Partners | M&A Advisory",
       description: "Specialized M&A and fundraising advisory for SMEs in France and Italy. Sector expertise and proprietary AI technology.",
       keywords: ["M&A", "mergers acquisitions", "fundraising", "SME", "business sale", "business acquisition", "financial advisory", "France", "Italy"],
@@ -46,21 +46,21 @@ export const seoConfig: PageSEO = {
     }
   },
   equipe: {
-    fr: {
+    FR: {
       title: "Notre équipe | Milaris Partners",
       description: "Rencontrez Paul Poulain et Matteo Orlandi Mango, nos experts M&A basés en France et Italie. Une équipe franco-italienne au service de vos projets de croissance.",
       keywords: ["équipe M&A", "experts fusions acquisitions", "Paul Poulain", "Matteo Orlandi Mango", "conseil M&A France", "conseil M&A Italie"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "profile"
     },
-    it: {
+    IT: {
       title: "Il nostro team | Milaris Partners",
       description: "Incontrate Paul Poulain e Matteo Orlandi Mango, i nostri esperti M&A basati in Francia e Italia. Un team franco-italiano al servizio dei vostri progetti di crescita.",
       keywords: ["team M&A", "esperti fusioni acquisizioni", "Paul Poulain", "Matteo Orlandi Mango", "consulenza M&A Francia", "consulenza M&A Italia"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "profile"
     },
-    en: {
+    EN: {
       title: "Our team | Milaris Partners",
       description: "Meet Paul Poulain and Matteo Orlandi Mango, our M&A experts based in France and Italy. A Franco-Italian team serving your growth projects.",
       keywords: ["M&A team", "mergers acquisitions experts", "Paul Poulain", "Matteo Orlandi Mango", "M&A advisory France", "M&A advisory Italy"],
@@ -69,21 +69,21 @@ export const seoConfig: PageSEO = {
     }
   },
   "cession-entreprise": {
-    fr: {
+    FR: {
       title: "Cession d'entreprise | Milaris Partners",
       description: "Accompagnement complet dans la cession de votre entreprise. Processus structuré, réseau d'acquéreurs international et technologie IA pour maximiser la valorisation.",
       keywords: ["cession entreprise", "vendre entreprise", "transmission entreprise", "valorisation entreprise", "acquéreurs stratégiques", "acquéreurs financiers", "M&A"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    it: {
+    IT: {
       title: "Sell-side advisory | Milaris Partners",
       description: "Accompagnamento completo nella cessione della vostra impresa. Processo strutturato, rete di acquirenti internazionale e tecnologia IA per massimizzare la valutazione.",
       keywords: ["cessione impresa", "vendere azienda", "trasmissione impresa", "valutazione impresa", "acquirenti strategici", "acquirenti finanziari", "M&A"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    en: {
+    EN: {
       title: "Sell-side advisory | Milaris Partners",
       description: "Complete support in selling your business. Structured process, international buyer network and AI technology to maximize valuation.",
       keywords: ["business sale", "sell company", "business transfer", "company valuation", "strategic buyers", "financial buyers", "M&A"],
@@ -92,21 +92,21 @@ export const seoConfig: PageSEO = {
     }
   },
   "acquisition-entreprise": {
-    fr: {
+    FR: {
       title: "Acquisition d'entreprise | Milaris Partners",
       description: "Stratégie d'acquisition sur-mesure pour votre croissance externe. Identification de cibles, négociation et structuration d'opérations avec notre technologie IA.",
       keywords: ["acquisition entreprise", "croissance externe", "rachat entreprise", "identification cibles", "due diligence", "négociation M&A"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    it: {
+    IT: {
       title: "Buy-side advisory | Milaris Partners",
       description: "Strategia di acquisizione su misura per la vostra crescita esterna. Identificazione di target, negoziazione e strutturazione di operazioni con la nostra tecnologia IA.",
       keywords: ["acquisizione impresa", "crescita esterna", "acquisto azienda", "identificazione target", "due diligence", "negoziazione M&A"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    en: {
+    EN: {
       title: "Buy-side advisory | Milaris Partners",
       description: "Tailored acquisition strategy for your external growth. Target identification, negotiation and deal structuring with our AI technology.",
       keywords: ["business acquisition", "external growth", "company buyout", "target identification", "due diligence", "M&A negotiation"],
@@ -115,21 +115,21 @@ export const seoConfig: PageSEO = {
     }
   },
   financement: {
-    fr: {
+    FR: {
       title: "Levée de fonds | Milaris Partners",
       description: "Accompagnement dans votre levée de fonds. Structuration financière, accès à notre réseau d'investisseurs et négociation optimisée pour votre croissance.",
       keywords: ["levée de fonds", "financement entreprise", "investisseurs", "private equity", "venture capital", "structuration financière", "croissance"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    it: {
+    IT: {
       title: "Fundraising advisory | Milaris Partners",
       description: "Accompagnamento nella vostra raccolta fondi. Strutturazione finanziaria, accesso alla nostra rete di investitori e negoziazione ottimizzata per la vostra crescita.",
       keywords: ["raccolta fondi", "finanziamento impresa", "investitori", "private equity", "venture capital", "strutturazione finanziaria", "crescita"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    en: {
+    EN: {
       title: "Fundraising advisory | Milaris Partners",
       description: "Support in your fundraising. Financial structuring, access to our investor network and optimized negotiation for your growth.",
       keywords: ["fundraising", "business financing", "investors", "private equity", "venture capital", "financial structuring", "growth"],
@@ -138,21 +138,21 @@ export const seoConfig: PageSEO = {
     }
   },
   "levee-de-fonds": {
-    fr: {
+    FR: {
       title: "Levée de Fonds Spécialisée - Financer votre développement | Milaris Partners",
       description: "Expertise approfondie en levée de fonds pour TPE/PME. De l'amorçage au développement, nous structurons votre financement avec les meilleurs investisseurs.",
       keywords: ["levée de fonds spécialisée", "financement TPE PME", "amorçage", "développement", "investisseurs spécialisés", "structuration financière"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    it: {
+    IT: {
       title: "Raccolta Fondi Specializzata - Finanziare il vostro sviluppo | Milaris Partners",
       description: "Competenza approfondita in raccolta fondi per PMI. Dal seed allo sviluppo, strutturiamo il vostro finanziamento con i migliori investitori.",
       keywords: ["raccolta fondi specializzata", "finanziamento PMI", "seed", "sviluppo", "investitori specializzati", "strutturazione finanziaria"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    en: {
+    EN: {
       title: "Specialized Fundraising - Finance your development | Milaris Partners",
       description: "Deep expertise in fundraising for SMEs. From seed to development, we structure your financing with the best investors.",
       keywords: ["specialized fundraising", "SME financing", "seed funding", "development", "specialized investors", "financial structuring"],
@@ -161,21 +161,21 @@ export const seoConfig: PageSEO = {
     }
   },
   "fusions-acquisitions": {
-    fr: {
+    FR: {
       title: "Fusions-Acquisitions - Expertise M&A complète | Milaris Partners",
       description: "Conseil stratégique en fusions-acquisitions. Accompagnement complet des opérations de M&A avec notre expertise sectorielle et technologie IA propriétaire.",
       keywords: ["fusions acquisitions", "conseil M&A", "opérations M&A", "expertise sectorielle", "technologie IA", "conseil stratégique"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    it: {
+    IT: {
       title: "Fusioni-Acquisizioni - Competenza M&A completa | Milaris Partners",
       description: "Consulenza strategica in fusioni e acquisizioni. Accompagnamento completo delle operazioni M&A con la nostra competenza settoriale e tecnologia IA proprietaria.",
       keywords: ["fusioni acquisizioni", "consulenza M&A", "operazioni M&A", "competenza settoriale", "tecnologia IA", "consulenza strategica"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "article"
     },
-    en: {
+    EN: {
       title: "Mergers-Acquisitions - Complete M&A expertise | Milaris Partners",
       description: "Strategic M&A advisory. Complete support for M&A transactions with our sector expertise and proprietary AI technology.",
       keywords: ["mergers acquisitions", "M&A advisory", "M&A transactions", "sector expertise", "AI technology", "strategic advisory"],
@@ -184,21 +184,21 @@ export const seoConfig: PageSEO = {
     }
   },
   carrieres: {
-    fr: {
+    FR: {
       title: "Rejoignez-nous | Milaris Partners",
       description: "Rejoignez notre équipe d'experts M&A. Découvrez nos opportunités de carrière dans le conseil en fusions-acquisitions et levée de fonds.",
       keywords: ["carrières M&A", "emploi conseil", "opportunités", "expert M&A", "fusions acquisitions", "recrutement"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "website"
     },
-    it: {
+    IT: {
       title: "Unisciti a noi | Milaris Partners",
       description: "Unitevi al nostro team di esperti M&A. Scoprite le nostre opportunità di carriera nella consulenza in fusioni e acquisizioni e raccolta fondi.",
       keywords: ["carriere M&A", "lavoro consulenza", "opportunità", "esperto M&A", "fusioni acquisizioni", "recruitment"],
       ogImage: "/og-images/home-fr.svg",
       ogType: "website"
     },
-    en: {
+    EN: {
       title: "Join us | Milaris Partners",
       description: "Join our team of M&A experts. Discover our career opportunities in mergers & acquisitions and fundraising advisory.",
       keywords: ["M&A careers", "advisory jobs", "opportunities", "M&A expert", "mergers acquisitions", "recruitment"],
@@ -207,7 +207,7 @@ export const seoConfig: PageSEO = {
     }
   },
   "mentions-legales": {
-    fr: {
+    FR: {
       title: "Mentions légales | Milaris Partners",
       description: "Mentions légales du site Milaris Partners. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
       keywords: ["mentions légales", "éditeur", "hébergeur", "conditions utilisation"],
@@ -215,7 +215,7 @@ export const seoConfig: PageSEO = {
       ogType: "website",
       noIndex: true
     },
-    it: {
+    IT: {
       title: "Note legali | Milaris Partners",
       description: "Note legali del sito Milaris Partners. Informazioni sull'editore, sull'hosting e sulle condizioni d'uso.",
       keywords: ["note legali", "editore", "hosting", "condizioni uso"],
@@ -223,7 +223,7 @@ export const seoConfig: PageSEO = {
       ogType: "website",
       noIndex: true
     },
-    en: {
+    EN: {
       title: "Legal Notice | Milaris Partners",
       description: "Legal notice of Milaris Partners website. Information about publisher, hosting and terms of use.",
       keywords: ["legal notice", "publisher", "hosting", "terms of use"],
@@ -233,7 +233,7 @@ export const seoConfig: PageSEO = {
     }
   },
   "conditions-generales": {
-    fr: {
+    FR: {
       title: "Conditions générales | Milaris Partners",
       description: "Conditions générales d'utilisation du site Milaris Partners. Termes et conditions de nos services de conseil M&A.",
       keywords: ["conditions générales", "termes conditions", "services conseil", "M&A"],
@@ -241,7 +241,7 @@ export const seoConfig: PageSEO = {
       ogType: "website",
       noIndex: true
     },
-    it: {
+    IT: {
       title: "Condizioni generali | Milaris Partners",
       description: "Condizioni generali d'uso del sito Milaris Partners. Termini e condizioni dei nostri servizi di consulenza M&A.",
       keywords: ["condizioni generali", "termini condizioni", "servizi consulenza", "M&A"],
@@ -249,7 +249,7 @@ export const seoConfig: PageSEO = {
       ogType: "website",
       noIndex: true
     },
-    en: {
+    EN: {
       title: "Terms and Conditions | Milaris Partners",
       description: "General terms of use of Milaris Partners website. Terms and conditions of our M&A advisory services.",
       keywords: ["general terms", "terms conditions", "advisory services", "M&A"],
@@ -262,7 +262,7 @@ export const seoConfig: PageSEO = {
 
 export function generateMetadata(
   pageName: string,
-  language: 'fr' | 'it' | 'en' = 'en',
+  language: 'FR' | 'EN' | 'IT' | 'DE' = 'EN',
   baseUrl: string = 'https://milaris.partners'
 ): Metadata {
   const pageConfig = seoConfig[pageName]?.[language];
@@ -307,7 +307,7 @@ export function generateMetadata(
       description: pageConfig.description,
       url: canonicalUrl,
       siteName: 'Milaris Partners',
-      locale: language === 'fr' ? 'fr_FR' : language === 'it' ? 'it_IT' : 'en_US',
+      locale: language === 'FR' ? 'fr_FR' : language === 'IT' ? 'it_IT' : 'en_US',
       type: pageConfig.ogType || 'website',
       images: pageConfig.ogImage ? [
         {
@@ -336,14 +336,16 @@ export function generateMetadata(
 
 // Données structurées pour différents types de pages
 export const generateStructuredData = {
-  organization: (language: 'fr' | 'it' | 'en' = 'fr') => ({
+  organization: (language: 'FR' | 'EN' | 'IT' | 'DE' = 'FR') => ({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Milaris Partners',
-    description: language === 'fr' 
+    description: language === 'FR' 
       ? 'Cabinet de conseil spécialisé en fusions-acquisitions et levée de fonds pour les TPE/PME en France et en Italie.'
-      : language === 'it'
+      : language === 'IT'
       ? 'Studio di consulenza specializzato in fusioni e acquisizioni e raccolta fondi per PMI in Francia e in Italia.'
+      : language === 'DE'
+      ? 'Beratungsunternehmen spezialisiert auf Fusionen und Übernahmen sowie Fundraising für KMU in Frankreich und Italien.'
       : 'Advisory firm specialized in mergers & acquisitions and fundraising for SMEs in France and Italy.',
     url: 'https://milaris.partners',
     logo: 'https://milaris.partners/logo.png',
@@ -364,7 +366,7 @@ export const generateStructuredData = {
     ]
   }),
 
-  person: (name: string, role: string, email: string, linkedin: string, language: 'fr' | 'it' | 'en' = 'fr') => ({
+  person: (name: string, role: string, email: string, linkedin: string, language: 'FR' | 'EN' | 'IT' | 'DE' = 'FR') => ({
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: name,
@@ -377,7 +379,7 @@ export const generateStructuredData = {
     }
   }),
 
-  service: (serviceName: string, description: string, language: 'fr' | 'it' | 'en' = 'fr') => ({
+  service: (serviceName: string, description: string, language: 'FR' | 'EN' | 'IT' | 'DE' = 'FR') => ({
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: serviceName,
@@ -387,7 +389,7 @@ export const generateStructuredData = {
       name: 'Milaris Partners'
     },
     areaServed: ['France', 'Italy', 'Europe'],
-    serviceType: language === 'fr' ? 'Conseil en fusions-acquisitions' : language === 'it' ? 'Consulenza in fusioni e acquisizioni' : 'Mergers & Acquisitions Advisory'
+    serviceType: language === 'FR' ? 'Conseil en fusions-acquisitions' : language === 'IT' ? 'Consulenza in fusioni e acquisizioni' : language === 'DE' ? 'M&A-Beratung' : 'Mergers & Acquisitions Advisory'
   }),
 
   faq: (questions: Array<{question: string, answer: string}>) => ({

@@ -28,21 +28,21 @@ const Equipe = () => {
       t("equipe.managingDirectorFrance"),
       "paul@milaris.partners",
       "https://www.linkedin.com/in/paul-poulain/",
-      language as 'fr' | 'it' | 'en'
+      language as 'FR' | 'IT' | 'EN' | 'DE'
     ),
     generateStructuredData.person(
       "Matteo Orlandi Mango",
       t("equipe.managingDirectorItalie"),
       "matteo@milaris.partners",
       "https://www.linkedin.com/in/matteoorlandimango/",
-      language as 'fr' | 'it' | 'en'
+      language as 'FR' | 'IT' | 'EN' | 'DE'
     ),
     generateStructuredData.person(
       "Kevin Lauwick-Baumeister",
       t("equipe.seniorAdvisor"),
       "kevin@milaris.partners",
       "https://www.linkedin.com/in/kevinlauwick/",
-      language as 'fr' | 'it' | 'en'
+      language as 'FR' | 'IT' | 'EN' | 'DE'
     )
   ];
 

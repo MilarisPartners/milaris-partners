@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { generateMetadata as generateSEOMetadata } from '@/utils/seo';
 
 export async function generateMetadata(): Promise<Metadata> {
-  return generateSEOMetadata('equipe', 'fr');
+  return generateSEOMetadata('equipe', 'FR');
 }
 
 export default function EquipeLayout({
