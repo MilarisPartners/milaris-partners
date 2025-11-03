@@ -2218,7 +2218,7 @@ export const translations = {
           description: "Expertise nell'ottimizzazione e valorizzazione dei servizi B2B"
         },
         energy: {
-          title: "Energia & Ambiente",
+          title: "Energia",
           description: "Accompagnamento nella transizione energetica e nei progetti sostenibili"
         }
       }
