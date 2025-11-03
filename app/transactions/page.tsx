@@ -8,7 +8,7 @@ import SEOHead from "@/components/SEOHead";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
 import { getAssetPath } from "@/utils/getAssetPath";
-import { Building2, MapPin, FileText, Mail, Calendar, Filter, Handshake } from "lucide-react";
+import { Building2, MapPin, FileText, Mail, Calendar, Filter, Handshake, ArrowDown } from "lucide-react";
 
 type Mandate = {
   id: string;
@@ -39,6 +39,10 @@ type Transaction = {
 const TransactionsPage = () => {
   const { t, language } = useTranslation();
   const [selectedCountry, setSelectedCountry] = useState<string>("all");
+
+  const scrollToMandates = () => {
+    document.getElementById('current-mandates')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   // Email links
   const emailPaul = language === "DE" ? "mailto:paul@milaris.partners?subject=Anfrage zu Mandaten" : "mailto:paul@milaris.partners?subject=Demande d'information - Mandats";
@@ -152,7 +156,7 @@ const TransactionsPage = () => {
       id: "mandate-6",
       title: language === "FR" ? "Construction and Engineering" : language === "IT" ? "Construction and Engineering" : language === "DE" ? "Bauwesen und Ingenieurwesen" : "Construction and Engineering",
       description: language === "FR"
-        ? "Studio italien d'architecture et d'ingénierie avec des compétences en projets complexes et durables au niveau national et international."
+        ? "Studio italien d'architecture et d'ingénierie reconnu pour ses solides compétences en projets complexes et durables, développés au niveau national et international."
         : language === "IT"
         ? "Studio italiano di architettura e ingegneria con competenze in progetti complessi e sostenibili a livello nazionale e internazionale."
         : language === "DE"
@@ -1257,7 +1261,7 @@ const TransactionsPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-64 pb-32 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5">
+      <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-50 via-white to-[#0001ff]/5">
         {/* Animated decorative elements */}
         <div className="absolute inset-0">
           <motion.div
@@ -1278,61 +1282,63 @@ const TransactionsPage = () => {
           />
         </div>
 
-        <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div 
-              className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#0001ff]/10 rounded-full"
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <Handshake className="w-5 h-5 text-[#0001ff]" />
-              <span className="text-[#0001ff] font-semibold">
-                {language === "FR" ? "Transactions" : language === "IT" ? "Transazioni" : language === "DE" ? "Transaktionen" : "Transactions"}
-              </span>
-            </motion.div>
-            
-            <h1 className="text-5xl md:text-6xl font-bold mb-12 text-[#0b062b]">
-              {language === "EN" ? (
-                <>
-                  <span 
-                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                  >Ongoing mandates</span> and completed transactions
-                </>
+        <div className="absolute inset-0 flex items-center">
+          <div className="container-custom relative z-10 w-full">
+            <div className="max-w-4xl mx-auto text-center">
+              <motion.div 
+                className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#0001ff]/10 rounded-full"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                <Handshake className="w-5 h-5 text-[#0001ff]" />
+                <span className="text-[#0001ff] font-semibold">
+                  {language === "FR" ? "Transactions" : language === "IT" ? "Transazioni" : language === "DE" ? "Transaktionen" : "Transactions"}
+                </span>
+              </motion.div>
+              
+              <h1 className="text-5xl md:text-6xl font-bold mb-12 text-[#0b062b]">
+                {language === "EN" ? (
+                  <>
+                    <span 
+                      className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                    >Ongoing mandates</span> and completed transactions
+                  </>
               ) : language === "IT" ? (
                 <>
                   <span 
                     className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                  >Mandati in corso</span> e operazioni realizzate
+                  >Mandati attualmente in corso</span> e operazioni realizzate
                 </>
               ) : language === "DE" ? (
-                <>
-                  Unsere aktuell laufenden <span 
-                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                  >Geschäfte und Mandate</span>
-                </>
-              ) : (
-                <>
-                  Nos opérations et <span 
-                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                  >mandats actuellement en cours</span>
-                </>
-              )}
-            </h1>
-            <p className="text-xl text-gray-600 mb-12">
-              {language === "EN"
-                ? "Our team brings extensive international M&A expertise, having successfully completed numerous transactions across multiple countries."
-                : language === "IT"
-                ? "Il nostro team vanta una forte esperienza in M&A a livello internazionale, con numerose operazioni concluse in diversi Paesi."
-                : language === "DE"
-                ? "Unser Team verfügt über umfangreiche M&A-Erfahrung weltweit und hat zahlreiche Transaktionen in verschiedenen Ländern erfolgreich begleitet."
-                : "Notre équipe dispose d'une solide expérience en M&A à l'international, avec de nombreuses transactions réalisées dans plusieurs pays."}
-            </p>
+                  <>
+                    Unsere aktuell laufenden <span 
+                      className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                    >Geschäfte und Mandate</span>
+                  </>
+                ) : (
+                  <>
+                    Nos opérations et <span 
+                      className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                    >mandats actuellement en cours</span>
+                  </>
+                )}
+              </h1>
+              <p className="text-xl text-gray-600 mb-12">
+                {language === "EN"
+                  ? "Our team brings extensive international M&A expertise, having successfully completed numerous transactions across multiple countries."
+                  : language === "IT"
+                  ? "Il nostro team vanta una forte esperienza in M&A a livello internazionale, con numerose operazioni concluse in diversi Paesi."
+                  : language === "DE"
+                  ? "Unser Team verfügt über umfangreiche M&A-Erfahrung weltweit und hat zahlreiche Transaktionen in verschiedenen Ländern erfolgreich begleitet."
+                  : "Notre équipe dispose d'une solide expérience en M&A à l'international, avec de nombreuses transactions réalisées dans plusieurs pays."}
+              </p>
+            </div>
           </div>
         </div>
-        
+
         {/* Company Logos Scrolling - Full Width */}
-        <div className="relative w-full overflow-hidden mt-16">
+        <div className="absolute bottom-52 left-0 right-0 w-full overflow-hidden">
           {/* Fade gradients */}
           <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
@@ -1363,13 +1369,32 @@ const TransactionsPage = () => {
           <div className="absolute left-0 bottom-0 w-32 h-full bg-gradient-to-r from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 bottom-0 w-32 h-full bg-gradient-to-l from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
         </div>
-        
+
         {/* Fade transition to gray section */}
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-transparent to-gray-50 pointer-events-none" />
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+        >
+          <motion.div 
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="flex flex-col items-center gap-1 sm:gap-2 cursor-pointer group"
+            onClick={scrollToMandates}
+          >
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-white to-[#0001ff]/10 border-2 border-[#0001ff]/30 flex items-center justify-center group-hover:border-[#0001ff] group-hover:shadow-lg transition-all duration-300">
+              <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-[#0001ff] group-hover:text-[#0b062b] transition-colors" />
+            </div>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* Current Mandates Section */}
-      <section className="py-20 bg-gray-50 -mt-32 pt-32">
+      <section id="current-mandates" className="py-20 bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0b062b]">
