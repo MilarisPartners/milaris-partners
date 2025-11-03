@@ -2249,7 +2249,7 @@ export const translations = {
       },
       stats: {
         data: {
-          value: "5M+",
+          value: "+5M",
           label: "Dati"
         },
         transactions: {
@@ -2591,7 +2591,7 @@ export const translations = {
         },
         stats: {
           targets: {
-            value: "500+",
+            value: "+500",
             label: "Target valutati ogni anno"
           },
           speed: {
@@ -2754,11 +2754,11 @@ export const translations = {
             label: "Operazioni a partire dalla Serie A"
           },
           investors: {
-            value: "250k+",
+            value: "+250k",
             label: "Investitori attivi nel nostro network"
           },
           minimum: {
-            value: "€2M+",
+            value: "+€2M",
             label: "Soglia minima per ogni intervento"
           }
         },

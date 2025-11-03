@@ -27,7 +27,7 @@ const AISection = () => {
     {
       key: "identifyBuyers",
       icon: Target,
-      value: language === "DE" ? "+500 Tsd." : "500k+",
+      value: language === "DE" ? "+500 Tsd." : language === "IT" ? "+500k" : "500k+",
     },
     {
       key: "qualifyTargets", 
@@ -47,7 +47,7 @@ const AISection = () => {
     {
       key: "marketKnowledge",
       icon: Globe,
-      value: language === "DE" ? "+50" : "50+",
+      value: language === "DE" ? "+50" : language === "IT" ? "+50" : "50+",
     },
   ];
 
