@@ -8,7 +8,7 @@ import SEOHead from "@/components/SEOHead";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
 import { getAssetPath } from "@/utils/getAssetPath";
-import { Building2, MapPin, FileText, Mail, Calendar, Filter } from "lucide-react";
+import { Building2, MapPin, FileText, Mail, Calendar, Filter, Handshake } from "lucide-react";
 
 type Mandate = {
   id: string;
@@ -1280,6 +1280,18 @@ const TransactionsPage = () => {
 
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
+            <motion.div 
+              className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#0001ff]/10 rounded-full"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Handshake className="w-5 h-5 text-[#0001ff]" />
+              <span className="text-[#0001ff] font-semibold">
+                {language === "FR" ? "Transactions" : language === "IT" ? "Transazioni" : language === "DE" ? "Transaktionen" : "Transactions"}
+              </span>
+            </motion.div>
+            
             <h1 className="text-5xl md:text-6xl font-bold mb-12 text-[#0b062b]">
               {language === "EN" ? (
                 <>
@@ -1295,15 +1307,15 @@ const TransactionsPage = () => {
                 </>
               ) : language === "DE" ? (
                 <>
-                  <span 
+                  Unsere aktuell laufenden <span 
                     className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                  >Mandate</span> und Transaktionen
+                  >Geschäfte und Mandate</span>
                 </>
               ) : (
                 <>
                   Nos opérations et <span 
                     className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                  >mandats en cours</span>
+                  >mandats actuellement en cours</span>
                 </>
               )}
             </h1>
