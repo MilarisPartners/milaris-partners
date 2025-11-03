@@ -1365,7 +1365,7 @@ const TransactionsPage = () => {
                 <>
                   <span 
                     className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                  >Transactions</span> followed by our team
+                  >Transactions</span> we're currently working on
                 </>
               ) : language === "IT" ? (
                 <>
