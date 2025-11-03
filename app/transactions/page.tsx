@@ -1282,9 +1282,9 @@ const TransactionsPage = () => {
           />
         </div>
 
-        <div className="absolute inset-0 flex items-center">
+        <div className="absolute inset-0 flex items-center py-8 sm:py-0">
           <div className="container-custom relative z-10 w-full">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center px-4 sm:px-0">
               <motion.div 
                 className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#0001ff]/10 rounded-full"
                 initial={{ scale: 0 }}
@@ -1297,20 +1297,20 @@ const TransactionsPage = () => {
                 </span>
               </motion.div>
               
-              <h1 className="text-5xl md:text-6xl font-bold mb-12 text-[#0b062b]">
+              <h1 className="heading-1 font-bold mb-6 sm:mb-12 text-[#0b062b]">
                 {language === "EN" ? (
                   <>
                     <span 
                       className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
                     >Ongoing mandates</span> and completed transactions
                   </>
-              ) : language === "IT" ? (
-                <>
-                  <span 
-                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                  >Mandati attualmente in corso</span> e operazioni realizzate
-                </>
-              ) : language === "DE" ? (
+                ) : language === "IT" ? (
+                  <>
+                    <span 
+                      className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
+                    >Mandati attualmente in corso</span> e operazioni realizzate
+                  </>
+                ) : language === "DE" ? (
                   <>
                     Unsere aktuell laufenden <span 
                       className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
@@ -1324,7 +1324,7 @@ const TransactionsPage = () => {
                   </>
                 )}
               </h1>
-              <p className="text-xl text-gray-600 mb-12">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto px-4 sm:px-0">
                 {language === "EN"
                   ? "Our team brings extensive international M&A expertise, having successfully completed numerous transactions across multiple countries."
                   : language === "IT"
@@ -1338,16 +1338,16 @@ const TransactionsPage = () => {
         </div>
 
         {/* Company Logos Scrolling - Full Width */}
-        <div className="absolute bottom-52 left-0 right-0 w-full overflow-hidden">
+        <div className="absolute bottom-24 sm:bottom-40 md:bottom-52 left-0 right-0 w-full overflow-hidden">
           {/* Fade gradients */}
           <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
           
           {/* Top row - scrolling right to left */}
-          <div className="overflow-hidden mb-4">
-            <div className="flex space-x-8 animate-scroll-left">
+          <div className="overflow-hidden mb-2 sm:mb-4">
+            <div className="flex space-x-4 sm:space-x-8 animate-scroll-left">
               {Array(6).fill(["ASICS", "PROMETHERA", "EPPENDORF", "SABAF", "TADANO", "GE MONEY BANK", "PIERRE MARCOLINI", "SYSTEMAIR"]).flat().map((company, idx) => (
-                <div key={`company-row1-${idx}`} className="text-gray-400 text-lg md:text-xl font-semibold whitespace-nowrap flex-shrink-0">
+                <div key={`company-row1-${idx}`} className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl font-semibold whitespace-nowrap flex-shrink-0">
                   {company}
                 </div>
               ))}
@@ -1356,9 +1356,9 @@ const TransactionsPage = () => {
           
           {/* Bottom row - scrolling left to right */}
           <div className="overflow-hidden">
-            <div className="flex space-x-8 animate-scroll-right">
+            <div className="flex space-x-4 sm:space-x-8 animate-scroll-right">
               {Array(6).fill(["KOKI HOLDINGS", "PALOMA", "HISTOIRE D'OR", "ORANGE", "LINDE", "TEREX", "DEMAG", "NJUKO"]).flat().map((company, idx) => (
-                <div key={`company-row2-${idx}`} className="text-gray-400 text-lg md:text-xl font-semibold whitespace-nowrap flex-shrink-0">
+                <div key={`company-row2-${idx}`} className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl font-semibold whitespace-nowrap flex-shrink-0">
                   {company}
                 </div>
               ))}
@@ -1378,7 +1378,7 @@ const TransactionsPage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+          className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20"
         >
           <motion.div 
             animate={{ y: [0, 10, 0] }}
@@ -1394,10 +1394,10 @@ const TransactionsPage = () => {
       </section>
 
       {/* Current Mandates Section */}
-      <section id="current-mandates" className="py-20 bg-gray-50">
+      <section id="current-mandates" className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0b062b]">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="heading-2 font-bold mb-4 text-[#0b062b]">
               {language === "EN" ? (
                 <>
                   <span 
@@ -1424,7 +1424,7 @@ const TransactionsPage = () => {
                 </>
               )}
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4 sm:px-0">
               {language === "EN"
                 ? "An overview of some transactions currently being followed by our team."
                 : language === "IT"
@@ -1435,17 +1435,17 @@ const TransactionsPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {currentMandates.map((mandate, idx) => (
               <motion.div
                 key={mandate.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
-                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative flex flex-col h-full"
+                className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-shadow relative flex flex-col h-full"
               >
                 {/* Badge en haut à gauche */}
-                <div className={`absolute top-4 left-4 text-xs px-3 py-1 rounded-full text-white font-semibold ${
+                <div className={`absolute top-3 left-3 sm:top-4 sm:left-4 text-xs px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-white font-semibold ${
                   mandate.mandateType === "Sell-side" ? "bg-[#0001ff]" : 
                   mandate.mandateType === "Buy-side" ? "bg-green-500" : 
                   "bg-purple-500"
@@ -1453,15 +1453,15 @@ const TransactionsPage = () => {
                   {getMandateTypeLabel(mandate.mandateType)}
                 </div>
                 
-                <h3 className="text-xl font-bold text-[#0b062b] mb-3 mt-8">
+                <h3 className="text-lg sm:text-xl font-bold text-[#0b062b] mb-3 mt-6 sm:mt-8">
                   {mandate.title}
                 </h3>
                 
-                <p className="text-gray-600 text-sm mb-4 flex-grow">
+                <p className="text-gray-600 text-sm mb-3 sm:mb-4 flex-grow">
                   {mandate.description}
                 </p>
                 
-                <div className="space-y-2 text-sm mb-4">
+                <div className="space-y-2 text-xs sm:text-sm mb-3 sm:mb-4">
                   <div className="flex items-center text-gray-700">
                     <MapPin className="w-4 h-4 mr-2" />
                     <span className="mr-2">{mandate.countryFlag}</span>
@@ -1518,8 +1518,8 @@ const TransactionsPage = () => {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200 flex items-center mt-auto">
-                  <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
+                <div className="pt-3 sm:pt-4 border-t border-gray-200 flex items-center mt-auto">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
                     <Image 
                       src={getAssetPath(`/team/${mandate.partner.toLowerCase()}-optimized.jpg`)} 
                       alt={mandate.partner} 
@@ -1528,8 +1528,8 @@ const TransactionsPage = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="ml-3 text-sm">
-                    <div className="text-xs text-gray-500 uppercase font-medium">
+                  <div className="ml-2 sm:ml-3 text-xs sm:text-sm">
+                    <div className="text-[10px] sm:text-xs text-gray-500 uppercase font-medium">
                       MANAGING PARTNER
                     </div>
                     <div className="text-[#0b062b] font-medium">
@@ -1544,10 +1544,10 @@ const TransactionsPage = () => {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-16 bg-gradient-to-r from-[#0001ff] to-blue-700">
+      <section className="py-12 sm:py-16 bg-gradient-to-r from-[#0001ff] to-blue-700">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="max-w-4xl mx-auto text-center text-white px-4 sm:px-0">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
               {language === "EN"
                 ? "Discover which mandates we are working on and what lies ahead!"
                 : language === "IT"
@@ -1556,7 +1556,7 @@ const TransactionsPage = () => {
                 ? "Erfahren Sie, an welchen Mandaten wir arbeiten und was vor uns liegt!"
                 : "En savoir plus sur nos mandats actuels et à venir"}
             </h3>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-90">
               {language === "EN"
                 ? "Get in touch with our partners to discuss your project."
                 : language === "IT"
@@ -1565,19 +1565,19 @@ const TransactionsPage = () => {
                 ? "Kontaktieren Sie unsere Partner, um Ihr Projekt zu besprechen."
                 : "Contactez nos associés pour discuter de votre projet."}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a
                 href={emailPaul}
-                className="bg-white text-[#0001ff] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-white text-[#0001ff] px-6 py-2.5 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 {language === "EN" ? "Contact Paul" : language === "IT" ? "Contattate Paul" : language === "DE" ? "Paul kontaktieren" : "Contacter Paul"}
               </a>
               <a
                 href={emailMatteo}
-                className="bg-white text-[#0001ff] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-white text-[#0001ff] px-6 py-2.5 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 {language === "EN" ? "Contact Matteo" : language === "IT" ? "Contattate Matteo" : language === "DE" ? "Matteo kontaktieren" : "Contacter Matteo"}
               </a>
             </div>
@@ -1586,10 +1586,10 @@ const TransactionsPage = () => {
       </section>
 
       {/* Completed Transactions Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0b062b]">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="heading-2 font-bold mb-4 text-[#0b062b]">
               {language === "EN" ? (
                 <>
                   <span 
@@ -1616,7 +1616,7 @@ const TransactionsPage = () => {
                 </>
               )}
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4 sm:px-0">
               {language === "EN"
                 ? "A collection of transactions followed by our professionals across Europe and worldwide."
                 : language === "IT"
@@ -1628,10 +1628,10 @@ const TransactionsPage = () => {
           </div>
 
           {/* Country Filter */}
-          <div className="mb-8 flex items-center justify-center flex-wrap gap-2">
+          <div className="mb-6 sm:mb-8 flex items-center justify-center flex-wrap gap-2 px-4 sm:px-0">
             <div className="flex items-center gap-2 text-gray-700">
-              <Filter className="w-5 h-5" />
-              <span className="font-medium">
+              <Filter className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="text-sm sm:text-base font-medium">
                 {language === "EN"
                   ? "Filter by country:"
                   : language === "IT"
@@ -1643,7 +1643,7 @@ const TransactionsPage = () => {
             </div>
             <button
               onClick={() => setSelectedCountry("all")}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors ${
                 selectedCountry === "all"
                   ? "bg-[#0001ff] text-white"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -1655,7 +1655,7 @@ const TransactionsPage = () => {
               <button
                 key={country}
                 onClick={() => setSelectedCountry(country)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors ${
                   selectedCountry === country
                     ? "bg-[#0001ff] text-white"
                     : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -1667,7 +1667,7 @@ const TransactionsPage = () => {
           </div>
 
           {/* Transactions Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
             {filteredTransactions.map((tx, idx) => (
               <motion.div
                 key={tx.id}
@@ -1677,14 +1677,14 @@ const TransactionsPage = () => {
                 transition={{ duration: 0.4, delay: idx * 0.05 }}
               >
                 {/* Face 1: résumé */}
-                <div className="p-4 h-full flex flex-col items-center justify-center text-center text-white">
+                <div className="p-3 sm:p-4 h-full flex flex-col items-center justify-center text-center text-white">
                   <div className="text-xs opacity-90 tracking-wide mb-1">{tx.titleTop}</div>
                   <div className="text-[10px] opacity-80 mb-1">{tx.shortLabel}</div>
-                  <div className="text-base font-semibold leading-tight">{tx.titleBottom}</div>
+                  <div className="text-sm sm:text-base font-semibold leading-tight">{tx.titleBottom}</div>
                 </div>
 
                 {/* Face 2: détails au hover */}
-                <div className="absolute inset-0 bg-[#0b86c1] text-white p-5 flex flex-col justify-between text-center translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <div className="absolute inset-0 bg-[#0b86c1] text-white p-3 sm:p-5 flex flex-col justify-between text-center translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <div className="flex-1 flex flex-col items-center justify-center">
                     <div className="text-[11px] opacity-90 mb-1">{tx.detailDate}</div>
                     <div className="text-sm font-bold mb-2">{tx.detailType}</div>
