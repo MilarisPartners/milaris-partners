@@ -922,7 +922,7 @@ export const translations = {
         part1: "Notre périmètre",
         highlight: "d'intervention"
       },
-      subtitle: "Accompagnement stratégique des actionnaires et dirigeants d'entreprises privées réalisant entre 5 M€ et 150 M€ de chiffre d'affaires, lors de phases clés de croissance, de transformation ou de transmission générationnelle.",
+      subtitle: "Accompagnement stratégique des actionnaires et dirigeants d'entreprises privées réalisant entre 5M€ et 150M€ de chiffre d'affaires, lors de phases clés de croissance, de transformation ou de transmission générationnelle.",
       cards: [
         {
           title: "Conseil en cession",
@@ -958,7 +958,7 @@ export const translations = {
           cta: "En savoir plus"
         }
       ],
-      bottomCtaText: "Une approche exclusive avec un nombre limité de mandats pour garantir un accompagnement premium!",
+      bottomCtaText: "Une approche exclusive avec un nombre limité de mandats pour garantir un accompagnement premium !",
       bottomCtaButton: "Discuter de votre projet"
     },
     testimonial: {

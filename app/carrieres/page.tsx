@@ -199,7 +199,7 @@ const Carrieres = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("carrieres.workWithUs.title2")}
                 </span>
-              )}{language === "EN" ? "?" : language === "IT" ? "?" : "?"}
+              )}{language === "EN" ? "?" : language === "IT" ? "?" : language === "FR" ? " ?" : "?"}
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
               {t("carrieres.workWithUs.subtitle")}
@@ -393,7 +393,7 @@ const Carrieres = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
                   {t("carrieres.howToApply.title2")}
                 </span>
-              )}{language === "EN" ? "?" : language === "IT" ? "?" : "?"}
+              )}{language === "EN" ? "?" : language === "IT" ? "?" : language === "FR" ? " ?" : "?"}
             </h2>
           </motion.div>
 
@@ -455,7 +455,7 @@ const Carrieres = () => {
                 <>
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">{t("carrieres.cta.title2")}</span>{" "}
                   {t("carrieres.cta.title3")}{" "}
-                  <span className="text-[#0b062b]">{t("carrieres.cta.title4")}</span>?
+                  <span className="text-[#0b062b]">{t("carrieres.cta.title4")}</span>{language === "FR" ? " ?" : "?"}
                 </>
               )}
             </h2>
