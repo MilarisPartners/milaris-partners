@@ -29,7 +29,7 @@ const Transactions = () => {
   const transactions: Transaction[] = [
     {
       id: "marcolini-mbk-2023",
-      titleTop: language === "IT" ? "PIERRE MARCOLINI" : language === "EN" ? "PIERRE MARCOLINI" : "PIERRE MARCOLINI S.A.",
+      titleTop: language === "IT" ? "PIERRE MARCOLINI" : language === "EN" ? "PIERRE MARCOLINI" : language === "DE" ? "PIERRE MARCOLINI" : "PIERRE MARCOLINI S.A.",
       titleBottom: "MBK PARTNERS",
       shortLabel: language === "EN" ? "SOLD TO" : language === "IT" ? "CEDUTA A" : language === "DE" ? "VERKAUFT AN" : "VENDU À",
       date: "2023",
@@ -41,9 +41,9 @@ const Transactions = () => {
           : language === "IT"
           ? "Pierre Marcolini ceduta a MBK Partners nell'ambito di un'operazione di M&A sell-side"
           : language === "DE"
-          ? "Pierre Marcolini S.A. wird von MBK Partners übernommen"
+          ? "Pierre Marcolini an MBK Partners im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "Pierre Marcolini S.A. est cédée à MBK Partners",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "Belgium" : language === "IT" ? "Belgio" : language === "DE" ? "Belgien" : "Belgique",
     },
     {
@@ -60,15 +60,15 @@ const Transactions = () => {
           : language === "IT"
           ? "Haglöfs ceduto da Asics a LionRock Capital nell'ambito di un'operazione di M&A sell-side"
           : language === "DE"
-          ? "Asics verkaufte seine schwedische Outdoor-Marke Haglöfs an den Hongkonger Investmentfonds LionRock Capital"
+          ? "Haglöfs von Asics an LionRock Capital im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "Asics a vendu sa marque suédoise outdoor Haglöfs au fonds d'investissement hongkongais LionRock Capital",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "Sweden" : language === "IT" ? "Svezia" : language === "DE" ? "Schweden" : "Suède",
     },
     {
       id: "systemair-panasonic-2022",
-      titleTop: language === "IT" ? "SYSTEMAIR (DIV. AC)" : language === "EN" ? "SYSTEMAIR (DIV. AC)" : "SYSTEMAIR AB (DIV. AC)",
-      titleBottom: language === "IT" ? "PANASONIC" : language === "EN" ? "PANASONIC" : "PANASONIC CORPORATION",
+      titleTop: language === "IT" ? "SYSTEMAIR (DIV. AC)" : language === "EN" ? "SYSTEMAIR (DIV. AC)" : language === "DE" ? "SYSTEMAIR (DIV. AC)" : "SYSTEMAIR AB (DIV. AC)",
+      titleBottom: language === "IT" ? "PANASONIC" : language === "EN" ? "PANASONIC" : language === "DE" ? "PANASONIC" : "PANASONIC CORPORATION",
       shortLabel: language === "EN" ? "SOLD TO" : language === "IT" ? "CEDUTA A" : language === "DE" ? "VERKAUFT AN" : "VENDU À",
       date: "2022",
       detailDate: language === "EN" ? "November 2022" : language === "IT" ? "Novembre 2022" : language === "DE" ? "November 2022" : "Novembre 2022",
@@ -79,15 +79,15 @@ const Transactions = () => {
           : language === "IT"
           ? "Divisione AC di Systemair ceduta a Panasonic nell'ambito di un'operazione di M&A sell-side"
           : language === "DE"
-          ? "Die AC-Sparte von Systemair AB wird an Panasonic Corporation verkauft"
+          ? "AC-Sparte von Systemair an Panasonic im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "La division AC de Systemair AB est vendue à Panasonic Corporation",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "Sweden" : language === "IT" ? "Svezia" : language === "DE" ? "Schweden" : "Suède",
     },
     {
       id: "njuko-asics-2022",
       titleTop: "NJUKO",
-      titleBottom: language === "IT" ? "ASICS" : language === "EN" ? "ASICS" : "ASICS CORPORATION",
+      titleBottom: "ASICS",
       shortLabel: language === "EN" ? "ACQUIRED BY" : language === "IT" ? "ACQUISITA DA" : language === "DE" ? "ERWORBEN VON" : "ACQUIS PAR",
       date: "2022",
       detailDate: language === "EN" ? "November 2022" : language === "IT" ? "Novembre 2022" : language === "DE" ? "November 2022" : "Novembre 2022",
@@ -98,14 +98,14 @@ const Transactions = () => {
           : language === "IT"
           ? "Njuko acquisita da ASICS nell'ambito di un'operazione di M&A buy-side"
           : language === "DE"
-          ? "Njuko wird von ASICS Corporation übernommen"
-          : "Njuko est acquise par ASICS Corporation",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+          ? "Njuko von ASICS im Rahmen einer M&A-Buy-Side-Transaktion erworben"
+          : "Njuko est acquise par ASICS",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
     },
     {
       id: "promethera-haotian-2020",
-      titleTop: language === "IT" ? "PROMETHERA BIOSCIENCES" : language === "EN" ? "PROMETHERA BIOSCIENCES" : "PROMETHERA BIOSCIENCES S.A.",
+      titleTop: language === "IT" ? "PROMETHERA BIOSCIENCES" : language === "EN" ? "PROMETHERA BIOSCIENCES" : language === "DE" ? "PROMETHERA BIOSCIENCES" : "PROMETHERA BIOSCIENCES S.A.",
       titleBottom: "HAO TIAN INTERNATIONAL",
       shortLabel: language === "EN" ? "RAISED FROM" : language === "IT" ? "RACCOLTI DA" : language === "DE" ? "ERHALTEN VON" : "LEVÉ AUPRÈS DE",
       date: "2020",
@@ -116,14 +116,16 @@ const Transactions = () => {
           ? "Promethera Biosciences received financing from Hao Tian International in a fundraising transaction"
           : language === "IT"
           ? "Promethera Biosciences ha ricevuto finanziamento da Hao Tian International nell'ambito di fundraising"
+          : language === "DE"
+          ? "Promethera Biosciences erhielt Finanzierung von Hao Tian International im Rahmen einer Fundraising-Transaktion"
           : "Promethera Biosciences S.A. reçoit un financement en obligations convertibles",
-      value: language === "EN" ? "~€5M" : language === "IT" ? "~€5M" : "≈ 5 M€",
+      value: language === "EN" ? "~€5M" : language === "IT" ? "~€5M" : language === "DE" ? "~5 Mio. €" : "≈ 5 M€",
       country: language === "EN" ? "Belgium" : language === "IT" ? "Belgio" : language === "DE" ? "Belgien" : "Belgique",
     },
     {
       id: "koki-eppendorf-2020",
       titleTop: "KOKI HOLDINGS (HIMAC)",
-      titleBottom: language === "IT" ? "EPPENDORF" : language === "EN" ? "EPPENDORF" : "EPPENDORF AG",
+      titleBottom: language === "IT" ? "EPPENDORF" : language === "EN" ? "EPPENDORF" : language === "DE" ? "EPPENDORF" : "EPPENDORF AG",
       shortLabel: language === "EN" ? "SOLD TO" : language === "IT" ? "CEDUTA A" : language === "DE" ? "VERKAUFT AN" : "VENDU À",
       date: "2020",
       detailDate: language === "EN" ? "March 2020" : language === "IT" ? "Marzo 2020" : language === "DE" ? "März 2020" : "Mars 2020",
@@ -133,14 +135,16 @@ const Transactions = () => {
           ? "Centrifuge operations of Koki Holdings sold to Eppendorf in an M&A sell-side transaction"
           : language === "IT"
           ? "Attività centrifughe di Koki Holdings cedute a Eppendorf nell'ambito di un'operazione di M&A sell-side"
+          : language === "DE"
+          ? "Zentrifugengeschäft von Koki Holdings an Eppendorf im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "Activité centrifugeuses de Koki Holdings (marque Himac) vendue à Eppendorf AG",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "Japan" : language === "IT" ? "Giappone" : language === "DE" ? "Japan" : "Japon",
     },
     {
       id: "sabaf-paloma-2019",
-      titleTop: language === "IT" ? "SABAF" : language === "EN" ? "SABAF" : "SABAF S.P.A.",
-      titleBottom: language === "IT" ? "PALOMA" : language === "EN" ? "PALOMA" : "PALOMA CO., LTD.",
+      titleTop: language === "IT" ? "SABAF" : language === "EN" ? "SABAF" : language === "DE" ? "SABAF" : "SABAF S.P.A.",
+      titleBottom: language === "IT" ? "PALOMA" : language === "EN" ? "PALOMA" : language === "DE" ? "PALOMA" : "PALOMA CO., LTD.",
       shortLabel: language === "EN" ? "ACQUIRED BY" : language === "IT" ? "ACQUISITA DA" : language === "DE" ? "ERWORBEN VON" : "ACQUIS PAR",
       date: "2019",
       detailDate: language === "EN" ? "November 2019" : language === "IT" ? "Novembre 2019" : language === "DE" ? "November 2019" : "Novembre 2019",
@@ -150,14 +154,16 @@ const Transactions = () => {
           ? "Minority stake in Sabaf acquired by Paloma in an M&A buy-side transaction"
           : language === "IT"
           ? "Partecipazione minoritaria in Sabaf acquisita da Paloma nell'ambito di un'operazione di M&A buy-side"
+          : language === "DE"
+          ? "Minderheitsbeteiligung an Sabaf von Paloma im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Participation minoritaire de Sabaf S.p.A. acquise par Paloma Co., Ltd.",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "Italy" : language === "IT" ? "Italia" : language === "DE" ? "Italien" : "Italie",
     },
     {
       id: "linde-airwater-2019",
-      titleTop: language === "IT" ? "LINDE INDIA" : language === "EN" ? "LINDE INDIA" : "LINDE INDIA LTD.",
-      titleBottom: language === "IT" ? "AIR WATER" : language === "EN" ? "AIR WATER" : "AIR WATER INC.",
+      titleTop: language === "IT" ? "LINDE INDIA" : language === "EN" ? "LINDE INDIA" : language === "DE" ? "LINDE INDIA" : "LINDE INDIA LTD.",
+      titleBottom: language === "IT" ? "AIR WATER" : language === "EN" ? "AIR WATER" : language === "DE" ? "AIR WATER" : "AIR WATER INC.",
       shortLabel: language === "EN" ? "ACQUIRED BY" : language === "IT" ? "ACQUISITA DA" : language === "DE" ? "ERWORBEN VON" : "ACQUIS PAR",
       date: "2019",
       detailDate: language === "EN" ? "June 2019" : language === "IT" ? "Giugno 2019" : language === "DE" ? "Juni 2019" : "Juin 2019",
@@ -167,14 +173,16 @@ const Transactions = () => {
           ? "Industrial gas assets in South India acquired by Air Water in an M&A buy-side transaction"
           : language === "IT"
           ? "Attivi di gas industriale nel sud India acquisiti da Air Water nell'ambito di un'operazione di M&A buy-side"
+          : language === "DE"
+          ? "Industriegas-Assets in Südindien von Air Water im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Actifs gaziers industriels dans le sud de l'Inde acquis par Air Water Inc.",
-      value: language === "EN" ? "~$194-220M" : language === "IT" ? "~$194-220M" : "~194-220 M$",
+      value: language === "EN" ? "~$194-220M" : language === "IT" ? "~$194-220M" : language === "DE" ? "~194–220 Mio. $" : "~194-220 M$",
       country: language === "EN" ? "India" : language === "IT" ? "India" : language === "DE" ? "Indien" : "Inde",
     },
     {
       id: "terex-tadano-2019",
       titleTop: "DEMAG MOBILE CRANES (TEREX)",
-      titleBottom: language === "IT" ? "TADANO" : language === "EN" ? "TADANO" : "TADANO LTD.",
+      titleBottom: language === "IT" ? "TADANO" : language === "EN" ? "TADANO" : language === "DE" ? "TADANO" : "TADANO LTD.",
       shortLabel: language === "EN" ? "SOLD TO" : language === "IT" ? "CEDUTA A" : language === "DE" ? "VERKAUFT AN" : "VENDU À",
       date: "2019",
       detailDate: language === "EN" ? "February 2019" : language === "IT" ? "Febbraio 2019" : language === "DE" ? "Februar 2019" : "Février 2019",
@@ -184,8 +192,10 @@ const Transactions = () => {
           ? "Demag Mobile Cranes division of Terex sold to Tadano in an M&A sell-side transaction"
           : language === "IT"
           ? "Divisione Demag Mobile Cranes di Terex ceduta a Tadano nell'ambito di un'operazione di M&A sell-side"
+          : language === "DE"
+          ? "Demag Mobile Cranes Sparte von Terex an Tadano im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "Division Demag Mobile Cranes de Terex Corporation vendue à Tadano Ltd.",
-      value: language === "EN" ? "~$215M" : language === "IT" ? "~$215M" : "~215 M$",
+      value: language === "EN" ? "~$215M" : language === "IT" ? "~$215M" : language === "DE" ? "~215 Mio. $" : "~215 M$",
       country: language === "EN" ? "Germany" : language === "IT" ? "Germania" : language === "DE" ? "Deutschland" : "Allemagne",
     },
     {
@@ -201,13 +211,15 @@ const Transactions = () => {
           ? "GE Money Bank France sold to Cerberus in an M&A sell-side transaction"
           : language === "IT"
           ? "GE Money Bank France ceduta a Cerberus nell'ambito di un'operazione di M&A sell-side"
+          : language === "DE"
+          ? "GE Money Bank France an Cerberus im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "GE Money Bank France (portefeuille d'actifs ~4,6 Md$) vendue à Cerberus",
-      value: language === "EN" ? "~$4.6B" : language === "IT" ? "~$4,6Md" : "~4,6 Md$",
+      value: language === "EN" ? "~$4.6B" : language === "IT" ? "~$4,6Md" : language === "DE" ? "~4,6 Mrd. $" : "~4,6 Md$",
       country: language === "EN" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
     },
     {
       id: "reydel-2014",
-      titleTop: language === "IT" ? "REYDEL AUTOMOTIVE FRANCE" : language === "EN" ? "REYDEL AUTOMOTIVE FRANCE" : "REYDEL AUTOMOTIVE FRANCE S.A.",
+      titleTop: language === "IT" ? "REYDEL AUTOMOTIVE FRANCE" : language === "EN" ? "REYDEL AUTOMOTIVE FRANCE" : language === "DE" ? "REYDEL AUTOMOTIVE FRANCE" : "REYDEL AUTOMOTIVE FRANCE S.A.",
       titleBottom: "MOTHERSON SUMI SYSTEMS",
       shortLabel: language === "EN" ? "SOLD TO" : language === "IT" ? "CEDUTA A" : language === "DE" ? "VERKAUFT AN" : "VENDU À",
       date: "2014",
@@ -218,13 +230,15 @@ const Transactions = () => {
           ? "Reydel Automotive France sold to Motherson Sumi Systems in an M&A sell-side transaction"
           : language === "IT"
           ? "Reydel Automotive France ceduta a Motherson Sumi Systems nell'ambito di un'operazione di M&A sell-side"
+          : language === "DE"
+          ? "Reydel Automotive France an Motherson Sumi Systems im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "Reydel Automotive France S.A. (CA mondial > 1 Md €) vendue à Motherson Sumi Systems Limited",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
     },
     {
       id: "simtronics-2011",
-      titleTop: language === "IT" ? "SIMTRONICS (P2P)" : language === "EN" ? "SIMTRONICS (P2P)" : "SIMTRONICS AB (P2P)",
+      titleTop: language === "IT" ? "SIMTRONICS (P2P)" : language === "EN" ? "SIMTRONICS (P2P)" : language === "DE" ? "SIMTRONICS (P2P)" : "SIMTRONICS AB (P2P)",
       titleBottom: "CARRIER",
       shortLabel: language === "EN" ? "ACQUIRED BY" : language === "IT" ? "ACQUISITA DA" : language === "DE" ? "ERWORBEN VON" : "ACQUIS PAR",
       date: "2011",
@@ -235,8 +249,10 @@ const Transactions = () => {
           ? "Simtronics (P2P) acquired by Carrier in an M&A buy-side transaction"
           : language === "IT"
           ? "Simtronics (P2P) acquisita da Carrier nell'ambito di un'operazione di M&A buy-side"
+          : language === "DE"
+          ? "Simtronics (P2P) von Carrier im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Simtronics AB (P2P) acquise par Carrier",
-      value: language === "EN" ? "~€49M" : language === "IT" ? "~€49M" : "~49 M €",
+      value: language === "EN" ? "~€49M" : language === "IT" ? "~€49M" : language === "DE" ? "~49 Mio. €" : "~49 M €",
       country: language === "EN" ? "Sweden" : language === "IT" ? "Svezia" : language === "DE" ? "Schweden" : "Suède",
     },
     {
@@ -252,30 +268,34 @@ const Transactions = () => {
           ? "GE Security sold to United Technologies in an M&A sell-side transaction"
           : language === "IT"
           ? "GE Security ceduta a United Technologies nell'ambito di un'operazione di M&A sell-side"
+          : language === "DE"
+          ? "GE Security an United Technologies im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "GE Security vendue à United Technologies",
-      value: language === "EN" ? "~€1.5B" : language === "IT" ? "~€1,5Md" : "~1,5 Md €",
+      value: language === "EN" ? "~€1.5B" : language === "IT" ? "~€1,5Md" : language === "DE" ? "~1,5 Mrd. €" : "~1,5 Md €",
       country: language === "EN" ? "United States" : language === "IT" ? "Stati Uniti" : language === "DE" ? "Vereinigte Staaten" : "États-Unis",
     },
     {
       id: "hallkay-2008",
-      titleTop: language === "IT" ? "HALL & KAY" : language === "EN" ? "HALL & KAY" : "HALL & KAY LTD.",
+      titleTop: language === "IT" ? "HALL & KAY" : language === "EN" ? "HALL & KAY" : language === "DE" ? "HALL & KAY" : "HALL & KAY LTD.",
       titleBottom: "UTC FIRE & SECURITY",
       shortLabel: language === "EN" ? "ACQUIRED BY" : language === "IT" ? "ACQUISITA DA" : language === "DE" ? "ERWORBEN VON" : "ACQUIS PAR",
       date: "2008",
-      detailDate: language === "EN" ? "March 2008" : language === "IT" ? "Marzo 2008" : "Mars 2008",
+      detailDate: language === "EN" ? "March 2008" : language === "IT" ? "Marzo 2008" : language === "DE" ? "März 2008" : "Mars 2008",
       detailType: "M & A BUY SIDE",
       detailDescription:
         language === "EN"
           ? "Hall & Kay acquired by UTC Fire & Security in an M&A buy-side transaction"
           : language === "IT"
           ? "Hall & Kay acquisita da UTC Fire & Security nell'ambito di un'operazione di M&A buy-side"
+          : language === "DE"
+          ? "Hall & Kay von UTC Fire & Security im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Hall & Kay Ltd. acquise par UTC Fire & Security",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "United Kingdom" : language === "IT" ? "Regno Unito" : language === "DE" ? "Vereinigtes Königreich" : "Royaume-Uni",
     },
     {
       id: "marioff-2008",
-      titleTop: language === "IT" ? "MARIOFF" : language === "EN" ? "MARIOFF" : "MARIOFF CORPORATION LTD.",
+      titleTop: language === "IT" ? "MARIOFF" : language === "EN" ? "MARIOFF" : language === "DE" ? "MARIOFF" : "MARIOFF CORPORATION LTD.",
       titleBottom: "UTC FIRE & SECURITY",
       shortLabel: language === "EN" ? "ACQUIRED BY" : language === "IT" ? "ACQUISITA DA" : language === "DE" ? "ERWORBEN VON" : "ACQUIS PAR",
       date: "2008",
@@ -286,13 +306,15 @@ const Transactions = () => {
           ? "Marioff acquired by UTC Fire & Security in an M&A buy-side transaction"
           : language === "IT"
           ? "Marioff acquisita da UTC Fire & Security nell'ambito di un'operazione di M&A buy-side"
+          : language === "DE"
+          ? "Marioff von UTC Fire & Security im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Marioff Corporation Ltd. (portée ~234 M €) acquise par UTC Fire & Security",
-      value: language === "EN" ? "~€234M" : language === "IT" ? "~€234M" : "~234 M €",
+      value: language === "EN" ? "~€234M" : language === "IT" ? "~€234M" : language === "DE" ? "~234 Mio. €" : "~234 M €",
       country: language === "EN" ? "Norway" : language === "IT" ? "Norvegia" : language === "DE" ? "Norwegen" : "Norvège",
     },
     {
       id: "canson-hamelin-2007",
-      titleTop: language === "IT" ? "CANSON" : language === "EN" ? "CANSON" : "CANSON SA",
+      titleTop: language === "IT" ? "CANSON" : language === "EN" ? "CANSON" : language === "DE" ? "CANSON" : "CANSON SA",
       titleBottom: "GROUPE HAMELIN",
       shortLabel: language === "EN" ? "SOLD TO" : language === "IT" ? "ACQUISITA DA" : language === "DE" ? "VERKAUFT AN" : "CÉDÉE À",
       date: "2007",
@@ -303,8 +325,10 @@ const Transactions = () => {
           ? "Canson acquired by Groupe Hamelin in an M&A buy-side transaction"
           : language === "IT"
           ? "Canson acquisita da Groupe Hamelin nell'ambito di un'operazione di M&A buy-side"
+          : language === "DE"
+          ? "Canson von Groupe Hamelin im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Canson SA cédée au Groupe Hamelin (conseil FDD/ODD pour Hamelin)",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
     },
     {
@@ -320,14 +344,16 @@ const Transactions = () => {
           ? "Histoire d'Or acquired by Silverfleet Capital in an M&A buy-side transaction"
           : language === "IT"
           ? "Histoire d'Or acquisita da Silverfleet Capital nell'ambito di un'operazione di M&A buy-side"
+          : language === "DE"
+          ? "Histoire d'Or von Silverfleet Capital im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Histoire d'Or acquise par Silverfleet Capital (conseil FDD pour Silverfleet)",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
     },
     {
       id: "orangeit-orange-2005",
       titleTop: "ORANGE IT",
-      titleBottom: language === "IT" ? "ORANGE" : language === "EN" ? "ORANGE" : "ORANGE S.A.",
+      titleBottom: language === "IT" ? "ORANGE" : language === "EN" ? "ORANGE" : language === "DE" ? "ORANGE" : "ORANGE S.A.",
       shortLabel: language === "EN" ? "ACQUIRED BY" : language === "IT" ? "ACQUISITA DA" : language === "DE" ? "ERWORBEN VON" : "ACQUIS PAR",
       date: "2005",
       detailDate: language === "EN" ? "June 2005" : language === "IT" ? "Giugno 2005" : language === "DE" ? "Juni 2005" : "Juin 2005",
@@ -337,8 +363,10 @@ const Transactions = () => {
           ? "Orange IT acquired by Orange in an M&A buy-side transaction"
           : language === "IT"
           ? "Orange IT acquisita da Orange nell'ambito di un'operazione di M&A buy-side"
+          : language === "DE"
+          ? "Orange IT von Orange im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Orange IT acquise par Orange S.A.",
-      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : "Confidentiel",
+      value: language === "IT" ? "Riservato" : language === "EN" ? "Confidential" : language === "DE" ? "Vertraulich" : "Confidentiel",
       country: language === "EN" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
     },
   ];
@@ -370,7 +398,15 @@ const Transactions = () => {
                   </>
                 )
               : language === "DE"
-              ? "Von unseren Mitarbeitern durchgeführte Transaktionen"
+              ? (
+                  <>
+                    Von unseren{" "}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                      Mitarbeitern
+                    </span>
+                    {" "}durchgeführte Transaktionen
+                  </>
+                )
               : "Opérations effectuées par nos collaborateurs"}
           </h2>
           <p className="text-gray-600 mt-3">

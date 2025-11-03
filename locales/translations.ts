@@ -3239,13 +3239,13 @@ export const translations = {
         part1: "Unser Tätigkeitsbereich",
         highlight: "der Intervention"
       },
-      subtitle: "Strategische Begleitung von Aktionären und Führungskräften privater Unternehmen mit einem Umsatz zwischen 5 M€ und 150 M€, in Schlüsselphasen des Wachstums, der Transformation oder des Generationswechsels.",
+      subtitle: "Strategische Begleitung von Aktionären und Führungskräften privater Unternehmen mit einem Umsatz zwischen 5 Mio. € und 150 Mio. € in Schlüsselphasen des Wachstums, der Transformation oder des Generationswechsels.",
       cards: [
         {
           title: "Verkaufsberatung",
           description: "Maximieren Sie den Wert Ihres Unternehmens beim Verkauf.",
           features: [
-            "Unternehmen von 5 bis 150M€ Umsatz",
+            "Unternehmen mit 5–150 Mio. € Umsatz",
             "Vollständiger oder teilweiser Verkauf",
             "Strukturierter Prozess über 6-9 Monate"
           ],
@@ -3265,7 +3265,7 @@ export const translations = {
         },
         {
           title: "Finanzierungsberatung",
-          description: "Strukturieren Sie die optimale Finanzierung, um Ihre Entwicklung zu beschleunigen.",
+          description: "Optimieren Sie Ihre Finanzierung für schnelleres Wachstum.",
           features: [
             "Growth-Finanzierung",
             "Schulden & hybride Finanzierungen",
@@ -3279,7 +3279,7 @@ export const translations = {
       bottomCtaButton: "Über Ihr Projekt sprechen"
     },
     testimonial: {
-      quote: "Milaris Partners zieht seine Stärke aus seiner europäischen Verankerung. In Frankreich, Italien oder Deutschland sprechen wir die Sprache unserer Kunden und verstehen ihre Märkte intim, ein Ansatz, der großes Interesse im Small- und Mid-Cap-Segment weckt und es uns ermöglicht, unsere Entwicklung in diesem Jahr weiter zu beschleunigen.",
+      quote: "Milaris Partners zieht seine Stärke aus seiner europäischen Verankerung. In Frankreich, Italien oder Deutschland sprechen wir die Sprache unserer Kunden und verstehen ihre Märkte intim, ein Ansatz, der großes Interesse im Small- und Mid-Cap-Segment weckt und es uns ermöglicht, unsere Entwicklung in diesem Jahr weiter zu beschleunigen",
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },
@@ -3328,7 +3328,7 @@ export const translations = {
       description: "Proprietäre KI-Technologie, entwickelt von Milaris Partners. Durch die Nutzung von Millionen von Markt- und Investorendaten enthüllt unser interner Matching-Motor versteckte Werte in der fragmentierten Landschaft der M&A von kleinen und mittleren Unternehmen, wo traditionelle Netzwerke versagen und Zuverlässigkeit entscheidend ist.",
       features: {
         identifyBuyers: {
-          title: "Identifikation von Käufern außerhalb des Radars",
+          title: "Identifikation verborgener Käufer",
         },
         qualifyTargets: {
           title: "Schnelle Qualifizierung relevanter Ziele",
@@ -3345,15 +3345,15 @@ export const translations = {
       },
       stats: {
         data: {
-          value: "5M+",
+          value: "+5 Mio.",
           label: "Analysierte Daten"
         },
         transactions: {
-          value: "150+",
+          value: "250 Tsd.",
           label: "Transaktionen"
         },
         accuracy: {
-          value: "95%",
+          value: "99,9%",
           label: "Genauigkeit"
         }
       }
@@ -3361,7 +3361,7 @@ export const translations = {
     expertise: {
       title: "Unsere Expertise",
       titleHighlight: "spezialisierte",
-      subtitle: "Spezialisierte Beratung für Ihre Erfolge",
+      subtitle: "Spezialisierte Beratung für Ihre Erfolge.",
       sectors: {
         consumer: {
           title: "Konsumgüter",
@@ -3373,14 +3373,14 @@ export const translations = {
         },
         healthcare: {
           title: "Gesundheitswesen",
-          description: "Spezialisierte Beratung für Akteure im medizinischen und pharmazeutischen Sektor"
+          description: "Spezialisierte Beratung für Akteure im Medizin- und Pharmasektor"
         },
         industry: {
           title: "Industrie",
           description: "Strategische Unterstützung für Industrie- und Fertigungsunternehmen"
         },
         services: {
-          title: "Unternehmensdienstleistungen",
+          title: "B2B-Dienstleistungen",
           description: "Expertise in der Optimierung und Bewertung von B2B-Dienstleistungen"
         },
         energy: {
@@ -3560,7 +3560,7 @@ export const translations = {
         },
         stats: {
           successRate: {
-            value: "95%",
+            value: "99,9%",
             label: "Erfolgsquote"
           },
           duration: {
@@ -3603,7 +3603,7 @@ export const translations = {
             benefits: {
               synergies: {
                 title: "Synergien",
-                subtitle: "Kombination von Ressourcen und Know-how für bessere Leistung"
+                subtitle: "Ressourcen und Know-how für bessere Leistung"
               },
               integration: {
                 title: "Integration",
@@ -3625,7 +3625,7 @@ export const translations = {
               },
               management: {
                 title: "Management",
-                subtitle: "Erfahrene Führungskräfte für strategische Entscheidungen"
+                subtitle: "Erfahrene Führungskräfte für Strategie"
               },
               exit: {
                 title: "Exit-Strategie",
@@ -3763,15 +3763,15 @@ export const translations = {
             items: {
               consolidation: {
                 title: "Marktkonsolidierung",
-                subtitle: "Zusammenführung von Unternehmen zur Stärkung der Marktposition"
+                subtitle: "Unternehmenszusammenschluss zur Marktstärkung"
               },
               vertical: {
                 title: "Vertikale Integration",
-                subtitle: "Erwerb von Lieferanten oder Kunden zur Optimierung der Wertschöpfungskette"
+                subtitle: "Vertikale Integration zur Wertschöpfungsoptimierung"
               },
               geographic: {
                 title: "Geografische Expansion",
-                subtitle: "Erschließung neuer Märkte durch Akquisition lokaler Unternehmen"
+                subtitle: "Markteintritt durch lokale Akquisitionen"
               }
             }
           },
@@ -3781,11 +3781,11 @@ export const translations = {
             items: {
               lbo: {
                 title: "Leveraged Buyouts",
-                subtitle: "Akquisitionen mit hoher Fremdfinanzierung für maximale Rendite"
+                subtitle: "Leveraged Akquisitionen für maximale Rendite"
               },
               carveout: {
                 title: "Carve-outs",
-                subtitle: "Abspaltung von Geschäftsbereichen aus größeren Konzernen"
+                subtitle: "Carve-outs aus Großkonzernen"
               },
               buildup: {
                 title: "Build-ups",
@@ -3888,7 +3888,7 @@ export const translations = {
             label: "Investoren im Netzwerk"
           },
           minimum: {
-            value: "€1M",
+            value: "1 Mio. €",
             label: "Mindestvolumen"
           }
         },
@@ -3919,15 +3919,15 @@ export const translations = {
             items: {
               vc: {
                 title: "Venture Capital",
-                subtitle: "Wachstumskapital für innovative Unternehmen in der Expansionsphase"
+                subtitle: "Wachstumskapital für innovative Unternehmen"
               },
               pe: {
                 title: "Private Equity",
-                subtitle: "Kapital für etablierte Unternehmen mit Wachstumspotenzial"
+                subtitle: "Kapital für wachstumsstarke Unternehmen"
               },
               family: {
                 title: "Family Offices",
-                subtitle: "Investitionen von vermögenden Familien in strategische Beteiligungen"
+                subtitle: "Investitionen vermögender Familien in Beteiligungen"
               },
               angels: {
                 title: "Business Angels",
@@ -3953,7 +3953,7 @@ export const translations = {
               },
               lease: {
                 title: "Leasing",
-                subtitle: "Finanzierung von Investitionsgütern durch Leasingverträge"
+                subtitle: "Leasingfinanzierung von Investitionsgütern"
               }
             }
           }
@@ -4013,7 +4013,7 @@ export const translations = {
         },
         value3: {
           title: "Dynamisches Umfeld",
-          description: "Entwickeln Sie sich in einem dynamischen, ideengetriebenen Umfeld, das intellektuelle Neugier, Zusammenarbeit und kontinuierliches Lernen schätzt, um Ihnen beim Fortschritt und bei einem bedeutsamen Beitrag zu helfen."
+          description: "Entwickeln Sie sich in einem dynamischen, ideengetriebenen Umfeld, das Neugier, Zusammenarbeit und kontinuierliches Lernen fördert, um Ihren Fortschritt und Beitrag zu unterstützen."
         }
       },
       benefits: {
@@ -4022,7 +4022,7 @@ export const translations = {
         title3: "",
         subtitle: "Wir investieren in das Wohlbefinden und die Entwicklung unserer Mitarbeiter.",
         benefit1: "Kontinuierliche Ausbildung und Mentoring",
-        benefit2: "Stimulierende Projekte mit prestigeträchtigen Kunden",
+        benefit2: "Projekte mit renommierten Kunden",
         benefit3: "Flexibles Arbeitsumfeld",
         benefit4: "Zugang zu einzigartigen technologischen Tools"
       },
@@ -4041,7 +4041,7 @@ export const translations = {
         title2: "Zukunft",
         title3: "mit",
         title4: "uns",
-        subtitle: "zu gestalten",
+        subtitle: "Werden Sie Teil eines Teams, das Ihr Talent schätzt und an internationalen Transaktionen mit hoher Wirkung arbeitet.",
         button: "Jetzt bewerben"
       }
     },
@@ -4102,7 +4102,7 @@ export const translations = {
         },
         focus2: {
           title: "Europäische Partnerschaften",
-          description: "Verkauf und Suche nach strategischen Partnern oder Finanzinvestoren auf europäischer Ebene für italienische Unternehmen."
+          description: "Verkauf und Partnersuche für italienische Unternehmen in Europa."
         },
         focus3: {
           title: "Italienische Origination",

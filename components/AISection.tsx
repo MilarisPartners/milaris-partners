@@ -27,7 +27,7 @@ const AISection = () => {
     {
       key: "identifyBuyers",
       icon: Target,
-      value: "500k+",
+      value: language === "DE" ? "+500 Tsd." : "500k+",
     },
     {
       key: "qualifyTargets", 
@@ -42,12 +42,12 @@ const AISection = () => {
     {
       key: "objectiveValuation",
       icon: TrendingUp,
-      value: "95%",
+      value: "99,9%",
     },
     {
       key: "marketKnowledge",
       icon: Globe,
-      value: "50+",
+      value: language === "DE" ? "+50" : "50+",
     },
   ];
 

@@ -180,8 +180,8 @@ const Equipe = () => {
                       `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
                     language === 'EN' ? 
                       `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span>` :
-                      `<br><span class="text-[#0b062b]">${t("equipe.hero.title2")}</span>`
-                  }${t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3") !== "" ? t("equipe.hero.title3") : ""}${t("equipe.hero.title4") && t("equipe.hero.title4") !== "equipe.hero.title4" && t("equipe.hero.title4") !== "" ? t("equipe.hero.title4") : ""}`
+                      `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">${t("equipe.hero.title2")}</span><br>`
+                  }${t("equipe.hero.title3") && t("equipe.hero.title3") !== "equipe.hero.title3" && t("equipe.hero.title3") !== "" ? t("equipe.hero.title3") : ""}${t("equipe.hero.title4") && t("equipe.hero.title4") !== "equipe.hero.title4" && t("equipe.hero.title4") !== "" ? `<span class="text-[#0b062b]">${t("equipe.hero.title4")}</span>` : ""}`
               }}
             />
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto mb-8">

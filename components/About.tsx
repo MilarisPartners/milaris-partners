@@ -94,6 +94,10 @@ const About = () => {
                   <>
                     Milaris Partners, société parisienne fondée par des <span className="font-semibold">professionnels français et italiens</span>, accompagne les <span className="font-semibold">petites et moyennes entreprises</span> dans leurs processus de <span className="font-semibold">cession, d'acquisition et de levée de fonds</span>, en leur ouvrant l'accès à des investisseurs et acquéreurs internationaux.
                   </>
+                ) : language === "DE" ? (
+                  <>
+                    Milaris Partners, ein Pariser Unternehmen, das von französischen und italienischen Fachleuten gegründet wurde, <span className="font-semibold">begleitet kleine und mittlere Unternehmen</span> in ihren Prozessen des <span className="font-semibold">Verkaufs, Kaufs und der Kapitalbeschaffung</span> und öffnet ihnen den Zugang zu <span className="font-semibold">internationalen Investoren und Käufern</span>.
+                  </>
                 ) : (
                   t("about.content.point1.title")
                 )}
@@ -121,6 +125,10 @@ const About = () => {
                 ) : t("about.content.point2.text1").includes("Présents en") ? (
                   <>
                     Présents en <span className="font-semibold">France, Italie et en Allemagne</span>, nous privilégions une approche exclusive avec un nombre limité de mandats. Méthode rigoureuse, <span className="font-semibold">réseau international</span>, sens du deal : nous ouvrons le champ des possibles pour <span className="font-semibold">maximiser valeur, options et réussite</span>.
+                  </>
+                ) : language === "DE" ? (
+                  <>
+                    Mit Präsenz in <span className="font-semibold">Frankreich, Italien und Deutschland</span> bevorzugen wir einen <span className="font-semibold">exklusiven Ansatz mit einer begrenzten Anzahl von Mandaten</span>. <span className="font-semibold">Rigorose Methodik, internationales Netzwerk, Gespür für Deals</span>: Wir erweitern das Feld der Möglichkeiten, um <span className="font-semibold">Wert, Optionen und Erfolg</span> zu maximieren.
                   </>
                 ) : (
                   <>
@@ -152,9 +160,13 @@ const About = () => {
                   <>
                     Pionniers de <span className="font-semibold">l'intégration de l'intelligence artificielle</span> en M&A, notre <span className="font-semibold">technologie propriétaire</span> optimise chaque étape de la transaction pour <span className="font-semibold">maximiser vos chances de succès</span>.
                   </>
+                ) : language === "DE" ? (
+                  <>
+                    Als <span className="font-semibold">Pioniere der Integration von künstlicher Intelligenz in M&A</span> optimiert unsere <span className="font-semibold">proprietäre Technologie</span> jeden Schritt der Transaktion, um Ihre <span className="font-semibold">Erfolgschancen zu maximieren</span>.
+                  </>
                 ) : (
                   <>
-                    {t("about.content.point3.text1")}{t("about.content.point3.ai")} {t("about.content.point3.text2")}
+                    {t("about.content.point3.text1")} {t("about.content.point3.ai")} {t("about.content.point3.text2")}
                   </>
                 )}
               </p>
