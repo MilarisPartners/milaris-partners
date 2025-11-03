@@ -87,7 +87,7 @@ const TransactionsPage = () => {
         ? "Fondo di private equity interessato ad acquisizioni nel settore logistico, con focus su operatori integrati e servizi specializzati."
         : language === "DE"
         ? "Private-Equity-Fonds mit Interesse an Akquisitionen im deutschen Logistiksektor, Fokus auf integrierte Betreiber und Spezialtransportdienstleistungen."
-        : "Private equity fund interested in acquisitions in the German logistics sector, with focus on integrated operators and specialized transport services.",
+        : "Private equity fund interested in acquisitions in the logistics sector, with focus on integrated operators and specialized transport services.",
       mandateType: "Buy-side",
       country: language === "FR" ? "Allemagne" : language === "IT" ? "Germania" : language === "DE" ? "Deutschland" : "Germany",
       countryFlag: "🇩🇪",
@@ -119,7 +119,7 @@ const TransactionsPage = () => {
         ? "Società attiva nei servizi digitali, software e soluzioni tecnologiche per l'efficienza operativa e la trasformazione digitale delle imprese."
         : language === "DE"
         ? "Französisches Unternehmen im Bereich digitale Dienste, Software und technologische Lösungen für die betriebliche Effizienz und digitale Transformation von Unternehmen."
-        : "French company active in digital services, software and technological solutions for operational efficiency and digital transformation of businesses.",
+        : "French company active in digital services, software and technological solutions for operational efficiency and digital transformation.",
       mandateType: "Sell-side",
       country: language === "FR" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
       countryFlag: "🇫🇷",
@@ -289,7 +289,7 @@ const TransactionsPage = () => {
           : language === "DE"
           ? "Promethera Biosciences S.A. erhält Finanzierung durch wandelbare Anleihen"
           : "Promethera Biosciences S.A. reçoit un financement en obligations convertibles",
-      value: language === "EN" ? "≈ €5M" : language === "IT" ? "≈ €5M" : "≈ 5 M€",
+      value: language === "EN" ? "~€5M" : language === "IT" ? "~€5M" : "≈ 5 M€",
       country: language === "EN" ? "Belgium" : language === "IT" ? "Belgio" : language === "DE" ? "Belgien" : "Belgique",
       partner: "Kevin",
     },

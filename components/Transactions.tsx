@@ -117,7 +117,7 @@ const Transactions = () => {
           : language === "IT"
           ? "Promethera Biosciences ha ricevuto finanziamento da Hao Tian International nell'ambito di fundraising"
           : "Promethera Biosciences S.A. reçoit un financement en obligations convertibles",
-      value: language === "EN" ? "≈ €5M" : language === "IT" ? "≈ €5M" : "≈ 5 M€",
+      value: language === "EN" ? "~€5M" : language === "IT" ? "~€5M" : "≈ 5 M€",
       country: language === "EN" ? "Belgium" : language === "IT" ? "Belgio" : language === "DE" ? "Belgien" : "Belgique",
     },
     {
@@ -352,7 +352,14 @@ const Transactions = () => {
         <div className="max-w-6xl mx-auto text-center mb-10">
           <h2 className="heading-2 font-bold text-[#0b062b]">
             {language === "EN"
-              ? "Deals completed by our collaborators"
+              ? (
+                  <>
+                    Deals completed by our{" "}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x">
+                      collaborators
+                    </span>
+                  </>
+                )
               : language === "IT"
               ? (
                   <>
