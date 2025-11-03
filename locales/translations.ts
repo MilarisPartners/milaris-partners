@@ -3495,7 +3495,7 @@ export const translations = {
       cession: {
         hero: {
           badge: "Unternehmensverkauf",
-          title: "Die relevantesten Käufer identifizieren, in Deutschland wie international, für einen erfolgreichen Verkauf",
+          title: "Die relevantesten Käufer für einen erfolgreichen Verkauf identifizieren",
           subtitle: "Wir machen es zu einem Erfolg.",
           description: "Milaris Partners begleitet Führungskräfte beim vollständigen oder teilweisen Verkauf ihres Unternehmens mit einem strukturierten, strategischen, vertraulichen und optimierten Ansatz.",
           cta: "Lassen Sie uns über Ihr Projekt sprechen"
@@ -3720,7 +3720,7 @@ export const translations = {
         },
         stats: {
           targets: {
-            value: "500+",
+            value: "+500",
             label: "Analysierte Ziele"
           },
           speed: {
@@ -3884,7 +3884,7 @@ export const translations = {
             label: "Finanzierungsstufen"
           },
           investors: {
-            value: "200+",
+            value: "+200",
             label: "Investoren im Netzwerk"
           },
           minimum: {
