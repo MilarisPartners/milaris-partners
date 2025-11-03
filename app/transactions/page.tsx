@@ -51,25 +51,29 @@ const TransactionsPage = () => {
       title: language === "FR" ? "Mobilité Tech" : "Mobility Tech",
       description: language === "FR"
         ? "Conseille à la vente un acteur de la gestion de la mobilité électrique en discussion avancée. Cession à un stratégique ou investisseur financier possible"
+        : language === "IT"
+        ? "Società italiana attiva nella gestione intelligente della mobilità elettrica, con soluzioni digitali per flotte e infrastrutture di ricarica."
         : "Advising on the sale of an electric mobility management player in advanced discussions. Sale to a strategic buyer or financial investor possible",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : "Italy",
+      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Majoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : 10-15M€" : "Revenue: 10-15M€",
+      amount: language === "FR" ? "Chiffre d'affaires : 10-15M€" : language === "IT" ? "Fatturato annuo pari a circa €10M" : "Revenue: 10-15M€",
       partner: "Matteo",
     },
     {
       id: "mandate-3",
-      title: language === "FR" ? "Industrie" : "Industry",
+      title: language === "FR" ? "Industrie" : language === "IT" ? "Industrials" : "Industry",
       description: language === "FR"
         ? "Conseil auprès d'un fonds industriel français dans un processus de build-up en Italie et en Allemagne"
+        : language === "IT"
+        ? "Fondo di private equity industriale attivo in Europa, focalizzato su acquisizioni di aziende manifatturiere e meccaniche per crescita."
         : "Advising a French industrial fund in a build-up process in Italy and Germany",
       mandateType: "Buy-side",
-      country: language === "FR" ? "France / Allemagne / Italie" : "France / Germany / Italy",
+      country: language === "FR" ? "France / Allemagne / Italie" : language === "IT" ? "Francia / Germania / Italia" : "France / Germany / Italy",
       countryFlag: "🇫🇷 / 🇩🇪 / 🇮🇹",
       transactionType: "Build-up",
-      amount: language === "FR" ? "EBITDA : > 2M€" : "EBITDA: > 2M€",
+      amount: language === "FR" ? "EBITDA : > 2M€" : language === "IT" ? "EBITDA superiore ai €2M" : "EBITDA: > 2M€",
       partner: "Paul",
     },
     {
@@ -77,38 +81,44 @@ const TransactionsPage = () => {
       title: language === "FR" ? "Produits chimiques" : "Chemicals",
       description: language === "FR"
         ? "Conseil pour la cession d'un acteur italien de la chimie"
+        : language === "IT"
+        ? "Azienda italiana specializzata nella produzione di formulati chimici ad alte prestazioni per applicazioni industriali e professionali."
         : "Advising on the sale of an Italian chemical player",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : "Italy",
+      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Majoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : >15M€" : "Revenue: >15M€",
+      amount: language === "FR" ? "Chiffre d'affaires : >15M€" : language === "IT" ? "Fatturato annuo superiore a €15M" : "Revenue: >15M€",
       partner: "Matteo",
     },
     {
       id: "mandate-5",
-      title: language === "FR" ? "Industrie" : "Industry",
+      title: language === "FR" ? "Industrie" : language === "IT" ? "Industrials" : "Industry",
       description: language === "FR"
         ? "Conseil d'un fonds d'investissement italien dans une stratégie de build-up en France"
+        : language === "IT"
+        ? "Fondo di investimento italiano impegnato in una strategia di build-up industriale in Francia, con interesse per società produttive medie."
         : "Advising an Italian investment fund in a build-up strategy in France",
       mandateType: "Buy-side",
-      country: language === "FR" ? "France" : "France",
+      country: language === "FR" ? "France" : language === "IT" ? "Francia" : "France",
       countryFlag: "🇫🇷",
       transactionType: "Build-up",
-      amount: language === "FR" ? "EBITDA : 2-8 M€" : "EBITDA: 2-8 M€",
+      amount: language === "FR" ? "EBITDA : 2-8 M€" : language === "IT" ? "EBITDA target tra i €2M e gli €8M" : "EBITDA: 2-8 M€",
       partner: "Matteo",
     },
     {
       id: "mandate-6",
-      title: language === "FR" ? "Engineering & Architecture" : "Engineering & Architecture",
+      title: language === "FR" ? "Engineering & Architecture" : "Construction and Engineering",
       description: language === "FR"
         ? "Conseil pour la cession minoritaire d'un studio d'architecture en Italie"
+        : language === "IT"
+        ? "Studio italiano di architettura e ingegneria con competenze in progetti complessi e sostenibili a livello nazionale e internazionale."
         : "Advising on the minority sale of an architecture studio in Italy",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : "Italy",
+      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Minoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : > 10 M€" : "Revenue: > 10 M€",
+      amount: language === "FR" ? "Chiffre d'affaires : > 10 M€" : language === "IT" ? "Fatturato annuo superiore a €15M" : "Revenue: > 10 M€",
       partner: "Matteo",
     },
     {
@@ -116,25 +126,29 @@ const TransactionsPage = () => {
       title: language === "FR" ? "Sécurité routière" : "Road Safety",
       description: language === "FR"
         ? "Conseil pour la cession minoritaire d'une société industrielle de barrières routières éco-durables"
+        : language === "IT"
+        ? "Azienda italiana specializzata in soluzioni industriali per la sicurezza stradale e infrastrutture ecosostenibili."
         : "Advising on the minority sale of an industrial eco-sustainable road barriers company",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : "Italy",
+      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Minoritaire",
-      amount: language === "FR" ? "Ticket d'investissement : 1,5-3 M€" : "Investment ticket: 1.5-3 M€",
+      amount: language === "FR" ? "Ticket d'investissement : 1,5-3 M€" : language === "IT" ? "Fatturato annuo pari a circa €10M" : "Investment ticket: 1.5-3 M€",
       partner: "Paul",
     },
     {
       id: "mandate-8",
-      title: language === "FR" ? "Produits de luxe" : "Luxury Products",
+      title: language === "FR" ? "Produits de luxe" : "Luxury Goods",
       description: language === "FR"
         ? "Conseil à la vente d'un acteur intégré dans la chaine de valeur de la production de produits de luxe"
+        : language === "IT"
+        ? "Azienda italiana integrata nella filiera produttiva dei beni di lusso, attiva nella realizzazione di componenti e accessori per brand internazionali."
         : "Advising on the sale of a player integrated in the luxury products production value chain",
       mandateType: "Sell-side",
-      country: language === "FR" ? "Italie" : "Italy",
+      country: language === "FR" ? "Italie" : language === "IT" ? "Italia" : "Italy",
       countryFlag: "🇮🇹",
       transactionType: "Majoritaire",
-      amount: language === "FR" ? "Chiffre d'affaires : > 10M€" : "Revenue: > 10M€",
+      amount: language === "FR" ? "Chiffre d'affaires : > 10M€" : language === "IT" ? "Fatturato annuo superiore a €10M" : "Revenue: > 10M€",
       partner: "Matteo",
     },
   ];
@@ -1365,7 +1379,19 @@ const TransactionsPage = () => {
                   </div>
                   <div className="flex items-center text-gray-700">
                     <FileText className="w-4 h-4 mr-2" />
-                    <span>{mandate.transactionType}</span>
+                    <span>
+                      {language === "IT" 
+                        ? (mandate.id === "mandate-4" || mandate.id === "mandate-7"
+                            ? "Capitale per la crescita"
+                            : mandate.transactionType === "Majoritaire" 
+                            ? "Cessione maggioritaria" 
+                            : mandate.transactionType === "Minoritaire" 
+                            ? "Cessione minoritaria"
+                            : mandate.transactionType === "Build-up"
+                            ? "Operazione di build-up"
+                            : mandate.transactionType)
+                        : mandate.transactionType}
+                    </span>
                   </div>
                   <div className="text-xs text-[#0001ff] font-normal">
                     {mandate.amount}
@@ -1384,7 +1410,7 @@ const TransactionsPage = () => {
                   </div>
                   <div className="ml-3 text-sm">
                     <div className="text-xs text-gray-500 uppercase font-medium">
-                      {language === "EN" ? "Partner" : language === "IT" ? "Partner" : language === "DE" ? "Partner" : "Associé"}
+                      MANAGING PARTNER
                     </div>
                     <div className="text-[#0b062b] font-medium">
                       {mandate.partner} {mandate.partner === "Paul" ? "Poulain" : "Orlandi Mango"}
