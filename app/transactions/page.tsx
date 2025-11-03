@@ -299,7 +299,7 @@ const TransactionsPage = () => {
           : language === "DE"
           ? "Promethera Biosciences erhielt Finanzierung von Hao Tian International im Rahmen einer Fundraising-Transaktion"
           : "Promethera Biosciences a reçu un financement de Hao Tian International dans le cadre d'une transaction de levée de fonds",
-      value: language === "EN" ? "~€5M" : language === "IT" ? "~€5M" : language === "DE" ? "~5 Mio. €" : "≈ 5 M€",
+      value: language === "EN" ? "~€5M" : language === "IT" ? "~€5M" : language === "DE" ? "~5 Mio. €" : "~5M€",
       country: language === "EN" ? "Belgium" : language === "IT" ? "Belgio" : language === "DE" ? "Belgien" : "Belgique",
       partner: "Kevin",
     },
@@ -359,7 +359,7 @@ const TransactionsPage = () => {
           : language === "DE"
           ? "Industriegas-Assets in Südindien von Air Water im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Actifs gaziers industriels dans le sud de l'Inde acquis par Air Water dans le cadre d'une transaction M&A buy-side",
-      value: language === "EN" ? "~$194-220M" : language === "IT" ? "~$194-220M" : language === "DE" ? "~194–220 Mio. $" : "~194-220 M$",
+      value: language === "EN" ? "~$194-220M" : language === "IT" ? "~$194-220M" : language === "DE" ? "~194–220 Mio. $" : "~194-220M$",
       country: language === "EN" ? "India" : language === "IT" ? "India" : language === "DE" ? "Indien" : "Inde",
       partner: "Kevin",
     },
@@ -379,7 +379,7 @@ const TransactionsPage = () => {
           : language === "DE"
           ? "Demag Mobile Cranes Sparte von Terex an Tadano im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "Division Demag Mobile Cranes de Terex vendue à Tadano dans le cadre d'une transaction M&A sell-side",
-      value: language === "EN" ? "~$215M" : language === "IT" ? "~$215M" : language === "DE" ? "~215 Mio. $" : "~215 M$",
+      value: language === "EN" ? "~$215M" : language === "IT" ? "~$215M" : language === "DE" ? "~215 Mio. $" : "~215M$",
       country: language === "EN" ? "Germany" : language === "IT" ? "Germania" : language === "DE" ? "Deutschland" : "Allemagne",
       partner: "Kevin",
     },
@@ -399,7 +399,7 @@ const TransactionsPage = () => {
           : language === "DE"
           ? "GE Money Bank France an Cerberus im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "GE Money Bank France vendue à Cerberus dans le cadre d'une transaction M&A sell-side",
-      value: language === "EN" ? "~$4.6B" : language === "IT" ? "~$4,6Md" : language === "DE" ? "~4,6 Mrd. $" : "~4,6 Md$",
+      value: language === "EN" ? "~$4.6B" : language === "IT" ? "~$4,6Md" : language === "DE" ? "~4,6 Mrd. $" : "~4,6Mds$",
       country: language === "EN" ? "France" : language === "IT" ? "Francia" : language === "DE" ? "Frankreich" : "France",
       partner: "Kevin",
     },
@@ -439,7 +439,7 @@ const TransactionsPage = () => {
           : language === "DE"
           ? "Simtronics (P2P) von Carrier im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Simtronics (P2P) acquise par Carrier dans le cadre d'une transaction M&A buy-side",
-      value: language === "EN" ? "~€49M" : language === "IT" ? "~€49M" : language === "DE" ? "~49 Mio. €" : "~49 M €",
+      value: language === "EN" ? "~€49M" : language === "IT" ? "~€49M" : language === "DE" ? "~49 Mio. €" : "~49M€",
       country: language === "EN" ? "Sweden" : language === "IT" ? "Svezia" : language === "DE" ? "Schweden" : "Suède",
       partner: "Kevin",
     },
@@ -459,7 +459,7 @@ const TransactionsPage = () => {
           : language === "DE"
           ? "GE Security an United Technologies im Rahmen einer M&A-Sell-Side-Transaktion verkauft"
           : "GE Security vendue à United Technologies dans le cadre d'une transaction M&A sell-side",
-      value: language === "EN" ? "~€1.5B" : language === "IT" ? "~€1,5Md" : language === "DE" ? "~1,5 Mrd. €" : "~1,5 Md €",
+      value: language === "EN" ? "~€1.5B" : language === "IT" ? "~€1,5Md" : language === "DE" ? "~1,5 Mrd. €" : "~1,5Mds€",
       country: language === "EN" ? "United States" : language === "IT" ? "Stati Uniti" : language === "DE" ? "Vereinigte Staaten" : "États-Unis",
       partner: "Kevin",
     },
@@ -499,7 +499,7 @@ const TransactionsPage = () => {
           : language === "DE"
           ? "Marioff von UTC Fire & Security im Rahmen einer M&A-Buy-Side-Transaktion erworben"
           : "Marioff acquise par UTC Fire & Security dans le cadre d'une transaction M&A buy-side",
-      value: language === "EN" ? "~€234M" : language === "IT" ? "~€234M" : language === "DE" ? "~234 Mio. €" : "~234 M €",
+      value: language === "EN" ? "~€234M" : language === "IT" ? "~€234M" : language === "DE" ? "~234 Mio. €" : "~234M€",
       country: language === "EN" ? "Norway" : language === "IT" ? "Norvegia" : language === "DE" ? "Norwegen" : "Norvège",
       partner: "Kevin",
     },
