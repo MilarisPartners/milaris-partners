@@ -88,7 +88,7 @@ const TransactionsPage = () => {
       id: "mandate-10",
       title: language === "FR" ? "Logistics" : language === "IT" ? "Logistics" : language === "DE" ? "Logistik" : "Logistics",
       description: language === "FR"
-        ? "Fonds de private equity intéressé par des acquisitions dans le secteur logistique, avec focus sur les opérateurs intégrés et les services spécialisés."
+        ? "Fonds d'investissement intéressé par des acquisitions dans le secteur logistique, avec un focus sur les opérateurs intégrés et les services spécialisés."
         : language === "IT"
         ? "Fondo di private equity interessato ad acquisizioni nel settore logistico, con focus su operatori integrati e servizi specializzati."
         : language === "DE"
@@ -97,7 +97,7 @@ const TransactionsPage = () => {
       mandateType: "Buy-side",
       country: language === "FR" ? "Allemagne" : language === "IT" ? "Germania" : language === "DE" ? "Deutschland" : "Germany",
       countryFlag: "🇩🇪",
-      transactionType: "Majoritaire",
+      transactionType: "Build-up",
       amount: language === "FR" ? "EBITDA cible entre 5M€ et 10M€" : language === "IT" ? "EBITDA target tra €5M e €10M" : language === "DE" ? "EBITDA-Ziel zwischen €5M und €10M" : "EBITDA target between €5M and €10M",
       partner: "Paul",
     },
@@ -173,7 +173,7 @@ const TransactionsPage = () => {
       id: "mandate-8",
       title: language === "FR" ? "Food & Beverage" : language === "IT" ? "Food & Beverage" : language === "DE" ? "Lebensmittel & Getränke" : "Food & Beverage",
       description: language === "FR"
-        ? "Entreprise italienne opérant dans la filière agroalimentaire et les produits de qualité, avec une forte identité de marque et un potentiel de croissance."
+        ? "Entreprise italienne opérant dans la filière agroalimentaire, avec une forte identité de marque, une culture d'innovation et un potentiel de croissance."
         : language === "IT"
         ? "Impresa italiana operante nella filiera agroalimentare e nei prodotti di qualità, con forte identità di marca e potenziale di crescita."
         : language === "DE"
@@ -190,7 +190,7 @@ const TransactionsPage = () => {
       id: "mandate-3",
       title: language === "FR" ? "Industrials" : language === "IT" ? "Industrials" : language === "DE" ? "Industrie" : "Industrials",
       description: language === "FR"
-        ? "Fonds de private equity industriel actif en Europe, focalisé sur l'acquisition d'entreprises manufacturières et mécaniques pour la croissance."
+        ? "Fonds d'investissement industriel actif en Europe, focalisé sur l'acquisition, le développement et la transformation d'entreprises manufacturières."
         : language === "IT"
         ? "Fondo di private equity industriale attivo in Europa, focalizzato su acquisizioni di aziende manifatturiere e meccaniche per crescita."
         : language === "DE"
@@ -1297,7 +1297,7 @@ const TransactionsPage = () => {
                 </span>
               </motion.div>
               
-              <h1 className="heading-1 font-bold mb-6 sm:mb-12 text-[#0b062b]">
+              <h1 className="heading-1 font-bold mb-6 sm:mb-12 text-[#0b062b] leading-tight" style={{ overflow: 'visible' }}>
                 {language === "EN" ? (
                   <>
                     <span 
@@ -1308,19 +1308,22 @@ const TransactionsPage = () => {
                   <>
                     <span 
                       className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                    >Mandati attualmente in corso</span> e operazioni realizzate
+                    >Mandat in corso</span> e operazioni realizzate
                   </>
                 ) : language === "DE" ? (
                   <>
-                    Unsere aktuell laufenden <span 
-                      className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                    >Geschäfte und Mandate</span>
+                    <span 
+                      className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x inline-block"
+                      style={{ lineHeight: '1.3' }}
+                    >Ausgewählte Mandate</span>
+                    <br className="hidden sm:inline" />
+                    <span className="inline sm:block">und Transaktionen</span>
                   </>
                 ) : (
                   <>
                     Nos opérations et <span 
                       className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                    >mandats actuellement en cours</span>
+                    >mandats en cours</span>
                   </>
                 )}
               </h1>
@@ -1338,7 +1341,7 @@ const TransactionsPage = () => {
         </div>
 
         {/* Company Logos Scrolling - Full Width */}
-        <div className="absolute bottom-24 sm:bottom-40 md:bottom-52 left-0 right-0 w-full overflow-hidden">
+        <div className="absolute bottom-16 sm:bottom-28 md:bottom-36 left-0 right-0 w-full overflow-hidden">
           {/* Fade gradients */}
           <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
@@ -1457,7 +1460,7 @@ const TransactionsPage = () => {
                   {mandate.title}
                 </h3>
                 
-                <p className="text-gray-600 text-sm mb-3 sm:mb-4 flex-grow">
+                <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4 flex-grow leading-relaxed">
                   {mandate.description}
                 </p>
                 
@@ -1473,6 +1476,8 @@ const TransactionsPage = () => {
                       {language === "FR"
                         ? (mandate.id === "mandate-4"
                             ? "Levée de fonds"
+                            : mandate.id === "mandate-10"
+                            ? "Opération de build-up"
                             : mandate.transactionType === "Majoritaire" 
                             ? "Cession majoritaire" 
                             : mandate.transactionType === "Minoritaire" 
@@ -1483,6 +1488,8 @@ const TransactionsPage = () => {
                         : language === "IT" 
                         ? (mandate.id === "mandate-4"
                             ? "Capitale per la crescita"
+                            : mandate.id === "mandate-10"
+                            ? "Operazione di build-up"
                             : mandate.transactionType === "Majoritaire" 
                             ? "Cessione maggioritaria" 
                             : mandate.transactionType === "Minoritaire" 
@@ -1493,6 +1500,8 @@ const TransactionsPage = () => {
                         : language === "EN"
                         ? (mandate.id === "mandate-4"
                             ? "Growth capital"
+                            : mandate.id === "mandate-10"
+                            ? "Build-up"
                             : mandate.transactionType === "Majoritaire" 
                             ? "Majority sale" 
                             : mandate.transactionType === "Minoritaire" 
@@ -1503,6 +1512,8 @@ const TransactionsPage = () => {
                         : language === "DE"
                         ? (mandate.id === "mandate-4"
                             ? "Wachstumskapital"
+                            : mandate.id === "mandate-10"
+                            ? "Build-up"
                             : mandate.transactionType === "Majoritaire" 
                             ? "Mehrheitsverkauf" 
                             : mandate.transactionType === "Minoritaire" 
@@ -1565,20 +1576,20 @@ const TransactionsPage = () => {
                 ? "Kontaktieren Sie unsere Partner, um Ihr Projekt zu besprechen."
                 : "Contactez nos associés pour discuter de votre projet."}
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto">
               <a
                 href={emailPaul}
-                className="bg-white text-[#0001ff] px-6 py-2.5 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-white text-[#0001ff] px-6 py-2.5 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2 w-full sm:w-auto"
               >
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-                {language === "EN" ? "Contact Paul" : language === "IT" ? "Contattate Paul" : language === "DE" ? "Paul kontaktieren" : "Contacter Paul"}
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                <span className="whitespace-nowrap">{language === "EN" ? "Contact Paul" : language === "IT" ? "Contattate Paul" : language === "DE" ? "Paul kontaktieren" : "Contacter Paul"}</span>
               </a>
               <a
                 href={emailMatteo}
-                className="bg-white text-[#0001ff] px-6 py-2.5 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-white text-[#0001ff] px-6 py-2.5 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2 w-full sm:w-auto"
               >
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-                {language === "EN" ? "Contact Matteo" : language === "IT" ? "Contattate Matteo" : language === "DE" ? "Matteo kontaktieren" : "Contacter Matteo"}
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                <span className="whitespace-nowrap">{language === "EN" ? "Contact Matteo" : language === "IT" ? "Contattate Matteo" : language === "DE" ? "Matteo kontaktieren" : "Contacter Matteo"}</span>
               </a>
             </div>
           </div>
@@ -1628,10 +1639,10 @@ const TransactionsPage = () => {
           </div>
 
           {/* Country Filter */}
-          <div className="mb-6 sm:mb-8 flex items-center justify-center flex-wrap gap-2 px-4 sm:px-0">
-            <div className="flex items-center gap-2 text-gray-700">
-              <Filter className="w-4 h-4 sm:w-5 sm:h-5" />
-              <span className="text-sm sm:text-base font-medium">
+          <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row items-center justify-center flex-wrap gap-2 px-4 sm:px-0">
+            <div className="flex items-center gap-2 text-gray-700 mb-2 sm:mb-0">
+              <Filter className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+              <span className="text-sm sm:text-base font-medium whitespace-nowrap">
                 {language === "EN"
                   ? "Filter by country:"
                   : language === "IT"
@@ -1677,14 +1688,14 @@ const TransactionsPage = () => {
                 transition={{ duration: 0.4, delay: idx * 0.05 }}
               >
                 {/* Face 1: résumé */}
-                <div className="p-3 sm:p-4 h-full flex flex-col items-center justify-center text-center text-white">
-                  <div className="text-xs opacity-90 tracking-wide mb-1">{tx.titleTop}</div>
-                  <div className="text-[10px] opacity-80 mb-1">{tx.shortLabel}</div>
-                  <div className="text-sm sm:text-base font-semibold leading-tight">{tx.titleBottom}</div>
+                <div className="p-3 sm:p-4 h-full flex flex-col items-center justify-center text-center text-white overflow-hidden">
+                  <div className="text-xs sm:text-sm opacity-90 tracking-wide mb-1 px-1 break-words">{tx.titleTop}</div>
+                  <div className="text-[10px] sm:text-xs opacity-80 mb-1">{tx.shortLabel}</div>
+                  <div className="text-sm sm:text-base font-semibold leading-tight px-1 break-words">{tx.titleBottom}</div>
                 </div>
 
-                {/* Face 2: détails au hover */}
-                <div className="absolute inset-0 bg-[#0b86c1] text-white p-3 sm:p-5 flex flex-col justify-between text-center translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                {/* Face 2: détails au hover/tap */}
+                <div className="absolute inset-0 bg-[#0b86c1] text-white p-3 sm:p-5 flex flex-col justify-between text-center translate-y-full group-hover:translate-y-0 group-active:translate-y-0 sm:group-active:translate-y-full transition-transform duration-300">
                   <div className="flex-1 flex flex-col items-center justify-center">
                     <div className="text-[11px] opacity-90 mb-1">{tx.detailDate}</div>
                     <div className="text-sm font-bold mb-2">{tx.detailType}</div>

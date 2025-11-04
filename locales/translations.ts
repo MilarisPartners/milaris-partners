@@ -962,7 +962,7 @@ export const translations = {
       bottomCtaButton: "Discuter de votre projet"
     },
     testimonial: {
-      quote: "Milaris Partners puise sa force dans son ancrage européen. En France, en Italie ou en Allemagne, on parle la langue de nos clients et on comprend intimement leurs marchés, une approche qui suscite un réel engouement sur le segment small et mid cap et qui nous permet d'accélérer cette année encore notre développement",
+      quote: "Milaris Partners puise sa force dans son ancrage européen. En France, en Italie ou en Allemagne, on parle la langue de nos clients et on comprend intimement leurs marchés, une approche qui suscite un réel engouement sur le segment small et mid cap et qui nous permet d'accélérer cette année encore notre développement.",
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },
@@ -2004,7 +2004,7 @@ export const translations = {
       bottomCtaButton: "Let's discuss your project"
     },
     testimonial: {
-      quote: "Milaris Partners draws its strength from its European roots. In France, Italy, and Germany, we speak our clients' language and possess a deep understanding of their markets. This approach inspires genuine enthusiasm within the small and mid-cap segment and continues to drive our growth and expansion this year",
+      quote: "Milaris Partners draws its strength from its European roots. In France, Italy, and Germany, we speak our clients' language and possess a deep understanding of their markets. This approach inspires genuine enthusiasm within the small and mid-cap segment and continues to drive our growth and expansion this year.",
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },
@@ -3046,7 +3046,7 @@ export const translations = {
       bottomCtaButton: "Parlateci del vostro progetto"
     },
     testimonial: {
-      quote: "Milaris Partners fonda la propria forza sulle sue radici europee. In Francia, in Italia e in Germania parliamo la stessa lingua dei nostri clienti e conosciamo a fondo le dinamiche dei loro mercati. Questo approccio, che genera un autentico entusiasmo nel segmento delle small e mid cap, ci consente di proseguire anche quest'anno con slancio nel nostro percorso di crescita e sviluppo",
+      quote: "Milaris Partners fonda la propria forza sulle sue radici europee. In Francia, in Italia e in Germania parliamo la stessa lingua dei nostri clienti e conosciamo a fondo le dinamiche dei loro mercati. Questo approccio, che genera un autentico entusiasmo nel segmento delle small e mid cap, ci consente di proseguire anche quest'anno con slancio nel nostro percorso di crescita e sviluppo.",
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },
@@ -3279,7 +3279,7 @@ export const translations = {
       bottomCtaButton: "Über Ihr Projekt sprechen"
     },
     testimonial: {
-      quote: "Milaris Partners zieht seine Stärke aus seiner europäischen Verankerung. In Frankreich, Italien oder Deutschland sprechen wir die Sprache unserer Kunden und verstehen ihre Märkte intim, ein Ansatz, der großes Interesse im Small- und Mid-Cap-Segment weckt und es uns ermöglicht, unsere Entwicklung in diesem Jahr weiter zu beschleunigen",
+      quote: "Milaris Partners zieht seine Stärke aus seiner europäischen Verankerung. In Frankreich, Italien oder Deutschland sprechen wir die Sprache unserer Kunden und verstehen ihre Märkte intim, ein Ansatz, der großes Interesse im Small- und Mid-Cap-Segment weckt und es uns ermöglicht, unsere Entwicklung in diesem Jahr weiter zu beschleunigen.",
       name: "Paul POULAIN",
       title: "MANAGING PARTNER"
     },
