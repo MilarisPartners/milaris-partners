@@ -1282,7 +1282,7 @@ const TransactionsPage = () => {
           />
         </div>
 
-        <div className="absolute inset-0 flex items-center py-8 sm:py-0">
+        <div className="absolute inset-0 flex items-center py-12 sm:py-16 md:py-8 lg:py-0">
           <div className="container-custom relative z-10 w-full">
             <div className="max-w-4xl mx-auto text-center px-4 sm:px-0">
               <motion.div 
@@ -1297,7 +1297,7 @@ const TransactionsPage = () => {
                 </span>
               </motion.div>
               
-              <h1 className="heading-1 font-bold mb-6 sm:mb-12 text-[#0b062b] leading-tight" style={{ overflow: 'visible' }}>
+              <h1 className="heading-1 font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-[#0b062b] leading-tight px-2 sm:px-0" style={{ overflow: 'visible' }}>
                 {language === "EN" ? (
                   <>
                     <span 
@@ -1308,16 +1308,16 @@ const TransactionsPage = () => {
                   <>
                     <span 
                       className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x"
-                    >Mandat in corso</span> e operazioni realizzate
+                    >Mandati in corso</span> e operazioni realizzate
                   </>
                 ) : language === "DE" ? (
                   <>
                     <span 
                       className="text-transparent bg-clip-text bg-gradient-to-r from-[#0001ff] via-[#3E8BFF] to-[#0001ff] animate-gradient-x inline-block"
-                      style={{ lineHeight: '1.3' }}
+                      style={{ lineHeight: '1.3', paddingBottom: '0.125rem' }}
                     >Ausgewählte Mandate</span>
-                    <br className="hidden sm:inline" />
-                    <span className="inline sm:block">und Transaktionen</span>
+                    <br className="hidden md:inline" />
+                    <span className="inline md:block">und Transaktionen</span>
                   </>
                 ) : (
                   <>
@@ -1327,7 +1327,7 @@ const TransactionsPage = () => {
                   </>
                 )}
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto px-4 sm:px-0">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 md:mb-10 lg:mb-12 max-w-3xl mx-auto px-4 sm:px-0 leading-relaxed">
                 {language === "EN"
                   ? "Our team brings extensive international M&A expertise, having successfully completed numerous transactions across multiple countries."
                   : language === "IT"
@@ -1341,7 +1341,7 @@ const TransactionsPage = () => {
         </div>
 
         {/* Company Logos Scrolling - Full Width */}
-        <div className="absolute bottom-16 sm:bottom-28 md:bottom-36 left-0 right-0 w-full overflow-hidden">
+        <div className="absolute bottom-24 sm:bottom-32 md:bottom-40 lg:bottom-32 xl:bottom-36 left-0 right-0 w-full overflow-hidden">
           {/* Fade gradients */}
           <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-blue-50/80 via-transparent to-transparent z-10 pointer-events-none" />
@@ -1350,7 +1350,7 @@ const TransactionsPage = () => {
           <div className="overflow-hidden mb-2 sm:mb-4">
             <div className="flex space-x-4 sm:space-x-8 animate-scroll-left">
               {Array(6).fill(["ASICS", "PROMETHERA", "EPPENDORF", "SABAF", "TADANO", "GE MONEY BANK", "PIERRE MARCOLINI", "SYSTEMAIR"]).flat().map((company, idx) => (
-                <div key={`company-row1-${idx}`} className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl font-semibold whitespace-nowrap flex-shrink-0">
+                <div key={`company-row1-${idx}`} className="text-gray-400 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold whitespace-nowrap flex-shrink-0">
                   {company}
                 </div>
               ))}
@@ -1361,7 +1361,7 @@ const TransactionsPage = () => {
           <div className="overflow-hidden">
             <div className="flex space-x-4 sm:space-x-8 animate-scroll-right">
               {Array(6).fill(["KOKI HOLDINGS", "PALOMA", "HISTOIRE D'OR", "ORANGE", "LINDE", "TEREX", "DEMAG", "NJUKO"]).flat().map((company, idx) => (
-                <div key={`company-row2-${idx}`} className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl font-semibold whitespace-nowrap flex-shrink-0">
+                <div key={`company-row2-${idx}`} className="text-gray-400 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold whitespace-nowrap flex-shrink-0">
                   {company}
                 </div>
               ))}
@@ -1374,14 +1374,14 @@ const TransactionsPage = () => {
         </div>
 
         {/* Fade transition to gray section */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-transparent to-gray-50 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-36 md:h-40 bg-gradient-to-b from-transparent via-transparent to-gray-50 pointer-events-none" />
 
         {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20"
+          className="absolute bottom-2 sm:bottom-4 md:bottom-6 lg:bottom-8 left-1/2 transform -translate-x-1/2 z-20"
         >
           <motion.div 
             animate={{ y: [0, 10, 0] }}
