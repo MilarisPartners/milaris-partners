@@ -36,8 +36,8 @@ const Hero = () => {
             src={getAssetPath(
               language === 'IT' ? "/milan-aerial.jpg" : 
               language === 'DE' ? "/berlin-aerial.jpg" : 
-              language === 'EN' ? "/london-aerial.jpg" :
-              "/paris-aerial.jpg"
+              language === 'EN' ? "/london-aerial2.jpg" :
+              "/paris-aerial3.jpg"
             )}
             alt={
               language === 'IT' ? "Milan aerial view" : 
@@ -47,50 +47,14 @@ const Hero = () => {
             }
             fill
             className="object-cover"
-            style={{ filter: 'blur(4px)' }}
             priority
             quality={90}
-            key={`hero-bg-${language}`}
+            key={`hero-bg-${language}-${language === 'IT' ? 'milan' : language === 'DE' ? 'berlin' : language === 'EN' ? 'london2' : 'paris3'}`}
           />
         </div>
         
-        {/* Overlay gradient pour lisibilité du texte */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0001ff]/20 via-transparent to-[#0001ff]/20" />
-        
-        {/* Rectangle avec flou progressif au centre - flou augmente vers le centre */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          {/* Couche externe - flou léger */}
-          <div 
-            className="absolute w-full max-w-5xl h-[50%]"
-            style={{
-              backdropFilter: 'blur(3px)',
-              WebkitBackdropFilter: 'blur(3px)',
-              maskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.3) 60%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.3) 60%, transparent 100%)'
-            }}
-          />
-          {/* Couche intermédiaire - flou moyen */}
-          <div 
-            className="absolute w-full max-w-4xl h-[45%]"
-            style={{
-              backdropFilter: 'blur(6px)',
-              WebkitBackdropFilter: 'blur(6px)',
-              maskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.4) 50%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.4) 50%, transparent 100%)'
-            }}
-          />
-          {/* Couche centrale - flou fort */}
-          <div 
-            className="absolute w-full max-w-3xl h-[40%]"
-            style={{
-              backdropFilter: 'blur(9px)',
-              WebkitBackdropFilter: 'blur(9px)',
-              maskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.5) 40%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 100% 100% at center, transparent 0%, rgba(0,0,0,0.5) 40%, transparent 100%)'
-            }}
-          />
-        </div>
+        {/* Light transparent overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/65" />
       </motion.div>
       
       {/* Content */}
@@ -108,7 +72,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="heading-1 font-bold mb-6 sm:mb-8 relative"
           >
-            <span className="text-white drop-shadow-2xl [text-shadow:_0_2px_10px_rgb(0_0_0_/_80%),_0_4px_20px_rgb(0_0_0_/_50%)]">
+            <span className="text-white drop-shadow-2xl [text-shadow:_0_2px_15px_rgb(0_0_0_/_100%),_0_4px_25px_rgb(0_0_0_/_80%),_0_6px_35px_rgb(0_0_0_/_60%)]">
               {language === "DE" && t("hero.title") === "Die Kunst der Vereinfachung von M&A-Operationen" ? (
                 <>
                   Die Kunst der<br />
@@ -127,7 +91,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-base sm:text-lg md:text-xl text-white drop-shadow-lg [text-shadow:_0_2px_8px_rgb(0_0_0_/_70%)] mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0"
+              className="text-base sm:text-lg md:text-xl text-white drop-shadow-lg [text-shadow:_0_2px_12px_rgb(0_0_0_/_100%),_0_4px_20px_rgb(0_0_0_/_80%)] mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0"
             >
               {t("hero.subtitle")}
             </motion.p>
