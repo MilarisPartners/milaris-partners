@@ -12,8 +12,8 @@ export const translations = {
       financing: "Financement",
     },
     hero: {
-      subtitle: "Milaris Partners accompagne les dirigeants, actionnaires et investisseurs de PME et ETI dans la cession, l'acquisition ou le financement d'entreprises, avec l'objectif de préserver leurs intérêts et de maximiser la valeur de chaque transaction.",
-      title: "L'art de simplifier les opérations de M&A",
+      subtitle: "Milaris Partners accompagne dirigeants, actionnaires et investisseurs dans la cession, l'acquisition et le financement d'entreprises. Plus de 50 transactions menées par nos associés à travers l'Europe.",
+      title: "L'expérience d'une grande banque d'affaires, au service des PME et des ETI.",
       description: {
         part1: "Milaris Partners accompagne les dirigeants, actionnaires et investisseurs",
         part2: "de PME et ETI dans la cession, l'acquisition ou le financement d'entreprises,",
@@ -1054,8 +1054,8 @@ export const translations = {
       financing: "Fundraising advisory",
     },
     hero: {
-      subtitle: "Milaris Partners supports SMEs, entrepreneurs, and investors through business sales, acquisitions, and corporate financing operations. Our goal is to safeguard your interests and maximize the value of every transaction.",
-      title: "Mastering the art of simplifying M&A",
+      subtitle: "Milaris Partners supports executives, shareholders, and investors through business sales, acquisitions, and corporate financing. Over 50 transactions led by our partners across Europe.",
+      title: "The expertise of a leading investment bank, at the service of SMEs and mid-market companies.",
       description: {
         part1: "Milaris Partners",
         part2: "supports",
@@ -2096,8 +2096,8 @@ export const translations = {
       financing: "Fundraising advisory",
     },
     hero: {
-      subtitle: "Milaris Partners accompagna PMI, imprenditori e investitori nelle cessioni, acquisizioni e operazioni di finanziamento aziendale, con l'obiettivo di tutelare gli interessi e valorizzare ogni transazione.",
-      title: "L'arte di semplificare le operazioni di M&A",
+      subtitle: "Milaris Partners accompagna dirigenti, azionisti e investitori nelle cessioni, acquisizioni e nel finanziamento di imprese. Oltre 50 transazioni condotte dai nostri partner in tutta Europa.",
+      title: "L'esperienza di una grande banca d'affari, al servizio delle PMI e delle mid-cap.",
       description: {
         part1: "Milaris Partners",
         part2: "accompagna",
@@ -3138,8 +3138,8 @@ export const translations = {
       financing: "Finanzierung",
     },
     hero: {
-      subtitle: "Milaris Partners begleitet Führungskräfte, Aktionäre und Investoren von KMU und mittelständischen Unternehmen beim Verkauf, Kauf oder der Finanzierung von Unternehmen, mit dem Ziel, ihre Interessen zu schützen und den Wert jeder Transaktion zu maximieren.",
-      title: "Die Kunst der Vereinfachung von M&A-Operationen",
+      subtitle: "Milaris Partners begleitet Führungskräfte, Aktionäre und Investoren beim Verkauf, Kauf und der Finanzierung von Unternehmen. Über 50 Transaktionen, die von unseren Partnern in ganz Europa durchgeführt wurden.",
+      title: "Die Expertise einer großen Investmentbank, im Dienste von KMU und mittelständischen Unternehmen.",
       description: {
         part1: "Milaris Partners begleitet Führungskräfte, Aktionäre und Investoren",
         part2: "von KMU und mittelständischen Unternehmen beim Verkauf, Kauf oder der Finanzierung von Unternehmen,",

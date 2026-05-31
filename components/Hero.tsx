@@ -73,15 +73,7 @@ const Hero = () => {
             className="heading-1 font-bold mb-6 sm:mb-8 relative"
           >
             <span className="text-white drop-shadow-2xl [text-shadow:_0_2px_15px_rgb(0_0_0_/_100%),_0_4px_25px_rgb(0_0_0_/_80%),_0_6px_35px_rgb(0_0_0_/_60%)]">
-              {language === "DE" && t("hero.title") === "Die Kunst der Vereinfachung von M&A-Operationen" ? (
-                <>
-                  Die Kunst der<br />
-                  Vereinfachung von<br />
-                  M&A-Operationen
-                </>
-              ) : (
-                t("hero.title")
-              )}
+              {t("hero.title")}
             </span>
           </motion.h1>
           
